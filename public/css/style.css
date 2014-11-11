@@ -1,0 +1,256 @@
+
+/*******  Style sheet for air-master
+******************************************/
+
+
+/******************************
+Font Styles and Sizing
+******************************/
+
+#header a {
+	color: #000;
+}
+
+h1 {
+	font-size: 3.4em;
+}
+
+.nav_categories li a {
+	text-transform: uppercase;
+	font-size: .88em;
+}
+
+.email, .phone {
+	font-size: 1.7em;
+}
+
+.main_body {
+	font-size: 1.7em;
+}
+
+.location {
+	font-size: 1.2em;
+}
+
+.about_description {
+	font-size: 1.3em;
+}
+
+#footer {
+	font-size: 1.4em;
+}
+
+
+
+
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+
+
+
+
+.container {
+	max-width: 1400px;
+}
+
+#header {
+	margin-top: 20px;
+}
+
+
+
+section {
+	margin: 160px 0;
+}
+
+.main_nav {
+	margin-top: 20px;
+}
+
+.main_nav li {
+	display: inline-block;
+}
+
+
+
+.nav_categories li a {
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+}
+
+.phone, .email, .nav_categories {
+	text-align: right;
+}
+
+
+
+/*****************************************
+Modal for About Us and Testimonials
+*****************************************************/
+
+#textModal {
+	
+}
+
+.modal-dialog {
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.modal-content {
+	min-height: 100vh;
+	padding: 30px;
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .5s ease-out;
+       -o-transition:      -o-transform .5s ease-out;
+          transition:         transform .5s ease-out;
+  -webkit-transform: translate(50%, 0);
+      -ms-transform: translate(50%, 0);
+       -o-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+
+/**************************************************************/
+
+
+
+
+
+
+.main_img_wrapper img {
+	margin-top: -30px;
+	margin-bottom: 50px;
+}
+
+.location {
+	margin-top: 14px;
+	text-align: right;
+}
+
+.testimonial {
+	
+}
+
+.business_categories {
+	
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.single_category_post {
+	margin: 90px 0;
+	
+}
+
+.single_category_post img {
+	min-height: 500px;
+}
+
+h3 	{
+	padding-bottom: 20px;
+}
+
+.category_info {
+	padding: 30px 60px 90px 40px;
+}
+
+	.category_info p {
+		padding: 5px 0;
+	}
+
+.single_category_post img {
+		width: 100%;
+	}
+
+.quote, .quote_name {
+	text-align: center;
+}
+
+
+.quote {
+	font-size: 1.75em;
+	font-style: italic;
+}
+
+.quote_name {
+	font-size: .85em;
+	color: darkgray;
+}
+
+
+.partners {
+	max-width: 90%;
+	margin: auto;
+}
+
+.partners h2 {
+	margin-bottom: 20px;
+}
+
+.logo_images {
+	padding: 10%;
+}
+
+
+.about {
+	padding: 0 50px;
+	text-align: center;
+	margin-bottom: 200px;
+}
+
+.about_description {
+	margin-bottom: 6%;
+}
+
+
+
+.single_category_post img:nth-child(odd) {
+
+}
+
+
+#footer {
+	margin-bottom: 90px;
+	margin-left: 20px;
+
+}
+
+.map {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

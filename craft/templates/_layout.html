@@ -1,0 +1,208 @@
+{#
+ # Layout template
+ # ---------------
+ #
+ # This template defines your site’s global layout. It can be
+ # “extended” by other templates to fill in the gaps.
+ #
+ # See Twig’s Template Inheritance documentation for more details:
+ # http://twig.sensiolabs.org/doc/templates.html#template-inheritance
+ #}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
+
+	<link rel="home" href="{{ siteUrl }}" />
+	<!-- external style sheets -->
+	<link href="{{ siteUrl }}/public/css/normalize.css" rel="stylesheet" />
+	<link href="{{ siteUrl }}/public/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="{{ siteUrl }}/public/css/animate.css" rel="stylesheet" >
+    <link href="{{ siteUrl }}/public/css/style.css" rel="stylesheet" />
+	
+
+</head>
+
+
+<body>
+
+	<div class="container">
+
+		<header id="header">
+			<div class="row">
+
+				<div class="col-sm-4 col-xs-3">
+					<h1><a href="{{ siteUrl }}">{{ siteName }}</a></h1>
+				</div>
+
+				<div class="col-sm-8 col-xs-9">
+					<nav>
+						<ul class="main_nav">
+							
+							<div class="col-md-7">
+								<div class="email">
+									<li>hello@airmaster.com</li>
+								</div>
+							</div>
+
+							<div class="col-md-5">
+								<div class="phone">
+									<li>555-555-5555</li>
+								</div>	
+							</div>						
+							
+							<div class="col-sm-12">
+								<div class="nav navbar nav_categories">
+
+									<li><a href="{{ siteUrl }}#residential">Residential</a></li>
+									<li><a href="{{ siteUrl }}#commercial">Commercial & Industrial</a></li>
+									<li><a href="{{ siteUrl }}#fireplace">Fireplace</a></li>
+									<li><a href="{{ siteUrl }}#barbecue">Barbecue</a></li>
+									<li>
+										<a data-toggle="modal" href="#textModal">About Us</a>
+									</li>
+
+								</div>
+							</div>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+			<!-- end row -->
+		</header>
+
+
+		<div class="main_img_wrapper">
+
+			{% set image = entry.headingImage.first() %}
+
+				<img src="{{ image.getUrl() }}" alt="">
+
+		</div>
+		
+
+
+
+		<!-- About Us modal -->
+		<div class="modal fade" id="textModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title contact_header">More about Air Master</h4>
+					</div>
+
+					<div class="map">
+						{% set image = entry.googleMap.first() %}
+
+							<img src="{{ image.getUrl() }}" alt="">
+					</div>
+
+					<div class="modal-body">
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius- mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+						</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius- mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese.
+						</p>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Contact modal -->
+
+
+		<main id="content" role="main">
+			
+			{% block content %}
+				<p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
+				<p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
+			{% endblock %}
+			
+		</main>
+
+		<footer id="footer">
+
+			<div class="row">
+				
+				<div class="col-sm-3">	
+					<div>hello@airmaster.com</div>
+					<div>248-399-1800</div>
+
+					<br>
+
+					<div>2870 Coolidge Highway</div>
+					<div>Berkely, Mi 48072</div>
+
+					<br>
+
+					<a href="#" class="twitter">Twitter</a>
+
+					<br>
+
+					<a href="#" class-"facebook">Facebook</a>
+				</div>
+
+				<div class="col-sm-3">
+					<div>Office and Showroom: </div>
+					<div>Mon - Fri: 9am - 5:30pm</div> 
+					<div>Sat: 10am - 2pm</div> 
+					<div>Sun: closed</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="map">
+						{% set image = entry.googleMap.first() %}
+
+							<img src="{{ image.getUrl() }}" alt="">
+					</div>
+				</div>
+			
+			
+			</div>
+			<!-- end row -->
+
+		</footer>
+	
+	</div>
+
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="{{ siteUrl }}/public/js/bootstrap.min.js"></script>
+	<script src="{{ siteUrl }}/public/js/application.js"></script>
+
+	<script src="{{ siteUrl }}/public/js/wow.min.js"></script>
+	<script>
+	 new WOW().init();
+	</script>
+	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

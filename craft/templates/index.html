@@ -1,0 +1,356 @@
+{#
+ # Homepage template
+ # ---------------
+ #
+ # When this template gets loaded, it will be because someone has accessed
+ # http://yoursite.com/ (without any URI). Craft checks to see if you have
+ # a Single section set to be the Homepage (as you do, by default), and
+ # loads the section’s Template (this file). A special ‘entry’ variable
+ # will already be set for you, assigned to the Homepage entry.
+ #
+ # It's worth noting that even if you didn't have a Homepage Single section,
+ # as long as this template remains at craft/templates/index.html, it
+ # would still be the one to get loaded when accessing http://yoursite.com/,
+ # albeit without an ‘entry’ variable already set for you.
+ #
+ # See this page for more details on how Craft routes requests:
+ # http://buildwithcraft.com/docs/routing
+ #}
+
+{% extends "_layout" %}
+
+{% block content %}
+
+	<div class="row">
+
+		<div class="main_body">
+			<div class="col-sm-7">
+				<p>{{ entry.body }}</p>
+			</div>
+		</div>
+
+		<div class="location">
+			<div class="col-sm-5">
+				<p>{{ entry.location }}</p>
+			</div>
+		</div>
+	</div>
+
+
+	
+	
+
+<!-- first testimonial -->
+
+	<section class="testimonial wow fadeInUp">
+		<div class="row">
+		
+		{% set entries = entry.testimonials %}
+
+			{% for entry in entry.testimonials.limit(1).find() %}
+			<div class="col-xs-8 col-xs-offset-2">	
+				<p class="quote">{{ entry.quote }}</p>
+				<p class="quote_name">{{ entry.customerName }}</p>
+			</div>
+			{% endfor %}
+		
+		</div>
+		<!-- end row -->
+	</section>
+	
+
+<!-- END first testimonial -->
+
+
+
+
+<!-- FOR LOOP to display different business categories -->
+	
+	<section class="business_categories wow">
+		
+		<h2 class="">Our Services</h2>
+
+		
+
+		{% set entries = entry.businessCategories %}
+			
+			{% for entry in entry.businessCategories.limit(1) %}	
+
+			<div class="single_category_post wow" id="residential">
+				
+				<div class="row">
+
+					<div class="col-sm-6">
+						{% set image = entry.image.first() %}
+
+							<img src="{{ image.getUrl() }}" alt="">
+					</div>
+
+					<div class="col-sm-6">
+						<div class="category_info">
+							<h3>{{ entry.title }}</h3>
+							<p>{{ entry.body }}</p>
+
+							<p><a href="#">find out more</a></p>
+						</div>
+					</div>
+
+				</div>
+				<!-- end row -->
+
+			</div>
+			
+			{% endfor %}
+
+			{% for entry in entry.businessCategories.limit(1).offset(1) %}	
+
+			<div class="single_category_post wow" id="commercial">
+				
+				<div class="row">
+
+					<div class="col-sm-6">
+						<div class="category_info">
+							<h3>{{ entry.title }}</h3>
+							<p>{{ entry.body }}</p>
+
+							<p><a href="#">find out more</a></p>
+						</div>
+					</div>
+
+					<div class="col-sm-6">
+						{% set image = entry.image.first() %}
+
+							<img src="{{ image.getUrl() }}" alt="">
+					</div>
+
+				</div>
+				<!-- end row -->
+
+			</div>
+			
+			{% endfor %}
+
+			{% for entry in entry.businessCategories.limit(1).offset(2) %}	
+
+			<div class="single_category_post wow " id="fireplace">
+				
+				<div class="row">
+
+					<div class="col-sm-6">
+						{% set image = entry.image.first() %}
+
+							<img src="{{ image.getUrl() }}" alt="">
+					</div>
+
+					<div class="col-sm-6">
+						<div class="category_info">
+							<h3>{{ entry.title }}</h3>
+							<p>{{ entry.body }}</p>
+
+							<p><a href="#">find out more</a></p>
+						</div>
+					</div>
+
+				</div>
+				<!-- end row -->
+
+			</div>
+			
+			{% endfor %}
+
+			{% for entry in entry.businessCategories.limit(1).offset(3) %}	
+
+			<div class="single_category_post" id="barbecue">
+				
+				<div class="row">
+
+					<div class="col-sm-6">
+						<div class="category_info">
+							<h3>{{ entry.title }}</h3>
+							<p>{{ entry.body }}</p>
+
+							<p><a href="#">find out more</a></p>
+						</div>
+					</div>
+
+					<div class="col-sm-6">
+						{% set image = entry.image.first() %}
+
+							<img src="{{ image.getUrl() }}" alt="">
+					</div>
+
+				</div>
+				<!-- end row -->
+
+			</div>
+			
+			{% endfor %}
+			
+		
+
+	</section>
+
+<!-- END FOR LOOP for business categories -->
+
+
+
+
+<!-- second testimonial -->
+
+	<section class="testimonial wow fadeInUp">
+		<div class="row">
+		
+		{% set entries = entry.testimonials %}
+
+			{% for entry in entry.testimonials.limit(1).offset(1) %}
+			<div class="col-xs-8 col-xs-offset-2">	
+				<p class="quote">{{ entry.quote }}</p>
+				<p class="quote_name">{{ entry.customerName }}</p>
+			</div>
+			{% endfor %}
+		
+		</div>
+		<!-- end row -->
+	</section>
+	
+
+<!-- END second testimonial -->
+
+
+<!-- Emergency services-->
+	
+	<section class="wow fadeInUp">
+		
+		{% set entries = entry.businessCategories %}
+			
+			{% for entry in entry.businessCategories.limit(1).find() %}	
+
+			<div class="single_category_post">
+				
+				<div class="row">
+
+					<div class="col-xs-6">
+						<img src="" alt="image">
+					</div>
+
+					<div class="col-xs-6">
+						<div class="category_info">
+							<h3>Emergency Services</h3>
+							<p>24 Hour Emergency Service</p>
+							<p>Ut enim ad minim</p>
+							<p>Duis aute irure dolor in reprehenderit Excepteur sint</p>
+
+							<p><a href="#">find out more</a></p>
+						</div>
+					</div>
+
+				</div>
+				<!-- end row -->
+
+			</div>
+			
+			{% endfor %}
+			
+		
+
+	</section>
+
+<!-- END FOR LOOP for business categories -->
+
+
+<!-- Our Partners -->
+
+	<section class="partners wow fadeInUp">
+
+		<h2>Our Partners</h2>
+
+		<div class="row">
+			
+			{% for image in entry.logoImages.limit(12) %}
+
+				<div class="col-sm-3 col-xs-6">
+
+					<div class="logo_images">
+
+						<img src="{{ image.getUrl() }}" alt="">
+
+					</div>
+
+				</div>
+
+			{% endfor %}
+			
+		</div>
+	</section>
+
+
+
+
+<!-- END Our Partners -->
+
+
+
+
+
+<!-- third testimonial -->
+
+	<section class="testimonial wow fadeInUp">
+		<div class="row">
+		
+		{% set entries = entry.testimonials %}
+
+			{% for entry in entry.testimonials.limit(1).offset(2) %}
+			<div class="col-xs-8 col-xs-offset-2">	
+				<p class="quote">{{ entry.quote }}</p>
+				<p class="quote_name">{{ entry.customerName }}</p>
+			</div>
+			{% endfor %}
+		
+		</div>
+		<!-- end row -->
+	</section>
+	
+<!-- END third testimonial -->
+		
+
+<!-- About Us section -->
+
+	<section class="about wow fadeInUp">
+		<div class="row">
+			
+			<div class="col-xs-8 col-xs-offset-2">	
+				<h2 class="about_title">{{ entry.aboutUs }}</h2>
+				<p class="about_description">{{ entry.aboutUsDescription }}</p>
+				<a href="#" class="read_more">Read more about us</a>
+			</div>
+		
+		
+		</div>
+		<!-- end row -->
+	</section>
+	
+<!-- END About Us -->
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
