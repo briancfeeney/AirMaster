@@ -1,14 +1,20 @@
 
-/*******  Style sheet for air-master
+/*******  LESS Style sheet for AirMaster
 ******************************************/
 
+// COLOR
+@red: rgb(215,44,66);
+@navyBlue: rgb(32,87,151);
+@bg-lightGray: rgb(242,245,249);
 
-/******************************
-Font Styles and Sizing
-******************************/
+@small: 650px;
 
-#header a {
-	color: #000;
+// FONT SIZES, STYLES AND COLORS
+
+#header {
+	h1 a, .email, .phone { 
+		color: @red;
+	}
 }
 
 h1 {
@@ -18,6 +24,7 @@ h1 {
 .nav_categories li a {
 	text-transform: uppercase;
 	font-size: .88em;
+	color: @navyBlue;
 }
 
 .email, .phone {
@@ -25,12 +32,53 @@ h1 {
 }
 
 .main_body {
-	font-size: 1.7em;
+	font-size: 3.75em;
+	color: white;
 }
 
 .location {
-	font-size: 1.2em;
+	font-size: 1.8em;
+	color: @navyBlue;
+	background-color: @bg-lightGray;
+	border-bottom: solid 2px @navyBlue;
 }
+
+
+
+.testimonial {
+	color: @red;
+	font-size: 1.7em;
+	
+}
+
+.quote {
+	font-size: 1.75em;
+	font-style: italic;
+}
+
+.quote_name {
+	text-transform: uppercase;
+	color: lighten(@red, 25%);
+}
+
+.category_info h3 {
+	color: @red;
+	text-transform: uppercase;
+}
+
+.read_more a {
+	color: @navyBlue;
+	text-transform: uppercase;
+	display: inline-block;
+	border-bottom: solid 2px @navyBlue;
+	padding-bottom: 5px;
+	&:hover {
+		text-decoration: none;
+		color: lighten(@navyBlue, 30%);
+		border-bottom: solid 2px lighten(@navyBlue, 30%);
+	}
+}
+
 
 .about_description {
 	font-size: 1.3em;
@@ -39,6 +87,40 @@ h1 {
 #footer {
 	font-size: 1.4em;
 }
+
+
+
+
+// BACKGROUND COLORS AND IMAGES
+
+.main_body {
+	background-color: @red;
+}
+
+
+.circle_bg {
+	background-color: @bg-lightGray;
+	border-radius: 100%;
+	height: 400px;
+	margin-top: 20%;
+	margin-bottom: -87%;
+}
+
+
+.single_category_post img {
+	border-radius: 100%;
+}
+
+#footer {
+	border-top: solid 1px @red;
+	background-color: @bg-lightGray;
+}
+
+
+
+
+
+
 
 
 
@@ -57,7 +139,7 @@ ul {
 
 
 .container {
-	max-width: 1400px;
+	max-width: 1900px;
 }
 
 #header {
@@ -142,12 +224,8 @@ Modal for About Us and Testimonials
 
 .location {
 	margin-top: 14px;
-	text-align: right;
 }
 
-.testimonial {
-	
-}
 
 .business_categories {
 	
@@ -166,7 +244,7 @@ h2 {
 }
 
 .single_category_post img {
-	min-height: 500px;
+	min-height: 600px;
 }
 
 h3 	{
@@ -174,7 +252,7 @@ h3 	{
 }
 
 .category_info {
-	padding: 30px 60px 90px 40px;
+	padding: 90px 60px 90px 40px;
 }
 
 	.category_info p {
@@ -189,16 +267,12 @@ h3 	{
 	text-align: center;
 }
 
-
-.quote {
-	font-size: 1.75em;
-	font-style: italic;
-}
-
 .quote_name {
-	font-size: .85em;
-	color: darkgray;
+	margin-top: 5%;
 }
+
+
+
 
 
 .partners {

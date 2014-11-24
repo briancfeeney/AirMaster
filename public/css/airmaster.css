@@ -1,0 +1,202 @@
+/*******  LESS Style sheet for AirMaster
+******************************************/
+#header h1 a,
+#header .email,
+#header .phone {
+  color: #d72c42;
+}
+h1 {
+  font-size: 3.4em;
+}
+.nav_categories li a {
+  text-transform: uppercase;
+  font-size: .88em;
+  color: #205797;
+}
+.email,
+.phone {
+  font-size: 1.7em;
+}
+.main_body {
+  font-size: 3.75em;
+  color: white;
+}
+.location {
+  font-size: 1.8em;
+  color: #205797;
+  background-color: #f2f5f9;
+  border-bottom: solid 2px #205797;
+}
+.testimonial {
+  color: #d72c42;
+  font-size: 1.7em;
+}
+.quote {
+  font-size: 1.75em;
+  font-style: italic;
+}
+.quote_name {
+  text-transform: uppercase;
+  color: #eb97a2;
+}
+.category_info h3 {
+  color: #d72c42;
+  text-transform: uppercase;
+}
+.read_more a {
+  color: #205797;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: solid 2px #205797;
+  padding-bottom: 5px;
+}
+.read_more a:hover {
+  text-decoration: none;
+  color: #6fa4e1;
+  border-bottom: solid 2px #6fa4e1;
+}
+.about_description {
+  font-size: 1.3em;
+}
+#footer {
+  font-size: 1.4em;
+}
+.main_body {
+  background-color: #d72c42;
+}
+.circle_bg {
+  background-color: #f2f5f9;
+  border-radius: 100%;
+  height: 400px;
+  margin-top: 20%;
+  margin-bottom: -87%;
+}
+.single_category_post img {
+  border-radius: 100%;
+}
+#footer {
+  border-top: solid 1px #d72c42;
+  background-color: #f2f5f9;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1900px;
+}
+#header {
+  margin-top: 20px;
+}
+section {
+  margin: 160px 0;
+}
+.main_nav {
+  margin-top: 20px;
+}
+.main_nav li {
+  display: inline-block;
+}
+.nav_categories li a {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+.phone,
+.email,
+.nav_categories {
+  text-align: right;
+}
+/*****************************************
+Modal for About Us and Testimonials
+*****************************************************/
+.modal-dialog {
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.modal-content {
+  min-height: 100vh;
+  padding: 30px;
+}
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  -o-transition: -o-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  -webkit-transform: translate(50%, 0);
+  -ms-transform: translate(50%, 0);
+  -o-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+/**************************************************************/
+.main_img_wrapper img {
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+.location {
+  margin-top: 14px;
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.single_category_post {
+  margin: 90px 0;
+}
+.single_category_post img {
+  min-height: 600px;
+}
+h3 {
+  padding-bottom: 20px;
+}
+.category_info {
+  padding: 90px 60px 90px 40px;
+}
+.category_info p {
+  padding: 5px 0;
+}
+.single_category_post img {
+  width: 100%;
+}
+.quote,
+.quote_name {
+  text-align: center;
+}
+.quote_name {
+  margin-top: 5%;
+}
+.partners {
+  max-width: 90%;
+  margin: auto;
+}
+.partners h2 {
+  margin-bottom: 20px;
+}
+.logo_images {
+  padding: 10%;
+}
+.about {
+  padding: 0 50px;
+  text-align: center;
+  margin-bottom: 200px;
+}
+.about_description {
+  margin-bottom: 6%;
+}
+#footer {
+  margin-bottom: 90px;
+  margin-left: 20px;
+}
+.map {
+  text-align: center;
+}
