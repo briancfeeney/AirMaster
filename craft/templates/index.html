@@ -21,50 +21,70 @@
 
 {% block content %}
 
-	<div class="row">
+	<div class="main_top">
 
-		<div class="col-sm-12">
-			<div class="main_body">
-				<p>{{ entry.body }}</p>
+		<div class="container">
+
+			<div class="row">
+			
+				<div class="col-sm-7">
+					<div class="main_body">
+						<p>{{ entry.body }}</p>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="location">
+						<p>{{ entry.location }}</p>
+					</div>
+				</div>
+
 			</div>
+			
+		</div>
+		<!-- END CONTAINER -->
+
+
+		<div class="main_img_wrapper">
+
+			{% set image = entry.headingImage.first() %}
+
+				<img src="{{ image.getUrl() }}" alt="">
+
 		</div>
 
-		<div class="col-sm-12">
-			<div class="location">
-				<p>{{ entry.location }}</p>
-			</div>
-		</div>
 	</div>
 
 
 	
 	
+	<div class="container">
 
 <!-- first testimonial -->
-	<div class="row">
-		<div class="col-sm-6 col-sm-offset-3">
-			<div class="circle_bg">
-				
-			</div>
-		</div>
-	</div>
-	
-	<section class="testimonial wow fadeInUp">
 		<div class="row">
-		
-		{% set entries = entry.testimonials %}
-
-			{% for entry in entry.testimonials.limit(1).find() %}
-			<div class="col-xs-10 col-xs-offset-1">	
-				<p class="quote">{{ entry.quote }}</p>
-				<p class="quote_name">{{ entry.customerName }}</p>
+			<div class="col-sm-6 col-sm-offset-3">
+				<div class="circle_bg">
+					
+				</div>
 			</div>
-			{% endfor %}
-		
 		</div>
-		<!-- end row -->
-	</section>
-	
+		
+		<section class="testimonial wow fadeInUp">
+			<div class="row">
+			
+			{% set entries = entry.testimonials %}
+
+				{% for entry in entry.testimonials.limit(1).find() %}
+				<div class="col-xs-10 col-xs-offset-1">	
+					<p class="quote">{{ entry.quote }}</p>
+					<p class="quote_name">{{ entry.customerName }}</p>
+				</div>
+				{% endfor %}
+			
+			</div>
+			<!-- end row -->
+		</section>
+		
 
 <!-- END first testimonial -->
 
@@ -73,129 +93,138 @@
 
 <!-- FOR LOOP to display different business categories -->
 	
-	<section class="business_categories wow">
-		
-		<h2 class="">Our Services</h2>
-
-		
-
-		{% set entries = entry.businessCategories %}
+		<section class="business_categories wow">
 			
-			{% for entry in entry.businessCategories.limit(1) %}	
 
-			<div class="single_category_post wow" id="residential">
+			{% set entries = entry.businessCategories %}
 				
-				<div class="row">
+				{% for entry in entry.businessCategories.limit(1) %}	
 
-					<div class="col-sm-6">
-						{% set image = entry.image.first() %}
+				<div class="single_category_post wow" id="residential">
+					
+					<div class="row">
 
-							<img src="{{ image.getUrl() }}" alt="">
-					</div>
+						<div class="col-sm-6">
+							{% set image = entry.image.first() %}
 
-					<div class="col-sm-6">
-						<div class="category_info">
-							<h3>{{ entry.title }}</h3>
-							<p>{{ entry.body }}</p>
-
-							<p class="read_more"><a href="#">find out more</a></p>
+								<img src="{{ image.getUrl() }}" alt="">
 						</div>
+
+						<div class="col-sm-6">
+							<div class="category_info">
+
+								<h3>{{ entry.title }}</h3>
+								<p>{{ entry.body }}</p>
+
+								<p class="read_more">
+									<a data-toggle="modal" href="#textModal">find out more</a>
+								</p>
+
+							</div>
+						</div>
+
 					</div>
+					<!-- end row -->
 
 				</div>
-				<!-- end row -->
-
-			</div>
-			
-			{% endfor %}
-
-			{% for entry in entry.businessCategories.limit(1).offset(1) %}	
-
-			<div class="single_category_post wow" id="commercial">
 				
-				<div class="row">
+				{% endfor %}
 
-					<div class="col-sm-6">
-						<div class="category_info">
-							<h3>{{ entry.title }}</h3>
-							<p>{{ entry.body }}</p>
+				{% for entry in entry.businessCategories.limit(1).offset(1) %}	
 
-							<p class="read_more"><a href="#">find out more</a></p>
+				<div class="single_category_post wow" id="commercial">
+					
+					<div class="row">
+
+						<div class="col-sm-6">
+
+							<div class="category_info">
+								<h3>{{ entry.title }}</h3>
+								<p>{{ entry.body }}</p>
+
+								<p class="read_more">
+									<a data-toggle="modal" href="#textModal">find out more</a>
+								</p>
+
+							</div>
 						</div>
-					</div>
 
-					<div class="col-sm-6">
-						{% set image = entry.image.first() %}
+						<div class="col-sm-6">
+							{% set image = entry.image.first() %}
 
-							<img src="{{ image.getUrl() }}" alt="">
+								<img src="{{ image.getUrl() }}" alt="">
+						</div>
+
 					</div>
+					<!-- end row -->
 
 				</div>
-				<!-- end row -->
-
-			</div>
-			
-			{% endfor %}
-
-			{% for entry in entry.businessCategories.limit(1).offset(2) %}	
-
-			<div class="single_category_post wow " id="fireplace">
 				
-				<div class="row">
+				{% endfor %}
 
-					<div class="col-sm-6">
-						{% set image = entry.image.first() %}
+				{% for entry in entry.businessCategories.limit(1).offset(2) %}	
 
-							<img src="{{ image.getUrl() }}" alt="">
-					</div>
+				<div class="single_category_post wow " id="fireplace">
+					
+					<div class="row">
 
-					<div class="col-sm-6">
-						<div class="category_info">
-							<h3>{{ entry.title }}</h3>
-							<p>{{ entry.body }}</p>
+						<div class="col-sm-6">
+							{% set image = entry.image.first() %}
 
-							<p class="read_more"><a href="#">find out more</a></p>
+								<img src="{{ image.getUrl() }}" alt="">
 						</div>
+
+						<div class="col-sm-6">
+							<div class="category_info">
+								<h3>{{ entry.title }}</h3>
+								<p>{{ entry.body }}</p>
+
+								<p class="read_more">
+									<a data-toggle="modal" href="#textModal">find out more</a>
+								</p>
+							</div>
+						</div>
+
 					</div>
+					<!-- end row -->
 
 				</div>
-				<!-- end row -->
-
-			</div>
-			
-			{% endfor %}
-
-			{% for entry in entry.businessCategories.limit(1).offset(3) %}	
-
-			<div class="single_category_post" id="barbecue">
 				
-				<div class="row">
+				{% endfor %}
 
-					<div class="col-sm-6">
-						<div class="category_info">
-							<h3>{{ entry.title }}</h3>
-							<p>{{ entry.body }}</p>
+				{% for entry in entry.businessCategories.limit(1).offset(3) %}	
 
-							<p class="read_more"><a href="#">find out more</a></p>
+				<div class="single_category_post" id="barbecue">
+					
+					<div class="row">
+
+						<div class="col-sm-6">
+							<div class="category_info">
+								<h3>{{ entry.title }}</h3>
+								<p>{{ entry.body }}</p>
+
+								<p class="read_more">
+									<a data-toggle="modal" href="#textModal">find out more</a>
+								</p>
+							</div>
 						</div>
-					</div>
 
-					<div class="col-sm-6">
-						{% set image = entry.image.first() %}
+						<div class="col-sm-6">
+							{% set image = entry.image.first() %}
 
-							<img src="{{ image.getUrl() }}" alt="">
+								<img src="{{ image.getUrl() }}" alt="">
+						</div>
+
 					</div>
+					<!-- end row -->
 
 				</div>
-				<!-- end row -->
-
-			</div>
+				
+				{% endfor %}
+				
 			
-			{% endfor %}
-			
-		
 
-	</section>
+		</section>
 
 <!-- END FOR LOOP for business categories -->
 
@@ -204,32 +233,37 @@
 
 <!-- second testimonial -->
 	
-	<div class="row">
-		<div class="col-sm-6 col-sm-offset-3">
-			<div class="circle_bg">
-				
-			</div>
-		</div>
-	</div>
-
-	<section class="testimonial wow fadeInUp">
 		<div class="row">
-		
-		{% set entries = entry.testimonials %}
-
-			{% for entry in entry.testimonials.limit(1).offset(1) %}
-			<div class="col-xs-10 col-xs-offset-1">	
-				<p class="quote">{{ entry.quote }}</p>
-				<p class="quote_name">{{ entry.customerName }}</p>
+			<div class="col-sm-6 col-sm-offset-3">
+				<div class="circle_bg">
+					
+				</div>
 			</div>
-			{% endfor %}
-		
 		</div>
-		<!-- end row -->
-	</section>
+
+		<section class="testimonial wow fadeInUp">
+			<div class="row">
+			
+			{% set entries = entry.testimonials %}
+
+				{% for entry in entry.testimonials.limit(1).offset(1) %}
+				<div class="col-xs-10 col-xs-offset-1">	
+					<p class="quote">{{ entry.quote }}</p>
+					<p class="quote_name">{{ entry.customerName }}</p>
+				</div>
+				{% endfor %}
+			
+			</div>
+			<!-- end row -->
+		</section>
 	
 
 <!-- END second testimonial -->
+
+	</div>
+	<!-- END CONTAINER -->
+
+
 
 
 <!-- Emergency services-->
@@ -240,27 +274,28 @@
 			
 			{% for entry in entry.businessCategories.limit(1).find() %}	
 
-			<div class="single_category_post">
+			<div class="single_category_post emergency">
 				
-				<div class="row">
+				<div class="container">
 
-					<div class="col-xs-6">
-						<img src="" alt="image">
-					</div>
+					<div class="row">
 
-					<div class="col-xs-6">
-						<div class="category_info">
-							<h3>Emergency Services</h3>
-							<p>24 Hour Emergency Service</p>
-							<p>Ut enim ad minim</p>
-							<p>Duis aute irure dolor in reprehenderit Excepteur sint</p>
+						<div class="col-xs-12">
+							<div class="category_info">
+								<h3> 24 Hour Emergency Services</h3>
+							
 
-							<p><a href="#">find out more</a></p>
+								<p class="read_more">
+									<a data-toggle="modal" href="#textModal">find out more</a>
+								</p>
+							</div>
 						</div>
+
 					</div>
+					<!-- end row -->
 
 				</div>
-				<!-- end row -->
+				<!-- END CONTAINER -->
 
 			</div>
 			
@@ -273,7 +308,7 @@
 <!-- END FOR LOOP for business categories -->
 
 
-<!-- Our Partners -->
+<!-- Our Partners 
 
 	<section class="partners wow fadeInUp">
 
@@ -298,7 +333,7 @@
 		</div>
 	</section>
 
-
+-->
 
 
 <!-- END Our Partners -->
@@ -307,52 +342,60 @@
 
 
 
-<!-- third testimonial -->
-	
-	<div class="row">
-		<div class="col-sm-6 col-sm-offset-3">
-			<div class="circle_bg">
-				
-			</div>
-		</div>
-	</div>
-
-	<section class="testimonial wow fadeInUp">
-		<div class="row">
-		
-		{% set entries = entry.testimonials %}
-
-			{% for entry in entry.testimonials.limit(1).offset(2) %}
-			<div class="col-xs-10 col-xs-offset-1">		
-				<p class="quote">{{ entry.quote }}</p>
-				<p class="quote_name">{{ entry.customerName }}</p>
-			</div>
-			{% endfor %}
-		
-		</div>
-		<!-- end row -->
-	</section>
-	
-<!-- END third testimonial -->
-		
-
 <!-- About Us section -->
 
-	<section class="about wow fadeInUp">
-		<div class="row">
+	<div class="container">
+
+		<section class="single_category_post about wow fadeInUp">
+			<div class="row">
+				
+				<div class="col-xs-8 col-xs-offset-2">	
+					<h2 class="about_title">{{ entry.aboutUs }}</h2>
+					<p class="about_description">{{ entry.aboutUsDescription }}</p>
+					<p class="read_more">
+						<a data-toggle="modal" href="#textModal">find out more</a>
+					</p>
+				</div>
 			
-			<div class="col-xs-8 col-xs-offset-2">	
-				<h2 class="about_title">{{ entry.aboutUs }}</h2>
-				<p class="about_description">{{ entry.aboutUsDescription }}</p>
-				<a href="#" class="read_more">Read more about us</a>
+			
 			</div>
-		
-		
-		</div>
-		<!-- end row -->
-	</section>
+			<!-- end row -->
+		</section>
 	
 <!-- END About Us -->
+
+
+
+<!-- third testimonial -->
+	
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<div class="circle_bg">
+					
+				</div>
+			</div>
+		</div>
+
+		<section class="testimonial wow fadeInUp">
+			<div class="row">
+			
+			{% set entries = entry.testimonials %}
+
+				{% for entry in entry.testimonials.limit(1).offset(2) %}
+				<div class="col-xs-10 col-xs-offset-1">		
+					<p class="quote">{{ entry.quote }}</p>
+					<p class="quote_name">{{ entry.customerName }}</p>
+				</div>
+				{% endfor %}
+			
+			</div>
+			<!-- end row -->
+		</section>
+		
+	</div>
+	<!-- END CONTAINER -->
+
+<!-- END third testimonial -->
 
 
 

@@ -1,34 +1,69 @@
 /*******  LESS Style sheet for AirMaster
 ******************************************/
+.chaparralR {
+  font-family: "chaparral-pro-n4", "chaparral-pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.chaparralI {
+  font-family: "chaparral-pro-i4", "chaparral-pro", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.chaparralB {
+  font-family: "chaparral-pro-n7", "chaparral-pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.chaparralBI {
+  font-family: "chaparral-pro-i7", "chaparral-pro", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+.calluna {
+  font-family: "calluna-n4", "calluna", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.sourcesans {
+  font-family: "source-sans-pro-n7", "source-sans-pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+#header {
+  padding-top: 20px;
+}
 #header h1 a,
 #header .email,
 #header .phone {
-  color: #d72c42;
+  color: #d9293e;
 }
 h1 {
-  font-size: 3.4em;
+  font-size: 3.5em;
 }
 .nav_categories li a {
   text-transform: uppercase;
   font-size: .88em;
-  color: #205797;
+  color: #1c5599;
 }
 .email,
 .phone {
   font-size: 1.7em;
+  font-weight: bolder;
 }
 .main_body {
-  font-size: 3.75em;
-  color: white;
+  font-size: 2.25em;
+  color: #1c5599;
 }
 .location {
-  font-size: 1.8em;
-  color: #205797;
-  background-color: #f2f5f9;
-  border-bottom: solid 2px #205797;
+  font-size: 1.2em;
+  color: #1c5599;
+}
+.single_category_post {
+  font-weight: bolder;
 }
 .testimonial {
-  color: #d72c42;
+  color: #d9293e;
   font-size: 1.7em;
 }
 .quote {
@@ -37,45 +72,61 @@ h1 {
 }
 .quote_name {
   text-transform: uppercase;
-  color: #eb97a2;
+  color: #ec95a0;
 }
-.category_info h3 {
-  color: #d72c42;
+.category_info h3,
+.about_title {
+  color: #d9293e;
   text-transform: uppercase;
 }
 .read_more a {
-  color: #205797;
+  color: #1c5599;
   text-transform: uppercase;
   display: inline-block;
-  border-bottom: solid 2px #205797;
+  border-bottom: solid 2px #1c5599;
   padding-bottom: 5px;
 }
 .read_more a:hover {
   text-decoration: none;
-  color: #6fa4e1;
-  border-bottom: solid 2px #6fa4e1;
+  color: #6aa2e4;
+  border-bottom: solid 2px #6aa2e4;
 }
 .about_description {
   font-size: 1.3em;
 }
 #footer {
   font-size: 1.4em;
+  color: #1c5599;
 }
-.main_body {
-  background-color: #d72c42;
+#footer h4 {
+  color: #d9293e;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: bolder;
+}
+.main_top {
+  background: url("../img/michigan.png") no-repeat;
+  background-position: 100% 30%;
+  background-size: 75%;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  margin-top: -200px;
 }
 .circle_bg {
   background-color: #f2f5f9;
   border-radius: 100%;
   height: 400px;
   margin-top: 20%;
-  margin-bottom: -87%;
+  margin-bottom: -77%;
 }
 .single_category_post img {
   border-radius: 100%;
 }
+.emergency {
+  background-color: #f2f5f9;
+}
 #footer {
-  border-top: solid 1px #d72c42;
+  border-top: solid 1px #d9293e;
   background-color: #f2f5f9;
 }
 img {
@@ -89,12 +140,17 @@ ul {
 }
 #header {
   margin-top: 20px;
+  margin-bottom: 7%;
+}
+.phone {
+  margin-top: 3%;
 }
 section {
-  margin: 160px 0;
+  margin: 100px 0;
 }
-.main_nav {
-  margin-top: 20px;
+.business_categories {
+  margin-bottom: 0px;
+  margin-top: 100px;
 }
 .main_nav li {
   display: inline-block;
@@ -108,6 +164,13 @@ section {
 .email,
 .nav_categories {
   text-align: right;
+}
+.emergency {
+  text-align: center;
+}
+.emergency h3 {
+  margin-bottom: 17%;
+  margin-top: -5%;
 }
 /*****************************************
 Modal for About Us and Testimonials
@@ -138,11 +201,15 @@ Modal for About Us and Testimonials
 }
 /**************************************************************/
 .main_img_wrapper img {
-  margin-top: -30px;
-  margin-bottom: 50px;
+  max-width: 80%;
 }
-.location {
-  margin-top: 14px;
+.main_body,
+.location,
+.main_img_wrapper {
+  padding: 20px 0;
+}
+.main_body {
+  padding-right: 10%;
 }
 h2 {
   text-align: center;
@@ -186,17 +253,41 @@ h3 {
   padding: 10%;
 }
 .about {
+  margin-top: 10px;
   padding: 0 50px;
   text-align: center;
-  margin-bottom: 200px;
 }
 .about_description {
-  margin-bottom: 6%;
+  margin-bottom: 3%;
 }
 #footer {
-  margin-bottom: 90px;
-  margin-left: 20px;
+  margin-top: 200px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  padding: 50px;
+  padding-top: 30px;
+}
+#footer .social_icons li {
+  display: inline;
+}
+#footer .social_icons li img {
+  max-width: 10%;
+  margin-left: -8px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.footer_info {
+  padding-bottom: 6%;
+}
+.footer_info img {
+  max-width: 70%;
+  padding-bottom: 40px;
+  padding-top: 6px;
 }
 .map {
-  text-align: center;
+  width: 100%;
+  text-align: right;
+}
+.map img {
+  border: solid 2px #1c5599;
 }

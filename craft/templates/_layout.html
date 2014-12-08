@@ -24,6 +24,10 @@
 	<link href="{{ siteUrl }}/public/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="{{ siteUrl }}/public/css/animate.css" rel="stylesheet" >
     <link href="{{ siteUrl }}/public/css/airmaster.css" rel="stylesheet" />
+
+	<!-- Typekit code for the header -->
+    <script src="//use.typekit.net/xkz7qtw.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 	
 
 </head>
@@ -31,64 +35,55 @@
 
 <body>
 
-	<div class="container">
+	
 
 		<header id="header">
-			<div class="row">
 
-				<div class="col-sm-4 col-xs-3">
-					<h1><a href="{{ siteUrl }}">{{ siteName }}</a></h1>
-				</div>
+			<div class="container">
 
-				<div class="col-sm-8 col-xs-9">
-					<nav>
-						<ul class="main_nav">
-							
-							<div class="col-md-7">
-								<div class="email">
-									<li>hello@airmaster.com</li>
+				<div class="row">
+
+					<div class="col-sm-4">
+
+						{% set image = entry.logo.first() %}
+
+							<img src="{{ image.getUrl() }}" alt="">
+
+					</div>
+
+					<div class="col-sm-8">
+						<nav>
+							<ul class="main_nav">
+								
+								<div class="col-md-5 col-md-offset-7">
+									<div class="email">
+										<li>hello@airmastermi.com</li>
+									</div>
 								</div>
-							</div>
 
-							<div class="col-md-5">
-								<div class="phone">
-									<li>555-555-5555</li>
-								</div>	
-							</div>						
-							
-							<div class="col-sm-12">
-								<div class="nav navbar nav_categories">
+								<div class="col-md-5 col-md-offset-7">
+									<div class="phone">
+										<li>555-555-5555</li>
+									</div>	
+								</div>						
+								
+								
+							</ul>
+						</nav>
+					</div>
 
-									<li><a href="{{ siteUrl }}#residential">Residential</a></li>
-									<li><a href="{{ siteUrl }}#commercial">Commercial & Industrial</a></li>
-									<li><a href="{{ siteUrl }}#fireplace">Fireplace</a></li>
-									<li><a href="{{ siteUrl }}#barbecue">Barbecue</a></li>
-									<li>
-										<a data-toggle="modal" href="#textModal">About Us</a>
-									</li>
-
-								</div>
-							</div>
-						</ul>
-					</nav>
 				</div>
+				<!-- end row -->
 
 			</div>
-			<!-- end row -->
+			<!-- END CONTAINER -->
+
 		</header>
 
 
-		<div class="main_img_wrapper">
-
-			{% set image = entry.headingImage.first() %}
-
-				<img src="{{ image.getUrl() }}" alt="">
-
-		</div>
 		
 
-
-
+		
 		<!-- About Us modal -->
 		<div class="modal fade" id="textModal">
 			<div class="modal-dialog">
@@ -120,7 +115,7 @@
 		</div>
 		<!-- End Contact modal -->
 
-
+		
 		<main id="content" role="main">
 			
 			{% block content %}
@@ -133,33 +128,51 @@
 		<footer id="footer">
 
 			<div class="row">
-				
-				<div class="col-sm-3">	
-					<div>hello@airmaster.com</div>
-					<div>248-399-1800</div>
-
-					<br>
-
-					<div>2870 Coolidge Highway</div>
-					<div>Berkely, Mi 48072</div>
-
-					<br>
-
-					<a href="#" class="twitter">Twitter</a>
-
-					<br>
-
-					<a href="#" class-"facebook">Facebook</a>
-				</div>
-
 				<div class="col-sm-3">
-					<div>Office and Showroom: </div>
-					<div>Mon - Fri: 9am - 5:30pm</div> 
-					<div>Sat: 10am - 2pm</div> 
-					<div>Sun: closed</div>
+					<div class="footer_info">
+						{% set image = entry.logo.first() %}
+
+							<img src="{{ image.getUrl() }}" alt="">
+					</div>
+					
+					<div class="footer_info">
+						<h4>Contact</h4>	
+						<div>hello@airmaster.com</div>
+						<div>248-399-1800</div>
+
+						<ul class="list-unstyled social_icons">
+
+							{% for image in entry.socialIcons.limit(12) %}
+
+								<li>
+									<img src="{{ image.getUrl() }}" alt="">
+								</li>
+
+							{% endfor %}
+
+						</ul>
+						
+					</div>
 				</div>
 
-				<div class="col-sm-6">
+
+				<div class="col-sm-4">
+					<div class="footer_info">
+						<h4>Location</h4>
+						<div>2870 Coolidge Highway</div>
+						<div>Berkely, Mi 48072</div>
+					</div>
+
+					<div class="footer_info">
+						<h4>Office &amp; Showroom Hours</h4>
+						<div>Mon - Fri: 9am - 5:30pm</div> 
+						<div>Sat: 10am - 2pm</div> 
+						<div>Sun: closed</div>
+					</div>
+				</div
+				
+
+				<div class="col-sm-5">
 					<div class="map">
 						{% set image = entry.googleMap.first() %}
 
@@ -173,7 +186,7 @@
 
 		</footer>
 	
-	</div>
+	
 
 
 
