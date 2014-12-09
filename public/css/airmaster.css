@@ -1,5 +1,40 @@
 /*******  LESS Style sheet for AirMaster
 ******************************************/
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ *
+ * GENERIC
+ * Fonts................Font styles
+ * 
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ *
+ * TOOLS
+ * Backgrounds..........background and background image position and styling.
+ * Modals...............the slide-in modals for "find out more" link
+ * Media Queries........all media querie code will be here
+ *
+ *
+ * COMPONENTS
+ * Wrappers.............Wrapping and constraining elements.
+ * Page-head............The main page header.
+ * Page-body............The main page body.
+ * Page-foot............The main page footer.
+ * 
+ *
+ */
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
 .chaparralR {
   font-family: "chaparral-pro-n4", "chaparral-pro", sans-serif;
   font-style: normal;
@@ -31,7 +66,7 @@
   font-weight: 700;
 }
 #header {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 #header h1 a,
 #header .email,
@@ -50,6 +85,7 @@ h1 {
 .phone {
   font-size: 1.7em;
   font-weight: bolder;
+  color: #d9293e;
 }
 .main_body {
   font-size: 2.25em;
@@ -74,10 +110,22 @@ h1 {
   text-transform: uppercase;
   color: #ec95a0;
 }
-.category_info h3,
+h3,
 .about_title {
   color: #d9293e;
   text-transform: uppercase;
+}
+.modal-body {
+  font-size: 1.25em;
+}
+.modal-body h3,
+.modal-body .modal_contact_info,
+.modal-body .read_more {
+  font-weight: bold;
+}
+.modal_contact_info {
+  color: #d9293e;
+  font-size: 2em;
 }
 .read_more a {
   color: #1c5599;
@@ -104,6 +152,12 @@ h1 {
   letter-spacing: .15em;
   font-weight: bolder;
 }
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 .main_top {
   background: url("../img/michigan.png") no-repeat;
   background-position: 100% 30%;
@@ -112,15 +166,16 @@ h1 {
   padding-bottom: 30px;
   margin-top: -200px;
 }
-.circle_bg {
-  background-color: #f2f5f9;
-  border-radius: 100%;
-  height: 400px;
-  margin-top: 20%;
-  margin-bottom: -77%;
-}
-.single_category_post img {
-  border-radius: 100%;
+.testimonial:after {
+  content: "";
+  background: url("../img/gray-circle.jpg") no-repeat center;
+  opacity: 0.09;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 .emergency {
   background-color: #f2f5f9;
@@ -129,60 +184,29 @@ h1 {
   border-top: solid 1px #d9293e;
   background-color: #f2f5f9;
 }
-img {
-  max-width: 100%;
-}
-ul {
-  list-style: none;
-}
-.container {
-  max-width: 1900px;
-}
-#header {
-  margin-top: 20px;
-  margin-bottom: 7%;
-}
-.phone {
-  margin-top: 3%;
-}
-section {
-  margin: 100px 0;
-}
-.business_categories {
-  margin-bottom: 0px;
-  margin-top: 100px;
-}
-.main_nav li {
-  display: inline-block;
-}
-.nav_categories li a {
-  margin: 0;
-  padding: 0;
-  padding-left: 10px;
-}
-.phone,
-.email,
-.nav_categories {
-  text-align: right;
-}
-.emergency {
-  text-align: center;
-}
-.emergency h3 {
-  margin-bottom: 17%;
-  margin-top: -5%;
-}
-/*****************************************
-Modal for About Us and Testimonials
-*****************************************************/
 .modal-dialog {
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
+  width: 60%;
+  max-width: 800px;
+}
+.modal-body {
+  padding: 30px 40px;
+}
+.modal-body h3 {
+  margin-top: 25px;
+  margin-bottom: 35px;
 }
 .modal-content {
   min-height: 100vh;
-  padding: 30px;
+}
+.modal_contact_info {
+  text-align: center;
+  margin: 110px 0;
+}
+.modal_contact_info p:last-child {
+  margin-top: 100px;
 }
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform 0.5s ease-out;
@@ -199,58 +223,148 @@ Modal for About Us and Testimonials
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-/**************************************************************/
-.main_img_wrapper img {
-  max-width: 80%;
+.close {
+  z-index: 200;
+  float: left;
+  color: #1c5599;
+  margin-left: -140px;
+  font-size: 5em;
+  font-weight: lighter;
+  background: white !important;
+  opacity: 1;
+  border-radius: 20px 0 0 20px;
+}
+button.close {
+  padding: 20px 30px 10px 30px;
+  margin-top: -30px;
+  max-height: 100%;
+}
+.close:hover {
+  opacity: .95 !important;
+}
+.modal-body .read_more {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 1.25em;
+}
+.modal_img img {
+  width: 100%;
+  max-height: 366px;
+}
+@media screen and (max-width: 991px) {
+  .map {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  header img {
+    width: 80%;
+    margin-bottom: 6%;
+  }
+  .testimonial,
+  .modal_contact_info {
+    font-size: 1.15em;
+  }
+  .modal-body .read_more {
+    font-size: .95em;
+  }
+  .map {
+    text-align: center;
+  }
+  .modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -o-transition: -o-transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    -webkit-transform: translate(50%, 0);
+    -ms-transform: translate(50%, 0);
+    -o-transform: translate(50%, 0);
+    transform: translate(50%, 0);
+  }
+  .modal.in .modal-dialog {
+    -webkit-transform: translate(20%, 0);
+    -ms-transform: translate(20%, 0);
+    -o-transform: translate(20%, 0);
+    transform: translate(20%, 0);
+  }
+  .modal-dialog {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 82%;
+    max-width: 800px;
+  }
+}
+.container {
+  max-width: 1900px;
 }
 .main_body,
 .location,
 .main_img_wrapper {
   padding: 20px 0;
 }
+#header {
+  margin-top: 20px;
+  margin-bottom: 7%;
+}
+.phone {
+  margin-top: 3%;
+}
+.modal .phone {
+  margin-top: 0;
+}
+ul.main_nav {
+  padding-left: 0;
+}
+.main_nav li {
+  display: inline-block;
+}
+.nav_categories li a {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+.phone,
+.email,
+.nav_categories {
+  text-align: right;
+}
+.main_img_wrapper img {
+  max-width: 83%;
+}
+.main_top {
+  margin-bottom: 5px;
+}
+section {
+  margin: 100px 0;
+}
+.business_categories {
+  margin-bottom: -20px;
+  margin-top: 100px;
+}
 .main_body {
   padding-right: 10%;
-}
-h2 {
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-  padding-top: 20px;
 }
 .single_category_post {
   margin: 90px 0;
 }
 .single_category_post img {
-  min-height: 600px;
-}
-h3 {
-  padding-bottom: 20px;
+  border-radius: 100%;
+  min-height: 400px;
+  max-width: 80%;
 }
 .category_info {
-  padding: 90px 60px 90px 40px;
+  padding: 20px 60px 90px 0px;
 }
 .category_info p {
   padding: 5px 0;
 }
-.single_category_post img {
-  width: 100%;
-}
-.quote,
-.quote_name {
+.emergency {
+  padding: 50px 0;
   text-align: center;
 }
-.quote_name {
-  margin-top: 5%;
-}
-.partners {
-  max-width: 90%;
-  margin: auto;
-}
-.partners h2 {
-  margin-bottom: 20px;
-}
-.logo_images {
-  padding: 10%;
+.emergency h3 {
+  margin-bottom: 17%;
+  margin-top: -2%;
 }
 .about {
   margin-top: 10px;
@@ -260,9 +374,21 @@ h3 {
 .about_description {
   margin-bottom: 3%;
 }
+.testimonial {
+  padding: 70px 0;
+}
+.quote,
+.quote_name {
+  text-align: center;
+}
+.quote {
+  margin-top: 30px;
+}
+.quote_name {
+  margin-top: 5%;
+}
 #footer {
-  margin-top: 200px;
-  margin-bottom: 10px;
+  margin-top: 30px;
   margin-left: 0px;
   padding: 50px;
   padding-top: 30px;
@@ -285,9 +411,10 @@ h3 {
   padding-top: 6px;
 }
 .map {
-  width: 100%;
+  max-width: 100%;
   text-align: right;
 }
 .map img {
+  max-width: 100%;
   border: solid 2px #1c5599;
 }

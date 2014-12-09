@@ -21,13 +21,13 @@
 
 {% block content %}
 
-	<div class="main_top">
+	<div class="main_top chaparralR">
 
 		<div class="container">
 
 			<div class="row">
 			
-				<div class="col-sm-7">
+				<div class="col-sm-8">
 					<div class="main_body">
 						<p>{{ entry.body }}</p>
 					</div>
@@ -61,13 +61,6 @@
 	<div class="container">
 
 <!-- first testimonial -->
-		<div class="row">
-			<div class="col-sm-6 col-sm-offset-3">
-				<div class="circle_bg">
-					
-				</div>
-			</div>
-		</div>
 		
 		<section class="testimonial wow fadeInUp">
 			<div class="row">
@@ -114,10 +107,10 @@
 							<div class="category_info">
 
 								<h3>{{ entry.title }}</h3>
-								<p>{{ entry.body }}</p>
+								<p>{{ entry.body.getPage(1) }}</p>
 
 								<p class="read_more">
-									<a data-toggle="modal" href="#textModal">find out more</a>
+									<a data-toggle="modal" href="#resModal">find out more</a>
 								</p>
 
 							</div>
@@ -140,10 +133,10 @@
 
 							<div class="category_info">
 								<h3>{{ entry.title }}</h3>
-								<p>{{ entry.body }}</p>
+								<p>{{ entry.body.getPage(1) }}</p>
 
 								<p class="read_more">
-									<a data-toggle="modal" href="#textModal">find out more</a>
+									<a data-toggle="modal" href="#commModal">find out more</a>
 								</p>
 
 							</div>
@@ -177,10 +170,10 @@
 						<div class="col-sm-6">
 							<div class="category_info">
 								<h3>{{ entry.title }}</h3>
-								<p>{{ entry.body }}</p>
+								<p>{{ entry.body.getPage(1) }}</p>
 
 								<p class="read_more">
-									<a data-toggle="modal" href="#textModal">find out more</a>
+									<a data-toggle="modal" href="#fireModal">find out more</a>
 								</p>
 							</div>
 						</div>
@@ -201,10 +194,10 @@
 						<div class="col-sm-6">
 							<div class="category_info">
 								<h3>{{ entry.title }}</h3>
-								<p>{{ entry.body }}</p>
+								<p>{{ entry.body.getPage(1) }}</p>
 
 								<p class="read_more">
-									<a data-toggle="modal" href="#textModal">find out more</a>
+									<a data-toggle="modal" href="#barModal">find out more</a>
 								</p>
 							</div>
 						</div>
@@ -232,14 +225,6 @@
 
 
 <!-- second testimonial -->
-	
-		<div class="row">
-			<div class="col-sm-6 col-sm-offset-3">
-				<div class="circle_bg">
-					
-				</div>
-			</div>
-		</div>
 
 		<section class="testimonial wow fadeInUp">
 			<div class="row">
@@ -268,7 +253,7 @@
 
 <!-- Emergency services-->
 	
-	<section class="wow fadeInUp">
+	<section class="fadeInUp">
 		
 		{% set entries = entry.businessCategories %}
 			
@@ -281,7 +266,7 @@
 					<div class="row">
 
 						<div class="col-xs-12">
-							<div class="category_info">
+							<div>
 								<h3> 24 Hour Emergency Services</h3>
 							
 
@@ -349,7 +334,7 @@
 		<section class="single_category_post about wow fadeInUp">
 			<div class="row">
 				
-				<div class="col-xs-8 col-xs-offset-2">	
+				<div class="col-md-10 col-md-offset-1 col-sm-12">	
 					<h2 class="about_title">{{ entry.aboutUs }}</h2>
 					<p class="about_description">{{ entry.aboutUsDescription }}</p>
 					<p class="read_more">
@@ -368,14 +353,6 @@
 
 <!-- third testimonial -->
 	
-		<div class="row">
-			<div class="col-sm-6 col-sm-offset-3">
-				<div class="circle_bg">
-					
-				</div>
-			</div>
-		</div>
-
 		<section class="testimonial wow fadeInUp">
 			<div class="row">
 			

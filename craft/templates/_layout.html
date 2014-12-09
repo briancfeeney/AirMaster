@@ -37,7 +37,7 @@
 
 	
 
-		<header id="header">
+		<header id="header" class="chaparralR">
 
 			<div class="container">
 
@@ -55,15 +55,19 @@
 						<nav>
 							<ul class="main_nav">
 								
-								<div class="col-md-5 col-md-offset-7">
+								<div class="col-md-8 col-md-offset-4">
 									<div class="email">
-										<li>hello@airmastermi.com</li>
+										<li>
+											{{ contact.emailAddress }}
+										</li>
 									</div>
 								</div>
 
 								<div class="col-md-5 col-md-offset-7">
 									<div class="phone">
-										<li>555-555-5555</li>
+										<li>
+											{{ contact.phoneNumber }}
+										</li>
 									</div>	
 								</div>						
 								
@@ -81,41 +85,351 @@
 		</header>
 
 
-		
 
 		
-		<!-- About Us modal -->
-		<div class="modal fade" id="textModal">
+<!-- START OF MODAL GROUPING (slides in from right to left) -->
+
+		
+<!-- Residential modal -->
+
+		<div class="modal fade chaparralR" id="resModal">
 			<div class="modal-dialog">
 				<div class="modal-content">
 
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title contact_header">More about Air Master</h4>
+						
+						<div class="row">
+							<div class="col-sm-12">
+								<nav>
+									<ul class="main_nav">
+										
+										<div class="col-md-7 col-xs-12">
+											<div class="email">
+												<li>{{ contact.emailAddress }}</li>
+											</div>
+										</div>
+
+										<div class="col-md-5">
+											<div class="phone">
+												<li>{{ contact.phoneNumber }}</li>
+											</div>	
+										</div>						
+										
+										
+									</ul>
+								</nav>
+							</div>
+						</div>
 					</div>
 
-					<div class="map">
-						{% set image = entry.googleMap.first() %}
+					{% for entry in entry.businessCategories.limit(1).find() %}	
 
-							<img src="{{ image.getUrl() }}" alt="">
-					</div>
+						<div class="row">
 
-					<div class="modal-body">
+							<div class="col-xs-12">
+								<div class="modal_img">
+									{% set image = entry.image.first() %}
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius- mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
-						</p>
+											<img src="{{ image.getUrl() }}" alt="">
+								</div>
+							</div>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius- mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese.
-						</p>
 
-					</div>
+							<div class="col-xs-12">
+								<div class="modal-body">
+									
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+									<h3>{{ entry.title }}</h3>
+									
+									<p>{{ entry.body }}</p>
+									
+									<div class="modal_contact_info">
+
+										<p>For installation information, call</p>
+
+										<p>{{ contact.phoneNumber }}</p>
+
+										<p>{{ contact.emailAddress }}</p>
+
+									</div>
+
+									<p class="read_more">
+										<a data-toggle="modal" href="#resModal">Back to homepage</a>
+									</p>
+
+								</div>
+
+							</div>
+							<!-- END columng -->
+						</div>
+						<!-- END row -->
+
+					{% endfor %}
 
 				</div>
 			</div>
 		</div>
-		<!-- End Contact modal -->
 
+<!-- End Residential modal -->
+
+
+<!-- Commercial & Industrial modal -->
+
+		<div class="modal fade chaparralR" id="commModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						
+						<div class="row">
+							<div class="col-sm-12">
+								<nav>
+									<ul class="main_nav">
+										
+										<div class="col-md-7 col-xs-12">
+											<div class="email">
+												<li>{{ contact.emailAddress }}</li>
+											</div>
+										</div>
+
+										<div class="col-md-5">
+											<div class="phone">
+												<li>{{ contact.phoneNumber }}</li>
+											</div>	
+										</div>						
+										
+										
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+
+					{% for entry in entry.businessCategories.limit(1).offset(1) %}	
+
+						<div class="row">
+
+							<div class="col-xs-12">
+								<div class="modal_img">
+									{% set image = entry.image.first() %}
+
+											<img src="{{ image.getUrl() }}" alt="">
+								</div>
+							</div>
+
+
+							<div class="col-xs-12">
+								<div class="modal-body">
+									
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+									<h3>{{ entry.title }}</h3>
+									
+									<p>{{ entry.body }}</p>
+									
+									<div class="modal_contact_info">
+
+										<p>For installation information, call</p>
+
+										<p>{{ contact.phoneNumber }}</p>
+
+										<p>{{ contact.emailAddress }}</p>
+
+									</div>
+
+									<p class="read_more">
+										<a data-toggle="modal" href="#commModal">Back to homepage</a>
+									</p>
+
+								</div>
+
+							</div>
+							<!-- END columng -->
+						</div>
+						<!-- END row -->
+
+					{% endfor %}
+
+				</div>
+			</div>
+		</div>
+
+<!-- End Commercial & Industrial modal -->
+
+
+<!-- Fireplace modal -->
+
+		<div class="modal fade chaparralR" id="fireModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						
+						<div class="row">
+							<div class="col-sm-12">
+								<nav>
+									<ul class="main_nav">
+										
+										<div class="col-md-7 col-xs-12">
+											<div class="email">
+												<li>{{ contact.emailAddress }}</li>
+											</div>
+										</div>
+
+										<div class="col-md-5">
+											<div class="phone">
+												<li>{{ contact.phoneNumber }}</li>
+											</div>	
+										</div>						
+										
+										
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+
+					{% for entry in entry.businessCategories.limit(1).offset(2) %}	
+
+						<div class="row">
+
+							<div class="col-xs-12">
+								<div class="modal_img">
+									{% set image = entry.image.first() %}
+
+											<img src="{{ image.getUrl() }}" alt="">
+								</div>
+							</div>
+
+
+							<div class="col-xs-12">
+								<div class="modal-body">
+									
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+									<h3>{{ entry.title }}</h3>
+									
+									<p>{{ entry.body }}</p>
+									
+									<div class="modal_contact_info">
+
+										<p>For installation information, call</p>
+
+										<p>{{ contact.phoneNumber }}</p>
+
+										<p>{{ contact.emailAddress }}</p>
+
+									</div>
+
+									<p class="read_more">
+										<a data-toggle="modal" href="#fireModal">Back to homepage</a>
+									</p>
+
+								</div>
+
+							</div>
+							<!-- END columng -->
+						</div>
+						<!-- END row -->
+
+					{% endfor %}
+
+				</div>
+			</div>
+		</div>
+
+<!-- End Fireplace modal -->
+
+
+<!-- Barbecue modal -->
+
+		<div class="modal fade chaparralR" id="barModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						
+						<div class="row">
+							<div class="col-sm-12">
+								<nav>
+									<ul class="main_nav">
+										
+										<div class="col-md-7 col-xs-12">
+											<div class="email">
+												<li>{{ contact.emailAddress }}</li>
+											</div>
+										</div>
+
+										<div class="col-md-5">
+											<div class="phone">
+												<li>{{ contact.phoneNumber }}</li>
+											</div>	
+										</div>						
+										
+										
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+
+					{% for entry in entry.businessCategories.limit(1).offset(3) %}	
+
+						<div class="row">
+
+							<div class="col-xs-12">
+								<div class="modal_img">
+									{% set image = entry.image.first() %}
+
+											<img src="{{ image.getUrl() }}" alt="">
+								</div>
+							</div>
+
+
+							<div class="col-xs-12">
+								<div class="modal-body">
+									
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+									<h3>{{ entry.title }}</h3>
+									
+									<p>{{ entry.body }}</p>
+									
+									<div class="modal_contact_info">
+
+										<p>For installation information, call</p>
+
+										<p>{{ contact.phoneNumber }}</p>
+
+										<p>{{ contact.emailAddress }}</p>
+
+									</div>
+
+									<p class="read_more">
+										<a data-toggle="modal" href="#barModal">Back to homepage</a>
+									</p>
+
+								</div>
+
+							</div>
+							<!-- END columng -->
+						</div>
+						<!-- END row -->
+
+					{% endfor %}
+
+				</div>
+			</div>
+		</div>
+
+<!-- End Barbecue modal -->
+
+
+<!-- END ALL MODALS -->
 		
+
+
 		<main id="content" role="main">
 			
 			{% block content %}
@@ -128,59 +442,73 @@
 		<footer id="footer">
 
 			<div class="row">
-				<div class="col-sm-3">
-					<div class="footer_info">
-						{% set image = entry.logo.first() %}
+				<div class="container">
+					<div class="col-md-3 col-sm-6">
+						<div class="footer_info">
+							{% set image = entry.logo.first() %}
 
-							<img src="{{ image.getUrl() }}" alt="">
-					</div>
-					
-					<div class="footer_info">
-						<h4>Contact</h4>	
-						<div>hello@airmaster.com</div>
-						<div>248-399-1800</div>
-
-						<ul class="list-unstyled social_icons">
-
-							{% for image in entry.socialIcons.limit(12) %}
-
-								<li>
-									<img src="{{ image.getUrl() }}" alt="">
-								</li>
-
-							{% endfor %}
-
-						</ul>
+								<img src="{{ image.getUrl() }}" alt="">
+						</div>
 						
+						<div class="footer_info">
+							<h4>Contact</h4>	
+							<div class="chaparralR">{{ contact.emailAddress }}</div>
+							<div class="chaparralR">{{ contact.phoneNumber }}</div>
+
+							<ul class="list-unstyled social_icons">
+
+								{% for image in facebook.socialIcons %}
+
+									<li>
+										<a href="{{ facebook8.socialLink }}">
+											<img src="{{ image.getUrl() }}" alt="">
+										</a>
+									</li>
+
+								{% endfor %}
+
+								{% for image in twitter.socialIcons %}
+
+									<li>
+										<a href="{{ twitter.socialLink }}">
+											<img src="{{ image.getUrl() }}" alt="">
+										</a>
+									</li>
+
+								{% endfor %}
+
+							</ul>
+							
+						</div>
 					</div>
-				</div>
 
 
-				<div class="col-sm-4">
-					<div class="footer_info">
-						<h4>Location</h4>
-						<div>2870 Coolidge Highway</div>
-						<div>Berkely, Mi 48072</div>
-					</div>
+					<div class="col-lg-4 col-md-3 col-sm-6">
+						<div class="footer_info">
+							<h4>Location</h4>
+							<div class="chaparralR">2870 Coolidge Highway</div>
+							<div class="chaparralR">Berkely, Mi 48072</div>
+						</div>
 
-					<div class="footer_info">
-						<h4>Office &amp; Showroom Hours</h4>
-						<div>Mon - Fri: 9am - 5:30pm</div> 
-						<div>Sat: 10am - 2pm</div> 
-						<div>Sun: closed</div>
+						<div class="footer_info">
+							<h4>Office &amp; Showroom Hours</h4>
+							<div class="chaparralR">Mon - Fri: 9am - 5:30pm</div> 
+							<div class="chaparralR">Sat: 10am - 2pm</div> 
+							<div class="chaparralR">Sun: closed</div>
+						</div>
+					</div
+					
+
+					<div class="col-md-5">
+						<div class="map">
+							{% set image = entry.googleMap.first() %}
+
+								<img src="{{ image.getUrl() }}" alt="">
+						</div>
 					</div>
-				</div
 				
-
-				<div class="col-sm-5">
-					<div class="map">
-						{% set image = entry.googleMap.first() %}
-
-							<img src="{{ image.getUrl() }}" alt="">
-					</div>
 				</div>
-			
-			
+				<!-- END container -->
 			</div>
 			<!-- end row -->
 
@@ -201,6 +529,8 @@
 	<script>
 	 new WOW().init();
 	</script>
+
+	
 	
 
 </body>
