@@ -1,1 +1,1 @@
-$(document).ready(function(){$(document).on("scroll",function(){$(document).scrollTop()>10?($(".main-logo").addClass("smaller"),$(".main_nav").addClass("smaller")):($(".main-logo").removeClass("smaller"),$(".main_nav").removeClass("smaller"))})});
+$(document).ready(function(){$(document).on("scroll",function(){$(document).scrollTop()>50?($(".main-logo").addClass("smaller"),$(".main_nav").addClass("smaller")):($(".main-logo").removeClass("smaller"),$(".main_nav").removeClass("smaller"))})});

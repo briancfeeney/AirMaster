@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	$(document).on("scroll", function() {
-		if($(document).scrollTop()>10) {
+		if($(document).scrollTop()>50) {
 			$(".main-logo").addClass("smaller");
 			$(".main_nav").addClass("smaller");
 			

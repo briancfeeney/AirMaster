@@ -43,7 +43,7 @@
 
 				<div class="row">
 
-					<div class="col-sm-4">
+					<div class="col-sm-4 col-xs-10">
 						
 						<div class="main-logo">
 							<img src="public/img/air-master_logo.png" alt="">
@@ -55,7 +55,7 @@
 						<nav>
 							<ul class="main_nav">
 								
-								<div class="col-md-8 col-md-offset-4">
+								<div class="col-sm-8 col-sm-offset-4">
 									<div class="email">
 										<li>
 											{{ contact.emailAddress }}
@@ -63,7 +63,7 @@
 									</div>
 								</div>
 
-								<div class="col-md-5 col-md-offset-7">
+								<div class="col-sm-5 col-sm-offset-7">
 									<div class="phone">
 										<li>
 											{{ contact.phoneNumber }}
@@ -101,7 +101,7 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<nav>
-									<ul class="main_nav">
+									<ul class="modal_nav">
 										
 										<div class="col-md-7 col-xs-12">
 											<div class="email">
@@ -185,7 +185,7 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<nav>
-									<ul class="main_nav">
+									<ul class="modal_nav">
 										
 										<div class="col-md-7 col-xs-12">
 											<div class="email">
@@ -269,7 +269,7 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<nav>
-									<ul class="main_nav">
+									<ul class="modal_nav">
 										
 										<div class="col-md-7 col-xs-12">
 											<div class="email">
@@ -353,7 +353,7 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<nav>
-									<ul class="main_nav">
+									<ul class="modal_nav">
 										
 										<div class="col-md-7 col-xs-12">
 											<div class="email">
@@ -500,11 +500,10 @@
 					
 
 					<div class="col-md-5">
-						<div class="map">
-							{% set image = entry.googleMap.first() %}
+						
+							<iframe class="map" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=2870%20Coolidge%20Highway%2C%20Berkley%2C%20MI%2C%20United%20States&key=AIzaSyA9xnxFVrO7U2ULdee51zw13SqBAeBwAvc"></iframe>
 
-								<img src="{{ image.getUrl() }}" alt="">
-						</div>
+						
 					</div>
 				
 				</div>
