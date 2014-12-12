@@ -29010,17 +29010,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/30.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1828,
-		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/30.png",
-		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/30.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/31.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -29061,6 +29050,28 @@
 		"initialSize": 1797,
 		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/34.png",
 		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/34.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/36.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2572,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/36.png",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/36.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/37.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 875,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/37.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/37.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -31169,6 +31180,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/craft\/storage\/runtime\/temp\/assets54875d946940c6.11947694-temp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14453,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54875d946940c6.11947694-temp.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54875d946940c6.11947694-temp.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54875d946940c6.11947694.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14426,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54875d946940c6.11947694.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54875d946940c6.11947694.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/craft\/templates\/404.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -31322,17 +31355,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/public\/img\/air-master_logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 22082,
-		"inputAbbreviatedPath": "\/public\/img\/air-master_logo.png",
-		"outputAbbreviatedPath": "\/public\/img\/air-master_logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/public\/img\/bbq-grills.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -31384,6 +31406,17 @@
 		"initialSize": 15262,
 		"inputAbbreviatedPath": "\/public\/img\/googlemap.png",
 		"outputAbbreviatedPath": "\/public\/img\/googlemap.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/gray-circle.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14426,
+		"inputAbbreviatedPath": "\/public\/img\/gray-circle.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/gray-circle.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -31516,6 +31549,17 @@
 		"initialSize": 8389,
 		"inputAbbreviatedPath": "\/public\/img\/logo1.png",
 		"outputAbbreviatedPath": "\/public\/img\/logo1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/main-stock.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 717514,
+		"inputAbbreviatedPath": "\/public\/img\/main-stock.png",
+		"outputAbbreviatedPath": "\/public\/img\/main-stock.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
