@@ -123,6 +123,7 @@
 				
 				{% endfor %}
 
+
 				{% for entry in entry.businessCategories.limit(1).offset(1) %}	
 
 				<div class="single_category_post wow" id="commercial">
@@ -154,6 +155,7 @@
 				</div>
 				
 				{% endfor %}
+				
 
 				{% for entry in entry.businessCategories.limit(1).offset(2) %}	
 
@@ -291,37 +293,6 @@
 	</section>
 
 <!-- END FOR LOOP for business categories -->
-
-
-<!-- Our Partners 
-
-	<section class="partners wow fadeInUp">
-
-		<h2>Our Partners</h2>
-
-		<div class="row">
-			
-			{% for image in entry.logoImages.limit(12) %}
-
-				<div class="col-sm-3 col-xs-6">
-
-					<div class="logo_images">
-
-						<img src="{{ image.getUrl() }}" alt="">
-
-					</div>
-
-				</div>
-
-			{% endfor %}
-			
-		</div>
-	</section>
-
--->
-
-
-<!-- END Our Partners -->
 
 
 

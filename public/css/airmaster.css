@@ -200,6 +200,71 @@ h2 {
   border-top: solid 1px #d9293e;
   background-color: #f2f5f9;
 }
+/**  Fixed Headers  *************************************************************/
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: white;
+  padding: 30px 0;
+  z-index: 500;
+}
+#content {
+  padding-top: 300px;
+}
+/** Scrolling header effects ****************************************************/
+.main-logo img,
+.phone {
+  -webkit-transition: all 0.85s cubic-bezier(0.52, -0.25, 0.83, 0.67);
+  -moz-transition: all 0.85s cubic-bezier(0.52, -0.25, 0.83, 0.67);
+  -ms-transition: all 0.85s cubic-bezier(0.52, -0.25, 0.83, 0.67);
+  -o-transition: all 0.85s cubic-bezier(0.52, -0.25, 0.83, 0.67);
+  transition: all 0.85s cubic-bezier(0.52, -0.25, 0.83, 0.67);
+}
+.email {
+  -webkit-transition: all 0.85s cubic-bezier(0.52, -0.85, 0.83, 0.67);
+  -moz-transition: all 0.85s cubic-bezier(0.52, -0.85, 0.83, 0.67);
+  -ms-transition: all 0.85s cubic-bezier(0.52, -0.85, 0.83, 0.67);
+  -o-transition: all 0.85s cubic-bezier(0.52, -0.85, 0.83, 0.67);
+  transition: all 0.85s cubic-bezier(0.52, -0.85, 0.83, 0.67);
+}
+.phone {
+  -webkit-transition: all 0.8s cubic-bezier(0.52, -0.25, 0.83, 0.67);
+  -moz-transition: all 0.8s cubic-bezier(0.52, -0.25, 0.83, 0.67);
+  -ms-transition: all 0.8s cubic-bezier(0.52, -0.25, 0.83, 0.67);
+  -o-transition: all 0.8s cubic-bezier(0.52, -0.25, 0.83, 0.67);
+  transition: all 0.8s cubic-bezier(0.52, -0.25, 0.83, 0.67);
+}
+.smaller img,
+.smaller .email {
+  -webkit-transition: all 0.85s cubic-bezier(0.52, -0.5, 1.83, 0.97);
+  -moz-transition: all 0.85s cubic-bezier(0.52, -0.5, 1.83, 0.97);
+  -ms-transition: all 0.85s cubic-bezier(0.52, -0.5, 1.83, 0.97);
+  -o-transition: all 0.85s cubic-bezier(0.52, -0.5, 1.83, 0.97);
+  transition: all 0.85s cubic-bezier(0.52, -0.5, 1.83, 0.97);
+}
+.smaller .phone {
+  -webkit-transition: all 0.9s cubic-bezier(0.52, -0.5, 0.83, 0.067);
+  -moz-transition: all 0.9s cubic-bezier(0.52, -0.5, 0.83, 0.067);
+  -ms-transition: all 0.9s cubic-bezier(0.52, -0.5, 0.83, 0.067);
+  -o-transition: all 0.9s cubic-bezier(0.52, -0.5, 0.83, 0.067);
+  transition: all 0.9s cubic-bezier(0.52, -0.5, 0.83, 0.067);
+}
+.smaller img {
+  max-width: 50%;
+  margin-left: 5%;
+}
+.smaller .email,
+.smaller .phone {
+  font-size: 1em;
+  color: #d9293e;
+}
+.smaller .email {
+  margin-right: 40%;
+}
+.smaller .phone {
+  margin-top: -20px;
+}
 /**  Modals  *************************************************************/
 .modal-dialog {
   margin-right: 0;
@@ -313,7 +378,11 @@ button.close {
   }
 }
 /***************************************************************************/
-/*****  COMPONENTS  *****************************************************************************************************/
+/******************************************************************************************************
+
+	COMPONENTS 
+
+ *****************************************************************************************************/
 /**  Wrappers  *************************************************************/
 .container {
   max-width: 1900px;
@@ -323,10 +392,6 @@ button.close {
 .location,
 .main_img_wrapper {
   padding: 20px 0;
-}
-#header {
-  margin-top: 20px;
-  margin-bottom: 7%;
 }
 .phone {
   margin-top: 3%;

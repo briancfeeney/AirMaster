@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Dec 10, 2014 at 05:46 PM
+-- Generation Time: Dec 11, 2014 at 08:18 PM
 -- Server version: 5.5.38
 -- PHP Version: 5.6.2
 
@@ -64,13 +64,13 @@ INSERT INTO `craft_assetfiles` (`id`, `sourceId`, `folderId`, `filename`, `kind`
 (27, 1, 1, 'logo1-12.png', 'image', 199, 191, 8389, '2014-11-10 00:45:31', '2014-11-10 00:45:31', '2014-11-10 00:45:31', 'dfe347f0-2b4e-4f79-8c8f-0195bef77f59'),
 (28, 1, 1, 'logo1.png', 'image', 199, 191, 8389, '2014-11-10 00:47:50', '2014-11-10 00:47:50', '2014-11-10 00:47:50', '136106b3-6efe-467a-8ab9-bdd784b7669e'),
 (29, 1, 1, 'googlemap.png', 'image', 461, 195, 15262, '2014-11-10 01:03:23', '2014-11-10 01:03:24', '2014-11-10 01:03:24', 'dd2a9bca-98f9-409f-9050-b478f85d2986'),
-(30, 1, 1, 'air-master_logo.png', 'image', 500, 146, 22082, '2014-12-08 20:39:08', '2014-12-08 20:39:09', '2014-12-08 20:39:09', 'bf633266-0f33-4043-8140-740ff88d5d5c'),
 (31, 1, 1, 'michigan.png', 'image', 1600, 1877, 32914, '2014-12-08 20:39:09', '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'bccd12a7-9877-48eb-b909-ddb5a829f3bd'),
 (32, 1, 1, 'facebook-icon.png', 'image', 40, 40, 1168, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'a1b265a4-ccad-4fd5-b4fe-5a1f4ab57f7d'),
 (33, 1, 1, 'twitter-icon.png', 'image', 40, 40, 1705, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '2014-12-08 20:39:15', '432d6df1-7da1-4990-a966-f6488e66a265'),
 (34, 1, 1, 'map.png', 'image', 429, 220, 133044, '2014-12-08 22:08:03', '2014-12-08 22:08:06', '2014-12-08 22:08:06', '11668a3b-9e74-4902-a9ad-6ff400783354'),
 (36, 1, 1, 'main-stock.png', 'image', 938, 398, 717514, '2014-12-09 16:11:18', '2014-12-09 16:11:25', '2014-12-09 16:11:25', '7b83df72-86dd-4a25-a1b4-995d25755be8'),
-(37, 1, 1, 'gray-circle.jpg', 'image', 512, 512, 14426, '2014-12-09 20:37:40', '2014-12-09 20:37:42', '2014-12-09 20:37:42', '3876c0de-4a15-47ca-a959-09b7b2c234ee');
+(37, 1, 1, 'gray-circle.jpg', 'image', 512, 512, 14426, '2014-12-09 20:37:40', '2014-12-09 20:37:42', '2014-12-09 20:37:42', '3876c0de-4a15-47ca-a959-09b7b2c234ee'),
+(40, 1, 1, 'air-master_logo.png', 'image', 500, 146, 22082, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '2014-12-12 01:07:13', 'f6daa5d1-8114-466f-bf0f-edcfd67e2631');
 
 -- --------------------------------------------------------
 
@@ -257,7 +257,7 @@ CREATE TABLE `craft_content` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_content`
@@ -291,7 +291,6 @@ INSERT INTO `craft_content` (`id`, `elementId`, `locale`, `title`, `field_headin
 (43, 27, 'en_us', 'logo1-12', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:45:31', '2014-11-10 00:45:31', 'b9a7a337-193c-4e9c-bfe8-64889225c4b0'),
 (44, 28, 'en_us', 'logo1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:47:50', '2014-11-10 00:47:50', 'a03025dd-a7c2-4378-964e-b5addde8dabb'),
 (45, 29, 'en_us', 'googlemap', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 01:03:23', '2014-11-10 01:03:23', '8d351522-964d-47fa-8312-4fabb909335b'),
-(46, 30, 'en_us', 'air-master logo', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:09', '2014-12-08 20:39:09', 'c30032e4-37bb-4240-adae-c905cc7e70d8'),
 (47, 31, 'en_us', 'michigan', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:14', '2014-12-08 20:39:14', 'eb2f0e8b-3b4e-4242-84c0-0a722026dbc0'),
 (48, 32, 'en_us', 'facebook-icon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'eba507e4-bfbd-46b9-8c8d-66509ed49aa3'),
 (49, 33, 'en_us', 'twitter-icon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'd5719311-cd1a-4984-855b-5cdc481bddc2'),
@@ -300,7 +299,8 @@ INSERT INTO `craft_content` (`id`, `elementId`, `locale`, `title`, `field_headin
 (52, 36, 'en_us', 'main-stock', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 16:11:25', '2014-12-09 16:11:25', '392463fc-89c6-40c9-93c0-fcc6f2fc5779'),
 (53, 37, 'en_us', 'gray-circle', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 20:37:41', '2014-12-09 20:37:41', '1e9f9ee5-6c8d-438b-b8a6-83d208ac6a85'),
 (54, 38, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'http://twitter.com', '2014-12-09 21:57:41', '2014-12-09 22:00:28', '205fa3ae-1c4a-4dc5-a677-430684c46f39'),
-(55, 39, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'http://facebook.com', '2014-12-09 21:59:55', '2014-12-09 22:00:16', 'ae656420-714b-4101-b071-5c1facc26f43');
+(55, 39, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'http://facebook.com', '2014-12-09 21:59:55', '2014-12-09 22:00:16', 'ae656420-714b-4101-b071-5c1facc26f43'),
+(56, 40, 'en_us', 'air-master logo', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '5badca16-23cd-444b-919b-c41dc3404f15');
 
 -- --------------------------------------------------------
 
@@ -340,7 +340,7 @@ CREATE TABLE `craft_elements` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_elements`
@@ -374,7 +374,6 @@ INSERT INTO `craft_elements` (`id`, `type`, `enabled`, `archived`, `dateCreated`
 (27, 'Asset', 1, 0, '2014-11-10 00:45:31', '2014-11-10 00:45:31', 'a898f342-feb4-4be0-b83a-82d51d01aabf'),
 (28, 'Asset', 1, 0, '2014-11-10 00:47:50', '2014-11-10 00:47:50', 'fdb81ebe-ca07-4cf7-acb5-201842a89175'),
 (29, 'Asset', 1, 0, '2014-11-10 01:03:23', '2014-11-10 01:03:23', '0fa7ca87-4d87-49a6-9b86-f7b8d35dcee6'),
-(30, 'Asset', 1, 0, '2014-12-08 20:39:09', '2014-12-08 20:39:09', 'f7d04bde-8d91-4544-86a9-a911dbd60b18'),
 (31, 'Asset', 1, 0, '2014-12-08 20:39:14', '2014-12-08 20:39:14', 'c4543a14-3b60-49c2-8bc9-58dacd1c8c25'),
 (32, 'Asset', 1, 0, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'a28fa053-cdd0-4606-a233-7b4a815f8f9d'),
 (33, 'Asset', 1, 0, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'c7455333-9d3f-4ce0-ad2e-4b28f8a40161'),
@@ -383,7 +382,8 @@ INSERT INTO `craft_elements` (`id`, `type`, `enabled`, `archived`, `dateCreated`
 (36, 'Asset', 1, 0, '2014-12-09 16:11:25', '2014-12-09 16:11:25', 'd3e1428c-7229-4b51-a2e6-4b80784482bc'),
 (37, 'Asset', 1, 0, '2014-12-09 20:37:41', '2014-12-09 20:37:41', 'e315eed8-baf4-44dd-b071-85ccd3155386'),
 (38, 'GlobalSet', 1, 0, '2014-12-09 21:57:41', '2014-12-09 22:00:28', 'bf8fafd3-0edd-4756-b336-580db5a85714'),
-(39, 'GlobalSet', 1, 0, '2014-12-09 21:59:55', '2014-12-09 22:00:16', '1938bd06-7bdc-4d83-856d-360279679e64');
+(39, 'GlobalSet', 1, 0, '2014-12-09 21:59:55', '2014-12-09 22:00:16', '1938bd06-7bdc-4d83-856d-360279679e64'),
+(40, 'Asset', 1, 0, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '2a224ba4-b974-47fd-9d48-88b742c68197');
 
 -- --------------------------------------------------------
 
@@ -401,7 +401,7 @@ CREATE TABLE `craft_elements_i18n` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_elements_i18n`
@@ -435,7 +435,6 @@ INSERT INTO `craft_elements_i18n` (`id`, `elementId`, `locale`, `slug`, `uri`, `
 (43, 27, 'en_us', 'logo1-12', NULL, 1, '2014-11-10 00:45:31', '2014-11-10 00:45:31', 'ec252b44-c923-47e5-ba37-2b260278de41'),
 (44, 28, 'en_us', 'logo1', NULL, 1, '2014-11-10 00:47:50', '2014-11-10 00:47:50', '73914e13-0e63-42c5-bdc2-b8581ca149ae'),
 (45, 29, 'en_us', 'googlemap', NULL, 1, '2014-11-10 01:03:23', '2014-11-10 01:03:23', '11a1a6ea-154b-4883-b818-04fbbe2d2460'),
-(46, 30, 'en_us', 'air-master-logo', NULL, 1, '2014-12-08 20:39:09', '2014-12-08 20:39:09', 'e63c4e52-da25-4967-a6ef-54e4b07dd575'),
 (47, 31, 'en_us', 'michigan', NULL, 1, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '8ee8c4f0-5cd1-49f2-802d-51722b3efad6'),
 (48, 32, 'en_us', 'facebook-icon', NULL, 1, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '8b019fd7-493c-4331-95fa-8d1cbaed6739'),
 (49, 33, 'en_us', 'twitter-icon', NULL, 1, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '916dbce7-2096-42bc-b2db-349a1e99f3fe'),
@@ -444,7 +443,8 @@ INSERT INTO `craft_elements_i18n` (`id`, `elementId`, `locale`, `slug`, `uri`, `
 (52, 36, 'en_us', 'main-stock', NULL, 1, '2014-12-09 16:11:25', '2014-12-09 16:11:25', '22f27158-20e6-47ca-b6b9-a10838f2f0d8'),
 (53, 37, 'en_us', 'gray-circle', NULL, 1, '2014-12-09 20:37:42', '2014-12-09 20:37:42', '20ae34aa-a70e-4446-bee8-ca45c965b33b'),
 (54, 38, 'en_us', '', NULL, 1, '2014-12-09 21:57:41', '2014-12-09 22:00:28', '78b07be4-07c0-41ce-9c20-9ef5e2da3271'),
-(55, 39, 'en_us', '', NULL, 1, '2014-12-09 21:59:55', '2014-12-09 22:00:17', 'c23802a2-74b9-440e-8b63-126dddd2630e');
+(55, 39, 'en_us', '', NULL, 1, '2014-12-09 21:59:55', '2014-12-09 22:00:17', 'c23802a2-74b9-440e-8b63-126dddd2630e'),
+(56, 40, 'en_us', 'air-master-logo', NULL, 1, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '3f629289-9419-42d7-9d18-9e8a0ff8acab');
 
 -- --------------------------------------------------------
 
@@ -632,7 +632,6 @@ INSERT INTO `craft_fieldlayoutfields` (`id`, `layoutId`, `tabId`, `fieldId`, `re
 (115, 42, NULL, 16, 0, 1, '2014-12-09 21:59:55', '2014-12-09 21:59:55', '8b269e8e-ea69-425f-89d6-fbb18191e1c0'),
 (116, 42, NULL, 19, 0, 2, '2014-12-09 21:59:55', '2014-12-09 21:59:55', 'd6e9eb9c-3053-4147-a5f0-e8190750112c'),
 (117, 43, 24, 1, 1, 1, '2014-12-09 22:00:49', '2014-12-09 22:00:49', '85182b18-3b5d-4402-a6fc-c4690c438696'),
-(118, 43, 24, 15, 0, 2, '2014-12-09 22:00:49', '2014-12-09 22:00:49', 'b6ff3923-7b2b-4afa-8419-c93d0839ce58'),
 (119, 43, 24, 4, 0, 3, '2014-12-09 22:00:49', '2014-12-09 22:00:49', '41ea2a68-d797-4609-a2e9-9ce8bb0a69ef'),
 (120, 43, 24, 2, 1, 4, '2014-12-09 22:00:49', '2014-12-09 22:00:49', 'bef4f49b-0426-4ac4-b313-aa8297bb9523'),
 (121, 43, 24, 8, 0, 5, '2014-12-09 22:00:49', '2014-12-09 22:00:49', '7373c816-f5d9-48ed-93b4-e6cf9cca0c7a'),
@@ -742,7 +741,6 @@ INSERT INTO `craft_fields` (`id`, `groupId`, `name`, `handle`, `context`, `instr
 (12, 2, 'About Us Description', 'aboutUsDescription', 'global', 'short description for the "About Us" portion of homepage', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-11-06 05:05:32', '2014-11-06 05:05:32', 'bd5cdf4c-4956-441c-ac48-1cf0819393ed'),
 (13, 2, 'Logo Images', 'logoImages', 'global', 'drop images for "Our Partners" logo''s here', 0, 'Assets', '{"useSingleFolder":"1","sources":"*","defaultUploadLocationSource":"1","defaultUploadLocationSubpath":"","singleUploadLocationSource":"1","singleUploadLocationSubpath":"","restrictFiles":"","limit":""}', '2014-11-10 00:46:23', '2014-11-10 00:46:23', '820cd38f-c63b-47da-9111-eefb7620ee2a'),
 (14, 2, 'Google Map', 'googleMap', 'global', 'drop image of google map here', 0, 'Assets', '{"useSingleFolder":"1","sources":"*","defaultUploadLocationSource":"1","defaultUploadLocationSubpath":"","singleUploadLocationSource":"1","singleUploadLocationSubpath":"","restrictFiles":"","limit":""}', '2014-11-10 01:03:49', '2014-11-10 01:03:49', 'dbacbdba-598e-478f-a2fb-489ffa16a82f'),
-(15, 1, 'Logo', 'logo', 'global', 'drop company logo image here', 0, 'Assets', '{"useSingleFolder":"1","sources":"*","defaultUploadLocationSource":"1","defaultUploadLocationSubpath":"","singleUploadLocationSource":"1","singleUploadLocationSubpath":"","restrictFiles":"","limit":""}', '2014-12-08 20:50:10', '2014-12-08 20:50:10', 'a6855000-d16f-4598-8578-b08614c4b9e7'),
 (16, 1, 'Social Icons', 'socialIcons', 'global', 'drop social icon images here', 0, 'Assets', '{"useSingleFolder":"1","sources":"*","defaultUploadLocationSource":"1","defaultUploadLocationSubpath":"","singleUploadLocationSource":"1","singleUploadLocationSubpath":"","restrictFiles":"","limit":""}', '2014-12-08 22:10:02', '2014-12-09 21:59:01', '53b2a2d6-fbc3-4d82-bd42-8af9ef8ef11f'),
 (17, 1, 'email address', 'emailAddress', 'global', 'input contact email address here', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-12-09 15:37:57', '2014-12-09 15:37:57', '29924156-0c3d-47ae-b164-3e3ae1ba18b0'),
 (18, 1, 'Phone Number', 'phoneNumber', 'global', 'input contact phone number here', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-12-09 15:38:18', '2014-12-09 15:38:18', '48ac7214-4646-47ad-8b7e-fd088df27b85'),
@@ -947,7 +945,6 @@ CREATE TABLE `craft_relations` (
 --
 
 INSERT INTO `craft_relations` (`id`, `fieldId`, `sourceId`, `sourceLocale`, `targetId`, `sortOrder`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(419, 15, 2, NULL, 30, 1, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '81e4d5d8-4942-4d98-bcc8-232467b57916'),
 (420, 4, 2, NULL, 36, 1, '2014-12-09 16:11:45', '2014-12-09 16:11:45', 'b91bf588-939a-4fca-bf9f-06b77ea2923e'),
 (421, 7, 2, NULL, 3, 1, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '1c795379-4da4-41f3-bd9d-e71e1c87b92c'),
 (422, 7, 2, NULL, 13, 2, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '9f984c56-dc46-4aa0-af69-9ba5abf55e2a'),
@@ -1235,7 +1232,13 @@ INSERT INTO `craft_searchindex` (`elementId`, `attribute`, `fieldId`, `locale`, 
 (38, 'field', 19, 'en_us', ' http twitter com '),
 (39, 'field', 16, 'en_us', ' facebook icon '),
 (39, 'field', 19, 'en_us', ' http facebook com '),
-(39, 'slug', 0, 'en_us', '');
+(39, 'slug', 0, 'en_us', ''),
+(40, 'field', 5, 'en_us', ''),
+(40, 'filename', 0, 'en_us', ' air master_logo png '),
+(40, 'extension', 0, 'en_us', ' png '),
+(40, 'kind', 0, 'en_us', ' image '),
+(40, 'slug', 0, 'en_us', ''),
+(40, 'title', 0, 'en_us', ' air master logo ');
 
 -- --------------------------------------------------------
 
@@ -1312,7 +1315,7 @@ CREATE TABLE `craft_sessions` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_sessions`
@@ -1331,7 +1334,8 @@ INSERT INTO `craft_sessions` (`id`, `userId`, `token`, `dateCreated`, `dateUpdat
 (11, 1, '18074987700b9c19405bb394f5522f93cf6d25dfczozNjoiM2I3YmNlY2UtYmQ0Yy00ZmNkLWFkYzYtZWE0OTMwMmFlNjMyIjs=', '2014-11-30 01:02:56', '2014-11-30 01:02:56', '508c9266-78e6-4208-a763-4ab5835d1ded'),
 (12, 1, '0105ca902fba58c4f90702af1efb5bbdbaa4a7b1czozNjoiMmFkNjYzMDgtODNmYy00YWE4LTg4NzItNjg2N2YzYWY3YjUyIjs=', '2014-12-08 20:33:53', '2014-12-08 20:33:53', '7f830bed-2a6d-4130-af8f-70ea1cba5d40'),
 (13, 1, 'b48bd3dcd49a179a55e8cc6286e9b75e8b95da40czozNjoiYWE2N2QzYmMtNWEyNS00Y2VlLTg3MjEtZWFiMDQ3YmFjYTc4Ijs=', '2014-12-09 15:35:59', '2014-12-09 15:35:59', 'a5ff9106-296b-453c-8a63-533d65566f74'),
-(14, 1, '6893e4282bf8252d3b89310040cc6b0c55121de4czozNjoiNzRmMzJkMzQtNzg0NS00MDUwLTk3NjYtYjZmNjExZTdhMTdhIjs=', '2014-12-09 19:55:34', '2014-12-09 23:24:55', 'd3075ddf-ec30-4959-a810-cc4d17812ac5');
+(14, 1, '6893e4282bf8252d3b89310040cc6b0c55121de4czozNjoiNzRmMzJkMzQtNzg0NS00MDUwLTk3NjYtYjZmNjExZTdhMTdhIjs=', '2014-12-09 19:55:34', '2014-12-09 23:24:55', 'd3075ddf-ec30-4959-a810-cc4d17812ac5'),
+(15, 1, '2c62a72c2bc6d80f98fc515cd80f670c87d3833aczozNjoiZDY3M2M3ZmEtMGMyMy00ZTg0LWFhZWQtYmE2ZjcwYTM5ODQyIjs=', '2014-12-12 01:02:09', '2014-12-12 01:02:09', 'e0fb1926-ed49-40bb-9f59-4d62cfb863a0');
 
 -- --------------------------------------------------------
 
@@ -1464,7 +1468,7 @@ CREATE TABLE `craft_tasks` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -1636,7 +1640,7 @@ CREATE TABLE `craft_users` (
 --
 
 INSERT INTO `craft_users` (`id`, `username`, `photo`, `firstName`, `lastName`, `email`, `password`, `preferredLocale`, `admin`, `client`, `status`, `lastLoginDate`, `lastLoginAttemptIPAddress`, `invalidLoginWindowStart`, `invalidLoginCount`, `lastInvalidLoginDate`, `lockoutDate`, `verificationCode`, `verificationCodeIssuedDate`, `unverifiedEmail`, `passwordResetRequired`, `lastPasswordChangeDate`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, 'admin', NULL, NULL, NULL, 'mjfeeney3@gmail.com', '$2a$13$D/w3wnYH84y.RsVW679gru6o/29BW5ZnW339.ujrmHUp4U7Ih/5Qq', NULL, 1, 0, 'active', '2014-12-09 19:55:34', '127.0.0.1', NULL, NULL, '2014-11-13 22:16:39', NULL, NULL, NULL, NULL, 0, '2014-11-05 23:30:07', '2014-11-05 23:30:07', '2014-12-09 19:55:34', '77edf27a-ec25-46e1-8d84-845ad0d15a88');
+(1, 'admin', NULL, NULL, NULL, 'mjfeeney3@gmail.com', '$2a$13$D/w3wnYH84y.RsVW679gru6o/29BW5ZnW339.ujrmHUp4U7Ih/5Qq', NULL, 1, 0, 'active', '2014-12-12 01:02:09', '127.0.0.1', NULL, NULL, '2014-11-13 22:16:39', NULL, NULL, NULL, NULL, 0, '2014-11-05 23:30:07', '2014-11-05 23:30:07', '2014-12-12 01:02:09', '77edf27a-ec25-46e1-8d84-845ad0d15a88');
 
 -- --------------------------------------------------------
 
@@ -2044,7 +2048,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `craft_content`
 --
 ALTER TABLE `craft_content`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=56;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=57;
 --
 -- AUTO_INCREMENT for table `craft_deprecationerrors`
 --
@@ -2054,12 +2058,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `craft_elements`
 --
 ALTER TABLE `craft_elements`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=41;
 --
 -- AUTO_INCREMENT for table `craft_elements_i18n`
 --
 ALTER TABLE `craft_elements_i18n`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=56;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=57;
 --
 -- AUTO_INCREMENT for table `craft_emailmessages`
 --
@@ -2154,7 +2158,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 -- AUTO_INCREMENT for table `craft_sessions`
 --
 ALTER TABLE `craft_sessions`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `craft_shunnedmessages`
 --
@@ -2184,7 +2188,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT for table `craft_tasks`
 --
 ALTER TABLE `craft_tasks`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=39;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
 --
 -- AUTO_INCREMENT for table `craft_templatecachecriteria`
 --
