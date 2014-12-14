@@ -87,11 +87,7 @@
 <!-- FOR LOOP to display different business categories -->
 	
 		<section class="business_categories wow">
-			
-
-			{% set entries = entry.businessCategories %}
 				
-				{% for entry in entry.businessCategories.limit(1) %}	
 
 				<div class="single_category_post wow" id="residential">
 					
@@ -99,15 +95,16 @@
 
 						<div class="col-sm-6">
 							{% set image = entry.image.first() %}
-
-								<img src="{{ image.getUrl() }}" alt="">
+								<div class="biz-img">
+									<img src="public/img/residential-heading-cooling.jpg" alt="">
+								</div>
 						</div>
 
 						<div class="col-sm-6">
 							<div class="category_info">
 
-								<h3>{{ entry.title }}</h3>
-								<p>{{ entry.body.getPage(1) }}</p>
+								<h3>Residential</h3>
+								<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service. </p>
 
 								<p class="read_more">
 									<a data-toggle="modal" href="#resModal">find out more</a>
@@ -121,10 +118,7 @@
 
 				</div>
 				
-				{% endfor %}
-
-
-				{% for entry in entry.businessCategories.limit(1).offset(1) %}	
+			
 
 				<div class="single_category_post wow" id="commercial">
 					
@@ -133,8 +127,10 @@
 						<div class="col-sm-6">
 
 							<div class="category_info">
-								<h3>{{ entry.title }}</h3>
-								<p>{{ entry.body.getPage(1) }}</p>
+								<h3>Commercial &amp; Industrial</h3>
+								<p>Our commercial team can design and execute a sophisticated cus- tom commercial heating and cooling system for your project, or provide simple 24 hour emergency repair service.
+
+</p>
 
 								<p class="read_more">
 									<a data-toggle="modal" href="#commModal">find out more</a>
@@ -146,7 +142,9 @@
 						<div class="col-sm-6">
 							{% set image = entry.image.first() %}
 
-								<img src="{{ image.getUrl() }}" alt="">
+								<div class="biz-img">
+									<img src="public/img/commercial-heating-cooling.jpg" alt="">
+								</div>
 						</div>
 
 					</div>
@@ -154,10 +152,7 @@
 
 				</div>
 				
-				{% endfor %}
 				
-
-				{% for entry in entry.businessCategories.limit(1).offset(2) %}	
 
 				<div class="single_category_post wow " id="fireplace">
 					
@@ -166,13 +161,18 @@
 						<div class="col-sm-6">
 							{% set image = entry.image.first() %}
 
-								<img src="{{ image.getUrl() }}" alt="">
+								<div class="biz-img">
+									<img src="public/img/fireplace-sales-service.jpg" alt="">
+								</div>
 						</div>
 
 						<div class="col-sm-6">
 							<div class="category_info">
-								<h3>{{ entry.title }}</h3>
-								<p>{{ entry.body.getPage(1) }}</p>
+								<h3>Fireplace</h3>
+								<p>With new technology, we can install a fireplace in any room for surprisingly cheap. You could have a new fireplace installed in 3-7 days.</p>
+
+								<p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you’re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?
+								</p>
 
 								<p class="read_more">
 									<a data-toggle="modal" href="#fireModal">find out more</a>
@@ -185,9 +185,7 @@
 
 				</div>
 				
-				{% endfor %}
 
-				{% for entry in entry.businessCategories.limit(1).offset(3) %}	
 
 				<div class="single_category_post" id="barbecue">
 					
@@ -195,8 +193,12 @@
 
 						<div class="col-sm-6">
 							<div class="category_info">
-								<h3>{{ entry.title }}</h3>
-								<p>{{ entry.body.getPage(1) }}</p>
+								<h3>Barbecue</h3>
+								<p>A great american tradition, and most delicious way to prepare food.</p>
+
+								<p>If you’re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.</p>
+
+								<p>We can also help you get any barbecue accessory you’re missing or find you a barbecue replacement part or pieces.</p>
 
 								<p class="read_more">
 									<a data-toggle="modal" href="#barModal">find out more</a>
@@ -207,15 +209,15 @@
 						<div class="col-sm-6">
 							{% set image = entry.image.first() %}
 
-								<img src="{{ image.getUrl() }}" alt="">
+								<div class="biz-img">
+									<img src="public/img/bbq-grills.jpg" alt="">
+								</div>
 						</div>
 
 					</div>
 					<!-- end row -->
 
 				</div>
-				
-				{% endfor %}
 				
 			
 
