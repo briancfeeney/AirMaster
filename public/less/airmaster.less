@@ -107,8 +107,21 @@ ul {
 	font-weight: 700;
 }
 
+.sourcesansL {
+	font-family: "source-sans-pro-n7","source-sans-pro",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
 /*********************************************/
 
+body {
+	.chaparralR();
+}
+
+h1, h2, h3, h4, h5 {
+	.sourcesans();
+}
 
 #header {
 	padding-top: 40px;
@@ -119,6 +132,11 @@ ul {
 
 h1 {
 	font-size: 3.5em;
+}
+
+h3, .about_title {
+	color: @red;
+	text-transform: uppercase;
 }
 
 .nav_categories li a {
@@ -133,39 +151,41 @@ h1 {
 	color: @red;
 }
 
-.main_body {
-	font-size: 1.7em;
+.main_top {
 	color: @blue;
-}
-
-.location {
-	font-size: 1.2em;
-	color: @blue;
+	.main_body {
+		.calluna();
+		max-width: 17em;
+		font-size: 2em;
+	}
+	.location {
+		.sourcesansL();
+		font-size: 1.2em;
+		max-width: 22em;
+	}
 }
 
 .single_category_post {
-	font-weight: bolder;
+	/* font-weight: bolder; */
 }
 
 .testimonial {
 	color: @red;
 	font-size: 1.7em;
+	.quote {
+		font-size: 1.75em;
+		.chaparralR();
+		line-height: 1.3em;
+	}
+
+	.quote_name {
+		text-transform: uppercase;
+		color: lighten(@red, 25%);
+		.sourcesans();
+		letter-spacing: 1px;
+	}
 }
 
-.quote {
-	font-size: 1.75em;
-	font-style: italic;
-}
-
-.quote_name {
-	text-transform: uppercase;
-	color: lighten(@red, 25%);
-}
-
-h3, .about_title {
-	color: @red;
-	text-transform: uppercase;
-}
 
 .modal-body {
 	font-size: 1.25em;
@@ -186,6 +206,7 @@ h3, .about_title {
 	display: inline-block;
 	border-bottom: solid 2px @blue;
 	padding-bottom: 5px;
+	.sourcesans();
 	&:hover {
 		text-decoration: none;
 		color: lighten(@blue, 30%);
@@ -293,7 +314,10 @@ body {
 	top: 0;
 	padding: 20px 0;
 	z-index: 500;
-	background: white;
+	background: transparent;
+	.main-logo {
+		max-width: 230px;
+	}
 }
 
 .modal-header {
@@ -565,6 +589,7 @@ section {
 	padding: 20px 40px 0px 20px;
 	p {
 		padding: 5px 0;
+		font-size: 1.2em;
 	};
 }
 

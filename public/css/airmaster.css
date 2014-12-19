@@ -74,7 +74,26 @@ ul {
   font-style: normal;
   font-weight: 700;
 }
+.sourcesansL {
+  font-family: "source-sans-pro-n7", "source-sans-pro", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
 /*********************************************/
+body {
+  font-family: "chaparral-pro-n4", "chaparral-pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "source-sans-pro-n7", "source-sans-pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
 #header {
   padding-top: 40px;
 }
@@ -85,6 +104,11 @@ ul {
 }
 h1 {
   font-size: 3.5em;
+}
+h3,
+.about_title {
+  color: #d9293e;
+  text-transform: uppercase;
 }
 .nav_categories li a {
   text-transform: uppercase;
@@ -97,33 +121,44 @@ h1 {
   font-weight: bolder;
   color: #d9293e;
 }
-.main_body {
-  font-size: 1.7em;
+.main_top {
   color: #1c5599;
 }
-.location {
+.main_top .main_body {
+  font-family: "calluna-n4", "calluna", serif;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 17em;
+  font-size: 2em;
+}
+.main_top .location {
+  font-family: "source-sans-pro-n7", "source-sans-pro", sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 1.2em;
-  color: #1c5599;
+  max-width: 22em;
 }
 .single_category_post {
-  font-weight: bolder;
+  /* font-weight: bolder; */
 }
 .testimonial {
   color: #d9293e;
   font-size: 1.7em;
 }
-.quote {
+.testimonial .quote {
   font-size: 1.75em;
-  font-style: italic;
+  font-family: "chaparral-pro-n4", "chaparral-pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3em;
 }
-.quote_name {
+.testimonial .quote_name {
   text-transform: uppercase;
   color: #ec95a0;
-}
-h3,
-.about_title {
-  color: #d9293e;
-  text-transform: uppercase;
+  font-family: "source-sans-pro-n7", "source-sans-pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .modal-body {
   font-size: 1.25em;
@@ -143,6 +178,9 @@ h3,
   display: inline-block;
   border-bottom: solid 2px #1c5599;
   padding-bottom: 5px;
+  font-family: "source-sans-pro-n7", "source-sans-pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 .read_more a:hover {
   text-decoration: none;
@@ -211,7 +249,10 @@ h2 {
   top: 0;
   padding: 20px 0;
   z-index: 500;
-  background: white;
+  background: transparent;
+}
+#header .main-logo {
+  max-width: 230px;
 }
 /** Scrolling header effects ****************************************************/
 .main-logo img,
@@ -410,6 +451,7 @@ section {
 }
 .category_info p {
   padding: 5px 0;
+  font-size: 1.2em;
 }
 .emergency {
   padding: 50px 0;
