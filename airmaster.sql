@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Dec 11, 2014 at 08:18 PM
+-- Generation Time: Dec 18, 2014 at 11:47 PM
 -- Server version: 5.5.38
 -- PHP Version: 5.6.2
 
@@ -51,26 +51,14 @@ INSERT INTO `craft_assetfiles` (`id`, `sourceId`, `folderId`, `filename`, `kind`
 (10, 1, 1, 'fireplace-sales-service.jpg', 'image', 220, 147, 28645, '2014-11-06 00:09:23', '2014-11-06 00:09:24', '2014-11-06 00:09:24', '9767eb1b-1263-4842-92c5-1297c6cd0940'),
 (11, 1, 1, 'residential-heading-cooling.jpg', 'image', 220, 147, 38665, '2014-11-06 00:09:24', '2014-11-06 00:09:24', '2014-11-06 00:09:24', '6ac070f5-4f98-4a9a-b6b3-4306dd367a4f'),
 (14, 1, 1, 'main_img.jpg', 'image', 1584, 671, 112053, '2014-11-09 04:45:22', '2014-11-06 03:28:24', '2014-11-09 04:45:25', 'a49acd68-5995-48de-8c9c-df54b3c0a8cf'),
-(17, 1, 1, 'logo1-2.png', 'image', 199, 191, 8389, '2014-11-10 00:45:28', '2014-11-10 00:45:28', '2014-11-10 00:45:28', '13835b06-43bf-44a8-addf-b79e97098cc4'),
-(18, 1, 1, 'logo1-3.png', 'image', 199, 191, 8389, '2014-11-10 00:45:28', '2014-11-10 00:45:28', '2014-11-10 00:45:28', '83b1c6f1-34a3-47e9-995f-24b1cfeab4d6'),
-(19, 1, 1, 'logo1-4.png', 'image', 199, 191, 8389, '2014-11-10 00:45:28', '2014-11-10 00:45:29', '2014-11-10 00:45:29', '2004d97e-778d-405e-bb4e-d691bb55e929'),
-(20, 1, 1, 'logo1-5.png', 'image', 199, 191, 8389, '2014-11-10 00:45:29', '2014-11-10 00:45:29', '2014-11-10 00:45:29', '46c926b2-69b9-47b0-bcde-c845f182f595'),
-(21, 1, 1, 'logo1-6.png', 'image', 199, 191, 8389, '2014-11-10 00:45:29', '2014-11-10 00:45:29', '2014-11-10 00:45:29', '39aad8b3-025d-483e-93e9-fe0396f4cdea'),
-(22, 1, 1, 'logo1-7.png', 'image', 199, 191, 8389, '2014-11-10 00:45:29', '2014-11-10 00:45:30', '2014-11-10 00:45:30', '463baf6a-78da-4a7e-a428-1eadc0275bee'),
-(23, 1, 1, 'logo1-8.png', 'image', 199, 191, 8389, '2014-11-10 00:45:30', '2014-11-10 00:45:30', '2014-11-10 00:45:30', '473719a6-0bdc-4cb6-be06-5145121ee9ad'),
-(24, 1, 1, 'logo1-9.png', 'image', 199, 191, 8389, '2014-11-10 00:45:30', '2014-11-10 00:45:30', '2014-11-10 00:45:30', 'ba938c03-d684-456b-a691-a5688bb3fd1d'),
-(25, 1, 1, 'logo1-10.png', 'image', 199, 191, 8389, '2014-11-10 00:45:30', '2014-11-10 00:45:30', '2014-11-10 00:45:30', 'a19e6dd0-1b2f-46d9-8a23-aace4ee18146'),
-(26, 1, 1, 'logo1-11.png', 'image', 199, 191, 8389, '2014-11-10 00:45:30', '2014-11-10 00:45:31', '2014-11-10 00:45:31', '80acc207-6720-4879-a32b-6ed8cfa42c0c'),
-(27, 1, 1, 'logo1-12.png', 'image', 199, 191, 8389, '2014-11-10 00:45:31', '2014-11-10 00:45:31', '2014-11-10 00:45:31', 'dfe347f0-2b4e-4f79-8c8f-0195bef77f59'),
-(28, 1, 1, 'logo1.png', 'image', 199, 191, 8389, '2014-11-10 00:47:50', '2014-11-10 00:47:50', '2014-11-10 00:47:50', '136106b3-6efe-467a-8ab9-bdd784b7669e'),
-(29, 1, 1, 'googlemap.png', 'image', 461, 195, 15262, '2014-11-10 01:03:23', '2014-11-10 01:03:24', '2014-11-10 01:03:24', 'dd2a9bca-98f9-409f-9050-b478f85d2986'),
 (31, 1, 1, 'michigan.png', 'image', 1600, 1877, 32914, '2014-12-08 20:39:09', '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'bccd12a7-9877-48eb-b909-ddb5a829f3bd'),
 (32, 1, 1, 'facebook-icon.png', 'image', 40, 40, 1168, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'a1b265a4-ccad-4fd5-b4fe-5a1f4ab57f7d'),
 (33, 1, 1, 'twitter-icon.png', 'image', 40, 40, 1705, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '2014-12-08 20:39:15', '432d6df1-7da1-4990-a966-f6488e66a265'),
 (34, 1, 1, 'map.png', 'image', 429, 220, 133044, '2014-12-08 22:08:03', '2014-12-08 22:08:06', '2014-12-08 22:08:06', '11668a3b-9e74-4902-a9ad-6ff400783354'),
 (36, 1, 1, 'main-stock.png', 'image', 938, 398, 717514, '2014-12-09 16:11:18', '2014-12-09 16:11:25', '2014-12-09 16:11:25', '7b83df72-86dd-4a25-a1b4-995d25755be8'),
 (37, 1, 1, 'gray-circle.jpg', 'image', 512, 512, 14426, '2014-12-09 20:37:40', '2014-12-09 20:37:42', '2014-12-09 20:37:42', '3876c0de-4a15-47ca-a959-09b7b2c234ee'),
-(40, 1, 1, 'air-master_logo.png', 'image', 500, 146, 22082, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '2014-12-12 01:07:13', 'f6daa5d1-8114-466f-bf0f-edcfd67e2631');
+(40, 1, 1, 'air-master_logo.png', 'image', 500, 146, 22082, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '2014-12-12 01:07:13', 'f6daa5d1-8114-466f-bf0f-edcfd67e2631'),
+(42, 1, 1, 'modal-x.png', 'image', 130, 130, 1931, '2014-12-18 15:04:42', '2014-12-18 15:04:43', '2014-12-18 15:04:43', '211e5bd3-7b5c-40be-b4f0-5e9e6717ac55');
 
 -- --------------------------------------------------------
 
@@ -257,7 +245,7 @@ CREATE TABLE `craft_content` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_content`
@@ -265,12 +253,12 @@ CREATE TABLE `craft_content` (
 
 INSERT INTO `craft_content` (`id`, `elementId`, `locale`, `title`, `field_heading`, `field_body`, `field_customerName`, `field_location`, `field_quote`, `field_aboutUs`, `field_aboutUsDescription`, `field_emailAddress`, `field_phoneNumber`, `field_socialLink`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 1, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:30:07', '2014-11-05 23:30:07', '95f72694-1971-4afc-97ee-bb8a60e237d1'),
-(2, 2, 'en_us', 'Homepage', 'Homepage Heading', '<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;</p>', NULL, 'Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.', NULL, 'About Our Company', 'Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.', NULL, NULL, NULL, '2014-11-05 23:30:10', '2014-12-09 16:11:44', '441e0b80-d771-4cb8-89ed-dccfe1a33eb8'),
+(2, 2, 'en_us', 'Homepage', 'Homepage Heading', '<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;</p>', NULL, 'Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.', NULL, 'About Our Company', 'Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.', NULL, NULL, NULL, '2014-11-05 23:30:10', '2014-12-19 04:09:49', '441e0b80-d771-4cb8-89ed-dccfe1a33eb8'),
 (3, 3, 'en_us', 'First Testimonial', NULL, '<p>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>', 'Harold Z.', NULL, '“Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."', NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:30:10', '2014-11-30 02:09:05', 'ab35985d-e94d-42f9-a7f4-2d95ae2a9ce0'),
-(5, 4, 'en_us', 'Residential', NULL, '<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p><!--pagebreak-->\r\n<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:36:02', '2014-12-09 19:56:33', '9b5b0035-4ec3-49ee-af03-709d4b597bda'),
+(5, 4, 'en_us', 'Residential', NULL, '<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p><!--pagebreak-->\r\n<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:36:02', '2014-12-19 03:53:08', '9b5b0035-4ec3-49ee-af03-709d4b597bda'),
 (8, 5, 'en_us', 'Commercial & Industrial', NULL, '<p>Our commercial team can design and execute a sophisticated cus- tom commercial heating and cooling system for your project, or&nbsp;provide simple 24 hour emergency repair service.</p><!--pagebreak--><p>* We offer discounted maintenance with our maintenance contract, * Can advice you on indoor air quality,</p><p> * Or give you a price estimate to replace your aging commercial fur- nace and/or air conditioner.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:36:42', '2014-12-09 19:57:10', '4d4f5310-2cdd-4ada-ad93-a8b4ad4baba5'),
-(9, 6, 'en_us', 'Fireplace', NULL, '<p>IWith new technology, we can install a fireplace in any room for surprisingly cheap. You could have a new fireplace installed in 3-7 days.</p><p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you’re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired? </p><p>We carry, or can order you, any fireplace replacement part. Maybe you want to buy some fireplace accessories or redesign the exterior? We do verything from plug and go fireplaces to a full custom design and install.&nbsp;</p><!--pagebreak--><p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you’re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?</p><p>We carry, or can order you, any fireplace replacement part. Maybe you want to buy some fireplace accessories or redesign the exterior? We do verything from plug and go fireplaces to a full custom design and install.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:36:48', '2014-12-09 19:57:35', '9f74f2cb-52de-4629-b6e8-751c333c9edf'),
-(10, 7, 'en_us', 'Barbecue', NULL, '<p>\r\n	A great american tradition, and most delicious way to prepare food.</p><p>\r\n	If you’re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.</p><p>\r\n	We can also help you get any barbecue accessory you’re missing or find you a barbecue replacement part or pieces.</p><!--pagebreak-->\r\n<p>\r\n	If you’re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.</p><p>\r\n	We can also help you get any barbecue accessory you’re missing or find you a barbecue replacement part or pieces.&nbsp;&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:36:57', '2014-12-09 17:19:14', '4fe03897-11b2-454d-a15a-abc8673f5d42'),
+(9, 6, 'en_us', 'Fireplace', NULL, '<p>IWith new technology, we can install a fireplace in any room for surprisingly cheap. You could have a new fireplace installed in 3-7 days.</p><p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you’re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?</p><!--pagebreak-->\r\n<p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you’re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?</p><p>We carry, or can order you, any fireplace replacement part. Maybe you want to buy some fireplace accessories or redesign the exterior? We do verything from plug and go fireplaces to a full custom design and install.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:36:48', '2014-12-14 01:48:17', '9f74f2cb-52de-4629-b6e8-751c333c9edf'),
+(10, 7, 'en_us', 'Barbecue', NULL, '<p>\r\n	A great american tradition, and most delicious way to prepare food.</p><p>\r\n	If you’re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.</p><p>\r\n	We can also help you get any barbecue accessory you’re missing or find you a barbecue replacement part or pieces.</p><!--pagebreak--><p>\r\n	If you’re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.</p><p>\r\n	We can also help you get any barbecue accessory you’re missing or find you a barbecue replacement part or pieces.&nbsp;&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:36:57', '2014-12-14 04:07:13', '4fe03897-11b2-454d-a15a-abc8673f5d42'),
 (23, 8, 'en_us', 'bbq-grills', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-06 00:09:23', '2014-11-06 00:09:23', '04b60112-1565-4602-8423-f2abb65353df'),
 (24, 9, 'en_us', 'commercial-heating-cooling', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-06 00:09:23', '2014-11-06 00:09:23', '2a2b3d56-3a8e-4cc6-8ab9-383fceaa96ca'),
 (25, 10, 'en_us', 'fireplace-sales-service', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-06 00:09:24', '2014-11-06 00:09:24', '2b4ba4e8-4a6b-469a-92c2-af8c242027a7'),
@@ -278,19 +266,6 @@ INSERT INTO `craft_content` (`id`, `elementId`, `locale`, `title`, `field_headin
 (27, 12, 'en_us', 'Second Testimonial', NULL, '<p>“Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. &nbsp;Lorem ipsum dolor sit amet, consectetur adip- isicing elit.”</p>', 'Harold Z.', NULL, '“Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."', NULL, NULL, NULL, NULL, NULL, '2014-11-06 00:13:57', '2014-11-30 02:08:58', 'e4fa578c-7de9-4973-bffc-1bddf7b5653e'),
 (28, 13, 'en_us', 'Third Testimonial', NULL, '<p>“Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>', 'Harold Z.', NULL, '“Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."', NULL, NULL, NULL, NULL, NULL, '2014-11-06 00:14:11', '2014-11-30 02:08:52', '8f6350a4-dd0e-44a7-ba80-d3355ec8735a'),
 (29, 14, 'en_us', 'main img', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-06 03:28:24', '2014-11-09 04:45:25', '8b7c0678-1e75-4465-a147-7da36b86abe4'),
-(33, 17, 'en_us', 'logo1-2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:45:28', '2014-11-10 00:45:28', 'c4e583d6-5e4d-4a7a-ad7e-e34fa1494bf9'),
-(34, 18, 'en_us', 'logo1-3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:45:28', '2014-11-10 00:45:28', '62c65967-3718-47fd-9a1d-4cab57025ddf'),
-(35, 19, 'en_us', 'logo1-4', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:45:29', '2014-11-10 00:45:29', '32373658-a8e0-406a-a780-9214ae44f841'),
-(36, 20, 'en_us', 'logo1-5', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:45:29', '2014-11-10 00:45:29', '7d32e7db-f7c8-4403-83c0-3476108f5940'),
-(37, 21, 'en_us', 'logo1-6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:45:29', '2014-11-10 00:45:29', 'bd04b9d7-dfa3-439d-aed2-6cf2adf0f8f9'),
-(38, 22, 'en_us', 'logo1-7', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:45:30', '2014-11-10 00:45:30', 'a0c78d1e-86ad-457e-968e-5db686f2b284'),
-(39, 23, 'en_us', 'logo1-8', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:45:30', '2014-11-10 00:45:30', 'a0948aab-aa54-4f02-a655-84abe4601d45'),
-(40, 24, 'en_us', 'logo1-9', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:45:30', '2014-11-10 00:45:30', '83960adb-c085-4f03-87e6-246e47da56a2'),
-(41, 25, 'en_us', 'logo1-10', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:45:30', '2014-11-10 00:45:30', '5b286339-b8d2-46cc-a3e8-025b7ef8cf0b'),
-(42, 26, 'en_us', 'logo1-11', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:45:31', '2014-11-10 00:45:31', 'b3edfc2f-34e6-43be-a10b-1926cd6b7398'),
-(43, 27, 'en_us', 'logo1-12', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:45:31', '2014-11-10 00:45:31', 'b9a7a337-193c-4e9c-bfe8-64889225c4b0'),
-(44, 28, 'en_us', 'logo1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 00:47:50', '2014-11-10 00:47:50', 'a03025dd-a7c2-4378-964e-b5addde8dabb'),
-(45, 29, 'en_us', 'googlemap', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-10 01:03:23', '2014-11-10 01:03:23', '8d351522-964d-47fa-8312-4fabb909335b'),
 (47, 31, 'en_us', 'michigan', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:14', '2014-12-08 20:39:14', 'eb2f0e8b-3b4e-4242-84c0-0a722026dbc0'),
 (48, 32, 'en_us', 'facebook-icon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'eba507e4-bfbd-46b9-8c8d-66509ed49aa3'),
 (49, 33, 'en_us', 'twitter-icon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'd5719311-cd1a-4984-855b-5cdc481bddc2'),
@@ -300,7 +275,9 @@ INSERT INTO `craft_content` (`id`, `elementId`, `locale`, `title`, `field_headin
 (53, 37, 'en_us', 'gray-circle', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 20:37:41', '2014-12-09 20:37:41', '1e9f9ee5-6c8d-438b-b8a6-83d208ac6a85'),
 (54, 38, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'http://twitter.com', '2014-12-09 21:57:41', '2014-12-09 22:00:28', '205fa3ae-1c4a-4dc5-a677-430684c46f39'),
 (55, 39, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'http://facebook.com', '2014-12-09 21:59:55', '2014-12-09 22:00:16', 'ae656420-714b-4101-b071-5c1facc26f43'),
-(56, 40, 'en_us', 'air-master logo', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '5badca16-23cd-444b-919b-c41dc3404f15');
+(56, 40, 'en_us', 'air-master logo', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '5badca16-23cd-444b-919b-c41dc3404f15'),
+(57, 41, 'en_us', 'About', NULL, NULL, NULL, NULL, NULL, 'About Our Company', 'Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.', NULL, NULL, NULL, '2014-12-18 15:03:55', '2014-12-19 03:53:26', '12489763-4a26-4bd5-987b-91447d1c0223'),
+(58, 42, 'en_us', 'modal-x', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-18 15:04:43', '2014-12-18 15:04:43', 'fd9dab20-33fc-4acf-b7da-8f6032aa00bf');
 
 -- --------------------------------------------------------
 
@@ -340,7 +317,7 @@ CREATE TABLE `craft_elements` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_elements`
@@ -348,12 +325,12 @@ CREATE TABLE `craft_elements` (
 
 INSERT INTO `craft_elements` (`id`, `type`, `enabled`, `archived`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 'User', 1, 0, '2014-11-05 23:30:07', '2014-11-05 23:30:07', 'c8113938-2a78-4759-8206-39c1861c8dff'),
-(2, 'Entry', 1, 0, '2014-11-05 23:30:10', '2014-12-09 16:11:44', '954ab411-f91a-45d3-a149-5a1188620910'),
+(2, 'Entry', 1, 0, '2014-11-05 23:30:10', '2014-12-19 04:09:49', '954ab411-f91a-45d3-a149-5a1188620910'),
 (3, 'Entry', 1, 0, '2014-11-05 23:30:10', '2014-11-30 02:09:05', '12b9d74c-0f5b-430e-82ff-d2642a574d70'),
-(4, 'Entry', 1, 0, '2014-11-05 23:36:02', '2014-12-09 19:56:33', '543727b0-243c-4fae-ac92-d119efd211c9'),
+(4, 'Entry', 1, 0, '2014-11-05 23:36:02', '2014-12-19 03:53:08', '543727b0-243c-4fae-ac92-d119efd211c9'),
 (5, 'Entry', 1, 0, '2014-11-05 23:36:42', '2014-12-09 19:57:10', '2738b754-0be8-4ce5-824c-6ab339fe1fa1'),
-(6, 'Entry', 1, 0, '2014-11-05 23:36:48', '2014-12-09 19:57:35', '55583cfe-0f3b-48db-8626-6fd5830321fb'),
-(7, 'Entry', 1, 0, '2014-11-05 23:36:57', '2014-12-09 17:19:14', 'f07c9cd9-f747-4e13-b080-e200ace31c83'),
+(6, 'Entry', 1, 0, '2014-11-05 23:36:48', '2014-12-14 01:48:17', '55583cfe-0f3b-48db-8626-6fd5830321fb'),
+(7, 'Entry', 1, 0, '2014-11-05 23:36:57', '2014-12-14 04:07:13', 'f07c9cd9-f747-4e13-b080-e200ace31c83'),
 (8, 'Asset', 1, 0, '2014-11-06 00:09:23', '2014-11-06 00:09:23', 'f06ee8a6-b09f-4698-9cee-5d882581e9a5'),
 (9, 'Asset', 1, 0, '2014-11-06 00:09:23', '2014-11-06 00:09:23', 'a525555c-1dd5-4e52-8452-cc5f316c6bc9'),
 (10, 'Asset', 1, 0, '2014-11-06 00:09:24', '2014-11-06 00:09:24', 'b3412ecd-1228-4ae8-aa9a-c75e981abf9a'),
@@ -361,19 +338,6 @@ INSERT INTO `craft_elements` (`id`, `type`, `enabled`, `archived`, `dateCreated`
 (12, 'Entry', 1, 0, '2014-11-06 00:13:57', '2014-11-30 02:08:58', '8ad7d59f-2694-4183-9489-8f030c383602'),
 (13, 'Entry', 1, 0, '2014-11-06 00:14:11', '2014-11-30 02:08:52', 'f41d4290-fa65-4af4-a474-d3b96d01a33e'),
 (14, 'Asset', 1, 0, '2014-11-06 03:28:24', '2014-11-09 04:45:25', 'd94a958d-14ce-483c-9619-fc0684807ce9'),
-(17, 'Asset', 1, 0, '2014-11-10 00:45:28', '2014-11-10 00:45:28', '9b19680a-cbcb-4388-bdf4-f8fcf00a4901'),
-(18, 'Asset', 1, 0, '2014-11-10 00:45:28', '2014-11-10 00:45:28', '7622acf3-f11b-45d2-8b78-a102cf298e8e'),
-(19, 'Asset', 1, 0, '2014-11-10 00:45:29', '2014-11-10 00:45:29', '676cfa8e-dd85-4485-aa26-127156751371'),
-(20, 'Asset', 1, 0, '2014-11-10 00:45:29', '2014-11-10 00:45:29', '0d291fa4-339d-43fb-8301-8cfbe65634a4'),
-(21, 'Asset', 1, 0, '2014-11-10 00:45:29', '2014-11-10 00:45:29', '3d99367d-f6d7-4823-ae75-274df6beefca'),
-(22, 'Asset', 1, 0, '2014-11-10 00:45:30', '2014-11-10 00:45:30', '1c4ed0d7-552d-4584-ac33-5a4d65f2fc2c'),
-(23, 'Asset', 1, 0, '2014-11-10 00:45:30', '2014-11-10 00:45:30', '69556fd8-fba1-4f35-aba1-6ed6f7254803'),
-(24, 'Asset', 1, 0, '2014-11-10 00:45:30', '2014-11-10 00:45:30', 'dddd5f03-41b4-4884-87fa-eb936d98053a'),
-(25, 'Asset', 1, 0, '2014-11-10 00:45:30', '2014-11-10 00:45:30', 'ddc92a96-3167-4570-8a48-38250a6d6535'),
-(26, 'Asset', 1, 0, '2014-11-10 00:45:31', '2014-11-10 00:45:31', '27ecfc7b-b054-447d-b105-7564ab9a8cbd'),
-(27, 'Asset', 1, 0, '2014-11-10 00:45:31', '2014-11-10 00:45:31', 'a898f342-feb4-4be0-b83a-82d51d01aabf'),
-(28, 'Asset', 1, 0, '2014-11-10 00:47:50', '2014-11-10 00:47:50', 'fdb81ebe-ca07-4cf7-acb5-201842a89175'),
-(29, 'Asset', 1, 0, '2014-11-10 01:03:23', '2014-11-10 01:03:23', '0fa7ca87-4d87-49a6-9b86-f7b8d35dcee6'),
 (31, 'Asset', 1, 0, '2014-12-08 20:39:14', '2014-12-08 20:39:14', 'c4543a14-3b60-49c2-8bc9-58dacd1c8c25'),
 (32, 'Asset', 1, 0, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'a28fa053-cdd0-4606-a233-7b4a815f8f9d'),
 (33, 'Asset', 1, 0, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'c7455333-9d3f-4ce0-ad2e-4b28f8a40161'),
@@ -383,7 +347,9 @@ INSERT INTO `craft_elements` (`id`, `type`, `enabled`, `archived`, `dateCreated`
 (37, 'Asset', 1, 0, '2014-12-09 20:37:41', '2014-12-09 20:37:41', 'e315eed8-baf4-44dd-b071-85ccd3155386'),
 (38, 'GlobalSet', 1, 0, '2014-12-09 21:57:41', '2014-12-09 22:00:28', 'bf8fafd3-0edd-4756-b336-580db5a85714'),
 (39, 'GlobalSet', 1, 0, '2014-12-09 21:59:55', '2014-12-09 22:00:16', '1938bd06-7bdc-4d83-856d-360279679e64'),
-(40, 'Asset', 1, 0, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '2a224ba4-b974-47fd-9d48-88b742c68197');
+(40, 'Asset', 1, 0, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '2a224ba4-b974-47fd-9d48-88b742c68197'),
+(41, 'Entry', 1, 0, '2014-12-18 15:03:55', '2014-12-19 03:53:26', '87e3e7b7-7937-4946-aae1-190a78b240f0'),
+(42, 'Asset', 1, 0, '2014-12-18 15:04:43', '2014-12-18 15:04:43', '7df3ceb7-c4f2-491d-b7d4-e8ce0e1ae6f3');
 
 -- --------------------------------------------------------
 
@@ -401,7 +367,7 @@ CREATE TABLE `craft_elements_i18n` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_elements_i18n`
@@ -409,12 +375,12 @@ CREATE TABLE `craft_elements_i18n` (
 
 INSERT INTO `craft_elements_i18n` (`id`, `elementId`, `locale`, `slug`, `uri`, `enabled`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 1, 'en_us', '', NULL, 1, '2014-11-05 23:30:07', '2014-11-05 23:30:07', 'd0bf46ea-2449-4940-ae10-9d0155f6855c'),
-(2, 2, 'en_us', 'homepage', '__home__', 1, '2014-11-05 23:30:10', '2014-12-09 16:11:45', 'f27b8b3c-2802-4829-9686-7e2b90409573'),
+(2, 2, 'en_us', 'homepage', '__home__', 1, '2014-11-05 23:30:10', '2014-12-19 04:09:49', 'f27b8b3c-2802-4829-9686-7e2b90409573'),
 (3, 3, 'en_us', 'we-just-installed-craft', 'testimonials/2014/we-just-installed-craft', 1, '2014-11-05 23:30:10', '2014-11-30 02:09:05', '2697644e-acbf-4ac2-965d-bf541c6f6713'),
-(5, 4, 'en_us', 'residential', 'residential', 1, '2014-11-05 23:36:02', '2014-12-09 19:56:33', '244657b1-4b38-4cd0-8518-f59a470c60df'),
+(5, 4, 'en_us', 'residential', 'residential', 1, '2014-11-05 23:36:02', '2014-12-19 03:53:08', '244657b1-4b38-4cd0-8518-f59a470c60df'),
 (8, 5, 'en_us', 'commercialindustrial', 'commercial-industrial', 1, '2014-11-05 23:36:42', '2014-12-09 19:57:10', '2a6bfb92-b209-402f-9794-c3394b69ee89'),
-(9, 6, 'en_us', 'fireplace', 'fireplace', 1, '2014-11-05 23:36:48', '2014-12-09 19:57:35', 'e201f096-85ff-4c9e-b142-22bc292b541f'),
-(10, 7, 'en_us', 'barbecue', 'barbecue', 1, '2014-11-05 23:36:57', '2014-12-09 17:19:14', '6e994f40-a96b-4cde-b2d6-1c839f3ad817'),
+(9, 6, 'en_us', 'fireplace', 'fireplace', 1, '2014-11-05 23:36:48', '2014-12-14 01:48:17', 'e201f096-85ff-4c9e-b142-22bc292b541f'),
+(10, 7, 'en_us', 'barbecue', 'barbecue', 1, '2014-11-05 23:36:57', '2014-12-14 04:07:13', '6e994f40-a96b-4cde-b2d6-1c839f3ad817'),
 (23, 8, 'en_us', 'bbq-grills', NULL, 1, '2014-11-06 00:09:23', '2014-11-06 00:09:23', '43042b71-6679-40e8-94e1-3676435105d9'),
 (24, 9, 'en_us', 'commercial-heating-cooling', NULL, 1, '2014-11-06 00:09:23', '2014-11-06 00:09:23', '86d853e8-a074-4a8c-bef6-e2f53035ebfb'),
 (25, 10, 'en_us', 'fireplace-sales-service', NULL, 1, '2014-11-06 00:09:24', '2014-11-06 00:09:24', 'd189532b-3c19-4cb8-aaa6-1b61627aa4e4'),
@@ -422,19 +388,6 @@ INSERT INTO `craft_elements_i18n` (`id`, `elementId`, `locale`, `slug`, `uri`, `
 (27, 12, 'en_us', 'second-testimonial', 'testimonials/2014/second-testimonial', 1, '2014-11-06 00:13:57', '2014-11-30 02:08:58', '8d481754-8f50-4516-8d37-a99aad8973c8'),
 (28, 13, 'en_us', 'third-testimonial', 'testimonials/2014/third-testimonial', 1, '2014-11-06 00:14:11', '2014-11-30 02:08:52', '4a6a2a67-b650-4d51-ae4a-17d4155e3911'),
 (29, 14, 'en_us', 'main-img', NULL, 1, '2014-11-06 03:28:24', '2014-11-09 04:45:25', '126f4865-5b8b-4da9-a6b9-78768235b151'),
-(33, 17, 'en_us', 'logo1-2', NULL, 1, '2014-11-10 00:45:28', '2014-11-10 00:45:28', '92b94bb4-d247-4e03-8e17-433e54d523f9'),
-(34, 18, 'en_us', 'logo1-3', NULL, 1, '2014-11-10 00:45:28', '2014-11-10 00:45:28', 'a3391775-7d6a-459e-a8e6-6fc0448f945b'),
-(35, 19, 'en_us', 'logo1-4', NULL, 1, '2014-11-10 00:45:29', '2014-11-10 00:45:29', '9eab6676-78ae-4dbe-8aab-063f6bd4ed72'),
-(36, 20, 'en_us', 'logo1-5', NULL, 1, '2014-11-10 00:45:29', '2014-11-10 00:45:29', '5e323fa3-a131-48e6-a245-258ff5c091d6'),
-(37, 21, 'en_us', 'logo1-6', NULL, 1, '2014-11-10 00:45:29', '2014-11-10 00:45:29', '323ad841-b59c-43a8-b040-606c743dacde'),
-(38, 22, 'en_us', 'logo1-7', NULL, 1, '2014-11-10 00:45:30', '2014-11-10 00:45:30', '6192d152-8b3d-4efb-b7fd-3da3b51ce771'),
-(39, 23, 'en_us', 'logo1-8', NULL, 1, '2014-11-10 00:45:30', '2014-11-10 00:45:30', 'f9772894-64c3-412b-a0ff-4ee6f2e420ec'),
-(40, 24, 'en_us', 'logo1-9', NULL, 1, '2014-11-10 00:45:30', '2014-11-10 00:45:30', 'f05bb659-7f6c-41c3-ba4d-7d011740b131'),
-(41, 25, 'en_us', 'logo1-10', NULL, 1, '2014-11-10 00:45:30', '2014-11-10 00:45:30', '03c8fb0b-1415-46d7-9138-28d77bf69d1e'),
-(42, 26, 'en_us', 'logo1-11', NULL, 1, '2014-11-10 00:45:31', '2014-11-10 00:45:31', '3a15dcc3-24cb-465d-90ed-1e6dfc1de78c'),
-(43, 27, 'en_us', 'logo1-12', NULL, 1, '2014-11-10 00:45:31', '2014-11-10 00:45:31', 'ec252b44-c923-47e5-ba37-2b260278de41'),
-(44, 28, 'en_us', 'logo1', NULL, 1, '2014-11-10 00:47:50', '2014-11-10 00:47:50', '73914e13-0e63-42c5-bdc2-b8581ca149ae'),
-(45, 29, 'en_us', 'googlemap', NULL, 1, '2014-11-10 01:03:23', '2014-11-10 01:03:23', '11a1a6ea-154b-4883-b818-04fbbe2d2460'),
 (47, 31, 'en_us', 'michigan', NULL, 1, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '8ee8c4f0-5cd1-49f2-802d-51722b3efad6'),
 (48, 32, 'en_us', 'facebook-icon', NULL, 1, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '8b019fd7-493c-4331-95fa-8d1cbaed6739'),
 (49, 33, 'en_us', 'twitter-icon', NULL, 1, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '916dbce7-2096-42bc-b2db-349a1e99f3fe'),
@@ -444,7 +397,9 @@ INSERT INTO `craft_elements_i18n` (`id`, `elementId`, `locale`, `slug`, `uri`, `
 (53, 37, 'en_us', 'gray-circle', NULL, 1, '2014-12-09 20:37:42', '2014-12-09 20:37:42', '20ae34aa-a70e-4446-bee8-ca45c965b33b'),
 (54, 38, 'en_us', '', NULL, 1, '2014-12-09 21:57:41', '2014-12-09 22:00:28', '78b07be4-07c0-41ce-9c20-9ef5e2da3271'),
 (55, 39, 'en_us', '', NULL, 1, '2014-12-09 21:59:55', '2014-12-09 22:00:17', 'c23802a2-74b9-440e-8b63-126dddd2630e'),
-(56, 40, 'en_us', 'air-master-logo', NULL, 1, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '3f629289-9419-42d7-9d18-9e8a0ff8acab');
+(56, 40, 'en_us', 'air-master-logo', NULL, 1, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '3f629289-9419-42d7-9d18-9e8a0ff8acab'),
+(57, 41, 'en_us', 'about', 'about', 1, '2014-12-18 15:03:55', '2014-12-19 03:53:26', '6dec3d60-8008-4355-82cf-232361a816e1'),
+(58, 42, 'en_us', 'modal-x', NULL, 1, '2014-12-18 15:04:43', '2014-12-18 15:04:43', '8cc1238d-8fdb-41d6-92dd-b20d54a49c5e');
 
 -- --------------------------------------------------------
 
@@ -486,14 +441,15 @@ CREATE TABLE `craft_entries` (
 --
 
 INSERT INTO `craft_entries` (`id`, `sectionId`, `typeId`, `authorId`, `postDate`, `expiryDate`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(2, 1, 1, NULL, '2014-11-06 00:00:41', NULL, '2014-11-05 23:30:10', '2014-12-09 16:11:45', '7c132c77-848a-4410-9619-4bb00519068a'),
+(2, 1, 1, NULL, '2014-12-18 18:19:57', NULL, '2014-11-05 23:30:10', '2014-12-19 04:09:49', '7c132c77-848a-4410-9619-4bb00519068a'),
 (3, 2, 2, 1, '2014-11-05 23:30:00', NULL, '2014-11-05 23:30:10', '2014-11-30 02:09:05', 'cdace329-e0ae-404a-8a8c-d7b0bc230ad6'),
-(4, 3, 3, NULL, '2014-11-06 03:54:12', NULL, '2014-11-05 23:36:02', '2014-12-09 19:56:33', '1cd68310-ba4b-46b8-be19-fd52b7771a67'),
+(4, 3, 3, NULL, '2014-11-06 03:54:12', NULL, '2014-11-05 23:36:02', '2014-12-19 03:53:08', '1cd68310-ba4b-46b8-be19-fd52b7771a67'),
 (5, 4, 4, NULL, '2014-11-05 23:36:42', NULL, '2014-11-05 23:36:42', '2014-12-09 19:57:10', 'a25d7a27-3b34-42d6-8844-a8061586e4de'),
-(6, 5, 5, NULL, '2014-11-06 00:00:56', NULL, '2014-11-05 23:36:48', '2014-12-09 19:57:35', '4a758c8b-a2d4-4802-938e-293752d73458'),
-(7, 6, 6, NULL, '2014-11-06 00:03:36', NULL, '2014-11-05 23:36:57', '2014-12-09 17:19:14', '805ea47e-d9db-43bd-ac7c-77ad1305b28f'),
+(6, 5, 5, NULL, '2014-11-06 00:00:56', NULL, '2014-11-05 23:36:48', '2014-12-14 01:48:17', '4a758c8b-a2d4-4802-938e-293752d73458'),
+(7, 6, 6, NULL, '2014-11-06 00:03:36', NULL, '2014-11-05 23:36:57', '2014-12-14 04:07:13', '805ea47e-d9db-43bd-ac7c-77ad1305b28f'),
 (12, 2, 2, 1, '2014-11-06 00:13:00', NULL, '2014-11-06 00:13:57', '2014-11-30 02:08:58', 'fce89adb-4fe1-413d-9cf5-ff382597e0b8'),
-(13, 2, 2, 1, '2014-11-06 00:14:00', NULL, '2014-11-06 00:14:11', '2014-11-30 02:08:52', 'a3d82543-393b-429d-a443-99237d980ae5');
+(13, 2, 2, 1, '2014-11-06 00:14:00', NULL, '2014-11-06 00:14:11', '2014-11-30 02:08:52', 'a3d82543-393b-429d-a443-99237d980ae5'),
+(41, 7, 7, NULL, '2014-12-18 18:24:18', NULL, '2014-12-18 15:03:55', '2014-12-19 03:53:26', 'f68da5f8-acec-4e14-9ba2-8d5e474a94d4');
 
 -- --------------------------------------------------------
 
@@ -534,19 +490,20 @@ CREATE TABLE `craft_entrytypes` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_entrytypes`
 --
 
 INSERT INTO `craft_entrytypes` (`id`, `sectionId`, `fieldLayoutId`, `name`, `handle`, `hasTitleField`, `titleLabel`, `titleFormat`, `sortOrder`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, 1, 43, 'Homepage', 'homepage', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:30:10', '2014-12-09 22:00:49', '3e5eabda-7292-42bc-9ad4-66b24bb48575'),
+(1, 1, 53, 'Homepage', 'homepage', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:30:10', '2014-12-19 03:19:28', '3e5eabda-7292-42bc-9ad4-66b24bb48575'),
 (2, 2, 24, 'Testimonial', 'testimonial', 1, 'Title', NULL, NULL, '2014-11-05 23:30:10', '2014-11-06 03:22:22', '1bd3536f-a980-48ab-bfec-eadd397f577a'),
-(3, 3, 11, 'Residential', 'residential', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:36:02', '2014-11-05 23:43:45', '2f6a9396-a489-4662-bfe2-45feaced4327'),
+(3, 3, 54, 'Residential', 'residential', 1, 'Title', NULL, NULL, '2014-11-05 23:36:02', '2014-12-19 03:36:40', '2f6a9396-a489-4662-bfe2-45feaced4327'),
 (4, 4, 13, 'Commercial & Industrial', 'commercialIndustrial', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:36:42', '2014-11-05 23:44:10', '9151e595-fb05-493f-9c07-5756d9061931'),
 (5, 5, 12, 'Fireplace', 'fireplace', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:36:48', '2014-11-05 23:44:01', '723effef-dfd6-4f57-96a6-a6b1da18783d'),
-(6, 6, 30, 'Barbecue', 'barbecue', 1, 'Barbecue', NULL, NULL, '2014-11-05 23:36:57', '2014-11-10 02:01:14', '2d4d06f6-f481-41c4-9197-6306b4deab5d');
+(6, 6, 30, 'Barbecue', 'barbecue', 1, 'Barbecue', NULL, NULL, '2014-11-05 23:36:57', '2014-11-10 02:01:14', '2d4d06f6-f481-41c4-9197-6306b4deab5d'),
+(7, 7, 46, 'About Us', 'aboutUs', 1, 'Title', NULL, NULL, '2014-12-18 15:03:55', '2014-12-18 18:14:29', '959308c3-b9a4-4f40-afa0-999d63dc81d5');
 
 -- --------------------------------------------------------
 
@@ -566,7 +523,38 @@ CREATE TABLE `craft_entryversions` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `craft_entryversions`
+--
+
+INSERT INTO `craft_entryversions` (`id`, `entryId`, `sectionId`, `creatorId`, `locale`, `num`, `notes`, `data`, `dateCreated`, `dateUpdated`, `uid`) VALUES
+(1, 41, 7, 1, 'en_us', 1, '', '{"typeId":"7","authorId":null,"title":"About Us","slug":"aboutus","postDate":1418915035,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","12":"Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-18 18:14:57', '2014-12-18 18:14:57', '9bfe731d-945d-4ae0-b3e8-cd42e981dce4'),
+(2, 41, 7, 1, 'en_us', 2, '', '{"typeId":"7","authorId":null,"title":"About Us","slug":"aboutus","postDate":1418915035,"expiryDate":null,"enabled":1,"fields":{"11":"Not Our Company","12":"Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-18 18:16:58', '2014-12-18 18:16:58', '0fab4c04-fb5f-4890-b748-540cabdcf335'),
+(3, 2, 1, 1, 'en_us', 1, '', '{"typeId":"1","authorId":null,"title":"Homepage","slug":"homepage","postDate":1415232041,"expiryDate":null,"enabled":1,"fields":{"2":"<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;<\\/p>","10":["4","5","6","7"],"14":["34"],"1":"Homepage Heading","4":["36"],"8":"Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.","7":["3","13","12"]}}', '2014-12-18 18:17:26', '2014-12-18 18:17:26', 'a8557d0f-4f2c-4817-ae3a-827c7aec27c2'),
+(4, 41, 7, 1, 'en_us', 3, '', '{"typeId":"7","authorId":null,"title":"About Us","slug":"aboutus","postDate":1418915035,"expiryDate":null,"enabled":1,"fields":{"11":"Not Our Company","12":"Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-18 18:17:49', '2014-12-18 18:17:49', '0bf60a9c-c989-4a71-ae5b-dcef64328a84'),
+(5, 41, 7, 1, 'en_us', 4, '', '{"typeId":"7","authorId":null,"title":"About Us","slug":"aboutus","postDate":1418915035,"expiryDate":null,"enabled":1,"fields":{"11":"Not Our Company","12":"NOT is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-18 18:23:00', '2014-12-18 18:23:00', 'b6edc7d9-62d8-455e-a08d-b60264a38d0f'),
+(6, 2, 1, 1, 'en_us', 2, '', '{"typeId":"1","authorId":null,"title":"Homepage","slug":"homepage","postDate":1418926797,"expiryDate":null,"enabled":1,"fields":{"2":"<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;<\\/p>","10":["4","5","6","7"],"14":["34"],"1":"Homepage Heading","4":["36"],"8":"Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.","7":["3","13","12"]}}', '2014-12-18 18:23:38', '2014-12-18 18:23:38', '1f696d53-12f8-4066-a8ce-be6b9b04cbb1'),
+(7, 41, 7, 1, 'en_us', 5, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"Not Our Company","12":"NOT is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-18 18:24:27', '2014-12-18 18:24:27', '25fd91e3-e061-4cb1-84b4-de37d903408d'),
+(8, 2, 1, 1, 'en_us', 3, '', '{"typeId":"1","authorId":null,"title":"Homepage","slug":"homepage","postDate":1418926797,"expiryDate":null,"enabled":1,"fields":{"2":"<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;<\\/p>","10":["4","5","6","7"],"14":["34"],"1":"Homepage Heading","4":["36"],"20":["41"],"8":"Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.","7":["3","13","12"]}}', '2014-12-18 18:27:31', '2014-12-18 18:27:31', '7fc21442-9f40-49ad-a869-eb5bc5bb5d2f'),
+(9, 41, 7, 1, 'en_us', 6, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About this here Our Company","12":"Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-18 18:29:58', '2014-12-18 18:29:58', 'f8a977c8-5851-4ac2-be51-2b4fc47254c8'),
+(10, 41, 7, 1, 'en_us', 7, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About this here Our Company","12":"Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-18 18:30:44', '2014-12-18 18:30:44', '23504f28-010f-4742-9750-586d35345c43'),
+(11, 41, 7, 1, 'en_us', 8, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","12":"Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-18 18:31:01', '2014-12-18 18:31:01', 'ce14c383-c2b2-4fe5-abdd-9005bb03efbc'),
+(12, 2, 1, 1, 'en_us', 4, '', '{"typeId":"1","authorId":null,"title":"Homepage","slug":"homepage","postDate":1418926797,"expiryDate":null,"enabled":1,"fields":{"2":"<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;<\\/p>","14":["34"],"1":"Homepage Heading","4":["36"],"20":["41"],"8":"Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.","7":["3","13","12"]}}', '2014-12-19 03:06:50', '2014-12-19 03:06:50', '32547557-7a4d-40d5-8de8-540ce0737f8c'),
+(13, 41, 7, 1, 'en_us', 9, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"REAL About Our Company","12":"Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-19 03:06:57', '2014-12-19 03:06:57', 'dcf7a312-4a03-4439-b79a-1dd9ec12846f'),
+(14, 41, 7, 1, 'en_us', 10, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"REAL About Our Company","12":"@@# Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-19 03:09:29', '2014-12-19 03:09:29', '3645660e-094b-471b-af82-e34576141e83'),
+(15, 41, 7, 1, 'en_us', 11, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"REAL About Our Company","12":"@@# Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-19 03:12:25', '2014-12-19 03:12:25', '1224b8c4-7c0b-4143-9f50-739b4378ca88'),
+(16, 41, 7, 1, 'en_us', 12, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","12":"Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-19 03:16:45', '2014-12-19 03:16:45', 'aeddbe72-ee8a-4ddc-8050-be9ec69ecf9e'),
+(17, 2, 1, 1, 'en_us', 5, '', '{"typeId":"1","authorId":null,"title":"Homepage","slug":"homepage","postDate":1418926797,"expiryDate":null,"enabled":1,"fields":{"2":"<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;<\\/p>","1":"Homepage Heading","4":["36"],"8":"Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.","7":["3","13","12"]}}', '2014-12-19 03:19:13', '2014-12-19 03:19:13', '33684abe-30da-4c18-9ba9-2d26e4f8ab40'),
+(18, 2, 1, 1, 'en_us', 6, '', '{"typeId":"1","authorId":null,"title":"Homepage","slug":"homepage","postDate":1418926797,"expiryDate":null,"enabled":1,"fields":{"2":"<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;<\\/p>","4":["36"],"8":"Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.","7":["3","13","12"]}}', '2014-12-19 03:19:43', '2014-12-19 03:19:43', '41b82c09-0696-40da-ad9a-2a67d8e7eaed'),
+(19, 4, 3, 1, 'en_us', 1, '', '{"typeId":"3","authorId":null,"title":"Residential","slug":"residential","postDate":1415246052,"expiryDate":null,"enabled":1,"fields":{"2":"<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\">\\r\\n<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p>","5":["11"]}}', '2014-12-19 03:22:38', '2014-12-19 03:22:38', '87211a44-8642-4ae9-9bfc-2479a66be192'),
+(20, 4, 3, 1, 'en_us', 2, '', '{"typeId":"3","authorId":null,"title":"Residential","slug":"residential","postDate":1415246052,"expiryDate":null,"enabled":1,"fields":{"2":"<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\"><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p>","5":["11"]}}', '2014-12-19 03:36:49', '2014-12-19 03:36:49', '60748113-e663-4e1a-a59a-6ba3dbef4d03'),
+(21, 2, 1, 1, 'en_us', 7, '', '{"typeId":"1","authorId":null,"title":"Homepage","slug":"homepage","postDate":1418926797,"expiryDate":null,"enabled":1,"fields":{"2":"<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;<\\/p>","4":["36"],"8":"Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.","7":["3","13","12"]}}', '2014-12-19 03:41:14', '2014-12-19 03:41:14', '0f9fce0c-fba8-48d1-b53d-d5e05752373a'),
+(22, 4, 3, 1, 'en_us', 3, '', '{"typeId":"3","authorId":null,"title":"Residential","slug":"residential","postDate":1415246052,"expiryDate":null,"enabled":1,"fields":{"2":"<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\">\\r\\n<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p>","5":["11"]}}', '2014-12-19 03:53:08', '2014-12-19 03:53:08', '18c3c8b9-0992-43bb-bf12-ac4bf44cf8bc'),
+(23, 41, 7, 1, 'en_us', 13, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","12":"22 Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-19 03:53:14', '2014-12-19 03:53:14', '86238d0c-af7d-4e2e-9b61-0f49cc31cf74'),
+(24, 41, 7, 1, 'en_us', 14, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","12":"Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers."}}', '2014-12-19 03:53:26', '2014-12-19 03:53:26', '864f4c87-497c-48b2-a973-10fda18fca64'),
+(25, 2, 1, 1, 'en_us', 8, '', '{"typeId":"1","authorId":null,"title":"Homepage","slug":"homepage","postDate":1418926797,"expiryDate":null,"enabled":1,"fields":{"2":"<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;<\\/p>","4":["36"],"8":"Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.","7":["3","13","12"]}}', '2014-12-19 04:09:49', '2014-12-19 04:09:49', '01ddfa11-c3dd-4a65-a842-d97ab9f9ed66');
 
 -- --------------------------------------------------------
 
@@ -607,15 +595,13 @@ CREATE TABLE `craft_fieldlayoutfields` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=185 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_fieldlayoutfields`
 --
 
 INSERT INTO `craft_fieldlayoutfields` (`id`, `layoutId`, `tabId`, `fieldId`, `required`, `sortOrder`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(7, 11, 4, 5, 0, 1, '2014-11-05 23:43:45', '2014-11-05 23:43:45', 'e7883d36-46ef-4c8e-a217-9438ef9d7fec'),
-(8, 11, 4, 2, 0, 2, '2014-11-05 23:43:45', '2014-11-05 23:43:45', 'd8417d5a-404b-4344-bccb-632cc9fe94f3'),
 (9, 12, 5, 5, 0, 1, '2014-11-05 23:44:01', '2014-11-05 23:44:01', '50b58f0a-834f-47e8-9ac1-b725a9a0ee38'),
 (10, 12, 5, 2, 0, 2, '2014-11-05 23:44:01', '2014-11-05 23:44:01', 'fa1dd806-3d75-4331-9a90-5c13838c2f41'),
 (11, 13, 6, 5, 0, 1, '2014-11-05 23:44:10', '2014-11-05 23:44:10', '70f1b782-7643-4347-af29-fcf33455f89a'),
@@ -631,16 +617,14 @@ INSERT INTO `craft_fieldlayoutfields` (`id`, `layoutId`, `tabId`, `fieldId`, `re
 (114, 41, NULL, 19, 0, 2, '2014-12-09 21:59:44', '2014-12-09 21:59:44', '4cc6430e-7400-4664-bd0d-b1175ced0596'),
 (115, 42, NULL, 16, 0, 1, '2014-12-09 21:59:55', '2014-12-09 21:59:55', '8b269e8e-ea69-425f-89d6-fbb18191e1c0'),
 (116, 42, NULL, 19, 0, 2, '2014-12-09 21:59:55', '2014-12-09 21:59:55', 'd6e9eb9c-3053-4147-a5f0-e8190750112c'),
-(117, 43, 24, 1, 1, 1, '2014-12-09 22:00:49', '2014-12-09 22:00:49', '85182b18-3b5d-4402-a6fc-c4690c438696'),
-(119, 43, 24, 4, 0, 3, '2014-12-09 22:00:49', '2014-12-09 22:00:49', '41ea2a68-d797-4609-a2e9-9ce8bb0a69ef'),
-(120, 43, 24, 2, 1, 4, '2014-12-09 22:00:49', '2014-12-09 22:00:49', 'bef4f49b-0426-4ac4-b313-aa8297bb9523'),
-(121, 43, 24, 8, 0, 5, '2014-12-09 22:00:49', '2014-12-09 22:00:49', '7373c816-f5d9-48ed-93b4-e6cf9cca0c7a'),
-(122, 43, 24, 7, 0, 6, '2014-12-09 22:00:49', '2014-12-09 22:00:49', 'a7345bf1-77ec-4d98-83f6-0c15087315c1'),
-(123, 43, 24, 10, 0, 7, '2014-12-09 22:00:49', '2014-12-09 22:00:49', 'a076bf9c-e888-4429-80de-9688c57bc31b'),
-(124, 43, 24, 11, 0, 8, '2014-12-09 22:00:49', '2014-12-09 22:00:49', '62c84c58-8e38-4c0c-b10f-f5d011aac13a'),
-(125, 43, 24, 12, 0, 9, '2014-12-09 22:00:49', '2014-12-09 22:00:49', '9bf256e8-b2bd-49b4-ac42-719c396de16d'),
-(126, 43, 24, 13, 0, 10, '2014-12-09 22:00:49', '2014-12-09 22:00:49', '1b33604a-5b91-4af6-b12f-55212228a23b'),
-(127, 43, 24, 14, 0, 11, '2014-12-09 22:00:49', '2014-12-09 22:00:49', '3c0cfa4d-b3b3-4622-bac7-a2853fd8e1a9');
+(137, 46, 26, 11, 0, 1, '2014-12-18 18:14:29', '2014-12-18 18:14:29', '7f63b46b-ccf4-4175-a4a1-c3b244bbf3b5'),
+(138, 46, 26, 12, 0, 2, '2014-12-18 18:14:29', '2014-12-18 18:14:29', '964ba85e-ff10-4bd5-9287-9411920e61c8'),
+(179, 53, 33, 4, 0, 1, '2014-12-19 03:19:28', '2014-12-19 03:19:28', 'a8fe1a91-3d70-48aa-859e-af26545c1658'),
+(180, 53, 33, 2, 1, 2, '2014-12-19 03:19:28', '2014-12-19 03:19:28', '366cbf1b-f1cf-48c5-abe5-b8c9af5e2a0d'),
+(181, 53, 33, 8, 0, 3, '2014-12-19 03:19:28', '2014-12-19 03:19:28', 'e32cf71b-3c84-428d-b72e-36d87e429ca6'),
+(182, 53, 33, 7, 0, 4, '2014-12-19 03:19:28', '2014-12-19 03:19:28', '1ae2b5ce-269a-4a50-85bd-af06e0067f2f'),
+(183, 54, 34, 5, 0, 1, '2014-12-19 03:36:40', '2014-12-19 03:36:40', 'c3e12ff1-a3ec-41a5-b534-b4f772590b89'),
+(184, 54, 34, 2, 0, 2, '2014-12-19 03:36:40', '2014-12-19 03:36:40', '920f5444-d18d-4607-9e11-9f456fae3ef0');
 
 -- --------------------------------------------------------
 
@@ -654,7 +638,7 @@ CREATE TABLE `craft_fieldlayouts` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_fieldlayouts`
@@ -662,7 +646,6 @@ CREATE TABLE `craft_fieldlayouts` (
 
 INSERT INTO `craft_fieldlayouts` (`id`, `type`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 'Tag', '2014-11-05 23:30:09', '2014-11-05 23:30:09', '7a378f1e-3e97-4d3b-94f1-38dc2c55a853'),
-(11, 'Entry', '2014-11-05 23:43:45', '2014-11-05 23:43:45', '016ff07a-b3de-47d9-a178-829146d8d571'),
 (12, 'Entry', '2014-11-05 23:44:01', '2014-11-05 23:44:01', 'dfb8aefa-41b8-4671-a9b6-258b1e30d7e9'),
 (13, 'Entry', '2014-11-05 23:44:10', '2014-11-05 23:44:10', '5e3d86bd-84d4-4869-a480-370c5ebdf15a'),
 (24, 'Entry', '2014-11-06 03:22:22', '2014-11-06 03:22:22', '24fd1ce6-d08f-4fd4-8f50-c2ff22c02905'),
@@ -671,7 +654,9 @@ INSERT INTO `craft_fieldlayouts` (`id`, `type`, `dateCreated`, `dateUpdated`, `u
 (38, 'GlobalSet', '2014-12-09 15:38:37', '2014-12-09 15:38:37', '244a1caf-d14e-4d7a-94d5-c7909ab07e4c'),
 (41, 'GlobalSet', '2014-12-09 21:59:44', '2014-12-09 21:59:44', '303e3cd2-b53d-4040-965d-eca5c6925e25'),
 (42, 'GlobalSet', '2014-12-09 21:59:55', '2014-12-09 21:59:55', 'ac2df093-50c2-4516-b62c-8347771e6701'),
-(43, 'Entry', '2014-12-09 22:00:49', '2014-12-09 22:00:49', '7f259078-78bc-4442-83a7-67a32d05256e');
+(46, 'Entry', '2014-12-18 18:14:29', '2014-12-18 18:14:29', '6d3ac5a2-867e-42b0-a365-289e2b387413'),
+(53, 'Entry', '2014-12-19 03:19:28', '2014-12-19 03:19:28', '172dc346-975b-43e0-80af-0bd5d7d2fecc'),
+(54, 'Entry', '2014-12-19 03:36:40', '2014-12-19 03:36:40', 'e0005414-3167-4b31-b492-4fcf990489d6');
 
 -- --------------------------------------------------------
 
@@ -687,19 +672,20 @@ CREATE TABLE `craft_fieldlayouttabs` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_fieldlayouttabs`
 --
 
 INSERT INTO `craft_fieldlayouttabs` (`id`, `layoutId`, `name`, `sortOrder`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(4, 11, 'Tab 1', 1, '2014-11-05 23:43:45', '2014-11-05 23:43:45', '88d83cc3-901c-47ea-9d72-869e784d0e3c'),
 (5, 12, 'Tab 1', 1, '2014-11-05 23:44:01', '2014-11-05 23:44:01', '8fa2bb22-863a-4ad6-ba23-d06b3ced3dca'),
 (6, 13, 'Tab 1', 1, '2014-11-05 23:44:10', '2014-11-05 23:44:10', 'd9a0f231-5170-439c-bb82-df4b33402db3'),
 (15, 24, 'Content', 1, '2014-11-06 03:22:22', '2014-11-06 03:22:22', '5956547f-3691-4b95-9f40-743049cab4bd'),
 (21, 30, 'Tab 1', 1, '2014-11-10 02:01:14', '2014-11-10 02:01:14', '7e4004f5-335b-4e2c-9442-14991d9ac571'),
-(24, 43, 'Content', 1, '2014-12-09 22:00:49', '2014-12-09 22:00:49', '2538ee25-1844-4a2a-bba9-13ab6ad794fa');
+(26, 46, 'Tab 1', 1, '2014-12-18 18:14:29', '2014-12-18 18:14:29', '6282d5f9-48a7-4bb2-b274-d6011f7dcefd'),
+(33, 53, 'Content', 1, '2014-12-19 03:19:28', '2014-12-19 03:19:28', '661b9a83-4a18-459f-821a-1cdffd24183c'),
+(34, 54, 'Tab 1', 1, '2014-12-19 03:36:40', '2014-12-19 03:36:40', 'aa4c636b-46f2-49b1-83f5-19378292e776');
 
 -- --------------------------------------------------------
 
@@ -720,7 +706,7 @@ CREATE TABLE `craft_fields` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_fields`
@@ -736,15 +722,14 @@ INSERT INTO `craft_fields` (`id`, `groupId`, `name`, `handle`, `context`, `instr
 (7, 2, 'Testimonials', 'testimonials', 'global', 'testimonial that will show up first on homepage.', 0, 'Entries', '{"sources":["section:2"],"limit":""}', '2014-11-06 02:52:56', '2014-11-06 03:14:46', 'd6609290-0556-4deb-96b2-368ff8895786'),
 (8, 2, 'Location', 'location', 'global', '"serving customers in this area" text', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-11-06 03:00:08', '2014-11-06 03:00:08', 'b2f2b5d3-81d7-442e-aab5-d04a1971d7a1'),
 (9, 3, 'Quote', 'quote', 'global', 'customer''s testimonial quote here', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-11-06 03:21:22', '2014-11-06 03:21:22', '07d20a9c-2f58-46fd-b90e-c2f2eec16057'),
-(10, 2, 'Business Categories', 'businessCategories', 'global', 'field to select the "single" posts for the different business categories.', 0, 'Entries', '{"sources":["singles"],"limit":""}', '2014-11-06 03:45:21', '2014-11-10 02:03:27', '5161373f-4d68-4fc8-9aaa-ac14b2061440'),
 (11, 2, 'About Us', 'aboutUs', 'global', 'the title for the "About Us" portion of the homepage', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-11-06 05:04:52', '2014-11-06 05:04:52', '6edc64a0-9b96-477f-8946-35531a184eff'),
-(12, 2, 'About Us Description', 'aboutUsDescription', 'global', 'short description for the "About Us" portion of homepage', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-11-06 05:05:32', '2014-11-06 05:05:32', 'bd5cdf4c-4956-441c-ac48-1cf0819393ed'),
-(13, 2, 'Logo Images', 'logoImages', 'global', 'drop images for "Our Partners" logo''s here', 0, 'Assets', '{"useSingleFolder":"1","sources":"*","defaultUploadLocationSource":"1","defaultUploadLocationSubpath":"","singleUploadLocationSource":"1","singleUploadLocationSubpath":"","restrictFiles":"","limit":""}', '2014-11-10 00:46:23', '2014-11-10 00:46:23', '820cd38f-c63b-47da-9111-eefb7620ee2a'),
+(12, 2, 'About Us Description', 'aboutUsDescription', 'global', 'short description for the "About Us" portion of homepage', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"1","initialRows":"8"}', '2014-11-06 05:05:32', '2014-12-18 18:30:30', 'bd5cdf4c-4956-441c-ac48-1cf0819393ed'),
 (14, 2, 'Google Map', 'googleMap', 'global', 'drop image of google map here', 0, 'Assets', '{"useSingleFolder":"1","sources":"*","defaultUploadLocationSource":"1","defaultUploadLocationSubpath":"","singleUploadLocationSource":"1","singleUploadLocationSubpath":"","restrictFiles":"","limit":""}', '2014-11-10 01:03:49', '2014-11-10 01:03:49', 'dbacbdba-598e-478f-a2fb-489ffa16a82f'),
 (16, 1, 'Social Icons', 'socialIcons', 'global', 'drop social icon images here', 0, 'Assets', '{"useSingleFolder":"1","sources":"*","defaultUploadLocationSource":"1","defaultUploadLocationSubpath":"","singleUploadLocationSource":"1","singleUploadLocationSubpath":"","restrictFiles":"","limit":""}', '2014-12-08 22:10:02', '2014-12-09 21:59:01', '53b2a2d6-fbc3-4d82-bd42-8af9ef8ef11f'),
 (17, 1, 'email address', 'emailAddress', 'global', 'input contact email address here', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-12-09 15:37:57', '2014-12-09 15:37:57', '29924156-0c3d-47ae-b164-3e3ae1ba18b0'),
 (18, 1, 'Phone Number', 'phoneNumber', 'global', 'input contact phone number here', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-12-09 15:38:18', '2014-12-09 15:38:18', '48ac7214-4646-47ad-8b7e-fd088df27b85'),
-(19, 1, 'Social Link', 'socialLink', 'global', 'enter web address for social newtork link', 0, 'PlainText', '{"placeholder":"http:\\/\\/example.com\\/user","maxLength":"","multiline":"","initialRows":"4"}', '2014-12-09 21:58:44', '2014-12-09 21:58:44', 'bc9d8dfe-6275-4100-ba63-04f99a15af98');
+(19, 1, 'Social Link', 'socialLink', 'global', 'enter web address for social newtork link', 0, 'PlainText', '{"placeholder":"http:\\/\\/example.com\\/user","maxLength":"","multiline":"","initialRows":"4"}', '2014-12-09 21:58:44', '2014-12-09 21:58:44', 'bc9d8dfe-6275-4100-ba63-04f99a15af98'),
+(20, 2, 'Homepage PlugIn', 'homepagePlugin', 'global', 'singles page that will be plugged into homepage', 0, 'Entries', '{"sources":["singles"],"limit":""}', '2014-12-18 18:26:55', '2014-12-18 18:26:55', '2fd1f6af-378a-4f73-b7fc-3fc752c1923a');
 
 -- --------------------------------------------------------
 
@@ -800,7 +785,7 @@ CREATE TABLE `craft_info` (
 --
 
 INSERT INTO `craft_info` (`id`, `version`, `build`, `schemaVersion`, `releaseDate`, `edition`, `siteName`, `siteUrl`, `timezone`, `on`, `maintenance`, `track`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, '2.2', 2581, '2.2.0', '2014-09-04 21:04:11', 0, 'Air Master', 'http://airmaster.dev', 'UTC', 1, 0, 'stable', '2014-11-05 23:30:03', '2014-11-13 06:35:40', '23571d6b-6d2e-4faf-a91f-95aec275273a');
+(1, '2.2', 2581, '2.2.0', '2014-09-04 21:04:11', 1, 'Air Master', 'http://airmaster.dev', 'UTC', 1, 0, 'stable', '2014-11-05 23:30:03', '2014-12-18 15:02:37', '23571d6b-6d2e-4faf-a91f-95aec275273a');
 
 -- --------------------------------------------------------
 
@@ -938,38 +923,27 @@ CREATE TABLE `craft_relations` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=452 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=526 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_relations`
 --
 
 INSERT INTO `craft_relations` (`id`, `fieldId`, `sourceId`, `sourceLocale`, `targetId`, `sortOrder`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(420, 4, 2, NULL, 36, 1, '2014-12-09 16:11:45', '2014-12-09 16:11:45', 'b91bf588-939a-4fca-bf9f-06b77ea2923e'),
-(421, 7, 2, NULL, 3, 1, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '1c795379-4da4-41f3-bd9d-e71e1c87b92c'),
-(422, 7, 2, NULL, 13, 2, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '9f984c56-dc46-4aa0-af69-9ba5abf55e2a'),
-(423, 7, 2, NULL, 12, 3, '2014-12-09 16:11:45', '2014-12-09 16:11:45', 'd8f15bd6-e053-40cf-a517-42315891ffb5'),
-(424, 10, 2, NULL, 4, 1, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '52c7baa8-09ac-4a62-8321-4d2aaba77bab'),
-(425, 10, 2, NULL, 5, 2, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '46f700a1-2d42-4a2f-a213-83c5dac0dbcc'),
-(426, 10, 2, NULL, 6, 3, '2014-12-09 16:11:45', '2014-12-09 16:11:45', 'fdb96dff-36cf-4365-be97-c384d808de74'),
-(427, 10, 2, NULL, 7, 4, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '2b0dcf70-de58-4d02-a824-9569c15c7b44'),
-(428, 13, 2, NULL, 17, 1, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '4f272379-29ed-4797-9618-7ef4a04a9aab'),
-(429, 13, 2, NULL, 18, 2, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '30007667-b33c-4248-830c-547228e0640d'),
-(430, 13, 2, NULL, 19, 3, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '14a5bbdb-506d-4677-8302-c2c2c0d1daff'),
-(431, 13, 2, NULL, 20, 4, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '7ec585ea-ae5a-4bd0-abc9-2a7fa1955a00'),
-(432, 13, 2, NULL, 21, 5, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '59490b97-3b9d-4d14-a9d0-6e9e98b5fccb'),
-(433, 13, 2, NULL, 22, 6, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '1bffecb8-a3bb-4141-9998-c467b4837ff1'),
-(434, 13, 2, NULL, 23, 7, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '210daf0b-ce2c-495e-832f-c8b6a12255c2'),
-(435, 13, 2, NULL, 28, 8, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '23f66b54-afb5-4424-9f90-5963bb92424d'),
 (436, 16, 2, NULL, 32, 1, '2014-12-09 16:11:45', '2014-12-09 16:11:45', 'f21cfe88-e579-4675-b8d6-79cc59ca7ea6'),
 (437, 16, 2, NULL, 33, 2, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '1bbe607e-3136-4805-9c4f-402108cfb9dc'),
-(438, 14, 2, NULL, 34, 1, '2014-12-09 16:11:45', '2014-12-09 16:11:45', '5ec091dc-d1a6-4ea4-8275-18e862d4f93c'),
-(446, 5, 7, NULL, 8, 1, '2014-12-09 17:19:14', '2014-12-09 17:19:14', '83630ec4-03c9-490e-81eb-eecab7f3e124'),
-(447, 5, 4, NULL, 11, 1, '2014-12-09 19:56:33', '2014-12-09 19:56:33', '73798b36-9736-418a-8f7d-9b6dfb4d0d19'),
 (448, 5, 5, NULL, 9, 1, '2014-12-09 19:57:10', '2014-12-09 19:57:10', '9c8a17b6-01dc-4f3d-baed-aa55e61a1eb6'),
-(449, 5, 6, NULL, 10, 1, '2014-12-09 19:57:35', '2014-12-09 19:57:35', '1806e9ed-1a2c-4012-8b81-759abf88af0c'),
 (450, 16, 39, NULL, 32, 1, '2014-12-09 22:00:17', '2014-12-09 22:00:17', '6e640265-a7f3-49ab-8186-209b2da73529'),
-(451, 16, 38, NULL, 33, 1, '2014-12-09 22:00:28', '2014-12-09 22:00:28', '85bfea95-daa7-4bb1-b719-62517045e7a9');
+(451, 16, 38, NULL, 33, 1, '2014-12-09 22:00:28', '2014-12-09 22:00:28', '85bfea95-daa7-4bb1-b719-62517045e7a9'),
+(470, 5, 6, NULL, 10, 1, '2014-12-14 01:48:17', '2014-12-14 01:48:17', '4fa15d9d-53fe-4051-9cd8-bb07b0970da3'),
+(472, 5, 7, NULL, 8, 1, '2014-12-14 04:07:13', '2014-12-14 04:07:13', '66337680-167d-4eae-97ab-e9fb4948eede'),
+(505, 20, 2, NULL, 41, 1, '2014-12-19 03:06:50', '2014-12-19 03:06:50', 'aed31415-bbd3-4351-b3dc-c2843037fc35'),
+(506, 14, 2, NULL, 34, 1, '2014-12-19 03:06:50', '2014-12-19 03:06:50', 'de1110d3-4ca5-402e-8eda-c69c8872cf2d'),
+(521, 5, 4, NULL, 11, 1, '2014-12-19 03:53:08', '2014-12-19 03:53:08', '78d57b2b-f83d-4b5f-abbb-ede24c78cc61'),
+(522, 4, 2, NULL, 36, 1, '2014-12-19 04:09:49', '2014-12-19 04:09:49', '9f4b2533-a948-4c6b-8641-87e7fd69611b'),
+(523, 7, 2, NULL, 3, 1, '2014-12-19 04:09:49', '2014-12-19 04:09:49', '2f16e439-1e66-46a0-abd4-3078b7256a94'),
+(524, 7, 2, NULL, 13, 2, '2014-12-19 04:09:49', '2014-12-19 04:09:49', '46500317-a29a-4875-a314-3d4bd67b1b4d'),
+(525, 7, 2, NULL, 12, 3, '2014-12-19 04:09:49', '2014-12-19 04:09:49', 'a9266b41-59d9-4cf1-af97-1b697ef259a4');
 
 -- --------------------------------------------------------
 
@@ -1018,7 +992,7 @@ INSERT INTO `craft_searchindex` (`elementId`, `attribute`, `fieldId`, `locale`, 
 (2, 'field', 2, 'en_us', ' the heating and air conditioning service repair solution for the southeast michigan community '),
 (7, 'title', 0, 'en_us', ' barbecue '),
 (6, 'field', 5, 'en_us', ' fireplace sales service '),
-(6, 'field', 2, 'en_us', ' iwith new technology we can install a fireplace in any room for surprisingly cheap you could have a new fireplace installed in 3 7 days do you need your fireplace inspected maybe you want to replace your old wood burning fireplace with a conversion to gas perhaps with an automatic remote starter perhaps you re looking for a chic indoor electric fireplace need an estimate on getting something repaired we carry or can order you any fireplace replacement part maybe you want to buy some fireplace accessories or redesign the exterior we do verything from plug and go fireplaces to a full custom design and install do you need your fireplace inspected maybe you want to replace your old wood burning fireplace with a conversion to gas perhaps with an automatic remote starter perhaps you re looking for a chic indoor electric fireplace need an estimate on getting something repaired we carry or can order you any fireplace replacement part maybe you want to buy some fireplace accessories or redesign the exterior we do verything from plug and go fireplaces to a full custom design and install '),
+(6, 'field', 2, 'en_us', ' iwith new technology we can install a fireplace in any room for surprisingly cheap you could have a new fireplace installed in 3 7 days do you need your fireplace inspected maybe you want to replace your old wood burning fireplace with a conversion to gas perhaps with an automatic remote starter perhaps you re looking for a chic indoor electric fireplace need an estimate on getting something repaired do you need your fireplace inspected maybe you want to replace your old wood burning fireplace with a conversion to gas perhaps with an automatic remote starter perhaps you re looking for a chic indoor electric fireplace need an estimate on getting something repaired we carry or can order you any fireplace replacement part maybe you want to buy some fireplace accessories or redesign the exterior we do verything from plug and go fireplaces to a full custom design and install '),
 (4, 'field', 5, 'en_us', ' residential heading cooling '),
 (4, 'field', 2, 'en_us', ' is it time for a new furnace maybe you just need a quote on the price for heat repair we provide every thing you could need for home heating air conditioning and hvac care including 24 hour emergency service is it time for a new furnace maybe you just need a quote on the price for heat repair we provide every thing you could need for home heating air conditioning and hvac care including 24 hour emergency service is it time for a new furnace maybe you just need a quote on the price for heat repair we provide every thing you could need for home heating air conditioning and hvac care including 24 hour emergency service '),
 (37, 'kind', 0, 'en_us', ' image '),
@@ -1224,6 +1198,10 @@ INSERT INTO `craft_searchindex` (`elementId`, `attribute`, `fieldId`, `locale`, 
 (36, 'kind', 0, 'en_us', ' image '),
 (36, 'slug', 0, 'en_us', ''),
 (36, 'title', 0, 'en_us', ' main stock '),
+(42, 'field', 5, 'en_us', ''),
+(42, 'filename', 0, 'en_us', ' modal x png '),
+(42, 'extension', 0, 'en_us', ' png '),
+(42, 'kind', 0, 'en_us', ' image '),
 (37, 'field', 5, 'en_us', ''),
 (37, 'filename', 0, 'en_us', ' gray circle jpg '),
 (37, 'extension', 0, 'en_us', ' jpg '),
@@ -1238,7 +1216,14 @@ INSERT INTO `craft_searchindex` (`elementId`, `attribute`, `fieldId`, `locale`, 
 (40, 'extension', 0, 'en_us', ' png '),
 (40, 'kind', 0, 'en_us', ' image '),
 (40, 'slug', 0, 'en_us', ''),
-(40, 'title', 0, 'en_us', ' air master logo ');
+(40, 'title', 0, 'en_us', ' air master logo '),
+(42, 'slug', 0, 'en_us', ''),
+(42, 'title', 0, 'en_us', ' modal x '),
+(41, 'field', 11, 'en_us', ' about our company '),
+(41, 'field', 12, 'en_us', ' air master is a family owned full service heating cooling and home comfort company we have been providing outstanding residential and commercial service to our southeast michigan community since 1983 30 glorious years we love heating and cooling and we love our customers '),
+(41, 'slug', 0, 'en_us', ' about '),
+(41, 'title', 0, 'en_us', ' about '),
+(2, 'field', 20, 'en_us', ' about ');
 
 -- --------------------------------------------------------
 
@@ -1258,19 +1243,20 @@ CREATE TABLE `craft_sections` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_sections`
 --
 
 INSERT INTO `craft_sections` (`id`, `structureId`, `name`, `handle`, `type`, `hasUrls`, `template`, `enableVersioning`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, NULL, 'Homepage', 'homepage', 'single', 1, 'index', 1, '2014-11-05 23:30:10', '2014-11-06 00:00:41', 'cc591c72-9d9d-4b63-9541-78f08d38301a'),
+(1, NULL, 'Homepage', 'homepage', 'single', 1, 'index', 1, '2014-11-05 23:30:10', '2014-12-18 18:19:57', 'cc591c72-9d9d-4b63-9541-78f08d38301a'),
 (2, NULL, 'Testimonials', 'testimonials', 'channel', 1, 'testimonials/_entry', 1, '2014-11-05 23:30:10', '2014-11-06 00:12:52', '7906de9f-31b9-4968-91c8-ce9158c7154f'),
 (3, NULL, 'Residential', 'residential', 'single', 1, 'residential', 1, '2014-11-05 23:36:02', '2014-11-06 03:54:12', '42da9c21-b252-4f78-818d-890b20cc931c'),
 (4, NULL, 'Commercial & Industrial', 'commercialIndustrial', 'single', 1, 'commercial-industrial', 1, '2014-11-05 23:36:42', '2014-11-05 23:36:42', '9ffc915d-b14c-4a34-8177-c466ef5b5076'),
 (5, NULL, 'Fireplace', 'fireplace', 'single', 1, 'fireplace', 1, '2014-11-05 23:36:48', '2014-11-06 00:00:56', '1c090c96-94f6-4087-8930-8b82f164d3c7'),
-(6, NULL, 'Barbecue', 'barbecue', 'single', 1, 'barbecue', 1, '2014-11-05 23:36:57', '2014-11-06 00:03:36', 'df986765-c9fb-4b5d-8e8e-22c628846682');
+(6, NULL, 'Barbecue', 'barbecue', 'single', 1, 'barbecue', 1, '2014-11-05 23:36:57', '2014-11-06 00:03:36', 'df986765-c9fb-4b5d-8e8e-22c628846682'),
+(7, NULL, 'About', 'about', 'single', 1, 'about', 1, '2014-12-18 15:03:55', '2014-12-18 18:24:18', '4bed18ef-287d-4b96-a055-b32e377dd983');
 
 -- --------------------------------------------------------
 
@@ -1288,7 +1274,7 @@ CREATE TABLE `craft_sections_i18n` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_sections_i18n`
@@ -1300,7 +1286,8 @@ INSERT INTO `craft_sections_i18n` (`id`, `sectionId`, `locale`, `enabledByDefaul
 (3, 3, 'en_us', 0, 'residential', NULL, '2014-11-05 23:36:02', '2014-11-05 23:36:02', '9da8896f-efa6-47f5-a0fb-430b36c0e27a'),
 (4, 4, 'en_us', 0, 'commercial-industrial', NULL, '2014-11-05 23:36:42', '2014-11-05 23:36:42', 'c481c921-e522-4895-b287-7fc4a3d4c99e'),
 (5, 5, 'en_us', 0, 'fireplace', NULL, '2014-11-05 23:36:48', '2014-11-05 23:36:48', 'a21f287a-1550-4859-a803-9a2cdc3ec913'),
-(6, 6, 'en_us', 0, 'barbecue', NULL, '2014-11-05 23:36:57', '2014-11-05 23:36:57', 'e7649097-6179-4d7f-8efc-42f2d8dbaad1');
+(6, 6, 'en_us', 0, 'barbecue', NULL, '2014-11-05 23:36:57', '2014-11-05 23:36:57', 'e7649097-6179-4d7f-8efc-42f2d8dbaad1'),
+(7, 7, 'en_us', 0, 'about', NULL, '2014-12-18 15:03:55', '2014-12-18 18:24:18', '24c8139f-2905-4dfb-a770-caf4ee862cab');
 
 -- --------------------------------------------------------
 
@@ -1315,7 +1302,7 @@ CREATE TABLE `craft_sessions` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_sessions`
@@ -1335,7 +1322,11 @@ INSERT INTO `craft_sessions` (`id`, `userId`, `token`, `dateCreated`, `dateUpdat
 (12, 1, '0105ca902fba58c4f90702af1efb5bbdbaa4a7b1czozNjoiMmFkNjYzMDgtODNmYy00YWE4LTg4NzItNjg2N2YzYWY3YjUyIjs=', '2014-12-08 20:33:53', '2014-12-08 20:33:53', '7f830bed-2a6d-4130-af8f-70ea1cba5d40'),
 (13, 1, 'b48bd3dcd49a179a55e8cc6286e9b75e8b95da40czozNjoiYWE2N2QzYmMtNWEyNS00Y2VlLTg3MjEtZWFiMDQ3YmFjYTc4Ijs=', '2014-12-09 15:35:59', '2014-12-09 15:35:59', 'a5ff9106-296b-453c-8a63-533d65566f74'),
 (14, 1, '6893e4282bf8252d3b89310040cc6b0c55121de4czozNjoiNzRmMzJkMzQtNzg0NS00MDUwLTk3NjYtYjZmNjExZTdhMTdhIjs=', '2014-12-09 19:55:34', '2014-12-09 23:24:55', 'd3075ddf-ec30-4959-a810-cc4d17812ac5'),
-(15, 1, '2c62a72c2bc6d80f98fc515cd80f670c87d3833aczozNjoiZDY3M2M3ZmEtMGMyMy00ZTg0LWFhZWQtYmE2ZjcwYTM5ODQyIjs=', '2014-12-12 01:02:09', '2014-12-12 01:02:09', 'e0fb1926-ed49-40bb-9f59-4d62cfb863a0');
+(15, 1, '2c62a72c2bc6d80f98fc515cd80f670c87d3833aczozNjoiZDY3M2M3ZmEtMGMyMy00ZTg0LWFhZWQtYmE2ZjcwYTM5ODQyIjs=', '2014-12-12 01:02:09', '2014-12-12 01:02:09', 'e0fb1926-ed49-40bb-9f59-4d62cfb863a0'),
+(16, 1, 'f7a4e431cbecaae8c7293160b054f7889518bfc2czozNjoiOWFhNmQ2OWUtMDFiNy00ZjhkLWE3Y2QtMzE4NDcyNGYyM2VkIjs=', '2014-12-12 02:20:40', '2014-12-12 05:07:52', 'ef5fa047-48aa-4e68-be87-6c0b023b8848'),
+(18, 1, 'bb94e99ec701a61e06a5c667ce0ef779d85fac2aczozNjoiZmE0ZDZhZWQtYjc2ZC00ZjgwLWI1MGEtYTUwZmQ4OGFmYmJkIjs=', '2014-12-18 15:02:11', '2014-12-18 15:02:11', '7c5c7f20-f8ec-4e2d-9122-d1508e305242'),
+(19, 1, '57aa97277df62bd0ab43dccd5372021a84393ca1czozNjoiZGExMWY2MmItMDBkOC00NzY2LThlNzUtMDBjNDZhMDlmNjdmIjs=', '2014-12-18 18:10:11', '2014-12-18 18:10:11', '293213a8-542e-4525-b61d-13b2a9809a7e'),
+(20, 1, 'd7db47e2236ffc0fd7ed34276d153e0de1094337czozNjoiY2U2OTVkNjQtYjM2YS00OWIwLWFhN2EtODA3ODU2Mzc0MzdkIjs=', '2014-12-19 03:03:23', '2014-12-19 03:03:23', '8a35a3a6-581f-4fd7-81b4-43eb9d774f4d');
 
 -- --------------------------------------------------------
 
@@ -1468,7 +1459,7 @@ CREATE TABLE `craft_tasks` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -1640,7 +1631,7 @@ CREATE TABLE `craft_users` (
 --
 
 INSERT INTO `craft_users` (`id`, `username`, `photo`, `firstName`, `lastName`, `email`, `password`, `preferredLocale`, `admin`, `client`, `status`, `lastLoginDate`, `lastLoginAttemptIPAddress`, `invalidLoginWindowStart`, `invalidLoginCount`, `lastInvalidLoginDate`, `lockoutDate`, `verificationCode`, `verificationCodeIssuedDate`, `unverifiedEmail`, `passwordResetRequired`, `lastPasswordChangeDate`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, 'admin', NULL, NULL, NULL, 'mjfeeney3@gmail.com', '$2a$13$D/w3wnYH84y.RsVW679gru6o/29BW5ZnW339.ujrmHUp4U7Ih/5Qq', NULL, 1, 0, 'active', '2014-12-12 01:02:09', '127.0.0.1', NULL, NULL, '2014-11-13 22:16:39', NULL, NULL, NULL, NULL, 0, '2014-11-05 23:30:07', '2014-11-05 23:30:07', '2014-12-12 01:02:09', '77edf27a-ec25-46e1-8d84-845ad0d15a88');
+(1, 'admin', NULL, NULL, NULL, 'mjfeeney3@gmail.com', '$2a$13$D/w3wnYH84y.RsVW679gru6o/29BW5ZnW339.ujrmHUp4U7Ih/5Qq', NULL, 1, 0, 'active', '2014-12-19 03:03:23', '127.0.0.1', NULL, NULL, '2014-11-13 22:16:39', NULL, NULL, NULL, NULL, 0, '2014-11-05 23:30:07', '2014-11-05 23:30:07', '2014-12-19 03:03:23', '77edf27a-ec25-46e1-8d84-845ad0d15a88');
 
 -- --------------------------------------------------------
 
@@ -2048,7 +2039,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `craft_content`
 --
 ALTER TABLE `craft_content`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=57;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=62;
 --
 -- AUTO_INCREMENT for table `craft_deprecationerrors`
 --
@@ -2058,12 +2049,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `craft_elements`
 --
 ALTER TABLE `craft_elements`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=41;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=43;
 --
 -- AUTO_INCREMENT for table `craft_elements_i18n`
 --
 ALTER TABLE `craft_elements_i18n`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=57;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=62;
 --
 -- AUTO_INCREMENT for table `craft_emailmessages`
 --
@@ -2078,12 +2069,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `craft_entrytypes`
 --
 ALTER TABLE `craft_entrytypes`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `craft_entryversions`
 --
 ALTER TABLE `craft_entryversions`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
 --
 -- AUTO_INCREMENT for table `craft_fieldgroups`
 --
@@ -2093,22 +2084,22 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 -- AUTO_INCREMENT for table `craft_fieldlayoutfields`
 --
 ALTER TABLE `craft_fieldlayoutfields`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=128;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=185;
 --
 -- AUTO_INCREMENT for table `craft_fieldlayouts`
 --
 ALTER TABLE `craft_fieldlayouts`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=44;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=55;
 --
 -- AUTO_INCREMENT for table `craft_fieldlayouttabs`
 --
 ALTER TABLE `craft_fieldlayouttabs`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=25;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=35;
 --
 -- AUTO_INCREMENT for table `craft_fields`
 --
 ALTER TABLE `craft_fields`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT for table `craft_info`
 --
@@ -2138,7 +2129,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `craft_relations`
 --
 ALTER TABLE `craft_relations`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=452;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=526;
 --
 -- AUTO_INCREMENT for table `craft_routes`
 --
@@ -2148,17 +2139,17 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `craft_sections`
 --
 ALTER TABLE `craft_sections`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `craft_sections_i18n`
 --
 ALTER TABLE `craft_sections_i18n`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `craft_sessions`
 --
 ALTER TABLE `craft_sessions`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT for table `craft_shunnedmessages`
 --
@@ -2188,7 +2179,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT for table `craft_tasks`
 --
 ALTER TABLE `craft_tasks`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=74;
 --
 -- AUTO_INCREMENT for table `craft_templatecachecriteria`
 --
