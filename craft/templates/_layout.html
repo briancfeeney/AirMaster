@@ -43,7 +43,7 @@
 
 				<div class="row">
 
-					<div class="col-sm-4 col-xs-10">
+					<div class="col-sm-5 col-xs-5">
 						
 						<div class="main-logo">
 							<img src="public/img/air-master_logo.png" alt="">
@@ -51,11 +51,11 @@
 
 					</div>
 
-					<div class="col-sm-8">
+					<div class="col-sm-7 col-xs-7">
 						<nav>
 							<ul class="main_nav">
 								
-								<div class="col-sm-8 col-sm-offset-4">
+								<div class="col-sm-10 col-sm-offset-2">
 									<div class="email">
 										<li>
 											{{ contact.emailAddress }}
@@ -63,7 +63,7 @@
 									</div>
 								</div>
 
-								<div class="col-sm-5 col-sm-offset-7">
+								<div class="col-sm-10 col-sm-offset-2">
 									<div class="phone">
 										<li>
 											{{ contact.phoneNumber }}
@@ -122,7 +122,7 @@
 						</div>
 					</div>
 
-					{% for entry in entry.businessCategories.limit(1).find() %}	
+					{% for entry in craft.entries.section('residential') %}
 
 						<div class="row">
 
@@ -138,7 +138,11 @@
 							<div class="col-xs-12">
 								<div class="modal-body">
 									
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+
+											<img src="public/img/modal-x.png" alt="">
+
+									</button>
 
 									<h3>{{ entry.title }}</h3>
 									
@@ -206,7 +210,7 @@
 						</div>
 					</div>
 
-					{% for entry in entry.businessCategories.limit(1).offset(1) %}	
+					{% for entry in craft.entries.section('commercialIndustrial') %}	
 
 						<div class="row">
 
@@ -222,7 +226,11 @@
 							<div class="col-xs-12">
 								<div class="modal-body">
 									
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										
+										<img src="public/img/modal-x.png" alt="">
+
+									</button>
 
 									<h3>{{ entry.title }}</h3>
 									
@@ -290,7 +298,7 @@
 						</div>
 					</div>
 
-					{% for entry in entry.businessCategories.limit(1).offset(2) %}	
+					{% for entry in craft.entries.section('fireplace') %}	
 
 						<div class="row">
 
@@ -306,7 +314,11 @@
 							<div class="col-xs-12">
 								<div class="modal-body">
 									
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										
+										<img src="public/img/modal-x.png" alt="">
+
+									</button>
 
 									<h3>{{ entry.title }}</h3>
 									
@@ -373,8 +385,8 @@
 							</div>
 						</div>
 					</div>
-
-					{% for entry in entry.businessCategories.limit(1).offset(3) %}	
+					
+					{% for entry in craft.entries.section('barbecue') %}	
 
 						<div class="row">
 
@@ -390,7 +402,11 @@
 							<div class="col-xs-12">
 								<div class="modal-body">
 									
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										
+										<img src="public/img/modal-x.png" alt="">
+
+									</button>
 
 									<h3>{{ entry.title }}</h3>
 									
@@ -440,11 +456,12 @@
 		</main>
 
 		<footer id="footer">
-
-			<div class="row">
-				<div class="container">
+			
+			<div class="container">
+				<div class="row">
+				
 					<div class="col-md-3 col-sm-6">
-						<div class="footer_info">
+						<div class="footer_info footer-logo">
 							
 							<img src="public/img/air-master_logo.png" alt="">
 
@@ -483,7 +500,7 @@
 					</div>
 
 
-					<div class="col-md-3 col-md-offset-0 col-sm-5 col-sm-offset-1">
+					<div class="col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1">
 						<div class="footer-content">
 							<div class="footer_info">
 								<h4>Location</h4>
@@ -501,7 +518,7 @@
 					</div>
 					
 
-					<div class="col-md-5 col-md-offset-1">
+					<div class="col-md-5 col-md-offset-0">
 						<div class="map">
 							<iframe class="" width="200px" height="300px" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=2870%20Coolidge%20Highway%2C%20Berkley%2C%20MI%2C%20United%20States&key=AIzaSyA9xnxFVrO7U2ULdee51zw13SqBAeBwAvc"></iframe>
 						</div>
