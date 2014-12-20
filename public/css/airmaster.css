@@ -573,7 +573,7 @@ section {
     font-size: .95em;
   }
   .close {
-    margin-left: -160px;
+    margin-left: -150px;
   }
   .close img {
     max-width: 60%;
@@ -615,10 +615,10 @@ section {
     padding: 10px 0;
   }
   .close {
-    margin-left: -140px;
+    margin-left: -135px;
   }
   .close img {
-    max-width: 20%;
+    max-width: 22%;
     padding: 0;
   }
   .modal.in .modal-dialog {
