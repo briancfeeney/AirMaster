@@ -470,58 +470,49 @@
 				
 					<div class="col-md-3 col-sm-6">
 						<div class="footer_info footer-logo">
-							
 							<img src="public/img/air-master_logo.png" alt="">
-
 						</div>
 						
-						<div class="footer_info">
-							<h4>Contact</h4>	
-							<div class="chaparralR">{{ contact.emailAddress }}</div>
-							<div class="chaparralR">{{ contact.phoneNumber }}</div>
+						<ul class="footer_info">
+							<li><h4>Contact</h4></li>	
+							<li>{{ contact.emailAddress }}</li>
+							<li>{{ contact.phoneNumber }}</li>
 
 							<ul class="list-unstyled social_icons">
-
 								{% for image in facebook.socialIcons %}
-
 									<li>
 										<a href="{{ facebook8.socialLink }}">
 											<img src="{{ image.getUrl() }}" alt="">
 										</a>
 									</li>
-
 								{% endfor %}
 
 								{% for image in twitter.socialIcons %}
-
 									<li>
 										<a href="{{ twitter.socialLink }}">
 											<img src="{{ image.getUrl() }}" alt="">
 										</a>
 									</li>
-
 								{% endfor %}
-
 							</ul>
-							
-						</div>
+						</ul>
 					</div>
 
 
 					<div class="col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1">
 						<div class="footer-content">
-							<div class="footer_info">
-								<h4>Location</h4>
-								<div class="chaparralR">2870 Coolidge Highway</div>
-								<div class="chaparralR">Berkely, Mi 48072</div>
-							</div>
+							<ul class="footer_info">
+								<li><h4>Location</h4><li>
+								<li>2870 Coolidge Highway</li>
+								<li>Berkely, Mi 48072</li>
+							</ul>
 
-							<div class="footer_info">
-								<h4>Office &amp; Showroom Hours</h4>
-								<div class="chaparralR">Mon - Fri: 9am - 5:30pm</div> 
-								<div class="chaparralR">Sat: 10am - 2pm</div> 
-								<div class="chaparralR">Sun: closed</div>
-							</div>
+							<ul class="footer_info">
+								<li><h4>Office &amp; Showroom Hours</h4><li>
+								<li>Mon - Fri: 9am - 5:30pm</li> 
+								<li>Sat: 10am - 2pm</li> 
+								<li>Sun: closed</li>
+							</ul>
 						</div>
 					</div>
 					

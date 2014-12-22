@@ -139,6 +139,12 @@ h3, .about_title {
 	text-transform: uppercase;
 }
 
+a, button {
+	&:focus, &:active {
+		outline: none;
+	}
+}
+
 .nav_categories li a {
 	text-transform: uppercase;
 	font-size: .88em;
@@ -147,7 +153,7 @@ h3, .about_title {
 
 .email, .phone {
 	font-size: 1.7em;
-	font-weight: bolder;
+	.sourcesans();
 	color: @red;
 }
 
@@ -171,13 +177,13 @@ h3, .about_title {
 
 .testimonial {
 	color: @red;
-	font-size: 1.7em;
+	font-size: 1.3em;
+	margin: 10em 0;
 	.quote {
 		font-size: 1.75em;
 		.chaparralR();
 		line-height: 1.3em;
 	}
-
 	.quote_name {
 		text-transform: uppercase;
 		color: lighten(@red, 25%);
@@ -225,7 +231,6 @@ h3, .about_title {
 		color: @red;
 		text-transform: uppercase;
 		letter-spacing: .07em;
-		font-weight: bolder;
 	};
 }
 
@@ -263,7 +268,7 @@ h3 	{
 .main_top {
 	background-image: url("../img/michigan.png");
 	background-repeat: no-repeat;
-	background-position: 100% 0;
+	background-position: 95% 0;
 	background-size: contain;
 	padding: 130px 0 30px 0;
 	margin-top: -130px;
@@ -499,7 +504,9 @@ button.close {
 	max-height: 366px;
 }
 
-
+.modal-backdrop {
+	background-color: @blue;
+}
 
 
 
@@ -568,7 +575,7 @@ ul.main_nav  {
 
 
 .main_top {
-	margin-bottom: 145px;
+	/* margin-bottom: 145px; */
 }
 
 section {
@@ -658,8 +665,18 @@ section {
 	};
 }
 
+
 .footer_info {
 	padding-bottom: 6%;
+	margin: 0 0 2em;
+	padding: 0;
+	.sourcesansL();
+	h4 {
+		.sourcesans();
+	}
+	&.footer-logo {
+		margin-bottom: 4em;
+	}
 }
 
 .footer-img {
