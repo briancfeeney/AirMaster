@@ -58,7 +58,9 @@
 								<div class="col-sm-10 col-sm-offset-2">
 									<div class="email">
 										<li>
-											{{ contact.emailAddress }}
+											<a href="mailto:{{ contact.emailAddress }}">
+												{{ contact.emailAddress }}
+											</a>
 										</li>
 									</div>
 								</div>
@@ -66,7 +68,9 @@
 								<div class="col-sm-10 col-sm-offset-2">
 									<div class="phone">
 										<li>
-											{{ contact.phoneNumber }}
+											<a href="tel:{{ contact.phoneNumber }}">
+												{{ contact.phoneNumber }}
+											</a>
 										</li>
 									</div>	
 								</div>						
@@ -105,13 +109,21 @@
 										
 										<div class="col-md-7 col-xs-12">
 											<div class="email">
-												<li>{{ contact.emailAddress }}</li>
+												<li>
+													<a href="mailto:{{ contact.emailAddress }}">
+														{{ contact.emailAddress }}
+													</a>
+												</li>
 											</div>
 										</div>
 
-										<div class="col-md-5">
+										<div class="col-md-5 col-xs-12">
 											<div class="phone">
-												<li>{{ contact.phoneNumber }}</li>
+												<li>
+													<a href="tel:{{ contact.phoneNumber }}">
+														{{ contact.phoneNumber }}
+													</a>
+												</li>
 											</div>	
 										</div>						
 										
@@ -153,9 +165,17 @@
 
 											<p>For installation information, call</p>
 
-											<p>{{ contact.phoneNumber }}</p>
+											<p>
+												<a href="tel:{{ contact.phoneNumber }}">
+													{{ contact.phoneNumber }}
+												</a>
+											</p>
 
-											<p>{{ contact.emailAddress }}</p>
+											<p>
+												<a href="mailto:{{ contact.emailAddress }}">
+													{{ contact.emailAddress }}
+												</a>
+											</p>
 
 										</div>
 
@@ -195,13 +215,21 @@
 										
 										<div class="col-md-7 col-xs-12">
 											<div class="email">
-												<li>{{ contact.emailAddress }}</li>
+												<li>
+													<a href="mailto:{{ contact.emailAddress }}">
+														{{ contact.emailAddress }}
+													</a>
+												</li>
 											</div>
 										</div>
 
-										<div class="col-md-5">
+										<div class="col-md-5 col-xs-12">
 											<div class="phone">
-												<li>{{ contact.phoneNumber }}</li>
+												<li>
+													<a href="tel:{{ contact.phoneNumber }}">
+														{{ contact.phoneNumber }}
+													</a>
+												</li>
 											</div>	
 										</div>						
 										
@@ -243,9 +271,17 @@
 
 											<p>For installation information, call</p>
 
-											<p>{{ contact.phoneNumber }}</p>
+											<p>
+												<a href="tel:{{ contact.phoneNumber }}">
+													{{ contact.phoneNumber }}
+												</a>
+											</p>
 
-											<p>{{ contact.emailAddress }}</p>
+											<p>
+												<a href="mailto:{{ contact.emailAddress }}">
+													{{ contact.emailAddress }}
+												</a>
+											</p>
 
 										</div>
 
@@ -285,13 +321,21 @@
 										
 										<div class="col-md-7 col-xs-12">
 											<div class="email">
-												<li>{{ contact.emailAddress }}</li>
+												<li>
+													<a href="mailto:{{ contact.emailAddress }}">
+														{{ contact.emailAddress }}
+													</a>
+												</li>
 											</div>
 										</div>
 
-										<div class="col-md-5">
+										<div class="col-md-5 col-xs-12">
 											<div class="phone">
-												<li>{{ contact.phoneNumber }}</li>
+												<li>
+													<a href="tel:{{ contact.phoneNumber }}">
+														{{ contact.phoneNumber }}
+													</a>
+												</li>
 											</div>	
 										</div>						
 										
@@ -333,9 +377,17 @@
 
 											<p>For installation information, call</p>
 
-											<p>{{ contact.phoneNumber }}</p>
+											<p>
+												<a href="tel:{{ contact.phoneNumber }}">
+													{{ contact.phoneNumber }}
+												</a>
+											</p>
 
-											<p>{{ contact.emailAddress }}</p>
+											<p>
+												<a href="mailto:{{ contact.emailAddress }}">
+													{{ contact.emailAddress }}
+												</a>
+											</p>
 
 										</div>
 
@@ -375,13 +427,21 @@
 										
 										<div class="col-md-7 col-xs-12">
 											<div class="email">
-												<li>{{ contact.emailAddress }}</li>
+												<li>
+													<a href="mailto:{{ contact.emailAddress }}">
+														{{ contact.emailAddress }}
+													</a>
+												</li>
 											</div>
 										</div>
 
-										<div class="col-md-5">
+										<div class="col-md-5 col-xs-12">
 											<div class="phone">
-												<li>{{ contact.phoneNumber }}</li>
+												<li>
+													<a href="tel:{{ contact.phoneNumber }}">
+														{{ contact.phoneNumber }}
+													</a>
+												</li>
 											</div>	
 										</div>						
 										
@@ -423,9 +483,17 @@
 
 											<p>For installation information, call</p>
 
-											<p>{{ contact.phoneNumber }}</p>
+											<p>
+												<a href="tel:{{ contact.phoneNumber }}">
+													{{ contact.phoneNumber }}
+												</a>
+											</p>
 
-											<p>{{ contact.emailAddress }}</p>
+											<p>
+												<a href="mailto:{{ contact.emailAddress }}">
+													{{ contact.emailAddress }}
+												</a>
+											</p>
 
 										</div>
 
@@ -477,8 +545,16 @@
 						
 						<div class="footer_info">
 							<h4>Contact</h4>	
-							<div class="chaparralR">{{ contact.emailAddress }}</div>
-							<div class="chaparralR">{{ contact.phoneNumber }}</div>
+							<div class="chaparralR">
+								<a href="mailto:{{ contact.emailAddress }}">
+									{{ contact.emailAddress }}
+								</a>
+							</div>
+							<div class="chaparralR">
+								<a href="tel:{{ contact.phoneNumber }}">
+									{{ contact.phoneNumber }}
+								</a>
+							</div>
 
 							<ul class="list-unstyled social_icons">
 
