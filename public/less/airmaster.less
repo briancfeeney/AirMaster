@@ -195,6 +195,9 @@ a, button {
 		.sourcesans();
 		letter-spacing: 1px;
 	}
+	@media screen and (max-width: 800px) {
+		margin: 2em 0;
+	}
 }
 
 
@@ -282,8 +285,26 @@ h3 	{
 
 
 .main_img_wrapper {
-	height: 330px;
-	width: 83%;
+	height: 380px;
+	width: 65%;
+	left: 12%;
+	position: relative;
+	@media screen and (max-width: 1300px) {
+		width: 70%;
+		left: 5%;
+	}
+	@media screen and (max-width: 1150px) {
+		height: 350px;
+		width: 77%;
+		left: 0;
+	}
+	@media screen and (max-width: 800px) {
+		height: 260px;
+		width: 78%;
+	}
+	@media screen and (max-width: 461px) {
+		width: 93%;
+	}
 }
 
 .fall {
@@ -779,7 +800,7 @@ section {
 	}
 
 	.location {
-		padding-bottom: 90px;
+		padding-bottom: 40px;
 	}
 
 	.main_top {
@@ -844,7 +865,7 @@ section {
 	}
 
 	.location {
-		padding: 10px 0;
+		padding: 10px 0 30px;
 	}
 
 	.main_img_wrapper {
