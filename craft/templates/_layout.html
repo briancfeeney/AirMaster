@@ -588,15 +588,15 @@
 						<div class="footer-content">
 							<div class="footer_info">
 								<h4>Location</h4>
-								<div class="chaparralR">2870 Coolidge Highway</div>
-								<div class="chaparralR">Berkely, Mi 48072</div>
+								<div class="chaparralR">{{ location.addressLine1 }}</div>
+								<div class="chaparralR">{{ location.addressLine2 }}</div>
 							</div>
 
 							<div class="footer_info">
 								<h4>Office &amp; Showroom Hours</h4>
-								<div class="chaparralR">Mon - Fri: 9am - 5:30pm</div> 
-								<div class="chaparralR">Sat: 10am - 2pm</div> 
-								<div class="chaparralR">Sun: closed</div>
+								<div class="chaparralR">Mon - Fri: {{ officeHours.monFri }}</div> 
+								<div class="chaparralR">Sat: {{ officeHours.saturday }}</div> 
+								<div class="chaparralR">Sun: {{ officeHours.sunday }}</div>
 							</div>
 						</div>
 					</div>

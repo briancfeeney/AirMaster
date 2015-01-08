@@ -28834,28 +28834,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/10.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 999,
-		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/10.jpg",
-		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/10.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/11.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1080,
-		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/11.jpg",
-		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/11.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/14.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -28951,28 +28929,6 @@
 		"initialSize": 824,
 		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/42.png",
 		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/42.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/8.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1129,
-		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/8.jpg",
-		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/8.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/9.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1054,
-		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/9.jpg",
-		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/9.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -29945,6 +29901,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/compiled_templates\/a5\/21\/e66318ed8f336281644dbd455661cddfd53564654f0828e66fc4ac8896e0.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/a6\/7f\/57944964d23db988dafaa5b4f48423c0538ffb8a10816bf675282fa87f3e.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/compiled_templates\/a6\/7f\/57944964d23db988dafaa5b4f48423c0538ffb8a10816bf675282fa87f3e.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -31161,11 +31126,196 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0b584e4d6.60661979-temp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.39322e+06,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0b584e4d6.60661979-temp.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0b584e4d6.60661979-temp.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0b584e4d6.60661979.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.49366e+06,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0b584e4d6.60661979.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0b584e4d6.60661979.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0b7ebd1a6.04631949-temp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 845045,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0b7ebd1a6.04631949-temp.png",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0b7ebd1a6.04631949-temp.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0b7ebd1a6.04631949.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.24954e+06,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0b7ebd1a6.04631949.png",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0b7ebd1a6.04631949.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0c0c0eca7.20476236-temp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.73791e+06,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c0c0eca7.20476236-temp.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c0c0eca7.20476236-temp.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0c0c0eca7.20476236.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.72622e+06,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c0c0eca7.20476236.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c0c0eca7.20476236.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0c1ec25e0.91490577-temp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 915269,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c1ec25e0.91490577-temp.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c1ec25e0.91490577-temp.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0c1ec25e0.91490577.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.06086e+06,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c1ec25e0.91490577.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c1ec25e0.91490577.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0c3810062.97487398-temp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 555964,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c3810062.97487398-temp.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c3810062.97487398-temp.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0c3810062.97487398.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 683379,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c3810062.97487398.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c3810062.97487398.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0c4b232b5.35880392-temp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 601170,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c4b232b5.35880392-temp.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c4b232b5.35880392-temp.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0c4b232b5.35880392.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 780674,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c4b232b5.35880392.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c4b232b5.35880392.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0c61835d1.69402012-temp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 130143,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c61835d1.69402012-temp.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c61835d1.69402012-temp.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0c61835d1.69402012.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 128641,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c61835d1.69402012.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c61835d1.69402012.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0c6bc6fc2.54066314-temp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35501,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c6bc6fc2.54066314-temp.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c6bc6fc2.54066314-temp.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/craft\/storage\/runtime\/temp\/assets54ade0c6bc6fc2.54066314.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33101,
+		"inputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c6bc6fc2.54066314.jpg",
+		"outputAbbreviatedPath": "\/craft\/storage\/runtime\/temp\/assets54ade0c6bc6fc2.54066314.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/craft\/templates\/404.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/craft\/templates\/404.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/craft\/templates\/_layout.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/craft\/templates\/_layout.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -31193,6 +31343,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/craft\/templates\/fireplace.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/craft\/templates\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/craft\/templates\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -31229,6 +31388,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/public\/css\/airmaster.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/css\/airmaster.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -31298,24 +31466,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/img\/bbq-grills.jpg": {
+	"\/public\/img\/barbecue.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 42891,
-		"inputAbbreviatedPath": "\/public\/img\/bbq-grills.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/bbq-grills.jpg",
+		"initialSize": 1.49366e+06,
+		"inputAbbreviatedPath": "\/public\/img\/barbecue.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/barbecue.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/img\/commercial-heating-cooling.jpg": {
+	"\/public\/img\/coporate-industrial.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 38980,
-		"inputAbbreviatedPath": "\/public\/img\/commercial-heating-cooling.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/commercial-heating-cooling.jpg",
+		"initialSize": 683379,
+		"inputAbbreviatedPath": "\/public\/img\/coporate-industrial.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/coporate-industrial.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -31331,13 +31499,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/img\/fireplace-sales-service.jpg": {
-		"fileType": 16384,
+	"\/public\/img\/fireplace.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 28645,
-		"inputAbbreviatedPath": "\/public\/img\/fireplace-sales-service.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/fireplace-sales-service.jpg",
+		"initialSize": 1.24954e+06,
+		"inputAbbreviatedPath": "\/public\/img\/fireplace.png",
+		"outputAbbreviatedPath": "\/public\/img\/fireplace.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -31386,6 +31554,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/img\/michican-winter.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.72622e+06,
+		"inputAbbreviatedPath": "\/public\/img\/michican-winter.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/michican-winter.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/michigan-fall.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 780674,
+		"inputAbbreviatedPath": "\/public\/img\/michigan-fall.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/michigan-fall.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/michigan-spring.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 128641,
+		"inputAbbreviatedPath": "\/public\/img\/michigan-spring.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/michigan-spring.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/michigan-summer.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33101,
+		"inputAbbreviatedPath": "\/public\/img\/michigan-summer.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/michigan-summer.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/img\/michigan.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -31408,13 +31620,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/img\/residential-heading-cooling.jpg": {
+	"\/public\/img\/residential.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 38665,
-		"inputAbbreviatedPath": "\/public\/img\/residential-heading-cooling.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/residential-heading-cooling.jpg",
+		"initialSize": 1.06086e+06,
+		"inputAbbreviatedPath": "\/public\/img\/residential.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/residential.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -31429,6 +31641,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/public\/js\/application.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/application.js",
+		"outputAbbreviatedPath": "\/public\/js\/min\/application-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/public\/js\/bootstrap.js": {
 		"fileType": 64,
@@ -31484,6 +31707,26 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/public\/less\/airmaster.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/less\/airmaster.less",
+		"outputAbbreviatedPath": "\/public\/css\/airmaster.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
 		},
 	"\/public\/less\/alerts.less": {
 		"allowInsecureImports": 0,

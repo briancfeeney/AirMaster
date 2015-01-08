@@ -67,7 +67,7 @@
 
 				{% for entry in entry.testimonials.limit(1).find() %}
 				<div class="col-xs-10 col-xs-offset-1">	
-					<p class="quote">{{ entry.quote }}</p>
+					<p class="quote">{{ entry.fullQuote }}</p>
 					<p class="quote_name">{{ entry.customerName }}</p>
 				</div>
 				{% endfor %}
@@ -246,7 +246,7 @@
 
 				{% for entry in entry.testimonials.limit(1).offset(1) %}
 				<div class="col-xs-10 col-xs-offset-1">	
-					<p class="quote">{{ entry.quote }}</p>
+					<p class="quote">{{ entry.quoteSnippet }}</p>
 					<p class="quote_name">{{ entry.customerName }}</p>
 				</div>
 				{% endfor %}
@@ -268,7 +268,7 @@
 	
 	<section class="fadeInUp">
 		
-		{% for entry in craft.entries('emergency').limit(1) %}	
+		{% for entry in craft.entries.section('emergency') %}	
 
 			<div class="single_category_post emergency">
 				
@@ -278,12 +278,9 @@
 
 						<div class="col-xs-12">
 							<div>
-								<h3> 24 Hour Emergency Services</h3>
-							
+								<h3>{{ entry.title }}</h3>
 
-								<p class="read_more">
-									<a data-toggle="modal" href="#textModal">find out more</a>
-								</p>
+								<p class="about_description">{{ entry.emergencyServices }}</p>
 							</div>
 						</div>
 
@@ -346,7 +343,7 @@
 
 				{% for entry in entry.testimonials.limit(1).offset(2) %}
 				<div class="col-xs-10 col-xs-offset-1">		
-					<p class="quote">{{ entry.quote }}</p>
+					<p class="quote">{{ entry.quoteSnippet }}</p>
 					<p class="quote_name">{{ entry.customerName }}</p>
 				</div>
 				{% endfor %}
