@@ -176,7 +176,7 @@ button:active {
 }
 @media screen and (max-width: 800px) {
   .testimonial {
-    margin: 2em 0;
+    margin: 3em 0;
   }
 }
 .modal-body {
@@ -268,36 +268,35 @@ h2 {
   }
 }
 .fall {
-  background: url("../img/main-stock.png") no-repeat center;
+  background: url("../img/michigan-fall.jpg") no-repeat center;
   background-size: cover;
 }
 .winter {
-  background: url("../img/main_img.jpg") no-repeat center;
+  background: url("../img/michigan-winter.jpg") no-repeat center;
   background-size: cover;
 }
 .spring {
-  background: url("../img/bbq-grills.jpg") no-repeat center;
+  background: url("../img/michigan-spring.jpg") no-repeat center;
   background-size: cover;
 }
 .summer {
-  background: url("../img/gray-circle.jpg") no-repeat center;
+  background: url("../img/michigan-summer.jpg") no-repeat center;
   background-size: cover;
 }
-/******************
-
 .testimonial:after {
-	content: "";
-    background: url("../img/gray-circle.jpg") no-repeat center;
-  	opacity: 0.09;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;  
+  content: "";
+  background-color: #ecf3fb;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 50%;
+  width: 305px;
+  max-height: 310px;
 }
-
-*******************/
 .emergency {
   background-color: #f2f5f9;
 }
@@ -319,6 +318,7 @@ h2 {
 }
 #header .main-logo {
   max-width: 330px;
+  margin-top: 7px;
 }
 /** Scrolling header effects ****************************************************/
 .main-logo img,
@@ -343,7 +343,7 @@ h2 {
   -o-transition: all 0.5s cubic-bezier(0.52, -0.25, 0.83, 0.67);
   transition: all 0.5s cubic-bezier(0.52, -0.25, 0.83, 0.67);
 }
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 767px) {
   .smaller img,
   .smaller .email {
     -webkit-transition: all 0.5s cubic-bezier(0.52, -0.5, 1.83, 0.97);
@@ -474,7 +474,7 @@ button.close {
 }
 .modal_img img {
   width: 100%;
-  max-height: 366px;
+  height: auto;
 }
 .modal-backdrop {
   background-color: #1c5599;
@@ -690,8 +690,10 @@ section {
   }
   .email,
   .phone {
-    font-size: 1.8em;
     line-height: 1em;
+  }
+  .email {
+    margin-top: 3px;
   }
   .location {
     padding-bottom: 40px;
@@ -702,6 +704,9 @@ section {
   .testimonial,
   .modal_contact_info {
     font-size: 1.15em;
+  }
+  .testimonial:after {
+    width: 250px;
   }
   .modal-body .read_more {
     font-size: .95em;
@@ -768,6 +773,9 @@ section {
   .modal-dialog {
     width: 80%;
     max-width: 800px;
+  }
+  .modal-header {
+    padding-top: 65px;
   }
   #content {
     padding-top: 130px;

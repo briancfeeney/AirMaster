@@ -196,7 +196,7 @@ a, button {
 		letter-spacing: 1px;
 	}
 	@media screen and (max-width: 800px) {
-		margin: 2em 0;
+		margin: 3em 0;
 	}
 }
 
@@ -308,44 +308,43 @@ h3 	{
 }
 
 .fall {
-	background: url("../img/main-stock.png") no-repeat center;
+	background: url("../img/michigan-fall.jpg") no-repeat center;
 	background-size: cover;
 }
 
 .winter {
-	background: url("../img/main_img.jpg") no-repeat center;
+	background: url("../img/michigan-winter.jpg") no-repeat center;
 	background-size: cover;
 }
 
 .spring {
-	background: url("../img/bbq-grills.jpg") no-repeat center;
+	background: url("../img/michigan-spring.jpg") no-repeat center;
 	background-size: cover;
 }
 
 .summer {
-	background: url("../img/gray-circle.jpg") no-repeat center;
+	background: url("../img/michigan-summer.jpg") no-repeat center;
 	background-size: cover;
 }
 
 
 
-
-
-/******************
-
 .testimonial:after {
 	content: "";
-    background: url("../img/gray-circle.jpg") no-repeat center;
-  	opacity: 0.09;
+    background-color: lighten(@blue, 60%);
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
+    margin: 0 auto;
     z-index: -1;  
+    border-radius: 50%;
+    width: 305px;
+    max-height: 310px;
 }
 
-*******************/
+
 
 
 .emergency {
@@ -377,6 +376,7 @@ body {
 	background: transparent;
 	.main-logo {
 		max-width: 330px;
+		margin-top: 7px;
 	}
 
 }
@@ -410,7 +410,7 @@ body {
 	
 }
 
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 767px) {
 
 	.smaller img, .smaller .email {
 	  -webkit-transition: all 0.5s cubic-bezier(.52,-0.5,1.83,.97);
@@ -573,7 +573,7 @@ button.close {
 
 .modal_img img {
 	width: 100%;
-	max-height: 366px;
+	height: auto;
 }
 
 .modal-backdrop {
@@ -649,6 +649,8 @@ ul.main_nav  {
 .phone, .email, .nav_categories {
 	text-align: right;
 }
+
+
 
 
 
@@ -844,8 +846,11 @@ section {
 	}
 
 	.email, .phone {
-		font-size: 1.8em;
 		line-height: 1em;
+	}
+
+	.email {
+		margin-top: 3px;
 	}
 
 	.location {
@@ -858,6 +863,10 @@ section {
 
 	.testimonial, .modal_contact_info {
 		font-size: 1.15em;
+	}
+
+	.testimonial:after {
+	    width: 250px;
 	}
 
 	.modal-body .read_more {
@@ -940,6 +949,10 @@ section {
 	.modal-dialog {
 		width: 80%;
 		max-width: 800px;
+	}
+
+	.modal-header {
+		padding-top: 65px;
 	}
 
     #content {

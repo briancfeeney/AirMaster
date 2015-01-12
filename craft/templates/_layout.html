@@ -28,6 +28,8 @@
 	<!-- Typekit code for the header -->
     <script src="//use.typekit.net/xkz7qtw.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+
+
 	
 
 </head>
@@ -43,7 +45,7 @@
 
 				<div class="row">
 
-					<div class="col-sm-5 col-xs-5">
+					<div class="col-sm-4 col-xs-5">
 						
 						<div class="main-logo">
 							<img src="public/img/air-master_logo.png" alt="">
@@ -51,7 +53,7 @@
 
 					</div>
 
-					<div class="col-sm-7 col-xs-7">
+					<div class="col-sm-8 col-xs-7">
 						<nav>
 							<ul class="main_nav">
 								
@@ -515,6 +517,28 @@
 	<script src="{{ siteUrl }}/public/js/wow.min.js"></script>
 	<script>
 	 new WOW().init();
+	</script>
+
+	<!-- Changing Hero Image by Season -->
+	<script>
+	// Change background depending on date
+		function applyclass()
+		{
+		var d = new Date();
+		var n = d.getMonth();
+		if (n < 3)
+		// If time is 6PM (18hrs) - 12AM (24hrs) apply night theme to 'body'
+		$('.main_img_wrapper').addClass('winter');
+		else if (n > 3 && n < 6)
+		// If time is between 4PM (16hrs) - 6PM (18hrs) sunset theme to 'body'
+		$('.main_img_wrapper').addClass('spring');
+		else if (n > 6 && n < 9)
+		// If time is between 12AM (0hrs) - 5AM (5hrs) night theme to 'body'
+		$('.main_img_wrapper').addClass('summer');
+		else if (n > 8 && n < 12)
+		// If time is between 5AM (5hrs) - 10AM (10hrs) sunset theme to 'body'
+		$('.main_img_wrapper').addClass('fall');
+		window.onload = applyclass;
 	</script>
 
 	
