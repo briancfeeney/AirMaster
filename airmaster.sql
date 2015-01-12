@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Jan 07, 2015 at 09:01 PM
+-- Generation Time: Jan 12, 2015 at 01:43 PM
 -- Server version: 5.5.38
 -- PHP Version: 5.6.2
 
@@ -46,10 +46,6 @@ CREATE TABLE `craft_assetfiles` (
 --
 
 INSERT INTO `craft_assetfiles` (`id`, `sourceId`, `folderId`, `filename`, `kind`, `width`, `height`, `size`, `dateModified`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(8, 1, 1, 'bbq-grills.jpg', 'image', 220, 147, 42891, '2014-11-06 00:09:23', '2014-11-06 00:09:23', '2014-11-06 00:09:23', 'e38b2b6f-408a-4ff0-9a85-f9ea520e0136'),
-(9, 1, 1, 'commercial-heating-cooling.jpg', 'image', 220, 147, 38980, '2014-11-06 00:09:23', '2014-11-06 00:09:23', '2014-11-06 00:09:23', 'fdc42a08-6254-490e-8a26-09cd411803b9'),
-(10, 1, 1, 'fireplace-sales-service.jpg', 'image', 220, 147, 28645, '2014-11-06 00:09:23', '2014-11-06 00:09:24', '2014-11-06 00:09:24', '9767eb1b-1263-4842-92c5-1297c6cd0940'),
-(11, 1, 1, 'residential-heading-cooling.jpg', 'image', 220, 147, 38665, '2014-11-06 00:09:24', '2014-11-06 00:09:24', '2014-11-06 00:09:24', '6ac070f5-4f98-4a9a-b6b3-4306dd367a4f'),
 (14, 1, 1, 'main_img.jpg', 'image', 1584, 671, 112053, '2014-11-09 04:45:22', '2014-11-06 03:28:24', '2014-11-09 04:45:25', 'a49acd68-5995-48de-8c9c-df54b3c0a8cf'),
 (31, 1, 1, 'michigan.png', 'image', 1600, 1877, 32914, '2014-12-08 20:39:09', '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'bccd12a7-9877-48eb-b909-ddb5a829f3bd'),
 (32, 1, 1, 'facebook-icon.png', 'image', 40, 40, 1168, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'a1b265a4-ccad-4fd5-b4fe-5a1f4ab57f7d'),
@@ -259,54 +255,76 @@ CREATE TABLE `craft_content` (
   `field_sunday` text COLLATE utf8_unicode_ci,
   `field_emergencyServices` text COLLATE utf8_unicode_ci,
   `field_quoteSnippet` text COLLATE utf8_unicode_ci,
+  `field_servicesFull` text COLLATE utf8_unicode_ci,
+  `field_servicesShort` text COLLATE utf8_unicode_ci,
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_content`
 --
 
-INSERT INTO `craft_content` (`id`, `elementId`, `locale`, `title`, `field_heading`, `field_body`, `field_customerName`, `field_location`, `field_fullQuote`, `field_aboutUs`, `field_aboutUsDescription`, `field_emailAddress`, `field_phoneNumber`, `field_socialLink`, `field_physicalAddress`, `field_officeHours`, `field_addressLine1`, `field_addressLine2`, `field_monFri`, `field_saturday`, `field_sunday`, `field_emergencyServices`, `field_quoteSnippet`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, 1, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:30:07', '2014-11-05 23:30:07', '95f72694-1971-4afc-97ee-bb8a60e237d1'),
-(2, 2, 'en_us', 'Homepage', 'Homepage Heading', '<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;</p>', NULL, 'Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.', NULL, 'About Our Company', 'Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:30:10', '2015-01-08 01:40:25', '441e0b80-d771-4cb8-89ed-dccfe1a33eb8'),
-(3, 3, 'en_us', 'First Testimonial', NULL, '<p>“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>', 'Harold Z.', NULL, '“Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '“Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed."', '2014-11-05 23:30:10', '2015-01-08 01:39:16', 'ab35985d-e94d-42f9-a7f4-2d95ae2a9ce0'),
-(5, 4, 'en_us', 'Residential', NULL, '<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p><!--pagebreak--><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:36:02', '2015-01-08 01:43:59', '9b5b0035-4ec3-49ee-af03-709d4b597bda'),
-(8, 5, 'en_us', 'Commercial & Industrial', NULL, '<p>Our commercial team can design and execute a sophisticated cus- tom commercial heating and cooling system for your project, or&nbsp;provide simple 24 hour emergency repair service.</p><!--pagebreak-->\r\n<p>* We offer discounted maintenance with our maintenance contract, * Can advice you on indoor air quality,</p><p> * Or give you a price estimate to replace your aging commercial fur- nace and/or air conditioner.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:36:42', '2015-01-08 01:44:33', '4d4f5310-2cdd-4ada-ad93-a8b4ad4baba5'),
-(9, 6, 'en_us', 'Fireplace', NULL, '<p>IWith new technology, we can install a fireplace in any room for surprisingly cheap. You could have a new fireplace installed in 3-7 days.</p><p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you’re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?</p><!--pagebreak--><p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you’re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?</p><p>We carry, or can order you, any fireplace replacement part. Maybe you want to buy some fireplace accessories or redesign the exterior? We do verything from plug and go fireplaces to a full custom design and install.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:36:48', '2015-01-08 01:44:20', '9f74f2cb-52de-4629-b6e8-751c333c9edf'),
-(10, 7, 'en_us', 'Barbecue', NULL, '<p>\r\n	A great american tradition, and most delicious way to prepare food.</p><p>\r\n	If you’re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.</p><p>\r\n	We can also help you get any barbecue accessory you’re missing or find you a barbecue replacement part or pieces.</p><!--pagebreak-->\r\n<p>\r\n	If you’re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.</p><p>\r\n	We can also help you get any barbecue accessory you’re missing or find you a barbecue replacement part or pieces.&nbsp;&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:36:57', '2015-01-08 01:44:09', '4fe03897-11b2-454d-a15a-abc8673f5d42'),
-(23, 8, 'en_us', 'bbq-grills', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-06 00:09:23', '2014-11-06 00:09:23', '04b60112-1565-4602-8423-f2abb65353df'),
-(24, 9, 'en_us', 'commercial-heating-cooling', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-06 00:09:23', '2014-11-06 00:09:23', '2a2b3d56-3a8e-4cc6-8ab9-383fceaa96ca'),
-(25, 10, 'en_us', 'fireplace-sales-service', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-06 00:09:24', '2014-11-06 00:09:24', '2b4ba4e8-4a6b-469a-92c2-af8c242027a7'),
-(26, 11, 'en_us', 'residential-heading-cooling', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-06 00:09:24', '2014-11-06 00:09:24', '4e8f36d7-59f4-4d58-b5c5-e57ced3515a4'),
-(27, 12, 'en_us', 'Second Testimonial', NULL, '<p>“Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. &nbsp;Lorem ipsum dolor sit amet, consectetur adip- isicing elit.”</p>', 'Harold Z.', NULL, '“Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '“Lorem ipsum dolor sit amet,', '2014-11-06 00:13:57', '2015-01-08 01:37:59', 'e4fa578c-7de9-4973-bffc-1bddf7b5653e'),
-(28, 13, 'en_us', 'Third Testimonial', NULL, '<p>“Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>', 'Harold Z.', NULL, '“Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '“Lorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod ', '2014-11-06 00:14:11', '2015-01-08 01:38:08', '8f6350a4-dd0e-44a7-ba80-d3355ec8735a'),
-(29, 14, 'en_us', 'main img', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-06 03:28:24', '2014-11-09 04:45:25', '8b7c0678-1e75-4465-a147-7da36b86abe4'),
-(47, 31, 'en_us', 'michigan', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:14', '2014-12-08 20:39:14', 'eb2f0e8b-3b4e-4242-84c0-0a722026dbc0'),
-(48, 32, 'en_us', 'facebook-icon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'eba507e4-bfbd-46b9-8c8d-66509ed49aa3'),
-(49, 33, 'en_us', 'twitter-icon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'd5719311-cd1a-4984-855b-5cdc481bddc2'),
-(50, 34, 'en_us', 'map', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 22:08:06', '2014-12-08 22:08:06', 'c46c0c60-90d4-44b8-a3ba-a618e9db7ffc'),
-(51, 35, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'hello@airmastermi.com', '248-399-1800', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 15:36:41', '2015-01-08 01:23:38', '2d9c56cb-534c-4d1a-921d-65e2fb84e368'),
-(52, 36, 'en_us', 'main-stock', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 16:11:25', '2014-12-09 16:11:25', '392463fc-89c6-40c9-93c0-fcc6f2fc5779'),
-(53, 37, 'en_us', 'gray-circle', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 20:37:41', '2014-12-09 20:37:41', '1e9f9ee5-6c8d-438b-b8a6-83d208ac6a85'),
-(54, 38, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'http://twitter.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 21:57:41', '2014-12-09 22:00:28', '205fa3ae-1c4a-4dc5-a677-430684c46f39'),
-(55, 39, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'http://facebook.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 21:59:55', '2014-12-09 22:00:16', 'ae656420-714b-4101-b071-5c1facc26f43'),
-(56, 40, 'en_us', 'air-master logo', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '5badca16-23cd-444b-919b-c41dc3404f15'),
-(57, 41, 'en_us', 'About', NULL, NULL, NULL, NULL, NULL, 'About Our Company', 'Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-18 15:03:55', '2014-12-19 03:53:26', '12489763-4a26-4bd5-987b-91447d1c0223'),
-(58, 42, 'en_us', 'modal-x', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-18 15:04:43', '2014-12-18 15:04:43', 'fd9dab20-33fc-4acf-b7da-8f6032aa00bf'),
-(59, 43, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-04 02:38:46', '2015-01-04 02:39:24', '19d5a19e-8ff6-4139-81b3-969bf70d19a3'),
-(60, 44, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2870 Coolidge Highway', 'Berkely, Mi 48072', NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:18:13', '2015-01-08 01:23:48', '26679eac-3ddf-4e7b-bcdd-6d042d6da6de'),
-(61, 45, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '9am - 5:30pm', '10am - 2pm', 'closed', NULL, NULL, '2015-01-08 01:18:23', '2015-01-08 01:21:36', '301fa1f1-114c-41e4-b750-8a8519088112'),
-(62, 46, 'en_us', '24 Hour Emergency Services', NULL, '<p>find out more WILL NO LONGER BE THE WORDS HERE. &nbsp;small pargraph instead</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'some brief words kajdfdjk ajdf lkdjf lkadsj fisdj ioadsj oidasjfoidajf aosid fjoidsf jadiofj oifadiofjd oifa  iio asiodj fioasdjfdioa jadsio jdsio fjadsoif jadsoi fjads.', NULL, '2015-01-08 01:25:59', '2015-01-08 01:32:15', 'eb275ceb-abfe-4539-b1bd-e7bff3f1bac2'),
-(63, 47, 'en_us', 'barbecue', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:19', '2015-01-08 01:43:19', '3c2bc649-eb65-4ed8-9a75-5f94a9eb432f'),
-(64, 48, 'en_us', 'fireplace', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:28', '2015-01-08 01:43:28', '9194b0eb-d96a-445a-a2da-174187d1a1e3'),
-(65, 49, 'en_us', 'michican-winter', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:29', '2015-01-08 01:43:29', '3694d18a-bbf0-4534-8d47-11312945669d'),
-(66, 50, 'en_us', 'residential', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:31', '2015-01-08 01:43:31', '7847a990-f78c-42bf-afbd-3369d5c16e55'),
-(67, 51, 'en_us', 'coporate-industrial', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:32', '2015-01-08 01:43:32', '257b285a-1d2d-4e6a-a3f0-4246c38e0f39'),
-(68, 52, 'en_us', 'michigan-fall', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:33', '2015-01-08 01:43:33', 'b1d5fc9f-ff72-48d1-9cae-fb0c0c7ce96b'),
-(69, 53, 'en_us', 'michigan-spring', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:34', '2015-01-08 01:43:34', '26d7ce77-a9df-44af-a49f-036850672e1a'),
-(70, 54, 'en_us', 'michigan-summer', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:35', '2015-01-08 01:43:35', '1f4f1475-7912-4518-83d5-39669394094c');
+INSERT INTO `craft_content` (`id`, `elementId`, `locale`, `title`, `field_heading`, `field_body`, `field_customerName`, `field_location`, `field_fullQuote`, `field_aboutUs`, `field_aboutUsDescription`, `field_emailAddress`, `field_phoneNumber`, `field_socialLink`, `field_physicalAddress`, `field_officeHours`, `field_addressLine1`, `field_addressLine2`, `field_monFri`, `field_saturday`, `field_sunday`, `field_emergencyServices`, `field_quoteSnippet`, `field_servicesFull`, `field_servicesShort`, `dateCreated`, `dateUpdated`, `uid`) VALUES
+(1, 1, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:30:07', '2014-11-05 23:30:07', '95f72694-1971-4afc-97ee-bb8a60e237d1'),
+(2, 2, 'en_us', 'Homepage', 'Homepage Heading', '<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;</p>', NULL, 'Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.', NULL, 'About Our Company', 'Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:30:10', '2015-01-12 17:11:13', '441e0b80-d771-4cb8-89ed-dccfe1a33eb8'),
+(5, 4, 'en_us', 'Residential', NULL, '<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p><!--pagebreak-->\r\n<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>At Air Master, we staff highly trained technicians that specialize in all residential Heating, Air Conditioning, &amp; Indoor Air Quality maintenance and repair.  Preventative Maintenance on your Heating, Air Conditioning &amp; Indoor Air Quality equipment is essential to avoid future costly repairs, unexpected failures, and lower your utility bills.  If you do find yourself in need of new equipment, our fully trained Comfort Advisors will assist you in making the best choice for your replacement needs. They will provide you with a comprehensive consultation and walk with you through every step of the installation process. We provide top quality, 24 hour Emergency service for all of your residential needs. Our fully stocked parts department and trucks are here to assist you, including annual filter and humidifier pad changes.</p>', '<p>- 24/7 Emergency service, 365 days a year.</p><p>- Our fleet includes over 25 fully stocked vehicles.</p><p>- NATE certified technicians with 40 hours per year of continuing HVAC education.</p><p>- Fully trained Comfort Advisors to assist you in all HVAC replacement needs.</p><p>- In house Sheet Metal Shop that supplies all custom made metal &amp; duct work.</p><p>- Preventative Maintenance Agreements to ensure all of your equipment is working as efficiently as possible.</p>', '2014-11-05 23:36:02', '2015-01-12 16:12:17', '9b5b0035-4ec3-49ee-af03-709d4b597bda'),
+(8, 5, 'en_us', 'Commercial & Industrial', NULL, '<p>Our commercial team can design and execute a sophisticated cus- tom commercial heating and cooling system for your project, or&nbsp;provide simple 24 hour emergency repair service.</p><!--pagebreak--><p>* We offer discounted maintenance with our maintenance contract, * Can advice you on indoor air quality,</p><p> * Or give you a price estimate to replace your aging commercial fur- nace and/or air conditioner.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Our Commercial Sales Team can design and execute a sophisticated custom heating and air conditioning system for your individual needs. With our in house design built estimator, we guarantee that we can exceed your every expectation. Our team treats each and every project with the utmost importance and attention to detail. Our Commercial Service Technicians, with decades of experience, can maintain and repair all of your commercial and industrial equipment. We offer many Preventative Maintenance options that are sure to meet your needs. Preventative Maintenance is highly recommended on all equipment. It lessens the chance of equipment failure, helps insure longevity, and lowers your utility bills. Air Master welcomes the chance to bid your HVAC Maintenance contract. Please contact our office directly, and we will get you set up with a customized Maintenance contract.</p>', '<p>- In-house design built contractor</p><p>- 24/7 Emergency service, 365 days a year.</p><p>- Our Commercial Sales Team has over 40 years of experience.</p><p>- Our Commercial Service Technicians have over 20 years of experience.</p><p>- In house Sheet Metal Shop that supplies all custom made metal &amp; duct work.</p><p>- Preventative Maintenance Agreements to ensure all of your equipment is working as efficiently as possible.</p>', '2014-11-05 23:36:42', '2015-01-12 16:13:24', '4d4f5310-2cdd-4ada-ad93-a8b4ad4baba5'),
+(9, 6, 'en_us', 'Fireplace', NULL, '<p>IWith new technology, we can install a fireplace in any room for surprisingly cheap. You could have a new fireplace installed in 3-7 days.</p><p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you’re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?</p><!--pagebreak-->\r\n<p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you’re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?</p><p>We carry, or can order you, any fireplace replacement part. Maybe you want to buy some fireplace accessories or redesign the exterior? We do verything from plug and go fireplaces to a full custom design and install.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Air Master is here to meet all of your fireplace installation and service needs.  We specialize in converting wood burning fireplaces to their more modern and efficient gas alternatives.  We can assist you in any facet of your fireplace project. From the design stage to the finished product, Air Master will be with you every step of the way. Come into our showroom, or contact us directly to have a fireplace advisor discuss your options in the comfort of your own home. Air Master also provides fireplace service and safety checks. Contact us directly for details. We look forward to hearing from you.</p>', '<p>- Gas &amp; Electric Fireplace installation</p><p>- Gas fireplace inserts</p><p>- Log sets &amp; fire glass </p><p>- Installation of blue flame &amp; garage heaters</p><p>- Fireplace safety inspections</p><p>- Preventative Maintenance Agreements to ensure all of your equipment is working as efficiently as possible.&nbsp;</p>', '2014-11-05 23:36:48', '2015-01-12 16:13:04', '9f74f2cb-52de-4629-b6e8-751c333c9edf'),
+(10, 7, 'en_us', 'Barbecue', NULL, '<p>\r\n	A great american tradition, and most delicious way to prepare food.</p><p>\r\n	If you’re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.</p><p>\r\n	We can also help you get any barbecue accessory you’re missing or find you a barbecue replacement part or pieces.</p><!--pagebreak--><p>\r\n	If you’re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.</p><p>\r\n	We can also help you get any barbecue accessory you’re missing or find you a barbecue replacement part or pieces.&nbsp;&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Barbecuing has gone from a cooking method to an entire entertaining experience.  Whether you’re entertaining 2 or 42, let Air Master find the perfect high quality product to fit your needs.  Visit our showroom to discuss your vision, or have a grilling specialist come to your home to discuss your options. Let us help make your dream barbecue a reality.</p>', '<p>- Full installation of gas &amp; charcoal barbecues</p><p>- Outdoor fire pits</p><p>- Smokers &amp; grills</p><p>- Fire tables</p><p>- Barbecue islands</p><p>- Outdoor kitchen &amp; living spaces</p>', '2014-11-05 23:36:57', '2015-01-12 16:12:43', '4fe03897-11b2-454d-a15a-abc8673f5d42'),
+(29, 14, 'en_us', 'main img', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-06 03:28:24', '2014-11-09 04:45:25', '8b7c0678-1e75-4465-a147-7da36b86abe4'),
+(47, 31, 'en_us', 'michigan', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:14', '2014-12-08 20:39:14', 'eb2f0e8b-3b4e-4242-84c0-0a722026dbc0'),
+(48, 32, 'en_us', 'facebook-icon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'eba507e4-bfbd-46b9-8c8d-66509ed49aa3'),
+(49, 33, 'en_us', 'twitter-icon', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'd5719311-cd1a-4984-855b-5cdc481bddc2'),
+(50, 34, 'en_us', 'map', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-08 22:08:06', '2014-12-08 22:08:06', 'c46c0c60-90d4-44b8-a3ba-a618e9db7ffc'),
+(51, 35, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'hello@airmastermi.com', '248-399-1800', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 15:36:41', '2015-01-08 01:23:38', '2d9c56cb-534c-4d1a-921d-65e2fb84e368'),
+(52, 36, 'en_us', 'main-stock', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 16:11:25', '2014-12-09 16:11:25', '392463fc-89c6-40c9-93c0-fcc6f2fc5779'),
+(53, 37, 'en_us', 'gray-circle', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 20:37:41', '2014-12-09 20:37:41', '1e9f9ee5-6c8d-438b-b8a6-83d208ac6a85'),
+(54, 38, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'http://twitter.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 21:57:41', '2014-12-09 22:00:28', '205fa3ae-1c4a-4dc5-a677-430684c46f39'),
+(55, 39, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'http://facebook.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-09 21:59:55', '2014-12-09 22:00:16', 'ae656420-714b-4101-b071-5c1facc26f43'),
+(56, 40, 'en_us', 'air-master logo', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '5badca16-23cd-444b-919b-c41dc3404f15'),
+(57, 41, 'en_us', 'About', NULL, '', NULL, NULL, NULL, 'About Our Company', 'Air Master is a family-owned, full-service, Heating, Air Conditioning & Indoor Air Quality company. We have been providing outstanding Residential and Commercial Service & Installation to our southeast Michigan community since 1983. With over 30 years of experience we are confident that Air Master will exceed your expectations in every way.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-18 15:03:55', '2015-01-12 17:48:22', '12489763-4a26-4bd5-987b-91447d1c0223'),
+(58, 42, 'en_us', 'modal-x', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-12-18 15:04:43', '2014-12-18 15:04:43', 'fd9dab20-33fc-4acf-b7da-8f6032aa00bf'),
+(59, 43, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-04 02:38:46', '2015-01-04 02:39:24', '19d5a19e-8ff6-4139-81b3-969bf70d19a3'),
+(60, 44, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2870 Coolidge Highway', 'Berkely, Mi 48072', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:18:13', '2015-01-08 01:23:48', '26679eac-3ddf-4e7b-bcdd-6d042d6da6de'),
+(61, 45, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '8:00a – 6:00p', '10:00a- 3:00p', 'closed', NULL, NULL, NULL, NULL, '2015-01-08 01:18:23', '2015-01-12 17:57:13', '301fa1f1-114c-41e4-b750-8a8519088112'),
+(62, 46, 'en_us', 'Emergency', '24 Hour Emergency Services', '<p>find out more WILL NO LONGER BE THE WORDS HERE. &nbsp;small pargraph instead</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'The comfort of our customers is of the utmost importance to us.  Air Master Heating & Air Conditioning provides Emergency Services 24 hours a day, 7 days a week, 365 days a year.  Our experienced technicians, and timely response make even the most discouraging emergencies manageable.', NULL, NULL, NULL, '2015-01-08 01:25:59', '2015-01-12 17:46:21', 'eb275ceb-abfe-4539-b1bd-e7bff3f1bac2'),
+(63, 47, 'en_us', 'barbecue', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:19', '2015-01-08 01:43:19', '3c2bc649-eb65-4ed8-9a75-5f94a9eb432f'),
+(64, 48, 'en_us', 'fireplace', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:28', '2015-01-08 01:43:28', '9194b0eb-d96a-445a-a2da-174187d1a1e3'),
+(65, 49, 'en_us', 'michican-winter', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:29', '2015-01-08 01:43:29', '3694d18a-bbf0-4534-8d47-11312945669d'),
+(66, 50, 'en_us', 'residential', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:31', '2015-01-08 01:43:31', '7847a990-f78c-42bf-afbd-3369d5c16e55'),
+(67, 51, 'en_us', 'coporate-industrial', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:32', '2015-01-08 01:43:32', '257b285a-1d2d-4e6a-a3f0-4246c38e0f39'),
+(68, 52, 'en_us', 'michigan-fall', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:33', '2015-01-08 01:43:33', 'b1d5fc9f-ff72-48d1-9cae-fb0c0c7ce96b'),
+(69, 53, 'en_us', 'michigan-spring', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:34', '2015-01-08 01:43:34', '26d7ce77-a9df-44af-a49f-036850672e1a'),
+(70, 54, 'en_us', 'michigan-summer', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-08 01:43:35', '2015-01-08 01:43:35', '1f4f1475-7912-4518-83d5-39669394094c'),
+(71, 55, 'en_us', 'Marcia Polselli', NULL, NULL, 'Marcia Polselli (Shades Optical)', NULL, '<p>“I wanted to thank you for outstanding service by each one of your employees.  We had a difficult situation and each member of your team was great.  From Mike in sales who worked with the city and took my endless phone calls to Dennis and Robert who worked on a the hottest day of the year.  They never complained.  I can not tell what I would have been saying if it were me on the roof. Please pass along my thanks the them all. You guys are great.  I will recommend you to all my clients.  Thank you so much.  Who knew keeping you cool makes everything better. Thank you."</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​“I wanted to thank you for outstanding service by each one of your employees. We had a difficult situation and each member of your team was great."', NULL, NULL, '2015-01-12 16:04:47', '2015-01-12 16:54:07', '12f7311d-131c-4eef-8b43-256e1f386478'),
+(73, 56, 'en_us', 'Bill Schmidt', NULL, NULL, 'Bill Schmidt', NULL, '<p>“Thanks to Jason for coming out in the rain to repair and recharge my home AC system. Jason was very professional, courteous and knowledgeable. I''m looking forward enjoying a comfortable house when it gets warm out again. You have a happy customer, well done!"</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​“Thanks to Jason for coming out in the rain to repair and recharge my home AC system. Jason was very professional, courteous and knowledgeable."', NULL, NULL, '2015-01-12 16:55:03', '2015-01-12 16:55:03', '6196e5ef-8c82-48ba-8bd0-84a5e40cf3e3'),
+(74, 57, 'en_us', 'Burton Carlson', NULL, NULL, 'Burton Carlson', NULL, '<p>”Totally impressed with the work that AirMaster did for us!! And perhaps just as importantly, really thankful for all of the guys that worked at the house &hellip; they did a great job, and were super-nice, especially to my kids!! Thanks so much for your help and support!!"</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '”Totally impressed with the work that AirMaster did for us!!"', NULL, NULL, '2015-01-12 16:55:37', '2015-01-12 16:55:37', 'a29589aa-72ba-4e9e-acb8-1ca0633a589e'),
+(75, 58, 'en_us', ' Francine Pfitzenmaier​', NULL, NULL, ' Francine Pfitzenmaier​', NULL, '<p>“Thank you for a job well done. The salesman was wonderful. The installation was wonderful, clean and complete. I was completely satisfied. I think that my husband and I are people who like to see a job well done and priced appropriately. I think that Air Master achieved our goal. THANK YOU!"</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '“Thank you for a job well done. The salesman was wonderful. The installation was wonderful, clean and complete. I was completely satisfied."', NULL, NULL, '2015-01-12 16:56:20', '2015-01-12 16:56:20', '517ff97b-ab5a-4bde-b51e-e331521cc964'),
+(76, 59, 'en_us', 'Harold Zeiger', NULL, NULL, 'Harold Zeiger', NULL, '<p>”Thanks for sending the greatest HVAC repairman with whom I have ever dealt. Your service is GREAT. Thanks so much for the prompt, courteous service.”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​”Thanks for sending the greatest HVAC repairman with whom I have ever dealt. Your service is GREAT. Thanks so much for the prompt, courteous service.”', NULL, NULL, '2015-01-12 17:03:45', '2015-01-12 17:03:45', '7a5bbcfe-d877-4a8a-8124-a271ae110bfb'),
+(77, 60, 'en_us', 'Tim & April Mrosewske', NULL, NULL, 'Tim & April Mrosewske', NULL, '<p>“The 2 gentlemen (Craig &amp;amp; Clyde) who were here to install our new equipment were polite, on time and did a wonderful job right down to the clean up."&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​“The 2 gentlemen (Craig &amp; Clyde) who were here to install our new equipment were polite, on time and did a wonderful job right down to the clean up." ', NULL, NULL, '2015-01-12 17:04:06', '2015-01-12 17:04:06', '796365f3-0f29-4a85-9698-b1d69ca19188'),
+(78, 61, 'en_us', 'Chet Penkala', NULL, NULL, 'Chet Penkala', NULL, '<p>”My wife pulled out the numbers of energy (gas) usage from the last 12 months and compared them to their previous 12 and there was a drop in usage of almost 70%."</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​”My wife pulled out the numbers of energy (gas) usage from the last 12 months and compared them to their previous 12 and there was a drop in usage of almost 70%."', NULL, NULL, '2015-01-12 17:04:24', '2015-01-12 17:04:24', '9be46ba6-5d15-4856-ae1b-191bf56e460e'),
+(79, 62, 'en_us', 'Christy Strawser (Daily Tribune)', NULL, NULL, 'Christy Strawser (Daily Tribune)', NULL, '<p>”Air Mater Heating &amp; Air Conditioning in Berkley is setting aside a day in its busy schedule this time of year to help members of JARC, a local organization that provides assistance to developmentally challenged adults."</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​”Air Mater Heating & Air Conditioning in Berkley is setting aside a day in its busy schedule this time of year to help members of JARC, a local organization that provides assistance to developmentally challenged adults."', NULL, NULL, '2015-01-12 17:04:58', '2015-01-12 17:05:29', '66e77b43-86af-45e1-b4bd-d6a87a0212c1'),
+(80, 63, 'en_us', 'Charles L. Schiff', NULL, NULL, 'Charles L. Schiff', NULL, '<p>”Just wanted to say thank you for your wonderful service in responding to service requests over the many years I have been a customer, both normal and emergency, and for the great job you did with the installation of my new furnace and air conditioning units last fall."</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​”Just wanted to say thank you for your wonderful service in responding to service requests over the many years I have been a customer, both normal and emergency, and for the great job you did with the installation of my new furnace and air conditioning units last fall."', NULL, NULL, '2015-01-12 17:06:11', '2015-01-12 17:06:11', '09c6d4d6-0206-43eb-b3ab-698c984d2be5'),
+(81, 64, 'en_us', 'Pastor Kevin Jensen​', NULL, NULL, 'Pastor Kevin Jensen​', NULL, '<p>“Greetings, One of the dedicated parishioners of Cana Lutheran Church, Michael Brombach, mentioned to me today as he was installing one of our three new programmable thermostats, that it was you and your business that donated them to our church."</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '“Greetings, One of the dedicated parishioners of Cana Lutheran Church, Michael Brombach, mentioned to me today as he was installing one of our three new programmable thermostats, that it was you and your business that donated them to our church."', NULL, NULL, '2015-01-12 17:06:52', '2015-01-12 17:06:52', '7aa3aeba-fbb0-4263-a8f9-574ad0d51964'),
+(82, 65, 'en_us', 'Matt Mollan', NULL, NULL, 'Matt Mollan', NULL, '<p>”Another heating and cooling company was going to charge me $1,000 to replace something that didn''t need to be replaced in the first place."</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​”Another heating and cooling company was going to charge me $1,000 to replace something that didn''t need to be replaced in the first place."', NULL, NULL, '2015-01-12 17:07:20', '2015-01-12 17:07:20', '6ef80a1a-1926-426f-ab05-13b90a6d19bb'),
+(83, 66, 'en_us', 'Ruby Thompson', NULL, NULL, 'Ruby Thompson', NULL, '<p>”You were very patient during this entire evaluation process as you discussed and answered all our questions in detail."</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​”You were very patient during this entire evaluation process as you discussed and answered all our questions in detail."', NULL, NULL, '2015-01-12 17:07:42', '2015-01-12 17:07:42', '8752a6da-0f7b-4dbd-aa1e-ea8fb8f662dc'),
+(84, 67, 'en_us', 'JJSBN​', NULL, NULL, 'JJSBN​', NULL, '<p>“We were victims of the Aug 11 floods here in MI. Air Master came to our rescue. Jeff was particularly helpful!”&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '“We were victims of the Aug 11 floods here in MI. Air Master came to our rescue. Jeff was particularly helpful!” ', NULL, NULL, '2015-01-12 17:08:11', '2015-01-12 17:08:11', 'a5cb994a-27a5-424c-a708-b903334ae31e'),
+(85, 68, 'en_us', 'Chomsky​', NULL, NULL, 'Chomsky​', NULL, '<p>“great customer service”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '“great customer service”', NULL, NULL, '2015-01-12 17:08:31', '2015-01-12 17:08:31', '9d7b0231-061f-4972-a7a7-4afad971cff6'),
+(86, 69, 'en_us', 'Chomsky', NULL, NULL, 'Chomsky', NULL, '<p>“The appointment time was kept. The serviceman was courteous, knowledgeable and throughout. His recommendations were appropriate and they followed up promptly.”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​“The appointment time was kept. The serviceman was courteous, knowledgeable and throughout. His recommendations were appropriate and they followed up promptly.”', NULL, NULL, '2015-01-12 17:09:17', '2015-01-12 17:09:33', 'af92d584-a136-4b9c-a417-e39966ab092b'),
+(87, 70, 'en_us', 'Kathy B.', NULL, NULL, 'Kathy B.', NULL, '<p>“The salesman took the time to explain several options and there was no hard sell. The installers were prompt, efficient, polite and cleaned up after the installation.”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​“The salesman took the time to explain several options and there was no hard sell. The installers were prompt, efficient, polite and cleaned up after the installation.”', NULL, NULL, '2015-01-12 17:10:03', '2015-01-12 17:10:03', '06cda882-39b7-4a6d-85f9-da456c620abd'),
+(88, 71, 'en_us', 'MEC0', NULL, NULL, 'MEC0', NULL, '<p>“I originally contacted Air Master for maintenance because I had a coupon -- that coupon was certainly lucky for me. The technicians are skilled and polite, and they''re careful about cleaning up after doing installation or maintenance. When I bought my new furnace and air conditioner last fall, the sales rep discussed options without pressure. I''ve often recommended this company.”&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​“I originally contacted Air Master for maintenance because I had a coupon -- that coupon was certainly lucky for me. The technicians are skilled and polite, and they''re careful about cleaning up after doing installation or maintenance."', NULL, NULL, '2015-01-12 17:10:30', '2015-01-12 17:10:30', '70a4697a-97ee-4535-8ffa-242400a0089a'),
+(89, 72, 'en_us', 'Jacie', NULL, NULL, 'Jacie', NULL, '<p>“We had only positive experiences with AirMaster. We would highly recommend them.”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​“We had only positive experiences with AirMaster. We would highly recommend them.”', NULL, NULL, '2015-01-12 17:10:52', '2015-01-12 17:10:52', '41570605-6cd0-46a0-959d-6bfd9ed448da'),
+(90, 73, 'en_us', 'Timvetsorg', NULL, NULL, 'Timvetsorg', NULL, '<p>“This dealer made sure that this new AC unit was the size our home needed. Installation went very well as the workers were polite and efficient. This unit cools our home nicely and the lowered electricity bills are a big plus.”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​“This dealer made sure that this new AC unit was the size our home needed. Installation went very well as the workers were polite and efficient."', NULL, NULL, '2015-01-12 17:12:18', '2015-01-12 17:12:18', 'f442828e-65cd-42ef-9458-df675ff247a6'),
+(91, 74, 'en_us', 'SGAH', NULL, NULL, 'SGAH', NULL, '<p>“In the fall of 2013 we were a repeat customer of Air Master Heating &amp; Cooling. In our former home they had previously installed a furnace &amp; air conditioning unit and when we realized the furnace in our new home was 29 years old, they were the company we called to replace our heating &amp; air conditioning units.</p><p>During the process our sales representative educated us on the different furnace &amp; AC options and helped us make the best decision for our home. We couldn''t be more pleased with our selection as it heats our home well and we have a consistent temperature through the entire house (and expect we''ll have the same result when it is time to turn on the AC).</p><p>We will continue to recommend Air Master to our family and friends.”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '"We couldn''t be more pleased with our selection as it heats our home well and we have a consistent temperature through the entire house (and expect we''ll have the same result when it is time to turn on the AC).  We will continue to recommend Air Master to our family and friends.”', NULL, NULL, '2015-01-12 17:12:58', '2015-01-12 17:12:58', '13aec7b9-1317-478a-92a3-a07612e2eb25'),
+(92, 75, 'en_us', 'William Myers', NULL, NULL, 'William Myers', NULL, '<p>“Mike, Laurie asked that I email you with my experience with your company after the flood.</p><p>Only issue, and probably was me as much or more then you folks, is not understanding that the recommendation was to replace the furnace. </p><p>The actual install process went well starting with Eric. He is the one who explained why the replace recommendation. When asked how much he was able to talk to Jeff Fry and get a quote while I was on the phone. Then the surprise, when I asked when they could do the install I was told the furnace was in the warehouse and could do next day. I figured it would be several weeks and I am sure I was one of the lucky ones. The "Jerry and Jerry" team came the next day and by lunch time had the old out and the new in, tested and any mess cleaned up. Not only were they quick but did a great job in my opinion. (What else from AirMaster?) You have two keepers there in my opinion.  Jerry just came this last week to do the fall maintenance and was just as good with that as with the install and seems to know his way around the Lennox thermostat. Jerry is welcome in my house for maintenance anytime. Not all of the techs seem comfortable with the thermostat. New technology and not everyone is comfortable with how these work, I am sure, especially folks who don''t use the new technology with devices they own, such as smart phones.</p><p>So I cannot think of anything that could have been done better or differently. I always expect the best from your company and you folks have never disappointed.  Would recommend your company without any hesitation.</p><p>Feel free to ask for any additional info.</p><p>Forgot to say a big thanks to Laurie as well.  She got the paper work done quickly and we have received our rebate from Lennox and an email from Consumers that our rebate has been approved but have not received the check yet.”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '"So I cannot think of anything that could have been done better or differently. I always expect the best from your company and you folks have never disappointed. Would recommend your company without any hesitation."', NULL, NULL, '2015-01-12 17:13:53', '2015-01-12 17:13:53', '90e360e2-8f3c-4f15-8fd3-3ed68e91c3c9'),
+(93, 76, 'en_us', 'Susan', NULL, NULL, 'Susan', NULL, '<p>“I would like to ask that you share my next comments with the owner of AirMaster and the rest of the crew who worked on my install. It was a great pleasure working with you and your staff. Your patience and willingness to listen to the special concerns I had about my install was greatly appreciated. The fact that you and your staff went "above and beyond" to come up with an appropriate line cover, represents how customer-centric your company is. Each of your staff exhibited a great sense of professionalism in every aspect of the project. And were always willing to answer my questions in laymen''s terms that even I could understand.</p><p>Again, thank you for making this project such a pleasant experience.”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​“I would like to ask that you share my next comments with the owner of AirMaster and the rest of the crew who worked on my install. It was a great pleasure working with you and your staff."', NULL, NULL, '2015-01-12 17:14:17', '2015-01-12 17:14:17', '3c84e1b2-e99c-4381-bae1-5b9b4362e577'),
+(94, 77, 'en_us', ' Erin Keating DeWald', NULL, NULL, ' Erin Keating DeWald', NULL, '<p>“Hello Michael,</p><p>I worked with you in 2009 to help sell 4th Street in Royal Oak. It was a tough market however I enjoyed working with you to get the home sold.</p><p>I have recently bought a house in Birmingham and contacted your company for a new furnace and AC. I would like to tell you what great costumer service I have had thus far! You have very professional and extremely educated employees. Laurie was great at explaining what our new house would need for both heating and cooling the home. Next Tuesday is my installation date of both the AC and Furnace!!</p><p>I will be referring your company to all my clients as well. I hope you are doing well and If you should have any real estate questions please feel free to contact me.</p><p>Have a great day!”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '"I will be referring your company to all my clients as well. I hope you are doing well and If you should have any real estate questions please feel free to contact me."', NULL, NULL, '2015-01-12 17:14:50', '2015-01-12 17:14:50', '78c75aaa-6ee7-4f8d-911a-8c32eb0c9f52'),
+(95, 78, 'en_us', 'Susan Watts', NULL, NULL, 'Susan Watts', NULL, '<p>“Hi Laura,</p><p> The chimney liner was installed yesterday, so the job is complete. Attached is the signed completion certificate. </p><p> I would like to ask that you share my next comments with the owner of AirMaster and the rest of the crew who worked on my install. It was a great pleasure working with you and your staff. Your patience and willingness to listen to the special concerns I had about my install was greatly appreciated. The fact that you and your staff went "above and beyond" to come up with an appropriate line cover, represents how customer-centric your company is. Each of your staff exhibited a great sense of professionalism in every aspect of the project. And were always willing to answer my questions in laymen''s terms that even I could understand.</p><p> Again, thank you for making this project such a pleasant experience. </p><p> Respectfully, Susan”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '"The fact that you and your staff went "above and beyond" to come up with an appropriate line cover, represents how customer-centric your company is. Each of your staff exhibited a great sense of professionalism in every aspect of the project."', NULL, NULL, '2015-01-12 17:15:25', '2015-01-12 17:15:25', '0dd52c2c-624c-4af7-a718-45f7a5884233'),
+(96, 79, 'en_us', 'Joel Sanberg', NULL, NULL, 'Joel Sanberg', NULL, '<p>“As usual, the fellas that came over were knowlegable, answered my questions, and did a great job”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '​“As usual, the fellas that came over were knowlegable, answered my questions, and did a great job.”', NULL, NULL, '2015-01-12 17:15:46', '2015-01-12 17:15:46', 'fc994d27-cb6e-4a42-82e1-1f5f8b53374f'),
+(97, 80, 'en_us', 'Wendy', NULL, NULL, 'Wendy', NULL, '<p>“Thanks so very much for getting my air conditioning problem resolved so quickly! This weekend is the Jacob wedding and all my kids are flying in.....</p><p>Craig and his assistant Chris were terrific. Very polite and professional young men.”</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '"Craig and his assistant Chris were terrific. Very polite and professional young men.”', NULL, NULL, '2015-01-12 17:16:11', '2015-01-12 17:16:11', '72bad81f-4a05-4f68-9aca-2aaf5fc44be6'),
+(98, 81, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '7:30a – 5:00p ', NULL, NULL, NULL, NULL, NULL, NULL, '2015-01-12 17:55:55', '2015-01-12 17:56:45', 'a1f450f1-51ac-4834-a9ba-bec3d445805d');
 
 -- --------------------------------------------------------
 
@@ -346,7 +364,7 @@ CREATE TABLE `craft_elements` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_elements`
@@ -354,18 +372,11 @@ CREATE TABLE `craft_elements` (
 
 INSERT INTO `craft_elements` (`id`, `type`, `enabled`, `archived`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 'User', 1, 0, '2014-11-05 23:30:07', '2014-11-05 23:30:07', 'c8113938-2a78-4759-8206-39c1861c8dff'),
-(2, 'Entry', 1, 0, '2014-11-05 23:30:10', '2015-01-08 01:40:25', '954ab411-f91a-45d3-a149-5a1188620910'),
-(3, 'Entry', 1, 0, '2014-11-05 23:30:10', '2015-01-08 01:39:16', '12b9d74c-0f5b-430e-82ff-d2642a574d70'),
-(4, 'Entry', 1, 0, '2014-11-05 23:36:02', '2015-01-08 01:43:59', '543727b0-243c-4fae-ac92-d119efd211c9'),
-(5, 'Entry', 1, 0, '2014-11-05 23:36:42', '2015-01-08 01:44:33', '2738b754-0be8-4ce5-824c-6ab339fe1fa1'),
-(6, 'Entry', 1, 0, '2014-11-05 23:36:48', '2015-01-08 01:44:20', '55583cfe-0f3b-48db-8626-6fd5830321fb'),
-(7, 'Entry', 1, 0, '2014-11-05 23:36:57', '2015-01-08 01:44:09', 'f07c9cd9-f747-4e13-b080-e200ace31c83'),
-(8, 'Asset', 1, 0, '2014-11-06 00:09:23', '2014-11-06 00:09:23', 'f06ee8a6-b09f-4698-9cee-5d882581e9a5'),
-(9, 'Asset', 1, 0, '2014-11-06 00:09:23', '2014-11-06 00:09:23', 'a525555c-1dd5-4e52-8452-cc5f316c6bc9'),
-(10, 'Asset', 1, 0, '2014-11-06 00:09:24', '2014-11-06 00:09:24', 'b3412ecd-1228-4ae8-aa9a-c75e981abf9a'),
-(11, 'Asset', 1, 0, '2014-11-06 00:09:24', '2014-11-06 00:09:24', 'b92de875-f254-4516-af60-8eaed4abc04a'),
-(12, 'Entry', 1, 0, '2014-11-06 00:13:57', '2015-01-08 01:37:59', '8ad7d59f-2694-4183-9489-8f030c383602'),
-(13, 'Entry', 1, 0, '2014-11-06 00:14:11', '2015-01-08 01:38:08', 'f41d4290-fa65-4af4-a474-d3b96d01a33e'),
+(2, 'Entry', 1, 0, '2014-11-05 23:30:10', '2015-01-12 17:11:13', '954ab411-f91a-45d3-a149-5a1188620910'),
+(4, 'Entry', 1, 0, '2014-11-05 23:36:02', '2015-01-12 16:12:17', '543727b0-243c-4fae-ac92-d119efd211c9'),
+(5, 'Entry', 1, 0, '2014-11-05 23:36:42', '2015-01-12 16:13:24', '2738b754-0be8-4ce5-824c-6ab339fe1fa1'),
+(6, 'Entry', 1, 0, '2014-11-05 23:36:48', '2015-01-12 16:13:04', '55583cfe-0f3b-48db-8626-6fd5830321fb'),
+(7, 'Entry', 1, 0, '2014-11-05 23:36:57', '2015-01-12 16:12:43', 'f07c9cd9-f747-4e13-b080-e200ace31c83'),
 (14, 'Asset', 1, 0, '2014-11-06 03:28:24', '2014-11-09 04:45:25', 'd94a958d-14ce-483c-9619-fc0684807ce9'),
 (31, 'Asset', 1, 0, '2014-12-08 20:39:14', '2014-12-08 20:39:14', 'c4543a14-3b60-49c2-8bc9-58dacd1c8c25'),
 (32, 'Asset', 1, 0, '2014-12-08 20:39:15', '2014-12-08 20:39:15', 'a28fa053-cdd0-4606-a233-7b4a815f8f9d'),
@@ -377,12 +388,12 @@ INSERT INTO `craft_elements` (`id`, `type`, `enabled`, `archived`, `dateCreated`
 (38, 'GlobalSet', 1, 0, '2014-12-09 21:57:41', '2014-12-09 22:00:28', 'bf8fafd3-0edd-4756-b336-580db5a85714'),
 (39, 'GlobalSet', 1, 0, '2014-12-09 21:59:55', '2014-12-09 22:00:16', '1938bd06-7bdc-4d83-856d-360279679e64'),
 (40, 'Asset', 1, 0, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '2a224ba4-b974-47fd-9d48-88b742c68197'),
-(41, 'Entry', 1, 0, '2014-12-18 15:03:55', '2014-12-19 03:53:26', '87e3e7b7-7937-4946-aae1-190a78b240f0'),
+(41, 'Entry', 1, 0, '2014-12-18 15:03:55', '2015-01-12 17:48:22', '87e3e7b7-7937-4946-aae1-190a78b240f0'),
 (42, 'Asset', 1, 0, '2014-12-18 15:04:43', '2014-12-18 15:04:43', '7df3ceb7-c4f2-491d-b7d4-e8ce0e1ae6f3'),
 (43, 'GlobalSet', 1, 0, '2015-01-04 02:38:46', '2015-01-04 02:39:24', '76bf5814-e503-4438-9cfb-40b7721f33ad'),
 (44, 'GlobalSet', 1, 0, '2015-01-08 01:18:13', '2015-01-08 01:23:48', '242db791-152b-4a8f-90a7-c708fc3cf32b'),
-(45, 'GlobalSet', 1, 0, '2015-01-08 01:18:23', '2015-01-08 01:21:36', '55a423b2-3ea6-42cb-aadc-2d8f4b61a009'),
-(46, 'Entry', 1, 0, '2015-01-08 01:25:59', '2015-01-08 01:32:15', '0f11597a-8c08-454a-b335-b4715434b661'),
+(45, 'GlobalSet', 1, 0, '2015-01-08 01:18:23', '2015-01-12 17:57:13', '55a423b2-3ea6-42cb-aadc-2d8f4b61a009'),
+(46, 'Entry', 1, 0, '2015-01-08 01:25:59', '2015-01-12 17:46:21', '0f11597a-8c08-454a-b335-b4715434b661'),
 (47, 'Asset', 1, 0, '2015-01-08 01:43:19', '2015-01-08 01:43:19', '5859bed9-da9a-4b5a-880b-c8ac118b71a1'),
 (48, 'Asset', 1, 0, '2015-01-08 01:43:28', '2015-01-08 01:43:28', 'ce6ff308-0513-4999-a5c0-cf47166a1490'),
 (49, 'Asset', 1, 0, '2015-01-08 01:43:29', '2015-01-08 01:43:29', '0a335f77-b103-41f8-afd4-c79d00e3aee2'),
@@ -390,7 +401,34 @@ INSERT INTO `craft_elements` (`id`, `type`, `enabled`, `archived`, `dateCreated`
 (51, 'Asset', 1, 0, '2015-01-08 01:43:32', '2015-01-08 01:43:32', '61f3d53c-32ba-42b8-ad03-07460c69b835'),
 (52, 'Asset', 1, 0, '2015-01-08 01:43:33', '2015-01-08 01:43:33', 'f6cad90c-fc1a-46f2-8e8c-af9430c749f2'),
 (53, 'Asset', 1, 0, '2015-01-08 01:43:34', '2015-01-08 01:43:34', 'fed561a0-ea73-4af7-aef6-25bb17a8cda8'),
-(54, 'Asset', 1, 0, '2015-01-08 01:43:35', '2015-01-08 01:43:35', 'bd3a7154-33d4-4736-84a6-a7a10d707692');
+(54, 'Asset', 1, 0, '2015-01-08 01:43:35', '2015-01-08 01:43:35', 'bd3a7154-33d4-4736-84a6-a7a10d707692'),
+(55, 'Entry', 1, 0, '2015-01-12 16:04:47', '2015-01-12 16:54:07', 'f544b4a0-6e21-40a7-82d0-55e40ab87dfc'),
+(56, 'Entry', 1, 0, '2015-01-12 16:55:03', '2015-01-12 16:55:03', 'e008bd18-1d9d-4d7b-b39f-85dc86185756'),
+(57, 'Entry', 1, 0, '2015-01-12 16:55:37', '2015-01-12 16:55:37', '0c913cbc-78ad-4d63-aa1b-70ec43eb593f'),
+(58, 'Entry', 1, 0, '2015-01-12 16:56:20', '2015-01-12 16:56:20', 'c9885243-5309-451b-be2b-04ea0df816b6'),
+(59, 'Entry', 1, 0, '2015-01-12 17:03:45', '2015-01-12 17:03:45', '6969cd33-9cdd-43c1-987b-9b1e976cc680'),
+(60, 'Entry', 1, 0, '2015-01-12 17:04:06', '2015-01-12 17:04:06', '419ee932-31cd-4673-8ba0-93fdc41c7968'),
+(61, 'Entry', 1, 0, '2015-01-12 17:04:24', '2015-01-12 17:04:24', '2a5687a4-6598-49c5-a4fb-5bf357258218'),
+(62, 'Entry', 1, 0, '2015-01-12 17:04:58', '2015-01-12 17:05:29', '3e50ed04-40ae-4870-a5d8-280607d7a576'),
+(63, 'Entry', 1, 0, '2015-01-12 17:06:11', '2015-01-12 17:06:11', '3aaa8c1d-e1ff-433f-bed5-94902418c5c1'),
+(64, 'Entry', 1, 0, '2015-01-12 17:06:52', '2015-01-12 17:06:52', '4547ddc2-b005-4f97-85dd-c523ae6107e1'),
+(65, 'Entry', 1, 0, '2015-01-12 17:07:20', '2015-01-12 17:07:20', '878168df-0644-4dda-be16-4fec6b8b4311'),
+(66, 'Entry', 1, 0, '2015-01-12 17:07:42', '2015-01-12 17:07:42', 'ebcb407b-3875-4c82-bad0-15ca0273cac6'),
+(67, 'Entry', 1, 0, '2015-01-12 17:08:11', '2015-01-12 17:08:11', '984d3dcb-9062-466c-881a-9522f9a3a2a8'),
+(68, 'Entry', 1, 0, '2015-01-12 17:08:31', '2015-01-12 17:08:31', 'c9c9dac4-094e-4a00-b734-2ea3a741d6b4'),
+(69, 'Entry', 1, 0, '2015-01-12 17:09:17', '2015-01-12 17:09:33', '5b7a51cf-f5d8-443a-a5a8-f935cf101bf6'),
+(70, 'Entry', 1, 0, '2015-01-12 17:10:03', '2015-01-12 17:10:03', '757c95b7-57d3-490a-a9ea-27ca048c0547'),
+(71, 'Entry', 1, 0, '2015-01-12 17:10:30', '2015-01-12 17:10:30', '75ae69a7-833f-4327-a9fb-81fd9b50cb73'),
+(72, 'Entry', 1, 0, '2015-01-12 17:10:52', '2015-01-12 17:10:52', 'cbbe6c45-e79b-4148-9e43-9c9a22f99c33'),
+(73, 'Entry', 1, 0, '2015-01-12 17:12:18', '2015-01-12 17:12:18', '51448b76-c901-411e-b25f-3913f155a995'),
+(74, 'Entry', 1, 0, '2015-01-12 17:12:58', '2015-01-12 17:12:58', 'ab6dbacd-3bd9-4656-b9c0-9bb2e60f6718'),
+(75, 'Entry', 1, 0, '2015-01-12 17:13:53', '2015-01-12 17:13:53', 'de93cdaa-787b-471d-a877-955d2a045671'),
+(76, 'Entry', 1, 0, '2015-01-12 17:14:17', '2015-01-12 17:14:17', 'dab4ae68-7f45-41b5-a02e-61df79a596c1'),
+(77, 'Entry', 1, 0, '2015-01-12 17:14:50', '2015-01-12 17:14:50', 'a11d1738-3ccb-4025-953a-95b633d0efa3'),
+(78, 'Entry', 1, 0, '2015-01-12 17:15:25', '2015-01-12 17:15:25', 'ce2063f5-34b1-406f-9ac0-e81415b5208c'),
+(79, 'Entry', 1, 0, '2015-01-12 17:15:46', '2015-01-12 17:15:46', '87ca7d12-9107-4aab-8bd5-7bc9a0371aa8'),
+(80, 'Entry', 1, 0, '2015-01-12 17:16:11', '2015-01-12 17:16:11', 'ef521dc4-fbbe-4870-9341-95d9f085f317'),
+(81, 'GlobalSet', 1, 0, '2015-01-12 17:55:55', '2015-01-12 17:56:45', '1219cc86-bcef-44e5-a3e2-68f6d098f707');
 
 -- --------------------------------------------------------
 
@@ -408,7 +446,7 @@ CREATE TABLE `craft_elements_i18n` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_elements_i18n`
@@ -416,18 +454,11 @@ CREATE TABLE `craft_elements_i18n` (
 
 INSERT INTO `craft_elements_i18n` (`id`, `elementId`, `locale`, `slug`, `uri`, `enabled`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 1, 'en_us', '', NULL, 1, '2014-11-05 23:30:07', '2014-11-05 23:30:07', 'd0bf46ea-2449-4940-ae10-9d0155f6855c'),
-(2, 2, 'en_us', 'homepage', '__home__', 1, '2014-11-05 23:30:10', '2015-01-08 01:40:25', 'f27b8b3c-2802-4829-9686-7e2b90409573'),
-(3, 3, 'en_us', 'we-just-installed-craft', 'testimonials/2014/we-just-installed-craft', 1, '2014-11-05 23:30:10', '2015-01-08 01:39:16', '2697644e-acbf-4ac2-965d-bf541c6f6713'),
-(5, 4, 'en_us', 'residential', 'residential', 1, '2014-11-05 23:36:02', '2015-01-08 01:43:59', '244657b1-4b38-4cd0-8518-f59a470c60df'),
-(8, 5, 'en_us', 'commercialindustrial', 'commercial-industrial', 1, '2014-11-05 23:36:42', '2015-01-08 01:44:33', '2a6bfb92-b209-402f-9794-c3394b69ee89'),
-(9, 6, 'en_us', 'fireplace', 'fireplace', 1, '2014-11-05 23:36:48', '2015-01-08 01:44:20', 'e201f096-85ff-4c9e-b142-22bc292b541f'),
-(10, 7, 'en_us', 'barbecue', 'barbecue', 1, '2014-11-05 23:36:57', '2015-01-08 01:44:10', '6e994f40-a96b-4cde-b2d6-1c839f3ad817'),
-(23, 8, 'en_us', 'bbq-grills', NULL, 1, '2014-11-06 00:09:23', '2014-11-06 00:09:23', '43042b71-6679-40e8-94e1-3676435105d9'),
-(24, 9, 'en_us', 'commercial-heating-cooling', NULL, 1, '2014-11-06 00:09:23', '2014-11-06 00:09:23', '86d853e8-a074-4a8c-bef6-e2f53035ebfb'),
-(25, 10, 'en_us', 'fireplace-sales-service', NULL, 1, '2014-11-06 00:09:24', '2014-11-06 00:09:24', 'd189532b-3c19-4cb8-aaa6-1b61627aa4e4'),
-(26, 11, 'en_us', 'residential-heading-cooling', NULL, 1, '2014-11-06 00:09:24', '2014-11-06 00:09:24', '6f0bd1f1-4e07-4393-8434-fecfeececa1f'),
-(27, 12, 'en_us', 'second-testimonial', 'testimonials/2014/second-testimonial', 1, '2014-11-06 00:13:57', '2015-01-08 01:37:59', '8d481754-8f50-4516-8d37-a99aad8973c8'),
-(28, 13, 'en_us', 'third-testimonial', 'testimonials/2014/third-testimonial', 1, '2014-11-06 00:14:11', '2015-01-08 01:38:09', '4a6a2a67-b650-4d51-ae4a-17d4155e3911'),
+(2, 2, 'en_us', 'homepage', '__home__', 1, '2014-11-05 23:30:10', '2015-01-12 17:11:13', 'f27b8b3c-2802-4829-9686-7e2b90409573'),
+(5, 4, 'en_us', 'residential', 'residential', 1, '2014-11-05 23:36:02', '2015-01-12 16:12:17', '244657b1-4b38-4cd0-8518-f59a470c60df'),
+(8, 5, 'en_us', 'commercialindustrial', 'commercial-industrial', 1, '2014-11-05 23:36:42', '2015-01-12 16:13:24', '2a6bfb92-b209-402f-9794-c3394b69ee89'),
+(9, 6, 'en_us', 'fireplace', 'fireplace', 1, '2014-11-05 23:36:48', '2015-01-12 16:13:05', 'e201f096-85ff-4c9e-b142-22bc292b541f'),
+(10, 7, 'en_us', 'barbecue', 'barbecue', 1, '2014-11-05 23:36:57', '2015-01-12 16:12:43', '6e994f40-a96b-4cde-b2d6-1c839f3ad817'),
 (29, 14, 'en_us', 'main-img', NULL, 1, '2014-11-06 03:28:24', '2014-11-09 04:45:25', '126f4865-5b8b-4da9-a6b9-78768235b151'),
 (47, 31, 'en_us', 'michigan', NULL, 1, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '8ee8c4f0-5cd1-49f2-802d-51722b3efad6'),
 (48, 32, 'en_us', 'facebook-icon', NULL, 1, '2014-12-08 20:39:15', '2014-12-08 20:39:15', '8b019fd7-493c-4331-95fa-8d1cbaed6739'),
@@ -439,12 +470,12 @@ INSERT INTO `craft_elements_i18n` (`id`, `elementId`, `locale`, `slug`, `uri`, `
 (54, 38, 'en_us', '', NULL, 1, '2014-12-09 21:57:41', '2014-12-09 22:00:28', '78b07be4-07c0-41ce-9c20-9ef5e2da3271'),
 (55, 39, 'en_us', '', NULL, 1, '2014-12-09 21:59:55', '2014-12-09 22:00:17', 'c23802a2-74b9-440e-8b63-126dddd2630e'),
 (56, 40, 'en_us', 'air-master-logo', NULL, 1, '2014-12-12 01:07:13', '2014-12-12 01:07:13', '3f629289-9419-42d7-9d18-9e8a0ff8acab'),
-(57, 41, 'en_us', 'about', 'about', 1, '2014-12-18 15:03:55', '2014-12-19 03:53:26', '6dec3d60-8008-4355-82cf-232361a816e1'),
+(57, 41, 'en_us', 'about', 'about', 1, '2014-12-18 15:03:55', '2015-01-12 17:48:22', '6dec3d60-8008-4355-82cf-232361a816e1'),
 (58, 42, 'en_us', 'modal-x', NULL, 1, '2014-12-18 15:04:43', '2014-12-18 15:04:43', '8cc1238d-8fdb-41d6-92dd-b20d54a49c5e'),
 (59, 43, 'en_us', '', NULL, 1, '2015-01-04 02:38:46', '2015-01-04 02:39:24', '055c8238-63f4-4001-b655-685e30724119'),
 (60, 44, 'en_us', '', NULL, 1, '2015-01-08 01:18:13', '2015-01-08 01:23:48', '4c9a2ea7-b6e1-49d5-ac0d-918541fbbbb6'),
-(61, 45, 'en_us', '', NULL, 1, '2015-01-08 01:18:23', '2015-01-08 01:21:36', '96a86006-61f6-4430-b1cd-479426f05817'),
-(62, 46, 'en_us', 'emergency', 'emergency', 1, '2015-01-08 01:25:59', '2015-01-08 01:32:15', '258ef01c-cd9a-4f9c-b643-06e26fc3784f'),
+(61, 45, 'en_us', '', NULL, 1, '2015-01-08 01:18:23', '2015-01-12 17:57:13', '96a86006-61f6-4430-b1cd-479426f05817'),
+(62, 46, 'en_us', 'emergency', 'emergency', 1, '2015-01-08 01:25:59', '2015-01-12 17:46:21', '258ef01c-cd9a-4f9c-b643-06e26fc3784f'),
 (63, 47, 'en_us', 'barbecue', NULL, 1, '2015-01-08 01:43:19', '2015-01-08 01:43:19', '39b449b6-fb74-4596-a6bc-76d0bf5dae13'),
 (64, 48, 'en_us', 'fireplace', NULL, 1, '2015-01-08 01:43:28', '2015-01-08 01:43:28', '39381b76-4c65-4442-85f2-d818cc833956'),
 (65, 49, 'en_us', 'michican-winter', NULL, 1, '2015-01-08 01:43:29', '2015-01-08 01:43:29', 'd3ebadfe-2713-4def-aec6-d13148304b81'),
@@ -452,7 +483,34 @@ INSERT INTO `craft_elements_i18n` (`id`, `elementId`, `locale`, `slug`, `uri`, `
 (67, 51, 'en_us', 'coporate-industrial', NULL, 1, '2015-01-08 01:43:32', '2015-01-08 01:43:32', 'edb2963a-76d9-4fb0-9feb-e419dd2a1eda'),
 (68, 52, 'en_us', 'michigan-fall', NULL, 1, '2015-01-08 01:43:33', '2015-01-08 01:43:33', 'e6de1aba-1847-47d5-8690-a6306845c630'),
 (69, 53, 'en_us', 'michigan-spring', NULL, 1, '2015-01-08 01:43:34', '2015-01-08 01:43:34', 'ba2ab1fb-b1d9-4f63-ab60-6b794199b5f0'),
-(70, 54, 'en_us', 'michigan-summer', NULL, 1, '2015-01-08 01:43:35', '2015-01-08 01:43:35', 'b2188ea2-fab4-4f7e-8874-461ec4a69b60');
+(70, 54, 'en_us', 'michigan-summer', NULL, 1, '2015-01-08 01:43:35', '2015-01-08 01:43:35', 'b2188ea2-fab4-4f7e-8874-461ec4a69b60'),
+(71, 55, 'en_us', 'marcia-polselli', 'testimonials/2015/marcia-polselli', 1, '2015-01-12 16:04:47', '2015-01-12 16:54:07', '73a00bc3-9adf-42cf-8cb0-4dfd2c447ad6'),
+(73, 56, 'en_us', 'bill-schmidt', 'testimonials/2015/bill-schmidt', 1, '2015-01-12 16:55:03', '2015-01-12 16:55:03', '663d3e90-9ce9-4b52-a4e3-05d46318cc9a'),
+(74, 57, 'en_us', 'burton-carlson', 'testimonials/2015/burton-carlson', 1, '2015-01-12 16:55:37', '2015-01-12 16:55:37', '47bc0f3c-8372-43c0-aad7-221885232b70'),
+(75, 58, 'en_us', 'francine-pfitzenmaier', 'testimonials/2015/francine-pfitzenmaier', 1, '2015-01-12 16:56:20', '2015-01-12 16:56:20', '71efe1ed-5f34-45e3-9b84-59bfe5da978f'),
+(76, 59, 'en_us', 'harold-zeiger', 'testimonials/2015/harold-zeiger', 1, '2015-01-12 17:03:45', '2015-01-12 17:03:45', '74e95547-3a23-4d04-a07c-bfbc14d3a354'),
+(77, 60, 'en_us', 'tim-april-mrosewske', 'testimonials/2015/tim-april-mrosewske', 1, '2015-01-12 17:04:06', '2015-01-12 17:04:06', '5034e9c2-2323-4bae-9cdf-5f3eadcca52c'),
+(78, 61, 'en_us', 'chet-penkala', 'testimonials/2015/chet-penkala', 1, '2015-01-12 17:04:24', '2015-01-12 17:04:24', 'b4e67deb-7a63-4602-bf7b-671b09a98ae0'),
+(79, 62, 'en_us', 'christy-strawser-daily-tribune', 'testimonials/2015/christy-strawser-daily-tribune', 1, '2015-01-12 17:04:58', '2015-01-12 17:05:29', '2987b513-f2bf-4098-8045-c5d311ec52f5'),
+(80, 63, 'en_us', 'charles-l-schiff', 'testimonials/2015/charles-l-schiff', 1, '2015-01-12 17:06:11', '2015-01-12 17:06:11', 'ea10fee7-ad70-4dfa-8cb6-5a6a06183a8d'),
+(81, 64, 'en_us', 'pastor-kevin-jensen', 'testimonials/2015/pastor-kevin-jensen', 1, '2015-01-12 17:06:52', '2015-01-12 17:06:52', 'f2cde3f0-a7ea-4c35-9e0e-b793ecb229f3'),
+(82, 65, 'en_us', 'matt-mollan', 'testimonials/2015/matt-mollan', 1, '2015-01-12 17:07:20', '2015-01-12 17:07:20', '256465b4-4a0e-4b4c-8ed4-a3c3db7494f2'),
+(83, 66, 'en_us', 'ruby-thompson', 'testimonials/2015/ruby-thompson', 1, '2015-01-12 17:07:42', '2015-01-12 17:07:42', 'c2b6a7ad-9bfe-4f24-888c-2bb6f107d6da'),
+(84, 67, 'en_us', 'jjsbn', 'testimonials/2015/jjsbn', 1, '2015-01-12 17:08:11', '2015-01-12 17:08:11', 'de013907-f15c-44af-83ac-cae36ba36628'),
+(85, 68, 'en_us', 'chomsky', 'testimonials/2015/chomsky', 1, '2015-01-12 17:08:31', '2015-01-12 17:08:31', '19b206fd-bdaa-4b37-b785-779c91d4e955'),
+(86, 69, 'en_us', 'chomsky-1', 'testimonials/2015/chomsky-1', 1, '2015-01-12 17:09:17', '2015-01-12 17:09:33', '4b4936c8-1a64-4b83-b8ee-21605243d77d'),
+(87, 70, 'en_us', 'kathy-b', 'testimonials/2015/kathy-b', 1, '2015-01-12 17:10:03', '2015-01-12 17:10:03', '030cd505-47ae-4310-a32c-b2c96908a4ea'),
+(88, 71, 'en_us', 'mec0', 'testimonials/2015/mec0', 1, '2015-01-12 17:10:30', '2015-01-12 17:10:30', '21ea755d-552c-451b-9fb7-d4d29555e7ed'),
+(89, 72, 'en_us', 'jacie', 'testimonials/2015/jacie', 1, '2015-01-12 17:10:52', '2015-01-12 17:10:52', '93487aa8-f65d-4c94-a0cc-7edb0a7357c6'),
+(90, 73, 'en_us', 'timvetsorg', 'testimonials/2015/timvetsorg', 1, '2015-01-12 17:12:18', '2015-01-12 17:12:18', 'bb3a68ad-0b9b-4637-94e0-8c61f33c3f09'),
+(91, 74, 'en_us', 'sgah', 'testimonials/2015/sgah', 1, '2015-01-12 17:12:58', '2015-01-12 17:12:58', 'df25cba6-4121-4cab-89af-d9cfa2221c38'),
+(92, 75, 'en_us', 'william-myers', 'testimonials/2015/william-myers', 1, '2015-01-12 17:13:53', '2015-01-12 17:13:53', 'f6fd7e2d-1bac-4875-bb3f-8906e4dcbd0b'),
+(93, 76, 'en_us', 'susan', 'testimonials/2015/susan', 1, '2015-01-12 17:14:17', '2015-01-12 17:14:17', '35d2061d-cdb0-469c-83cb-71a25d06faa6'),
+(94, 77, 'en_us', 'erin-keating-dewald', 'testimonials/2015/erin-keating-dewald', 1, '2015-01-12 17:14:50', '2015-01-12 17:14:50', '3739be79-5bd6-4390-8673-b124f3ae469b'),
+(95, 78, 'en_us', 'susan-watts', 'testimonials/2015/susan-watts', 1, '2015-01-12 17:15:25', '2015-01-12 17:15:25', '57364b86-b02f-42ad-baa0-7f6a9a170aaa'),
+(96, 79, 'en_us', 'joel-sanberg', 'testimonials/2015/joel-sanberg', 1, '2015-01-12 17:15:46', '2015-01-12 17:15:46', 'f15025c0-6227-4ed0-9ea1-626c29d71248'),
+(97, 80, 'en_us', 'wendy', 'testimonials/2015/wendy', 1, '2015-01-12 17:16:11', '2015-01-12 17:16:11', '0d1f952b-a2db-4984-8baf-8c76e4079c89'),
+(98, 81, 'en_us', '', NULL, 1, '2015-01-12 17:55:55', '2015-01-12 17:56:45', 'f2de48c5-93ea-49e6-abd2-4b35e887cf0f');
 
 -- --------------------------------------------------------
 
@@ -494,16 +552,39 @@ CREATE TABLE `craft_entries` (
 --
 
 INSERT INTO `craft_entries` (`id`, `sectionId`, `typeId`, `authorId`, `postDate`, `expiryDate`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(2, 1, 1, NULL, '2014-12-18 18:19:57', NULL, '2014-11-05 23:30:10', '2015-01-08 01:40:25', '7c132c77-848a-4410-9619-4bb00519068a'),
-(3, 2, 2, 1, '2014-11-05 23:30:00', NULL, '2014-11-05 23:30:10', '2015-01-08 01:39:16', 'cdace329-e0ae-404a-8a8c-d7b0bc230ad6'),
-(4, 3, 3, NULL, '2014-11-06 03:54:12', NULL, '2014-11-05 23:36:02', '2015-01-08 01:44:00', '1cd68310-ba4b-46b8-be19-fd52b7771a67'),
-(5, 4, 4, NULL, '2014-11-05 23:36:42', NULL, '2014-11-05 23:36:42', '2015-01-08 01:44:33', 'a25d7a27-3b34-42d6-8844-a8061586e4de'),
-(6, 5, 5, NULL, '2014-11-06 00:00:56', NULL, '2014-11-05 23:36:48', '2015-01-08 01:44:20', '4a758c8b-a2d4-4802-938e-293752d73458'),
-(7, 6, 6, NULL, '2014-11-06 00:03:36', NULL, '2014-11-05 23:36:57', '2015-01-08 01:44:10', '805ea47e-d9db-43bd-ac7c-77ad1305b28f'),
-(12, 2, 2, 1, '2014-11-06 00:13:00', NULL, '2014-11-06 00:13:57', '2015-01-08 01:37:59', 'fce89adb-4fe1-413d-9cf5-ff382597e0b8'),
-(13, 2, 2, 1, '2014-11-06 00:14:00', NULL, '2014-11-06 00:14:11', '2015-01-08 01:38:09', 'a3d82543-393b-429d-a443-99237d980ae5'),
-(41, 7, 7, NULL, '2014-12-18 18:24:18', NULL, '2014-12-18 15:03:55', '2014-12-19 03:53:26', 'f68da5f8-acec-4e14-9ba2-8d5e474a94d4'),
-(46, 8, 8, NULL, '2015-01-08 01:25:59', NULL, '2015-01-08 01:25:59', '2015-01-08 01:32:15', '6897a149-8e57-42d0-9624-594e9d4fb39b');
+(2, 1, 1, NULL, '2014-12-18 18:19:57', NULL, '2014-11-05 23:30:10', '2015-01-12 17:11:13', '7c132c77-848a-4410-9619-4bb00519068a'),
+(4, 3, 3, NULL, '2015-01-12 16:10:11', NULL, '2014-11-05 23:36:02', '2015-01-12 16:12:17', '1cd68310-ba4b-46b8-be19-fd52b7771a67'),
+(5, 4, 4, NULL, '2014-11-05 23:36:42', NULL, '2014-11-05 23:36:42', '2015-01-12 16:13:24', 'a25d7a27-3b34-42d6-8844-a8061586e4de'),
+(6, 5, 5, NULL, '2014-11-06 00:00:56', NULL, '2014-11-05 23:36:48', '2015-01-12 16:13:05', '4a758c8b-a2d4-4802-938e-293752d73458'),
+(7, 6, 6, NULL, '2014-11-06 00:03:36', NULL, '2014-11-05 23:36:57', '2015-01-12 16:12:43', '805ea47e-d9db-43bd-ac7c-77ad1305b28f'),
+(41, 7, 7, NULL, '2014-12-18 18:24:18', NULL, '2014-12-18 15:03:55', '2015-01-12 17:48:22', 'f68da5f8-acec-4e14-9ba2-8d5e474a94d4'),
+(46, 8, 8, NULL, '2015-01-08 01:25:59', NULL, '2015-01-08 01:25:59', '2015-01-12 17:46:21', '6897a149-8e57-42d0-9624-594e9d4fb39b'),
+(55, 2, 2, 1, '2015-01-12 16:04:00', NULL, '2015-01-12 16:04:47', '2015-01-12 16:54:07', 'cebb767c-e291-4d27-ac44-6422687ccc78'),
+(56, 2, 2, 1, '2015-01-12 16:55:03', NULL, '2015-01-12 16:55:03', '2015-01-12 16:55:03', '437996e0-80c6-42c0-a20a-9ed9b632ff69'),
+(57, 2, 2, 1, '2015-01-12 16:55:37', NULL, '2015-01-12 16:55:37', '2015-01-12 16:55:37', 'e27009ef-9851-43ed-9c09-4f6445395acc'),
+(58, 2, 2, 1, '2015-01-12 16:56:20', NULL, '2015-01-12 16:56:20', '2015-01-12 16:56:20', '4dc075ab-5f08-42a0-8f04-7a1f2a780b2e'),
+(59, 2, 2, 1, '2015-01-12 17:03:45', NULL, '2015-01-12 17:03:45', '2015-01-12 17:03:45', 'a95ac545-99ec-40f0-9436-a622a0b173bb'),
+(60, 2, 2, 1, '2015-01-12 17:04:06', NULL, '2015-01-12 17:04:06', '2015-01-12 17:04:06', '3acc72bf-d1c4-4c0b-8322-1e32a1fe96af'),
+(61, 2, 2, 1, '2015-01-12 17:04:24', NULL, '2015-01-12 17:04:24', '2015-01-12 17:04:24', 'db3475be-52fd-4301-b6b5-ce434e187baf'),
+(62, 2, 2, 1, '2015-01-12 17:04:00', NULL, '2015-01-12 17:04:58', '2015-01-12 17:05:29', 'a64c45a0-401c-435b-9d09-4ebb7ecbcbf6'),
+(63, 2, 2, 1, '2015-01-12 17:06:11', NULL, '2015-01-12 17:06:11', '2015-01-12 17:06:11', '71cd3ebe-61a3-4a03-985f-ecf48c1c9e0d'),
+(64, 2, 2, 1, '2015-01-12 17:06:52', NULL, '2015-01-12 17:06:52', '2015-01-12 17:06:52', '5918c4b5-eaf2-42bd-954a-1011905e8cc2'),
+(65, 2, 2, 1, '2015-01-12 17:07:20', NULL, '2015-01-12 17:07:20', '2015-01-12 17:07:20', '962826d4-c847-4773-9e64-e059fe655bd5'),
+(66, 2, 2, 1, '2015-01-12 17:07:42', NULL, '2015-01-12 17:07:42', '2015-01-12 17:07:42', 'ac9c9080-dd70-4196-9566-caacd117f1b2'),
+(67, 2, 2, 1, '2015-01-12 17:08:11', NULL, '2015-01-12 17:08:11', '2015-01-12 17:08:11', '498bb074-20d1-4525-8339-32296fe04fcb'),
+(68, 2, 2, 1, '2015-01-12 17:08:31', NULL, '2015-01-12 17:08:31', '2015-01-12 17:08:31', 'c18c6cb0-1058-42f2-8310-6c99139a8586'),
+(69, 2, 2, 1, '2015-01-12 17:09:00', NULL, '2015-01-12 17:09:17', '2015-01-12 17:09:33', 'df32282b-0316-4905-b3d5-ccd8305eff76'),
+(70, 2, 2, 1, '2015-01-12 17:10:03', NULL, '2015-01-12 17:10:03', '2015-01-12 17:10:03', '5a8bd08a-9c09-4211-bba5-b77923a600e4'),
+(71, 2, 2, 1, '2015-01-12 17:10:30', NULL, '2015-01-12 17:10:30', '2015-01-12 17:10:30', '536a53c0-d854-4ef1-bdf0-3b56d09043b3'),
+(72, 2, 2, 1, '2015-01-12 17:10:52', NULL, '2015-01-12 17:10:52', '2015-01-12 17:10:52', '891dcba4-54cc-4a6d-a4a3-dc6af95148d4'),
+(73, 2, 2, 1, '2015-01-12 17:12:18', NULL, '2015-01-12 17:12:18', '2015-01-12 17:12:18', 'f06f1516-b71c-49a5-ae82-f5611da67309'),
+(74, 2, 2, 1, '2015-01-12 17:12:58', NULL, '2015-01-12 17:12:58', '2015-01-12 17:12:58', 'c71360a4-87bd-4f33-8851-97b1f3bdb929'),
+(75, 2, 2, 1, '2015-01-12 17:13:53', NULL, '2015-01-12 17:13:53', '2015-01-12 17:13:53', 'db8ef80e-7f1b-491e-af2e-fe365363d80a'),
+(76, 2, 2, 1, '2015-01-12 17:14:17', NULL, '2015-01-12 17:14:17', '2015-01-12 17:14:17', '6e41aae7-1b7d-44f9-bbe9-25b2e966bb68'),
+(77, 2, 2, 1, '2015-01-12 17:14:50', NULL, '2015-01-12 17:14:50', '2015-01-12 17:14:50', '8e34f029-d504-4035-b3a1-af3d79c8e0c6'),
+(78, 2, 2, 1, '2015-01-12 17:15:25', NULL, '2015-01-12 17:15:25', '2015-01-12 17:15:25', '089efae3-2111-402f-93ec-79a0a72c2054'),
+(79, 2, 2, 1, '2015-01-12 17:15:46', NULL, '2015-01-12 17:15:46', '2015-01-12 17:15:46', '7381da29-7cb2-4577-a9c2-92104138ead2'),
+(80, 2, 2, 1, '2015-01-12 17:16:11', NULL, '2015-01-12 17:16:11', '2015-01-12 17:16:11', 'cde3df73-b1fd-48f5-97ae-3efcf07d5ce7');
 
 -- --------------------------------------------------------
 
@@ -553,12 +634,12 @@ CREATE TABLE `craft_entrytypes` (
 INSERT INTO `craft_entrytypes` (`id`, `sectionId`, `fieldLayoutId`, `name`, `handle`, `hasTitleField`, `titleLabel`, `titleFormat`, `sortOrder`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 1, 53, 'Homepage', 'homepage', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:30:10', '2014-12-19 03:19:28', '3e5eabda-7292-42bc-9ad4-66b24bb48575'),
 (2, 2, 68, 'Testimonial', 'testimonial', 1, 'Title', NULL, NULL, '2014-11-05 23:30:10', '2015-01-08 01:37:30', '1bd3536f-a980-48ab-bfec-eadd397f577a'),
-(3, 3, 54, 'Residential', 'residential', 1, 'Title', NULL, NULL, '2014-11-05 23:36:02', '2014-12-19 03:36:40', '2f6a9396-a489-4662-bfe2-45feaced4327'),
-(4, 4, 13, 'Commercial & Industrial', 'commercialIndustrial', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:36:42', '2014-11-05 23:44:10', '9151e595-fb05-493f-9c07-5756d9061931'),
-(5, 5, 12, 'Fireplace', 'fireplace', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:36:48', '2014-11-05 23:44:01', '723effef-dfd6-4f57-96a6-a6b1da18783d'),
-(6, 6, 30, 'Barbecue', 'barbecue', 1, 'Barbecue', NULL, NULL, '2014-11-05 23:36:57', '2014-11-10 02:01:14', '2d4d06f6-f481-41c4-9197-6306b4deab5d'),
-(7, 7, 46, 'About Us', 'aboutUs', 1, 'Title', NULL, NULL, '2014-12-18 15:03:55', '2014-12-18 18:14:29', '959308c3-b9a4-4f40-afa0-999d63dc81d5'),
-(8, 8, 67, 'Emergency', 'emergency', 1, 'Title', NULL, NULL, '2015-01-08 01:25:59', '2015-01-08 01:31:54', '6a88fefc-c90e-4b22-8b59-6e8d7b6bf003');
+(3, 3, 72, 'Residential', 'residential', 1, 'Title', NULL, NULL, '2014-11-05 23:36:02', '2015-01-12 16:10:28', '2f6a9396-a489-4662-bfe2-45feaced4327'),
+(4, 4, 74, 'Commercial & Industrial', 'commercialIndustrial', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:36:42', '2015-01-12 16:10:53', '9151e595-fb05-493f-9c07-5756d9061931'),
+(5, 5, 73, 'Fireplace', 'fireplace', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:36:48', '2015-01-12 16:10:41', '723effef-dfd6-4f57-96a6-a6b1da18783d'),
+(6, 6, 75, 'Barbecue', 'barbecue', 1, 'Barbecue', NULL, NULL, '2014-11-05 23:36:57', '2015-01-12 16:11:04', '2d4d06f6-f481-41c4-9197-6306b4deab5d'),
+(7, 7, 77, 'About Us', 'aboutUs', 1, 'Title', NULL, NULL, '2014-12-18 15:03:55', '2015-01-12 17:48:30', '959308c3-b9a4-4f40-afa0-999d63dc81d5'),
+(8, 8, 70, 'Emergency', 'emergency', 1, 'Title', NULL, NULL, '2015-01-08 01:25:59', '2015-01-08 02:39:10', '6a88fefc-c90e-4b22-8b59-6e8d7b6bf003');
 
 -- --------------------------------------------------------
 
@@ -578,7 +659,7 @@ CREATE TABLE `craft_entryversions` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_entryversions`
@@ -615,16 +696,55 @@ INSERT INTO `craft_entryversions` (`id`, `entryId`, `sectionId`, `creatorId`, `l
 (28, 46, 8, 1, 'en_us', 1, '', '{"typeId":"8","authorId":null,"title":"Emergency","slug":"emergency","postDate":1420680359,"expiryDate":null,"enabled":1,"fields":{"2":"<p>find out more WILL NO LONGER BE THE WORDS HERE. &nbsp;small pargraph instead<\\/p>"}}', '2015-01-08 01:27:02', '2015-01-08 01:27:02', 'c1a4eb3b-e534-4b1a-887f-03a62b1508de'),
 (29, 46, 8, 1, 'en_us', 2, '', '{"typeId":"8","authorId":null,"title":"24 Hour Emergency Services","slug":"emergency","postDate":1420680359,"expiryDate":null,"enabled":1,"fields":{"2":"<p>find out more WILL NO LONGER BE THE WORDS HERE. &nbsp;small pargraph instead<\\/p>"}}', '2015-01-08 01:28:24', '2015-01-08 01:28:24', '2852471c-1624-48cc-9409-e1e398f0e892'),
 (30, 46, 8, 1, 'en_us', 3, '', '{"typeId":"8","authorId":null,"title":"24 Hour Emergency Services","slug":"emergency","postDate":1420680359,"expiryDate":null,"enabled":1,"fields":{"28":"some brief words kajdfdjk ajdf lkdjf lkadsj fisdj ioadsj oidasjfoidajf aosid fjoidsf jadiofj oifadiofjd oifa  iio asiodj fioasdjfdioa jadsio jdsio fjadsoif jadsoi fjads."}}', '2015-01-08 01:32:15', '2015-01-08 01:32:15', '2900a811-66a7-4331-af77-5d8f067c553e'),
-(31, 13, 2, 1, 'en_us', 1, '', '{"typeId":"2","authorId":"1","title":"Third Testimonial","slug":"third-testimonial","postDate":1415232840,"expiryDate":null,"enabled":1,"fields":{"6":"Harold Z.","9":"\\u201cLorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\\""}}', '2015-01-08 01:36:19', '2015-01-08 01:36:19', 'fa53ac47-8e51-4a92-8bd6-ebe0c1ba91aa'),
-(32, 3, 2, 1, 'en_us', 1, '', '{"typeId":"2","authorId":"1","title":"First Testimonial","slug":"we-just-installed-craft","postDate":1415230200,"expiryDate":null,"enabled":1,"fields":{"6":"Harold Z.","9":"\\u201cLorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\\"  \\u201cLorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\\"  \\u201cLorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\\"","29":"\\u201cLorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\\""}}', '2015-01-08 01:37:50', '2015-01-08 01:37:50', '08b3f31b-1fed-4750-b962-9058b8c9dfe5'),
-(33, 12, 2, 1, 'en_us', 1, '', '{"typeId":"2","authorId":"1","title":"Second Testimonial","slug":"second-testimonial","postDate":1415232780,"expiryDate":null,"enabled":1,"fields":{"6":"Harold Z.","9":"\\u201cLorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\\"","29":"\\u201cLorem ipsum dolor sit amet,"}}', '2015-01-08 01:37:59', '2015-01-08 01:37:59', '15da4d05-0420-400a-8e97-96b836f2c532'),
-(34, 13, 2, 1, 'en_us', 2, '', '{"typeId":"2","authorId":"1","title":"Third Testimonial","slug":"third-testimonial","postDate":1415232840,"expiryDate":null,"enabled":1,"fields":{"6":"Harold Z.","9":"\\u201cLorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\\"","29":"\\u201cLorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod "}}', '2015-01-08 01:38:09', '2015-01-08 01:38:09', '2c5fad6f-5edb-4041-850b-56971b46aaba'),
-(35, 3, 2, 1, 'en_us', 2, '', '{"typeId":"2","authorId":"1","title":"First Testimonial","slug":"we-just-installed-craft","postDate":1415230200,"expiryDate":null,"enabled":1,"fields":{"6":"Harold Z.","9":"\\u201cLorem ipsum dolor sit amet, consectetur adip- isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\\"","29":"\\u201cLorem ipsum dolor sit amet, consectetur adip- isicing elit, sed.\\""}}', '2015-01-08 01:39:16', '2015-01-08 01:39:16', '8442283f-4506-4299-9700-cc539de4bd19'),
 (36, 2, 1, 1, 'en_us', 11, '', '{"typeId":"1","authorId":null,"title":"Homepage","slug":"homepage","postDate":1418926797,"expiryDate":null,"enabled":1,"fields":{"2":"<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;<\\/p>","4":["36"],"8":"Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.","7":["3","13","12"]}}', '2015-01-08 01:40:25', '2015-01-08 01:40:25', '5eddf4a8-8078-4872-bb7b-6edd3a671aaf'),
 (37, 4, 3, 1, 'en_us', 4, '', '{"typeId":"3","authorId":null,"title":"Residential","slug":"residential","postDate":1415246052,"expiryDate":null,"enabled":1,"fields":{"2":"<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\"><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p>","5":["50"]}}', '2015-01-08 01:44:00', '2015-01-08 01:44:00', '46672b42-c1cf-4623-bacd-8eb6a5ebfbd1'),
 (38, 7, 6, 1, 'en_us', 1, '', '{"typeId":"6","authorId":null,"title":"Barbecue","slug":"barbecue","postDate":1415232216,"expiryDate":null,"enabled":1,"fields":{"2":"<p>\\r\\n\\tA great american tradition, and most delicious way to prepare food.<\\/p><p>\\r\\n\\tIf you\\u2019re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.<\\/p><p>\\r\\n\\tWe can also help you get any barbecue accessory you\\u2019re missing or find you a barbecue replacement part or pieces.<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\">\\r\\n<p>\\r\\n\\tIf you\\u2019re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.<\\/p><p>\\r\\n\\tWe can also help you get any barbecue accessory you\\u2019re missing or find you a barbecue replacement part or pieces.&nbsp;&nbsp;<\\/p>","5":["47"]}}', '2015-01-08 01:44:10', '2015-01-08 01:44:10', '551d7cdb-64d6-4f58-b342-61e942bf6ef2'),
 (39, 6, 5, 1, 'en_us', 1, '', '{"typeId":"5","authorId":null,"title":"Fireplace","slug":"fireplace","postDate":1415232056,"expiryDate":null,"enabled":1,"fields":{"2":"<p>IWith new technology, we can install a fireplace in any room for surprisingly cheap. You could have a new fireplace installed in 3-7 days.<\\/p><p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you\\u2019re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\"><p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you\\u2019re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?<\\/p><p>We carry, or can order you, any fireplace replacement part. Maybe you want to buy some fireplace accessories or redesign the exterior? We do verything from plug and go fireplaces to a full custom design and install.&nbsp;<\\/p>","5":["48"]}}', '2015-01-08 01:44:20', '2015-01-08 01:44:20', '4cfb2033-4a4f-42dd-9067-943b1eb3d576'),
-(40, 5, 4, 1, 'en_us', 1, '', '{"typeId":"4","authorId":null,"title":"Commercial & Industrial","slug":"commercialindustrial","postDate":1415230602,"expiryDate":null,"enabled":1,"fields":{"2":"<p>Our commercial team can design and execute a sophisticated cus- tom commercial heating and cooling system for your project, or&nbsp;provide simple 24 hour emergency repair service.<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\">\\r\\n<p>* We offer discounted maintenance with our maintenance contract, * Can advice you on indoor air quality,<\\/p><p> * Or give you a price estimate to replace your aging commercial fur- nace and\\/or air conditioner.&nbsp;<\\/p>","5":["51"]}}', '2015-01-08 01:44:33', '2015-01-08 01:44:33', '25929eec-9a69-4870-af53-697af7821954');
+(40, 5, 4, 1, 'en_us', 1, '', '{"typeId":"4","authorId":null,"title":"Commercial & Industrial","slug":"commercialindustrial","postDate":1415230602,"expiryDate":null,"enabled":1,"fields":{"2":"<p>Our commercial team can design and execute a sophisticated cus- tom commercial heating and cooling system for your project, or&nbsp;provide simple 24 hour emergency repair service.<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\">\\r\\n<p>* We offer discounted maintenance with our maintenance contract, * Can advice you on indoor air quality,<\\/p><p> * Or give you a price estimate to replace your aging commercial fur- nace and\\/or air conditioner.&nbsp;<\\/p>","5":["51"]}}', '2015-01-08 01:44:33', '2015-01-08 01:44:33', '25929eec-9a69-4870-af53-697af7821954'),
+(41, 46, 8, 1, 'en_us', 4, '', '{"typeId":"8","authorId":null,"title":"Emergency","slug":"emergency","postDate":1420680359,"expiryDate":null,"enabled":1,"fields":{"28":"some brief words kajdfdjk ajdf lkdjf lkadsj fisdj ioadsj oidasjfoidajf aosid fjoidsf jadiofj oifadiofjd oifa  iio asiodj fioasdjfdioa jadsio jdsio fjadsoif jadsoi fjads.","1":"24 Hour Emergency Services"}}', '2015-01-08 02:39:30', '2015-01-08 02:39:30', '89a97d5d-20e5-4a58-99a8-7ffea18a8b33'),
+(42, 41, 7, 1, 'en_us', 15, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","2":"<p>Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\"><p>Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.<\\/p><p>Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.<\\/p>"}}', '2015-01-08 02:40:59', '2015-01-08 02:40:59', '9525d3dc-9936-4363-a27f-27fe2fd1e130'),
+(43, 41, 7, 1, 'en_us', 16, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","2":"<p>Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\">\\r\\n<p>Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.<\\/p><p>Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.<\\/p>"}}', '2015-01-08 02:41:15', '2015-01-08 02:41:15', 'd5c5c13b-bdea-44eb-837a-2490b3cba9fa'),
+(44, 2, 1, 1, 'en_us', 12, '', '{"typeId":"1","authorId":null,"title":"Homepage","slug":"homepage","postDate":1418926797,"expiryDate":null,"enabled":1,"fields":{"2":"<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;<\\/p>","4":["52","49","53","54"],"8":"Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.","7":["3","13","12"]}}', '2015-01-08 03:26:03', '2015-01-08 03:26:03', '1a7d14f7-637d-4ca5-8f22-2646bcee32d2'),
+(45, 55, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Marcia Polselli","slug":"marcia-polselli","postDate":1421078687,"expiryDate":null,"enabled":1,"fields":{"6":"Marcia Polselli (Shades Optical)","9":"<p>\\u201cI wanted to thank you for outstanding service by each one of your employees.  We had a difficult situation and each member of your team was great.  From Mike in sales who worked with the city and took my endless phone calls to Dennis and Robert who worked on a the hottest day of the year.  They never complained.  I can not tell what I would have been saying if it were me on the roof. Please pass along my thanks the them all. You guys are great.  I will recommend you to all my clients.  Thank you so much.  Who knew keeping you cool makes everything better. Thank you.\\"<\\/p>","29":"\\u200b\\u201cI wanted to thank you for outstanding service by each one of your employees. We had a difficult situation and each member of your team was great.\\""}}', '2015-01-12 16:04:47', '2015-01-12 16:04:47', '184a5b0e-4ef1-489a-87cf-136b863c09c3'),
+(46, 4, 3, 1, 'en_us', 5, '', '{"typeId":"3","authorId":null,"title":"Residential","slug":"residential","postDate":1421079011,"expiryDate":null,"enabled":1,"fields":{"2":"<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\">\\r\\n<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;<\\/p>","5":["50"],"30":"<p>At Air Master, we staff highly trained technicians that specialize in all residential Heating, Air Conditioning, &amp; Indoor Air Quality maintenance and repair.  Preventative Maintenance on your Heating, Air Conditioning &amp; Indoor Air Quality equipment is essential to avoid future costly repairs, unexpected failures, and lower your utility bills.  If you do find yourself in need of new equipment, our fully trained Comfort Advisors will assist you in making the best choice for your replacement needs. They will provide you with a comprehensive consultation and walk with you through every step of the installation process. We provide top quality, 24 hour Emergency service for all of your residential needs. Our fully stocked parts department and trucks are here to assist you, including annual filter and humidifier pad changes.<\\/p>","31":"<p>- 24\\/7 Emergency service, 365 days a year.<\\/p><p>- Our fleet includes over 25 fully stocked vehicles.<\\/p><p>- NATE certified technicians with 40 hours per year of continuing HVAC education.<\\/p><p>- Fully trained Comfort Advisors to assist you in all HVAC replacement needs.<\\/p><p>- In house Sheet Metal Shop that supplies all custom made metal &amp; duct work.<\\/p><p>- Preventative Maintenance Agreements to ensure all of your equipment is working as efficiently as possible.<\\/p>"}}', '2015-01-12 16:12:17', '2015-01-12 16:12:17', '2db28f21-8b49-44d0-8dc1-51627da98a59'),
+(47, 7, 6, 1, 'en_us', 2, '', '{"typeId":"6","authorId":null,"title":"Barbecue","slug":"barbecue","postDate":1415232216,"expiryDate":null,"enabled":1,"fields":{"2":"<p>\\r\\n\\tA great american tradition, and most delicious way to prepare food.<\\/p><p>\\r\\n\\tIf you\\u2019re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.<\\/p><p>\\r\\n\\tWe can also help you get any barbecue accessory you\\u2019re missing or find you a barbecue replacement part or pieces.<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\"><p>\\r\\n\\tIf you\\u2019re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.<\\/p><p>\\r\\n\\tWe can also help you get any barbecue accessory you\\u2019re missing or find you a barbecue replacement part or pieces.&nbsp;&nbsp;<\\/p>","5":["47"],"30":"<p>Barbecuing has gone from a cooking method to an entire entertaining experience.  Whether you\\u2019re entertaining 2 or 42, let Air Master find the perfect high quality product to fit your needs.  Visit our showroom to discuss your vision, or have a grilling specialist come to your home to discuss your options. Let us help make your dream barbecue a reality.<\\/p>","31":"<p>- Full installation of gas &amp; charcoal barbecues<\\/p><p>- Outdoor fire pits<\\/p><p>- Smokers &amp; grills<\\/p><p>- Fire tables<\\/p><p>- Barbecue islands<\\/p><p>- Outdoor kitchen &amp; living spaces<\\/p>"}}', '2015-01-12 16:12:43', '2015-01-12 16:12:43', '6840191c-13b0-40d0-b088-c363380fec18'),
+(48, 6, 5, 1, 'en_us', 2, '', '{"typeId":"5","authorId":null,"title":"Fireplace","slug":"fireplace","postDate":1415232056,"expiryDate":null,"enabled":1,"fields":{"2":"<p>IWith new technology, we can install a fireplace in any room for surprisingly cheap. You could have a new fireplace installed in 3-7 days.<\\/p><p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you\\u2019re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\">\\r\\n<p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you\\u2019re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?<\\/p><p>We carry, or can order you, any fireplace replacement part. Maybe you want to buy some fireplace accessories or redesign the exterior? We do verything from plug and go fireplaces to a full custom design and install.&nbsp;<\\/p>","5":["48"],"30":"<p>Air Master is here to meet all of your fireplace installation and service needs.  We specialize in converting wood burning fireplaces to their more modern and efficient gas alternatives.  We can assist you in any facet of your fireplace project. From the design stage to the finished product, Air Master will be with you every step of the way. Come into our showroom, or contact us directly to have a fireplace advisor discuss your options in the comfort of your own home. Air Master also provides fireplace service and safety checks. Contact us directly for details. We look forward to hearing from you.<\\/p>","31":"<p>- Gas &amp; Electric Fireplace installation<\\/p><p>- Gas fireplace inserts<\\/p><p>- Log sets &amp; fire glass <\\/p><p>- Installation of blue flame &amp; garage heaters<\\/p><p>- Fireplace safety inspections<\\/p><p>- Preventative Maintenance Agreements to ensure all of your equipment is working as efficiently as possible.&nbsp;<\\/p>"}}', '2015-01-12 16:13:05', '2015-01-12 16:13:05', '2a63a2ed-914e-4e55-ba88-9b9eff4e792a'),
+(49, 5, 4, 1, 'en_us', 2, '', '{"typeId":"4","authorId":null,"title":"Commercial & Industrial","slug":"commercialindustrial","postDate":1415230602,"expiryDate":null,"enabled":1,"fields":{"2":"<p>Our commercial team can design and execute a sophisticated cus- tom commercial heating and cooling system for your project, or&nbsp;provide simple 24 hour emergency repair service.<\\/p><hr class=\\"redactor_pagebreak\\" style=\\"display:none\\" unselectable=\\"on\\" contenteditable=\\"false\\"><p>* We offer discounted maintenance with our maintenance contract, * Can advice you on indoor air quality,<\\/p><p> * Or give you a price estimate to replace your aging commercial fur- nace and\\/or air conditioner.&nbsp;<\\/p>","5":["51"],"30":"<p>Our Commercial Sales Team can design and execute a sophisticated custom heating and air conditioning system for your individual needs. With our in house design built estimator, we guarantee that we can exceed your every expectation. Our team treats each and every project with the utmost importance and attention to detail. Our Commercial Service Technicians, with decades of experience, can maintain and repair all of your commercial and industrial equipment. We offer many Preventative Maintenance options that are sure to meet your needs. Preventative Maintenance is highly recommended on all equipment. It lessens the chance of equipment failure, helps insure longevity, and lowers your utility bills. Air Master welcomes the chance to bid your HVAC Maintenance contract. Please contact our office directly, and we will get you set up with a customized Maintenance contract.<\\/p>","31":"<p>- In-house design built contractor<\\/p><p>- 24\\/7 Emergency service, 365 days a year.<\\/p><p>- Our Commercial Sales Team has over 40 years of experience.<\\/p><p>- Our Commercial Service Technicians have over 20 years of experience.<\\/p><p>- In house Sheet Metal Shop that supplies all custom made metal &amp; duct work.<\\/p><p>- Preventative Maintenance Agreements to ensure all of your equipment is working as efficiently as possible.<\\/p>"}}', '2015-01-12 16:13:24', '2015-01-12 16:13:24', '032dbee7-e8bb-4886-8026-656e1b8d7ee8'),
+(50, 55, 2, 1, 'en_us', 2, '', '{"typeId":"2","authorId":"1","title":"Marcia Polselli","slug":"marcia-polselli","postDate":1421078640,"expiryDate":null,"enabled":1,"fields":{"6":"Marcia Polselli (Shades Optical)","9":"<p>\\u201cI wanted to thank you for outstanding service by each one of your employees.  We had a difficult situation and each member of your team was great.  From Mike in sales who worked with the city and took my endless phone calls to Dennis and Robert who worked on a the hottest day of the year.  They never complained.  I can not tell what I would have been saying if it were me on the roof. Please pass along my thanks the them all. You guys are great.  I will recommend you to all my clients.  Thank you so much.  Who knew keeping you cool makes everything better. Thank you.\\"<\\/p>","29":"\\u200b\\u201cI wanted to thank you for outstanding service by each one of your employees. We had a difficult situation and each member of your team was great.\\""}}', '2015-01-12 16:54:07', '2015-01-12 16:54:07', '285d631f-94a2-4959-abe9-45a73ac67849'),
+(51, 56, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Bill Schmidt","slug":"bill-schmidt","postDate":1421081703,"expiryDate":null,"enabled":1,"fields":{"6":"Bill Schmidt","9":"<p>\\u201cThanks to Jason for coming out in the rain to repair and recharge my home AC system. Jason was very professional, courteous and knowledgeable. I''m looking forward enjoying a comfortable house when it gets warm out again. You have a happy customer, well done!\\"<\\/p>","29":"\\u200b\\u201cThanks to Jason for coming out in the rain to repair and recharge my home AC system. Jason was very professional, courteous and knowledgeable.\\""}}', '2015-01-12 16:55:03', '2015-01-12 16:55:03', '4d2843e9-075f-4a12-bfc9-16467b0d896e'),
+(52, 57, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Burton Carlson","slug":"burton-carlson","postDate":1421081737,"expiryDate":null,"enabled":1,"fields":{"6":"Burton Carlson","9":"<p>\\u201dTotally impressed with the work that AirMaster did for us!! And perhaps just as importantly, really thankful for all of the guys that worked at the house &hellip; they did a great job, and were super-nice, especially to my kids!! Thanks so much for your help and support!!\\"<\\/p>","29":"\\u201dTotally impressed with the work that AirMaster did for us!!\\""}}', '2015-01-12 16:55:37', '2015-01-12 16:55:37', 'a560e057-b558-4f02-a5b1-f82078c95dbc'),
+(53, 58, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":" Francine Pfitzenmaier\\u200b","slug":"francine-pfitzenmaier","postDate":1421081780,"expiryDate":null,"enabled":1,"fields":{"6":" Francine Pfitzenmaier\\u200b","9":"<p>\\u201cThank you for a job well done. The salesman was wonderful. The installation was wonderful, clean and complete. I was completely satisfied. I think that my husband and I are people who like to see a job well done and priced appropriately. I think that Air Master achieved our goal. THANK YOU!\\"<\\/p>","29":"\\u201cThank you for a job well done. The salesman was wonderful. The installation was wonderful, clean and complete. I was completely satisfied.\\""}}', '2015-01-12 16:56:20', '2015-01-12 16:56:20', '31169449-74ef-4db8-89c7-0edd8b342732'),
+(54, 2, 1, 1, 'en_us', 13, '', '{"typeId":"1","authorId":null,"title":"Homepage","slug":"homepage","postDate":1418926797,"expiryDate":null,"enabled":1,"fields":{"2":"<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;<\\/p>","4":["52","49","53","54"],"8":"Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.","7":["58","57","56"]}}', '2015-01-12 17:00:55', '2015-01-12 17:00:55', 'ae6bb7a2-b0f2-4422-9b15-30b49d8a5a18'),
+(55, 59, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Harold Zeiger","slug":"harold-zeiger","postDate":1421082225,"expiryDate":null,"enabled":1,"fields":{"6":"Harold Zeiger","9":"<p>\\u201dThanks for sending the greatest HVAC repairman with whom I have ever dealt. Your service is GREAT. Thanks so much for the prompt, courteous service.\\u201d<\\/p>","29":"\\u200b\\u201dThanks for sending the greatest HVAC repairman with whom I have ever dealt. Your service is GREAT. Thanks so much for the prompt, courteous service.\\u201d"}}', '2015-01-12 17:03:45', '2015-01-12 17:03:45', '8f0553b5-d1d6-40bb-8259-ba6cbc21e512'),
+(56, 60, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Tim & April Mrosewske","slug":"tim-april-mrosewske","postDate":1421082246,"expiryDate":null,"enabled":1,"fields":{"6":"Tim & April Mrosewske","9":"<p>\\u201cThe 2 gentlemen (Craig &amp;amp; Clyde) who were here to install our new equipment were polite, on time and did a wonderful job right down to the clean up.\\"&nbsp;<\\/p>","29":"\\u200b\\u201cThe 2 gentlemen (Craig &amp; Clyde) who were here to install our new equipment were polite, on time and did a wonderful job right down to the clean up.\\" "}}', '2015-01-12 17:04:06', '2015-01-12 17:04:06', '62894cfd-cdc5-4a55-9729-6c33371e5ae0'),
+(57, 61, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Chet Penkala","slug":"chet-penkala","postDate":1421082264,"expiryDate":null,"enabled":1,"fields":{"6":"Chet Penkala","9":"<p>\\u201dMy wife pulled out the numbers of energy (gas) usage from the last 12 months and compared them to their previous 12 and there was a drop in usage of almost 70%.\\"<\\/p>","29":"\\u200b\\u201dMy wife pulled out the numbers of energy (gas) usage from the last 12 months and compared them to their previous 12 and there was a drop in usage of almost 70%.\\""}}', '2015-01-12 17:04:24', '2015-01-12 17:04:24', '295ff626-7148-4603-a1cf-801fa9ef0a55'),
+(58, 62, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Christy Strawser (Daily Tribune)","slug":"christy-strawser-daily-tribune","postDate":1421082298,"expiryDate":null,"enabled":1,"fields":{"6":"Christy Strawser (Daily Tribune)","9":"<p>\\u201dAir Mater Heating &amp;amp; Air Conditioning in Berkley is setting aside a day in its busy schedule this time of year to help members of JARC, a local organization that provides assistance to developmentally challenged adults.\\"<\\/p>","29":"\\u200b\\u201dAir Mater Heating &amp; Air Conditioning in Berkley is setting aside a day in its busy schedule this time of year to help members of JARC, a local organization that provides assistance to developmentally challenged adults.\\""}}', '2015-01-12 17:04:58', '2015-01-12 17:04:58', 'ea57376e-48f9-4f1f-99d0-6a162604716c'),
+(59, 62, 2, 1, 'en_us', 2, '', '{"typeId":"2","authorId":"1","title":"Christy Strawser (Daily Tribune)","slug":"christy-strawser-daily-tribune","postDate":1421082240,"expiryDate":null,"enabled":1,"fields":{"6":"Christy Strawser (Daily Tribune)","9":"<p>\\u201dAir Mater Heating &amp; Air Conditioning in Berkley is setting aside a day in its busy schedule this time of year to help members of JARC, a local organization that provides assistance to developmentally challenged adults.\\"<\\/p>","29":"\\u200b\\u201dAir Mater Heating & Air Conditioning in Berkley is setting aside a day in its busy schedule this time of year to help members of JARC, a local organization that provides assistance to developmentally challenged adults.\\""}}', '2015-01-12 17:05:29', '2015-01-12 17:05:29', 'f08a99af-606d-433b-a812-b62decb2e687'),
+(60, 63, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Charles L. Schiff","slug":"charles-l-schiff","postDate":1421082371,"expiryDate":null,"enabled":1,"fields":{"6":"Charles L. Schiff","9":"<p>\\u201dJust wanted to say thank you for your wonderful service in responding to service requests over the many years I have been a customer, both normal and emergency, and for the great job you did with the installation of my new furnace and air conditioning units last fall.\\"<\\/p>","29":"\\u200b\\u201dJust wanted to say thank you for your wonderful service in responding to service requests over the many years I have been a customer, both normal and emergency, and for the great job you did with the installation of my new furnace and air conditioning units last fall.\\""}}', '2015-01-12 17:06:11', '2015-01-12 17:06:11', 'b146cf90-6e69-43d8-a396-fc2ecd869afa'),
+(61, 64, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Pastor Kevin Jensen\\u200b","slug":"pastor-kevin-jensen","postDate":1421082412,"expiryDate":null,"enabled":1,"fields":{"6":"Pastor Kevin Jensen\\u200b","9":"<p>\\u201cGreetings, One of the dedicated parishioners of Cana Lutheran Church, Michael Brombach, mentioned to me today as he was installing one of our three new programmable thermostats, that it was you and your business that donated them to our church.\\"<\\/p>","29":"\\u201cGreetings, One of the dedicated parishioners of Cana Lutheran Church, Michael Brombach, mentioned to me today as he was installing one of our three new programmable thermostats, that it was you and your business that donated them to our church.\\""}}', '2015-01-12 17:06:52', '2015-01-12 17:06:52', 'c2235505-beb0-46ff-ae72-e702735199cc'),
+(62, 65, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Matt Mollan","slug":"matt-mollan","postDate":1421082440,"expiryDate":null,"enabled":1,"fields":{"6":"Matt Mollan","9":"<p>\\u201dAnother heating and cooling company was going to charge me $1,000 to replace something that didn''t need to be replaced in the first place.\\"<\\/p>","29":"\\u200b\\u201dAnother heating and cooling company was going to charge me $1,000 to replace something that didn''t need to be replaced in the first place.\\""}}', '2015-01-12 17:07:20', '2015-01-12 17:07:20', 'ca2fd26e-e6d0-436d-ab91-06eeb9f01b39'),
+(63, 66, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Ruby Thompson","slug":"ruby-thompson","postDate":1421082462,"expiryDate":null,"enabled":1,"fields":{"6":"Ruby Thompson","9":"<p>\\u201dYou were very patient during this entire evaluation process as you discussed and answered all our questions in detail.\\"<\\/p>","29":"\\u200b\\u201dYou were very patient during this entire evaluation process as you discussed and answered all our questions in detail.\\""}}', '2015-01-12 17:07:42', '2015-01-12 17:07:42', 'dab49574-d6bc-443e-8034-1a360b371d29'),
+(64, 67, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"JJSBN\\u200b","slug":"jjsbn","postDate":1421082491,"expiryDate":null,"enabled":1,"fields":{"6":"JJSBN\\u200b","9":"<p>\\u201cWe were victims of the Aug 11 floods here in MI. Air Master came to our rescue. Jeff was particularly helpful!\\u201d&nbsp;<\\/p>","29":"\\u201cWe were victims of the Aug 11 floods here in MI. Air Master came to our rescue. Jeff was particularly helpful!\\u201d "}}', '2015-01-12 17:08:11', '2015-01-12 17:08:11', '26556715-e5b4-4627-bb8d-8a1b6b2f666c'),
+(65, 68, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Chomsky\\u200b","slug":"chomsky","postDate":1421082511,"expiryDate":null,"enabled":1,"fields":{"6":"Chomsky\\u200b","9":"<p>\\u201cgreat customer service\\u201d<\\/p>","29":"\\u201cgreat customer service\\u201d"}}', '2015-01-12 17:08:31', '2015-01-12 17:08:31', '3bb19b66-0ff0-4d4e-b578-dd7fb5174c8a'),
+(66, 69, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Chomsky","slug":"chomsky-1","postDate":1421082557,"expiryDate":null,"enabled":1,"fields":{"6":"Chomsky","9":"<p>\\u201cThe appointment time was kept. the serviceman was courteous, knowledgeable and throughout. His recommendations were appropriate and they followed up promptly.\\u201d<\\/p>","29":"\\u200b\\u201cThe appointment time was kept. the serviceman was courteous, knowledgeable and throughout. his recommendations were appropriate and they followed up promptly.\\u201d"}}', '2015-01-12 17:09:17', '2015-01-12 17:09:17', '62a44d83-1169-4469-ae38-eaebc55f25d3'),
+(67, 69, 2, 1, 'en_us', 2, '', '{"typeId":"2","authorId":"1","title":"Chomsky","slug":"chomsky-1","postDate":1421082540,"expiryDate":null,"enabled":1,"fields":{"6":"Chomsky","9":"<p>\\u201cThe appointment time was kept. The serviceman was courteous, knowledgeable and throughout. His recommendations were appropriate and they followed up promptly.\\u201d<\\/p>","29":"\\u200b\\u201cThe appointment time was kept. The serviceman was courteous, knowledgeable and throughout. His recommendations were appropriate and they followed up promptly.\\u201d"}}', '2015-01-12 17:09:33', '2015-01-12 17:09:33', 'fd7a8952-45c7-4841-829d-e64abb2df87f'),
+(68, 70, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Kathy B.","slug":"kathy-b","postDate":1421082603,"expiryDate":null,"enabled":1,"fields":{"6":"Kathy B.","9":"<p>\\u201cThe salesman took the time to explain several options and there was no hard sell. The installers were prompt, efficient, polite and cleaned up after the installation.\\u201d<\\/p>","29":"\\u200b\\u201cThe salesman took the time to explain several options and there was no hard sell. The installers were prompt, efficient, polite and cleaned up after the installation.\\u201d"}}', '2015-01-12 17:10:03', '2015-01-12 17:10:03', 'dd6941bc-389e-4824-b44e-e92563cf56b0');
+INSERT INTO `craft_entryversions` (`id`, `entryId`, `sectionId`, `creatorId`, `locale`, `num`, `notes`, `data`, `dateCreated`, `dateUpdated`, `uid`) VALUES
+(69, 71, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"MEC0","slug":"mec0","postDate":1421082630,"expiryDate":null,"enabled":1,"fields":{"6":"MEC0","9":"<p>\\u201cI originally contacted Air Master for maintenance because I had a coupon -- that coupon was certainly lucky for me. The technicians are skilled and polite, and they''re careful about cleaning up after doing installation or maintenance. When I bought my new furnace and air conditioner last fall, the sales rep discussed options without pressure. I''ve often recommended this company.\\u201d&nbsp;<\\/p>","29":"\\u200b\\u201cI originally contacted Air Master for maintenance because I had a coupon -- that coupon was certainly lucky for me. The technicians are skilled and polite, and they''re careful about cleaning up after doing installation or maintenance.\\""}}', '2015-01-12 17:10:30', '2015-01-12 17:10:30', '93df9be2-837f-47d6-b751-646d4ed4fdcf'),
+(70, 72, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Jacie","slug":"jacie","postDate":1421082652,"expiryDate":null,"enabled":1,"fields":{"6":"Jacie","9":"<p>\\u201cWe had only positive experiences with AirMaster. We would highly recommend them.\\u201d<\\/p>","29":"\\u200b\\u201cWe had only positive experiences with AirMaster. We would highly recommend them.\\u201d"}}', '2015-01-12 17:10:52', '2015-01-12 17:10:52', 'aa97df6b-bcb6-41b4-836b-685595abe56b'),
+(71, 2, 1, 1, 'en_us', 14, '', '{"typeId":"1","authorId":null,"title":"Homepage","slug":"homepage","postDate":1418926797,"expiryDate":null,"enabled":1,"fields":{"2":"<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;<\\/p>","4":["52","49","53","54"],"8":"Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.","7":["72","57","56"]}}', '2015-01-12 17:11:13', '2015-01-12 17:11:13', '964546a7-60a6-4af7-aedb-84d117e06369'),
+(72, 73, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Timvetsorg","slug":"timvetsorg","postDate":1421082738,"expiryDate":null,"enabled":1,"fields":{"6":"Timvetsorg","9":"<p>\\u201cThis dealer made sure that this new AC unit was the size our home needed. Installation went very well as the workers were polite and efficient. This unit cools our home nicely and the lowered electricity bills are a big plus.\\u201d<\\/p>","29":"\\u200b\\u201cThis dealer made sure that this new AC unit was the size our home needed. Installation went very well as the workers were polite and efficient.\\""}}', '2015-01-12 17:12:18', '2015-01-12 17:12:18', '892b9951-c3bf-41f2-9567-65c86b0f0b8e'),
+(73, 74, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"SGAH","slug":"sgah","postDate":1421082778,"expiryDate":null,"enabled":1,"fields":{"6":"SGAH","9":"<p>\\u201cIn the fall of 2013 we were a repeat customer of Air Master Heating &amp; Cooling. In our former home they had previously installed a furnace &amp; air conditioning unit and when we realized the furnace in our new home was 29 years old, they were the company we called to replace our heating &amp; air conditioning units.<\\/p><p>During the process our sales representative educated us on the different furnace &amp; AC options and helped us make the best decision for our home. We couldn''t be more pleased with our selection as it heats our home well and we have a consistent temperature through the entire house (and expect we''ll have the same result when it is time to turn on the AC).<\\/p><p>We will continue to recommend Air Master to our family and friends.\\u201d<\\/p>","29":"\\"We couldn''t be more pleased with our selection as it heats our home well and we have a consistent temperature through the entire house (and expect we''ll have the same result when it is time to turn on the AC).  We will continue to recommend Air Master to our family and friends.\\u201d"}}', '2015-01-12 17:12:58', '2015-01-12 17:12:58', 'ce20fbe9-e3ef-4e46-a17c-35ccf2e36994'),
+(74, 75, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"William Myers","slug":"william-myers","postDate":1421082833,"expiryDate":null,"enabled":1,"fields":{"6":"William Myers","9":"<p>\\u201cMike, Laurie asked that I email you with my experience with your company after the flood.<\\/p><p>Only issue, and probably was me as much or more then you folks, is not understanding that the recommendation was to replace the furnace. <\\/p><p>The actual install process went well starting with Eric. He is the one who explained why the replace recommendation. When asked how much he was able to talk to Jeff Fry and get a quote while I was on the phone. Then the surprise, when I asked when they could do the install I was told the furnace was in the warehouse and could do next day. I figured it would be several weeks and I am sure I was one of the lucky ones. The \\"Jerry and Jerry\\" team came the next day and by lunch time had the old out and the new in, tested and any mess cleaned up. Not only were they quick but did a great job in my opinion. (What else from AirMaster?) You have two keepers there in my opinion.  Jerry just came this last week to do the fall maintenance and was just as good with that as with the install and seems to know his way around the Lennox thermostat. Jerry is welcome in my house for maintenance anytime. Not all of the techs seem comfortable with the thermostat. New technology and not everyone is comfortable with how these work, I am sure, especially folks who don''t use the new technology with devices they own, such as smart phones.<\\/p><p>So I cannot think of anything that could have been done better or differently. I always expect the best from your company and you folks have never disappointed.  Would recommend your company without any hesitation.<\\/p><p>Feel free to ask for any additional info.<\\/p><p>Forgot to say a big thanks to Laurie as well.  She got the paper work done quickly and we have received our rebate from Lennox and an email from Consumers that our rebate has been approved but have not received the check yet.\\u201d<\\/p>","29":"\\"So I cannot think of anything that could have been done better or differently. I always expect the best from your company and you folks have never disappointed. Would recommend your company without any hesitation.\\""}}', '2015-01-12 17:13:53', '2015-01-12 17:13:53', '2ed3edc6-3e3f-4374-8a96-0d5c3d222042'),
+(75, 76, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Susan","slug":"susan","postDate":1421082857,"expiryDate":null,"enabled":1,"fields":{"6":"Susan","9":"<p>\\u201cI would like to ask that you share my next comments with the owner of AirMaster and the rest of the crew who worked on my install. It was a great pleasure working with you and your staff. Your patience and willingness to listen to the special concerns I had about my install was greatly appreciated. The fact that you and your staff went \\"above and beyond\\" to come up with an appropriate line cover, represents how customer-centric your company is. Each of your staff exhibited a great sense of professionalism in every aspect of the project. And were always willing to answer my questions in laymen''s terms that even I could understand.<\\/p><p>Again, thank you for making this project such a pleasant experience.\\u201d<\\/p>","29":"\\u200b\\u201cI would like to ask that you share my next comments with the owner of AirMaster and the rest of the crew who worked on my install. It was a great pleasure working with you and your staff.\\""}}', '2015-01-12 17:14:17', '2015-01-12 17:14:17', '45ea1e0a-5593-4a88-b6f9-a3c660560fb9'),
+(76, 77, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":" Erin Keating DeWald","slug":"erin-keating-dewald","postDate":1421082890,"expiryDate":null,"enabled":1,"fields":{"6":" Erin Keating DeWald","9":"<p>\\u201cHello Michael,<\\/p><p>I worked with you in 2009 to help sell 4th Street in Royal Oak. It was a tough market however I enjoyed working with you to get the home sold.<\\/p><p>I have recently bought a house in Birmingham and contacted your company for a new furnace and AC. I would like to tell you what great costumer service I have had thus far! You have very professional and extremely educated employees. Laurie was great at explaining what our new house would need for both heating and cooling the home. Next Tuesday is my installation date of both the AC and Furnace!!<\\/p><p>I will be referring your company to all my clients as well. I hope you are doing well and If you should have any real estate questions please feel free to contact me.<\\/p><p>Have a great day!\\u201d<\\/p>","29":"\\"I will be referring your company to all my clients as well. I hope you are doing well and If you should have any real estate questions please feel free to contact me.\\""}}', '2015-01-12 17:14:50', '2015-01-12 17:14:50', '975c1b23-ca56-4fc4-aa3b-961a5d43ae8c'),
+(77, 78, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Susan Watts","slug":"susan-watts","postDate":1421082925,"expiryDate":null,"enabled":1,"fields":{"6":"Susan Watts","9":"<p>\\u201cHi Laura,<\\/p><p> The chimney liner was installed yesterday, so the job is complete. Attached is the signed completion certificate. <\\/p><p> I would like to ask that you share my next comments with the owner of AirMaster and the rest of the crew who worked on my install. It was a great pleasure working with you and your staff. Your patience and willingness to listen to the special concerns I had about my install was greatly appreciated. The fact that you and your staff went \\"above and beyond\\" to come up with an appropriate line cover, represents how customer-centric your company is. Each of your staff exhibited a great sense of professionalism in every aspect of the project. And were always willing to answer my questions in laymen''s terms that even I could understand.<\\/p><p> Again, thank you for making this project such a pleasant experience. <\\/p><p> Respectfully, Susan\\u201d<\\/p>","29":"\\"The fact that you and your staff went \\"above and beyond\\" to come up with an appropriate line cover, represents how customer-centric your company is. Each of your staff exhibited a great sense of professionalism in every aspect of the project.\\""}}', '2015-01-12 17:15:25', '2015-01-12 17:15:25', 'f8a6a5cf-6d60-4727-a6ae-a8de41bfb12e'),
+(78, 79, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Joel Sanberg","slug":"joel-sanberg","postDate":1421082946,"expiryDate":null,"enabled":1,"fields":{"6":"Joel Sanberg","9":"<p>\\u201cAs usual, the fellas that came over were knowlegable, answered my questions, and did a great job\\u201d<\\/p>","29":"\\u200b\\u201cAs usual, the fellas that came over were knowlegable, answered my questions, and did a great job.\\u201d"}}', '2015-01-12 17:15:46', '2015-01-12 17:15:46', 'e3a1b8e0-c33a-44ba-8148-7583feb48e94'),
+(79, 80, 2, 1, 'en_us', 1, '', '{"typeId":null,"authorId":"1","title":"Wendy","slug":"wendy","postDate":1421082971,"expiryDate":null,"enabled":1,"fields":{"6":"Wendy","9":"<p>\\u201cThanks so very much for getting my air conditioning problem resolved so quickly! This weekend is the Jacob wedding and all my kids are flying in.....<\\/p><p>Craig and his assistant Chris were terrific. Very polite and professional young men.\\u201d<\\/p>","29":"\\"Craig and his assistant Chris were terrific. Very polite and professional young men.\\u201d"}}', '2015-01-12 17:16:11', '2015-01-12 17:16:11', '2d33d067-e1da-432b-a707-d2dc41cd2d2d'),
+(80, 46, 8, 1, 'en_us', 5, '', '{"typeId":"8","authorId":null,"title":"Emergency","slug":"emergency","postDate":1420680359,"expiryDate":null,"enabled":1,"fields":{"28":"The comfort of our customers is of the utmost importance to us.  Air Master Heating & Air Conditioning provides Emergency Services 24 hours a day, 7 days a week, 365 days a year.  Our experienced technicians, and timely response make even the most discouraging emergencies manageable.","1":"24 Hour Emergency Services"}}', '2015-01-12 17:46:21', '2015-01-12 17:46:21', '0ce1d037-8e2d-4cde-a693-4106f883be79'),
+(81, 41, 7, 1, 'en_us', 17, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","2":"<p>Air Master is a family-owned, full-service, Heating, Air Conditioning &amp; Indoor Air Quality company. We have been providing outstanding Residential and Commercial Service &amp; Installation to our southeast Michigan community since 1983.  With over 30 years of experience we are confident that Air Master will exceed your expectations in every way.<\\/p>"}}', '2015-01-12 17:46:41', '2015-01-12 17:46:41', 'a7a8250d-31ea-4527-b61c-39c29b435c98'),
+(82, 41, 7, 1, 'en_us', 18, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","2":"<p>Air Master is a family-owned, full-service, Heating, Air Conditioning &amp; Indoor Air Quality company. We have been providing outstanding Residential and Commercial Service &amp; Installation to our southeast Michigan community since 1983.  With over 30 years of experience we are confident that Air Master will exceed your expectations in every way.<\\/p>"}}', '2015-01-12 17:47:36', '2015-01-12 17:47:36', 'e83e94a3-8a7e-4bce-88b6-e57d8658c12c'),
+(83, 41, 7, 1, 'en_us', 19, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","12":"Air Master is a family-owned, full-service, Heating, Air Conditioning & Indoor Air Quality company. We have been providing outstanding Residential and Commercial Service & Installation to our southeast Michigan community since 1983. With over 30 years of experience we are confident that Air Master will exceed your expectations in every way.","2":""}}', '2015-01-12 17:48:22', '2015-01-12 17:48:22', 'ddb06a31-596a-4bb8-acda-7b583b1bef40');
 
 -- --------------------------------------------------------
 
@@ -667,44 +787,54 @@ CREATE TABLE `craft_fieldlayoutfields` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=207 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=237 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_fieldlayoutfields`
 --
 
 INSERT INTO `craft_fieldlayoutfields` (`id`, `layoutId`, `tabId`, `fieldId`, `required`, `sortOrder`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(9, 12, 5, 5, 0, 1, '2014-11-05 23:44:01', '2014-11-05 23:44:01', '50b58f0a-834f-47e8-9ac1-b725a9a0ee38'),
-(10, 12, 5, 2, 0, 2, '2014-11-05 23:44:01', '2014-11-05 23:44:01', 'fa1dd806-3d75-4331-9a90-5c13838c2f41'),
-(11, 13, 6, 5, 0, 1, '2014-11-05 23:44:10', '2014-11-05 23:44:10', '70f1b782-7643-4347-af29-fcf33455f89a'),
-(12, 13, 6, 2, 0, 2, '2014-11-05 23:44:10', '2014-11-05 23:44:10', 'f7880680-763e-48ff-9f90-665ca8db42e0'),
-(80, 30, 21, 5, 0, 1, '2014-11-10 02:01:14', '2014-11-10 02:01:14', '903240f1-8da9-4709-a6d4-671cd8ca05c5'),
-(81, 30, 21, 2, 0, 2, '2014-11-10 02:01:14', '2014-11-10 02:01:14', 'a46ba258-2788-499e-9d10-6a8f82f7677d'),
 (84, 33, NULL, 5, 0, 1, '2014-11-16 19:41:13', '2014-11-16 19:41:13', '8aa9dfee-0e7f-4a33-b679-fb6d05364679'),
 (113, 41, NULL, 16, 0, 1, '2014-12-09 21:59:44', '2014-12-09 21:59:44', '8934064c-a6e0-4dd1-8181-9c33c21173ec'),
 (114, 41, NULL, 19, 0, 2, '2014-12-09 21:59:44', '2014-12-09 21:59:44', '4cc6430e-7400-4664-bd0d-b1175ced0596'),
 (115, 42, NULL, 16, 0, 1, '2014-12-09 21:59:55', '2014-12-09 21:59:55', '8b269e8e-ea69-425f-89d6-fbb18191e1c0'),
 (116, 42, NULL, 19, 0, 2, '2014-12-09 21:59:55', '2014-12-09 21:59:55', 'd6e9eb9c-3053-4147-a5f0-e8190750112c'),
-(137, 46, 26, 11, 0, 1, '2014-12-18 18:14:29', '2014-12-18 18:14:29', '7f63b46b-ccf4-4175-a4a1-c3b244bbf3b5'),
-(138, 46, 26, 12, 0, 2, '2014-12-18 18:14:29', '2014-12-18 18:14:29', '964ba85e-ff10-4bd5-9287-9411920e61c8'),
 (179, 53, 33, 4, 0, 1, '2014-12-19 03:19:28', '2014-12-19 03:19:28', 'a8fe1a91-3d70-48aa-859e-af26545c1658'),
 (180, 53, 33, 2, 1, 2, '2014-12-19 03:19:28', '2014-12-19 03:19:28', '366cbf1b-f1cf-48c5-abe5-b8c9af5e2a0d'),
 (181, 53, 33, 8, 0, 3, '2014-12-19 03:19:28', '2014-12-19 03:19:28', 'e32cf71b-3c84-428d-b72e-36d87e429ca6'),
 (182, 53, 33, 7, 0, 4, '2014-12-19 03:19:28', '2014-12-19 03:19:28', '1ae2b5ce-269a-4a50-85bd-af06e0067f2f'),
-(183, 54, 34, 5, 0, 1, '2014-12-19 03:36:40', '2014-12-19 03:36:40', 'c3e12ff1-a3ec-41a5-b534-b4f772590b89'),
-(184, 54, 34, 2, 0, 2, '2014-12-19 03:36:40', '2014-12-19 03:36:40', '920f5444-d18d-4607-9e11-9f456fae3ef0'),
 (185, 55, NULL, 5, 0, 1, '2015-01-04 02:38:46', '2015-01-04 02:38:46', '7151f283-36ac-4642-aa57-02cee74500d3'),
 (192, 59, NULL, 17, 0, 1, '2015-01-08 01:20:36', '2015-01-08 01:20:36', 'fea73bc4-6045-4370-a08b-f97060c11efc'),
 (193, 59, NULL, 18, 0, 2, '2015-01-08 01:20:36', '2015-01-08 01:20:36', '9b39fbcd-fed0-4cc8-9db0-2360592ff72a'),
 (194, 60, NULL, 23, 0, 1, '2015-01-08 01:20:42', '2015-01-08 01:20:42', '0b0f3247-571c-4205-99cf-418e4e98cda7'),
 (195, 60, NULL, 24, 0, 2, '2015-01-08 01:20:42', '2015-01-08 01:20:42', 'c51ce6fa-b45a-4a86-8b4d-f27b2891abf2'),
-(196, 61, NULL, 25, 0, 1, '2015-01-08 01:20:56', '2015-01-08 01:20:56', '105742ed-2512-49cd-ad10-7a94881ac9a4'),
-(197, 61, NULL, 26, 0, 2, '2015-01-08 01:20:56', '2015-01-08 01:20:56', '95f6b461-21e0-4fdd-9358-796a7ba8fd2a'),
-(198, 61, NULL, 27, 0, 3, '2015-01-08 01:20:56', '2015-01-08 01:20:56', 'b3300f38-64e3-4f9e-8d95-e70aabdfa62a'),
-(203, 67, 39, 28, 0, 1, '2015-01-08 01:31:54', '2015-01-08 01:31:54', 'a29cd7e0-c112-415e-9627-f838112765ae'),
 (204, 68, 40, 29, 0, 1, '2015-01-08 01:37:30', '2015-01-08 01:37:30', '834d5472-bcbd-4b90-a13f-f68a8271f0bf'),
 (205, 68, 40, 9, 0, 2, '2015-01-08 01:37:30', '2015-01-08 01:37:30', '460f1ad9-43c3-42bf-a91a-16f052b7e6e0'),
-(206, 68, 40, 6, 0, 3, '2015-01-08 01:37:30', '2015-01-08 01:37:30', 'c90964b8-6ecb-4d6c-aff0-308c626f735d');
+(206, 68, 40, 6, 0, 3, '2015-01-08 01:37:30', '2015-01-08 01:37:30', 'c90964b8-6ecb-4d6c-aff0-308c626f735d'),
+(208, 70, 42, 1, 0, 1, '2015-01-08 02:39:10', '2015-01-08 02:39:10', 'a299810f-412a-4814-9ff7-88d4206dff63'),
+(209, 70, 42, 28, 0, 2, '2015-01-08 02:39:10', '2015-01-08 02:39:10', 'c225cc09-5b34-44f4-af90-87bac2feb248'),
+(212, 72, 44, 5, 0, 1, '2015-01-12 16:10:28', '2015-01-12 16:10:28', '416870eb-4e2e-4a90-aeb2-04ff2df23b5a'),
+(213, 72, 44, 2, 0, 2, '2015-01-12 16:10:28', '2015-01-12 16:10:28', '3adbacd9-9a17-4fd6-911d-4c776473786a'),
+(214, 72, 44, 30, 0, 3, '2015-01-12 16:10:28', '2015-01-12 16:10:28', 'bc30743d-832d-4a2e-8b40-bb4fc0a68c68'),
+(215, 72, 44, 31, 0, 4, '2015-01-12 16:10:28', '2015-01-12 16:10:28', 'c5bc02c8-c8b8-44da-8804-33e7599e96ef'),
+(216, 73, 45, 5, 0, 1, '2015-01-12 16:10:41', '2015-01-12 16:10:41', 'e074a636-5260-43e4-bd70-7d7689260ebe'),
+(217, 73, 45, 2, 0, 2, '2015-01-12 16:10:41', '2015-01-12 16:10:41', '80986ae3-458b-4578-8f03-1e701f55c66f'),
+(218, 73, 45, 30, 0, 3, '2015-01-12 16:10:41', '2015-01-12 16:10:41', '2336cbae-d88e-4346-96e6-fcd5e306d1dd'),
+(219, 73, 45, 31, 0, 4, '2015-01-12 16:10:41', '2015-01-12 16:10:41', 'd74e4809-7be5-4121-a281-f164eea80195'),
+(220, 74, 46, 5, 0, 1, '2015-01-12 16:10:53', '2015-01-12 16:10:53', '88f5bd6d-fd04-4ea5-bf2d-33310d69f7e4'),
+(221, 74, 46, 2, 0, 2, '2015-01-12 16:10:53', '2015-01-12 16:10:53', '78f4db62-a7da-4520-9dab-c534bf50f144'),
+(222, 74, 46, 30, 0, 3, '2015-01-12 16:10:53', '2015-01-12 16:10:53', 'dc0ef32e-f876-44e1-a6d7-b9bc54a85cc5'),
+(223, 74, 46, 31, 0, 4, '2015-01-12 16:10:53', '2015-01-12 16:10:53', '8cecc9db-60f7-4459-864f-f579876505ad'),
+(224, 75, 47, 5, 0, 1, '2015-01-12 16:11:04', '2015-01-12 16:11:04', 'a4ccc103-dca4-41ad-8567-4c2b8d2c9cb7'),
+(225, 75, 47, 2, 0, 2, '2015-01-12 16:11:04', '2015-01-12 16:11:04', 'c9edda75-cfff-47bc-9e88-550f80839158'),
+(226, 75, 47, 30, 0, 3, '2015-01-12 16:11:04', '2015-01-12 16:11:04', '42cccc13-fd25-44c0-a795-a63a4b1ddb81'),
+(227, 75, 47, 31, 0, 4, '2015-01-12 16:11:04', '2015-01-12 16:11:04', 'c2681869-c0d9-4a79-882c-867331785d05'),
+(231, 77, 49, 11, 0, 1, '2015-01-12 17:48:30', '2015-01-12 17:48:30', 'd9e97ca3-1a42-4562-86c5-1a52346d1dfe'),
+(232, 77, 49, 12, 0, 2, '2015-01-12 17:48:30', '2015-01-12 17:48:30', '11e8c1b9-870b-44b2-9f66-6fc29e7e761f'),
+(233, 78, NULL, 25, 0, 1, '2015-01-12 17:55:38', '2015-01-12 17:55:38', 'f47a34f1-b1b0-4a21-9b5b-eda0823ea36b'),
+(234, 78, NULL, 26, 0, 2, '2015-01-12 17:55:38', '2015-01-12 17:55:38', 'dfed42c6-e918-44bd-b2ac-6e4c3a6e1a49'),
+(235, 78, NULL, 27, 0, 3, '2015-01-12 17:55:38', '2015-01-12 17:55:38', 'cf3cd8af-c47c-445d-90eb-a152154d02b6'),
+(236, 80, NULL, 25, 0, 1, '2015-01-12 17:56:10', '2015-01-12 17:56:10', '4868d875-6078-43b8-a998-56f5d23c19aa');
 
 -- --------------------------------------------------------
 
@@ -718,7 +848,7 @@ CREATE TABLE `craft_fieldlayouts` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_fieldlayouts`
@@ -726,21 +856,22 @@ CREATE TABLE `craft_fieldlayouts` (
 
 INSERT INTO `craft_fieldlayouts` (`id`, `type`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 'Tag', '2014-11-05 23:30:09', '2014-11-05 23:30:09', '7a378f1e-3e97-4d3b-94f1-38dc2c55a853'),
-(12, 'Entry', '2014-11-05 23:44:01', '2014-11-05 23:44:01', 'dfb8aefa-41b8-4671-a9b6-258b1e30d7e9'),
-(13, 'Entry', '2014-11-05 23:44:10', '2014-11-05 23:44:10', '5e3d86bd-84d4-4869-a480-370c5ebdf15a'),
-(30, 'Entry', '2014-11-10 02:01:14', '2014-11-10 02:01:14', '7d8e404a-2b69-41b1-b1cc-dd8347670e20'),
 (33, 'Asset', '2014-11-16 19:41:13', '2014-11-16 19:41:13', '1cb7c4a1-f1d8-4de8-b36b-8ccbf8c3ffc1'),
 (41, 'GlobalSet', '2014-12-09 21:59:44', '2014-12-09 21:59:44', '303e3cd2-b53d-4040-965d-eca5c6925e25'),
 (42, 'GlobalSet', '2014-12-09 21:59:55', '2014-12-09 21:59:55', 'ac2df093-50c2-4516-b62c-8347771e6701'),
-(46, 'Entry', '2014-12-18 18:14:29', '2014-12-18 18:14:29', '6d3ac5a2-867e-42b0-a365-289e2b387413'),
 (53, 'Entry', '2014-12-19 03:19:28', '2014-12-19 03:19:28', '172dc346-975b-43e0-80af-0bd5d7d2fecc'),
-(54, 'Entry', '2014-12-19 03:36:40', '2014-12-19 03:36:40', 'e0005414-3167-4b31-b492-4fcf990489d6'),
 (55, 'GlobalSet', '2015-01-04 02:38:46', '2015-01-04 02:38:46', '257d78f8-89e4-4e50-b65d-490335bb008e'),
 (59, 'GlobalSet', '2015-01-08 01:20:36', '2015-01-08 01:20:36', 'cbb2766d-da15-41a1-a895-6fdfe0656521'),
 (60, 'GlobalSet', '2015-01-08 01:20:42', '2015-01-08 01:20:42', '17a3b548-9929-4de4-9bd1-92f84ac46b67'),
-(61, 'GlobalSet', '2015-01-08 01:20:56', '2015-01-08 01:20:56', 'cfccf24b-3d61-42fc-b4ab-2b8bd0afc2af'),
-(67, 'Entry', '2015-01-08 01:31:54', '2015-01-08 01:31:54', '6837e30a-2d5d-4e33-a534-c07f2b2363ad'),
-(68, 'Entry', '2015-01-08 01:37:30', '2015-01-08 01:37:30', 'b456719b-3d50-4258-be9b-c3a3fa167acf');
+(68, 'Entry', '2015-01-08 01:37:30', '2015-01-08 01:37:30', 'b456719b-3d50-4258-be9b-c3a3fa167acf'),
+(70, 'Entry', '2015-01-08 02:39:10', '2015-01-08 02:39:10', '515c351c-dacb-44f8-9357-9c9c97f65de6'),
+(72, 'Entry', '2015-01-12 16:10:28', '2015-01-12 16:10:28', '8ca6872b-ac5a-4ca3-ba43-211fe089e365'),
+(73, 'Entry', '2015-01-12 16:10:41', '2015-01-12 16:10:41', 'b41050d5-77d6-40f0-9b74-a0db65eea9c2'),
+(74, 'Entry', '2015-01-12 16:10:53', '2015-01-12 16:10:53', 'fb47d417-a4f8-4181-931a-6a03a1e7d646'),
+(75, 'Entry', '2015-01-12 16:11:03', '2015-01-12 16:11:03', 'd262f369-8e06-48cb-9061-d9b0275ec6f8'),
+(77, 'Entry', '2015-01-12 17:48:30', '2015-01-12 17:48:30', 'dc78a09c-f096-4e36-a606-c09873bd81ce'),
+(78, 'GlobalSet', '2015-01-12 17:55:38', '2015-01-12 17:55:38', 'f1b2ed67-f557-4963-bdd2-735591fbae0a'),
+(80, 'GlobalSet', '2015-01-12 17:56:10', '2015-01-12 17:56:10', '22608b4f-9c19-4405-9fc9-e1374833ffbc');
 
 -- --------------------------------------------------------
 
@@ -756,21 +887,21 @@ CREATE TABLE `craft_fieldlayouttabs` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_fieldlayouttabs`
 --
 
 INSERT INTO `craft_fieldlayouttabs` (`id`, `layoutId`, `name`, `sortOrder`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(5, 12, 'Tab 1', 1, '2014-11-05 23:44:01', '2014-11-05 23:44:01', '8fa2bb22-863a-4ad6-ba23-d06b3ced3dca'),
-(6, 13, 'Tab 1', 1, '2014-11-05 23:44:10', '2014-11-05 23:44:10', 'd9a0f231-5170-439c-bb82-df4b33402db3'),
-(21, 30, 'Tab 1', 1, '2014-11-10 02:01:14', '2014-11-10 02:01:14', '7e4004f5-335b-4e2c-9442-14991d9ac571'),
-(26, 46, 'Tab 1', 1, '2014-12-18 18:14:29', '2014-12-18 18:14:29', '6282d5f9-48a7-4bb2-b274-d6011f7dcefd'),
 (33, 53, 'Content', 1, '2014-12-19 03:19:28', '2014-12-19 03:19:28', '661b9a83-4a18-459f-821a-1cdffd24183c'),
-(34, 54, 'Tab 1', 1, '2014-12-19 03:36:40', '2014-12-19 03:36:40', 'aa4c636b-46f2-49b1-83f5-19378292e776'),
-(39, 67, 'Tab 1', 1, '2015-01-08 01:31:54', '2015-01-08 01:31:54', 'febe8dfb-ff1b-43cf-ad87-3e05c2921bef'),
-(40, 68, 'Content', 1, '2015-01-08 01:37:30', '2015-01-08 01:37:30', 'd3058790-0fd4-4751-bdeb-c487db96ce91');
+(40, 68, 'Content', 1, '2015-01-08 01:37:30', '2015-01-08 01:37:30', 'd3058790-0fd4-4751-bdeb-c487db96ce91'),
+(42, 70, 'Tab 1', 1, '2015-01-08 02:39:10', '2015-01-08 02:39:10', 'efa65020-4a1d-4f19-bb25-ff672001e28c'),
+(44, 72, 'Tab 1', 1, '2015-01-12 16:10:28', '2015-01-12 16:10:28', 'eab354e9-5a93-49a4-90ad-8afbf1ca64ca'),
+(45, 73, 'Tab 1', 1, '2015-01-12 16:10:41', '2015-01-12 16:10:41', '3988e762-5c33-4800-b607-94b9f9c40260'),
+(46, 74, 'Tab 1', 1, '2015-01-12 16:10:53', '2015-01-12 16:10:53', '42d2b051-3d43-443a-a20f-7c2a9be875f7'),
+(47, 75, 'Tab 1', 1, '2015-01-12 16:11:03', '2015-01-12 16:11:03', '0ce1b118-b9f5-4d61-849f-c81655a7d7df'),
+(49, 77, 'Tab 1', 1, '2015-01-12 17:48:30', '2015-01-12 17:48:30', '7e457dbc-c928-4fb4-9b26-66dd415e2772');
 
 -- --------------------------------------------------------
 
@@ -791,7 +922,7 @@ CREATE TABLE `craft_fields` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_fields`
@@ -806,9 +937,9 @@ INSERT INTO `craft_fields` (`id`, `groupId`, `name`, `handle`, `context`, `instr
 (6, 3, 'Customer Name', 'customerName', 'global', 'customer name to be shown under their testimonial', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-11-06 00:12:04', '2014-11-06 00:12:04', '69ee0af4-3eda-4538-85e4-2108edfc7295'),
 (7, 2, 'Testimonials', 'testimonials', 'global', 'testimonial that will show up first on homepage.', 0, 'Entries', '{"sources":["section:2"],"limit":"3"}', '2014-11-06 02:52:56', '2015-01-08 01:40:15', 'd6609290-0556-4deb-96b2-368ff8895786'),
 (8, 2, 'Location', 'location', 'global', '"serving customers in this area" text', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-11-06 03:00:08', '2014-11-06 03:00:08', 'b2f2b5d3-81d7-442e-aab5-d04a1971d7a1'),
-(9, 3, 'Full Quote', 'fullQuote', 'global', 'customer''s full testimonial quote here', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-11-06 03:21:22', '2015-01-08 01:35:45', '07d20a9c-2f58-46fd-b90e-c2f2eec16057'),
+(9, 3, 'Full Quote', 'fullQuote', 'global', 'customer''s full testimonial quote here', 0, 'RichText', '{"configFile":"","cleanupHtml":"1","purifyHtml":""}', '2014-11-06 03:21:22', '2015-01-12 15:51:48', '07d20a9c-2f58-46fd-b90e-c2f2eec16057'),
 (11, 2, 'About Us', 'aboutUs', 'global', 'the title for the "About Us" portion of the homepage', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-11-06 05:04:52', '2014-11-06 05:04:52', '6edc64a0-9b96-477f-8946-35531a184eff'),
-(12, 2, 'About Us Description', 'aboutUsDescription', 'global', 'short description for the "About Us" portion of homepage', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"1","initialRows":"8"}', '2014-11-06 05:05:32', '2014-12-18 18:30:30', 'bd5cdf4c-4956-441c-ac48-1cf0819393ed'),
+(12, 2, 'About Us Description', 'aboutUsDescription', 'global', 'short description for the "About Us" portion of homepage', 0, 'RichText', '{"configFile":"","cleanupHtml":"1","purifyHtml":""}', '2014-11-06 05:05:32', '2015-01-12 17:48:40', 'bd5cdf4c-4956-441c-ac48-1cf0819393ed'),
 (14, 2, 'Google Map', 'googleMap', 'global', 'drop image of google map here', 0, 'Assets', '{"useSingleFolder":"1","sources":"*","defaultUploadLocationSource":"1","defaultUploadLocationSubpath":"","singleUploadLocationSource":"1","singleUploadLocationSubpath":"","restrictFiles":"","limit":""}', '2014-11-10 01:03:49', '2014-11-10 01:03:49', 'dbacbdba-598e-478f-a2fb-489ffa16a82f'),
 (16, 1, 'Social Icons', 'socialIcons', 'global', 'drop social icon images here', 0, 'Assets', '{"useSingleFolder":"1","sources":"*","defaultUploadLocationSource":"1","defaultUploadLocationSubpath":"","singleUploadLocationSource":"1","singleUploadLocationSubpath":"","restrictFiles":"","limit":""}', '2014-12-08 22:10:02', '2014-12-09 21:59:01', '53b2a2d6-fbc3-4d82-bd42-8af9ef8ef11f'),
 (17, 1, 'email address', 'emailAddress', 'global', 'input contact email address here', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2014-12-09 15:37:57', '2014-12-09 15:37:57', '29924156-0c3d-47ae-b164-3e3ae1ba18b0'),
@@ -823,7 +954,9 @@ INSERT INTO `craft_fields` (`id`, `groupId`, `name`, `handle`, `context`, `instr
 (26, 5, 'Saturday', 'saturday', 'global', 'office hours for saturday', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2015-01-08 01:19:38', '2015-01-08 01:19:38', '2876616e-9472-4fac-972a-212e38166f0f'),
 (27, 5, 'Sunday', 'sunday', 'global', 'office hours for Sunday', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2015-01-08 01:19:49', '2015-01-08 01:19:49', '1cdfe0c0-2e16-45c7-aa70-a6dddeeb8d7e'),
 (28, 2, 'Emergency Services', 'emergencyServices', 'global', 'description of 24 Hour Emergency Services', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2015-01-08 01:31:37', '2015-01-08 01:31:37', 'fd6c477e-8729-476c-919b-83f726aedd69'),
-(29, 1, 'Quote Snippet', 'quoteSnippet', 'global', 'short snippet of a testimonial for homepage.', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2015-01-08 01:36:52', '2015-01-08 01:36:52', '890f16bc-3a72-4c79-801a-7bc2c5798a47');
+(29, 1, 'Quote Snippet', 'quoteSnippet', 'global', 'short snippet of a testimonial for homepage.', 0, 'PlainText', '{"placeholder":"","maxLength":"","multiline":"","initialRows":"4"}', '2015-01-08 01:36:52', '2015-01-08 01:36:52', '890f16bc-3a72-4c79-801a-7bc2c5798a47'),
+(30, 2, 'Services Full', 'servicesFull', 'global', 'input full services content here', 0, 'RichText', '{"configFile":"","cleanupHtml":"1","purifyHtml":""}', '2015-01-12 16:09:18', '2015-01-12 16:09:18', '31b24090-72aa-4d26-8f43-fdd42278e9dc'),
+(31, 2, 'Services Short', 'servicesShort', 'global', 'input shorter services content here for homepage sections', 0, 'RichText', '{"configFile":"","cleanupHtml":"1","purifyHtml":""}', '2015-01-12 16:10:01', '2015-01-12 16:10:01', '780c3473-dd7c-4df2-8e4e-007e4ff67cac');
 
 -- --------------------------------------------------------
 
@@ -851,7 +984,8 @@ INSERT INTO `craft_globalsets` (`id`, `name`, `handle`, `fieldLayoutId`, `dateCr
 (39, 'facebook', 'facebook', 42, '2014-12-09 21:59:55', '2014-12-09 21:59:55', '7eac1448-f3f2-4133-aea0-ac2e92f555b6'),
 (43, 'hero images', 'heroImages', 55, '2015-01-04 02:38:46', '2015-01-04 02:38:46', 'edbfc725-22bf-4054-9969-16234c0f9719'),
 (44, 'location', 'location', 60, '2015-01-08 01:18:13', '2015-01-08 01:20:42', '1ba740ce-3536-43da-aa5d-114f8e54a22b'),
-(45, 'Office Hours', 'officeHours', 61, '2015-01-08 01:18:23', '2015-01-08 01:20:56', '768445e3-c7b7-4105-8ead-2a781a0f8a2a');
+(45, 'Show Room Hours', 'showRoomHours', 78, '2015-01-08 01:18:23', '2015-01-12 17:55:38', '768445e3-c7b7-4105-8ead-2a781a0f8a2a'),
+(81, 'Office Hours', 'officeHours', 80, '2015-01-12 17:55:55', '2015-01-12 17:56:10', 'd34a933e-31f1-4a65-9f6a-b0b9e3f30d77');
 
 -- --------------------------------------------------------
 
@@ -1020,7 +1154,7 @@ CREATE TABLE `craft_relations` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=544 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=569 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_relations`
@@ -1035,14 +1169,17 @@ INSERT INTO `craft_relations` (`id`, `fieldId`, `sourceId`, `sourceLocale`, `tar
 (506, 14, 2, NULL, 34, 1, '2014-12-19 03:06:50', '2014-12-19 03:06:50', 'de1110d3-4ca5-402e-8eda-c69c8872cf2d'),
 (534, 5, 43, NULL, 36, 1, '2015-01-04 02:39:24', '2015-01-04 02:39:24', 'da0f0721-c3d2-4367-b49c-aec8e0b44554'),
 (535, 5, 43, NULL, 14, 2, '2015-01-04 02:39:24', '2015-01-04 02:39:24', '550a7183-809d-4bc6-8f0d-c0889f368a0f'),
-(536, 4, 2, NULL, 36, 1, '2015-01-08 01:40:25', '2015-01-08 01:40:25', 'a18aa3d7-5916-4b87-8778-ee306d84227f'),
-(537, 7, 2, NULL, 3, 1, '2015-01-08 01:40:25', '2015-01-08 01:40:25', 'e5c44e5a-e857-48f9-b95f-afed0e8212f4'),
-(538, 7, 2, NULL, 13, 2, '2015-01-08 01:40:25', '2015-01-08 01:40:25', '8a892eed-cc91-4f0f-a736-6d75ce0ceee0'),
-(539, 7, 2, NULL, 12, 3, '2015-01-08 01:40:25', '2015-01-08 01:40:25', '62ea0f8d-36cb-49de-a0ca-2a8d2c574d29'),
-(540, 5, 4, NULL, 50, 1, '2015-01-08 01:44:00', '2015-01-08 01:44:00', '2660b39b-ea86-469d-b65c-b2cc223d8139'),
-(541, 5, 7, NULL, 47, 1, '2015-01-08 01:44:10', '2015-01-08 01:44:10', '15997be4-de37-43e1-b512-f963727df85f'),
-(542, 5, 6, NULL, 48, 1, '2015-01-08 01:44:20', '2015-01-08 01:44:20', 'cfcdc5b6-459d-4bd1-8005-4764256c1549'),
-(543, 5, 5, NULL, 51, 1, '2015-01-08 01:44:33', '2015-01-08 01:44:33', '0e1a3337-dd2b-435a-b6db-8a2a7f3f93d0');
+(551, 5, 4, NULL, 50, 1, '2015-01-12 16:12:17', '2015-01-12 16:12:17', 'cf2f45df-9244-4eb1-b67f-d731953ce0e4'),
+(552, 5, 7, NULL, 47, 1, '2015-01-12 16:12:43', '2015-01-12 16:12:43', '24f989a1-450f-4771-9f4f-f48d61817f17'),
+(553, 5, 6, NULL, 48, 1, '2015-01-12 16:13:05', '2015-01-12 16:13:05', 'ca315283-09b8-427c-8e36-e6048776c466'),
+(554, 5, 5, NULL, 51, 1, '2015-01-12 16:13:24', '2015-01-12 16:13:24', '6670c3e6-7d7e-4284-af1a-a6b72dc4d647'),
+(562, 4, 2, NULL, 52, 1, '2015-01-12 17:11:13', '2015-01-12 17:11:13', '79d8cc6d-c6ef-4cb4-90c4-9e41d5c4dd0c'),
+(563, 4, 2, NULL, 49, 2, '2015-01-12 17:11:13', '2015-01-12 17:11:13', 'f26b66f0-a7fd-447d-b783-cced8c3f8fe8'),
+(564, 4, 2, NULL, 53, 3, '2015-01-12 17:11:13', '2015-01-12 17:11:13', '07bcea7f-ce29-4939-a8e2-26f0c30072ed'),
+(565, 4, 2, NULL, 54, 4, '2015-01-12 17:11:13', '2015-01-12 17:11:13', 'fc0e822e-e029-41d9-9771-0d81da2cdf5f'),
+(566, 7, 2, NULL, 72, 1, '2015-01-12 17:11:13', '2015-01-12 17:11:13', '1a125629-d5f3-4448-a1df-88b403f66643'),
+(567, 7, 2, NULL, 57, 2, '2015-01-12 17:11:13', '2015-01-12 17:11:13', '891a6927-3f25-49c7-ae45-08e5f7665872'),
+(568, 7, 2, NULL, 56, 3, '2015-01-12 17:11:13', '2015-01-12 17:11:13', '3a66a934-ac74-45ac-a97f-cbcf23c666a6');
 
 -- --------------------------------------------------------
 
@@ -1147,8 +1284,8 @@ INSERT INTO `craft_searchindex` (`elementId`, `attribute`, `fieldId`, `locale`, 
 (13, 'field', 6, 'en_us', ' harold z '),
 (13, 'slug', 0, 'en_us', ' third testimonial '),
 (13, 'title', 0, 'en_us', ' third testimonial '),
-(2, 'field', 4, 'en_us', ' main stock '),
-(2, 'field', 7, 'en_us', ' first testimonial third testimonial second testimonial '),
+(2, 'field', 4, 'en_us', ' michigan fall michican winter michigan spring michigan summer '),
+(2, 'field', 7, 'en_us', ' jacie burton carlson bill schmidt '),
 (2, 'field', 8, 'en_us', ' serving customers in oakland wayne washtenaw and macomb counties since 1983 '),
 (3, 'field', 9, 'en_us', ' lorem ipsum dolor sit amet consectetur adip isicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '),
 (12, 'field', 9, 'en_us', ' lorem ipsum dolor sit amet consectetur adip isicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '),
@@ -1319,7 +1456,7 @@ INSERT INTO `craft_searchindex` (`elementId`, `attribute`, `fieldId`, `locale`, 
 (42, 'slug', 0, 'en_us', ''),
 (42, 'title', 0, 'en_us', ' modal x '),
 (41, 'field', 11, 'en_us', ' about our company '),
-(41, 'field', 12, 'en_us', ' air master is a family owned full service heating cooling and home comfort company we have been providing outstanding residential and commercial service to our southeast michigan community since 1983 30 glorious years we love heating and cooling and we love our customers '),
+(41, 'field', 12, 'en_us', ' air master is a family owned full service heating air conditioning indoor air quality company we have been providing outstanding residential and commercial service installation to our southeast michigan community since 1983 with over 30 years of experience we are confident that air master will exceed your expectations in every way '),
 (41, 'slug', 0, 'en_us', ' about '),
 (41, 'title', 0, 'en_us', ' about '),
 (2, 'field', 20, 'en_us', ' about '),
@@ -1331,13 +1468,13 @@ INSERT INTO `craft_searchindex` (`elementId`, `attribute`, `fieldId`, `locale`, 
 (44, 'field', 24, 'en_us', ' berkely mi 48072 '),
 (44, 'slug', 0, 'en_us', ''),
 (45, 'slug', 0, 'en_us', ''),
-(45, 'field', 25, 'en_us', ' 9am 5 30pm '),
-(45, 'field', 26, 'en_us', ' 10am 2pm '),
+(45, 'field', 25, 'en_us', ' 8 00a 6 00p '),
+(45, 'field', 26, 'en_us', ' 10 00a 3 00p '),
 (45, 'field', 27, 'en_us', ' closed '),
 (46, 'field', 2, 'en_us', ' find out more will no longer be the words here small pargraph instead '),
 (46, 'slug', 0, 'en_us', ' emergency '),
-(46, 'title', 0, 'en_us', ' 24 hour emergency services '),
-(46, 'field', 28, 'en_us', ' some brief words kajdfdjk ajdf lkdjf lkadsj fisdj ioadsj oidasjfoidajf aosid fjoidsf jadiofj oifadiofjd oifa iio asiodj fioasdjfdioa jadsio jdsio fjadsoif jadsoi fjads '),
+(46, 'title', 0, 'en_us', ' emergency '),
+(46, 'field', 28, 'en_us', ' the comfort of our customers is of the utmost importance to us air master heating air conditioning provides emergency services 24 hours a day 7 days a week 365 days a year our experienced technicians and timely response make even the most discouraging emergencies manageable '),
 (3, 'field', 29, 'en_us', ' lorem ipsum dolor sit amet consectetur adip isicing elit sed '),
 (47, 'title', 0, 'en_us', ' barbecue '),
 (47, 'field', 5, 'en_us', ''),
@@ -1388,7 +1525,149 @@ INSERT INTO `craft_searchindex` (`elementId`, `attribute`, `fieldId`, `locale`, 
 (54, 'extension', 0, 'en_us', ' jpg '),
 (54, 'kind', 0, 'en_us', ' image '),
 (54, 'slug', 0, 'en_us', ''),
-(54, 'title', 0, 'en_us', ' michigan summer ');
+(54, 'title', 0, 'en_us', ' michigan summer '),
+(46, 'field', 1, 'en_us', ' 24 hour emergency services '),
+(41, 'field', 2, 'en_us', ''),
+(81, 'slug', 0, 'en_us', ''),
+(81, 'field', 25, 'en_us', ' 7 30a 5 00p '),
+(55, 'field', 29, 'en_us', ' ​ i wanted to thank you for outstanding service by each one of your employees we had a difficult situation and each member of your team was great '),
+(55, 'field', 9, 'en_us', ' i wanted to thank you for outstanding service by each one of your employees we had a difficult situation and each member of your team was great from mike in sales who worked with the city and took my endless phone calls to dennis and robert who worked on a the hottest day of the year they never complained i can not tell what i would have been saying if it were me on the roof please pass along my thanks the them all you guys are great i will recommend you to all my clients thank you so much who knew keeping you cool makes everything better thank you '),
+(55, 'field', 6, 'en_us', ' marcia polselli shades optical '),
+(55, 'slug', 0, 'en_us', ' marcia polselli '),
+(55, 'title', 0, 'en_us', ' marcia polselli '),
+(4, 'field', 30, 'en_us', ' at air master we staff highly trained technicians that specialize in all residential heating air conditioning indoor air quality maintenance and repair preventative maintenance on your heating air conditioning indoor air quality equipment is essential to avoid future costly repairs unexpected failures and lower your utility bills if you do find yourself in need of new equipment our fully trained comfort advisors will assist you in making the best choice for your replacement needs they will provide you with a comprehensive consultation and walk with you through every step of the installation process we provide top quality 24 hour emergency service for all of your residential needs our fully stocked parts department and trucks are here to assist you including annual filter and humidifier pad changes '),
+(4, 'field', 31, 'en_us', ' 24 7 emergency service 365 days a year our fleet includes over 25 fully stocked vehicles nate certified technicians with 40 hours per year of continuing hvac education fully trained comfort advisors to assist you in all hvac replacement needs in house sheet metal shop that supplies all custom made metal duct work preventative maintenance agreements to ensure all of your equipment is working as efficiently as possible '),
+(7, 'field', 30, 'en_us', ' barbecuing has gone from a cooking method to an entire entertaining experience whether you re entertaining 2 or 42 let air master find the perfect high quality product to fit your needs visit our showroom to discuss your vision or have a grilling specialist come to your home to discuss your options let us help make your dream barbecue a reality '),
+(7, 'field', 31, 'en_us', ' full installation of gas charcoal barbecues outdoor fire pits smokers grills fire tables barbecue islands outdoor kitchen living spaces '),
+(6, 'field', 30, 'en_us', ' air master is here to meet all of your fireplace installation and service needs we specialize in converting wood burning fireplaces to their more modern and efficient gas alternatives we can assist you in any facet of your fireplace project from the design stage to the finished product air master will be with you every step of the way come into our showroom or contact us directly to have a fireplace advisor discuss your options in the comfort of your own home air master also provides fireplace service and safety checks contact us directly for details we look forward to hearing from you '),
+(6, 'field', 31, 'en_us', ' gas electric fireplace installation gas fireplace inserts log sets fire glass installation of blue flame garage heaters fireplace safety inspections preventative maintenance agreements to ensure all of your equipment is working as efficiently as possible '),
+(5, 'field', 30, 'en_us', ' our commercial sales team can design and execute a sophisticated custom heating and air conditioning system for your individual needs with our in house design built estimator we guarantee that we can exceed your every expectation our team treats each and every project with the utmost importance and attention to detail our commercial service technicians with decades of experience can maintain and repair all of your commercial and industrial equipment we offer many preventative maintenance options that are sure to meet your needs preventative maintenance is highly recommended on all equipment it lessens the chance of equipment failure helps insure longevity and lowers your utility bills air master welcomes the chance to bid your hvac maintenance contract please contact our office directly and we will get you set up with a customized maintenance contract '),
+(5, 'field', 31, 'en_us', ' in house design built contractor 24 7 emergency service 365 days a year our commercial sales team has over 40 years of experience our commercial service technicians have over 20 years of experience in house sheet metal shop that supplies all custom made metal duct work preventative maintenance agreements to ensure all of your equipment is working as efficiently as possible '),
+(56, 'field', 29, 'en_us', ' ​ thanks to jason for coming out in the rain to repair and recharge my home ac system jason was very professional courteous and knowledgeable '),
+(56, 'field', 9, 'en_us', ' thanks to jason for coming out in the rain to repair and recharge my home ac system jason was very professional courteous and knowledgeable i m looking forward enjoying a comfortable house when it gets warm out again you have a happy customer well done '),
+(56, 'field', 6, 'en_us', ' bill schmidt '),
+(56, 'slug', 0, 'en_us', ' bill schmidt '),
+(56, 'title', 0, 'en_us', ' bill schmidt '),
+(57, 'field', 29, 'en_us', ' totally impressed with the work that airmaster did for us '),
+(57, 'field', 9, 'en_us', ' totally impressed with the work that airmaster did for us and perhaps just as importantly really thankful for all of the guys that worked at the house they did a great job and were super nice especially to my kids thanks so much for your help and support '),
+(57, 'field', 6, 'en_us', ' burton carlson '),
+(57, 'slug', 0, 'en_us', ' burton carlson '),
+(57, 'title', 0, 'en_us', ' burton carlson '),
+(58, 'field', 29, 'en_us', ' thank you for a job well done the salesman was wonderful the installation was wonderful clean and complete i was completely satisfied '),
+(58, 'field', 9, 'en_us', ' thank you for a job well done the salesman was wonderful the installation was wonderful clean and complete i was completely satisfied i think that my husband and i are people who like to see a job well done and priced appropriately i think that air master achieved our goal thank you '),
+(58, 'field', 6, 'en_us', ' francine pfitzenmaier​ '),
+(58, 'slug', 0, 'en_us', ' francine pfitzenmaier '),
+(58, 'title', 0, 'en_us', ' francine pfitzenmaier​ '),
+(59, 'field', 29, 'en_us', ' ​ thanks for sending the greatest hvac repairman with whom i have ever dealt your service is great thanks so much for the prompt courteous service '),
+(59, 'field', 9, 'en_us', ' thanks for sending the greatest hvac repairman with whom i have ever dealt your service is great thanks so much for the prompt courteous service '),
+(59, 'field', 6, 'en_us', ' harold zeiger '),
+(59, 'slug', 0, 'en_us', ' harold zeiger '),
+(59, 'title', 0, 'en_us', ' harold zeiger '),
+(60, 'field', 29, 'en_us', ' ​ the 2 gentlemen craig clyde who were here to install our new equipment were polite on time and did a wonderful job right down to the clean up '),
+(60, 'field', 9, 'en_us', ' the 2 gentlemen craig amp clyde who were here to install our new equipment were polite on time and did a wonderful job right down to the clean up '),
+(60, 'field', 6, 'en_us', ' tim april mrosewske '),
+(60, 'slug', 0, 'en_us', ' tim april mrosewske '),
+(60, 'title', 0, 'en_us', ' tim april mrosewske '),
+(61, 'field', 29, 'en_us', ' ​ my wife pulled out the numbers of energy gas usage from the last 12 months and compared them to their previous 12 and there was a drop in usage of almost 70% '),
+(61, 'field', 9, 'en_us', ' my wife pulled out the numbers of energy gas usage from the last 12 months and compared them to their previous 12 and there was a drop in usage of almost 70% '),
+(61, 'field', 6, 'en_us', ' chet penkala '),
+(61, 'slug', 0, 'en_us', ' chet penkala '),
+(61, 'title', 0, 'en_us', ' chet penkala '),
+(62, 'field', 29, 'en_us', ' ​ air mater heating air conditioning in berkley is setting aside a day in its busy schedule this time of year to help members of jarc a local organization that provides assistance to developmentally challenged adults '),
+(62, 'field', 9, 'en_us', ' air mater heating air conditioning in berkley is setting aside a day in its busy schedule this time of year to help members of jarc a local organization that provides assistance to developmentally challenged adults '),
+(62, 'field', 6, 'en_us', ' christy strawser daily tribune '),
+(62, 'slug', 0, 'en_us', ' christy strawser daily tribune '),
+(62, 'title', 0, 'en_us', ' christy strawser daily tribune '),
+(63, 'field', 29, 'en_us', ' ​ just wanted to say thank you for your wonderful service in responding to service requests over the many years i have been a customer both normal and emergency and for the great job you did with the installation of my new furnace and air conditioning units last fall '),
+(63, 'field', 9, 'en_us', ' just wanted to say thank you for your wonderful service in responding to service requests over the many years i have been a customer both normal and emergency and for the great job you did with the installation of my new furnace and air conditioning units last fall '),
+(63, 'field', 6, 'en_us', ' charles l schiff '),
+(63, 'slug', 0, 'en_us', ' charles l schiff '),
+(63, 'title', 0, 'en_us', ' charles l schiff '),
+(64, 'field', 29, 'en_us', ' greetings one of the dedicated parishioners of cana lutheran church michael brombach mentioned to me today as he was installing one of our three new programmable thermostats that it was you and your business that donated them to our church '),
+(64, 'field', 9, 'en_us', ' greetings one of the dedicated parishioners of cana lutheran church michael brombach mentioned to me today as he was installing one of our three new programmable thermostats that it was you and your business that donated them to our church '),
+(64, 'field', 6, 'en_us', ' pastor kevin jensen​ '),
+(64, 'slug', 0, 'en_us', ' pastor kevin jensen '),
+(64, 'title', 0, 'en_us', ' pastor kevin jensen​ '),
+(65, 'field', 29, 'en_us', ' ​ another heating and cooling company was going to charge me $1 000 to replace something that didn t need to be replaced in the first place '),
+(65, 'field', 9, 'en_us', ' another heating and cooling company was going to charge me $1 000 to replace something that didn t need to be replaced in the first place '),
+(65, 'field', 6, 'en_us', ' matt mollan '),
+(65, 'slug', 0, 'en_us', ' matt mollan '),
+(65, 'title', 0, 'en_us', ' matt mollan '),
+(66, 'field', 29, 'en_us', ' ​ you were very patient during this entire evaluation process as you discussed and answered all our questions in detail '),
+(66, 'field', 9, 'en_us', ' you were very patient during this entire evaluation process as you discussed and answered all our questions in detail '),
+(66, 'field', 6, 'en_us', ' ruby thompson '),
+(66, 'slug', 0, 'en_us', ' ruby thompson '),
+(66, 'title', 0, 'en_us', ' ruby thompson '),
+(67, 'field', 29, 'en_us', ' we were victims of the aug 11 floods here in mi air master came to our rescue jeff was particularly helpful '),
+(67, 'field', 9, 'en_us', ' we were victims of the aug 11 floods here in mi air master came to our rescue jeff was particularly helpful '),
+(67, 'field', 6, 'en_us', ' jjsbn​ '),
+(67, 'slug', 0, 'en_us', ' jjsbn '),
+(67, 'title', 0, 'en_us', ' jjsbn​ '),
+(68, 'field', 29, 'en_us', ' great customer service '),
+(68, 'field', 9, 'en_us', ' great customer service '),
+(68, 'field', 6, 'en_us', ' chomsky​ '),
+(68, 'slug', 0, 'en_us', ' chomsky '),
+(68, 'title', 0, 'en_us', ' chomsky​ '),
+(69, 'field', 29, 'en_us', ' ​ the appointment time was kept the serviceman was courteous knowledgeable and throughout his recommendations were appropriate and they followed up promptly '),
+(69, 'field', 9, 'en_us', ' the appointment time was kept the serviceman was courteous knowledgeable and throughout his recommendations were appropriate and they followed up promptly '),
+(69, 'field', 6, 'en_us', ' chomsky '),
+(69, 'slug', 0, 'en_us', ' chomsky 1 '),
+(69, 'title', 0, 'en_us', ' chomsky '),
+(70, 'field', 29, 'en_us', ' ​ the salesman took the time to explain several options and there was no hard sell the installers were prompt efficient polite and cleaned up after the installation '),
+(70, 'field', 9, 'en_us', ' the salesman took the time to explain several options and there was no hard sell the installers were prompt efficient polite and cleaned up after the installation '),
+(70, 'field', 6, 'en_us', ' kathy b '),
+(70, 'slug', 0, 'en_us', ' kathy b '),
+(70, 'title', 0, 'en_us', ' kathy b '),
+(71, 'field', 29, 'en_us', ' ​ i originally contacted air master for maintenance because i had a coupon that coupon was certainly lucky for me the technicians are skilled and polite and they re careful about cleaning up after doing installation or maintenance '),
+(71, 'field', 9, 'en_us', ' i originally contacted air master for maintenance because i had a coupon that coupon was certainly lucky for me the technicians are skilled and polite and they re careful about cleaning up after doing installation or maintenance when i bought my new furnace and air conditioner last fall the sales rep discussed options without pressure i ve often recommended this company '),
+(71, 'field', 6, 'en_us', ' mec0 '),
+(71, 'slug', 0, 'en_us', ' mec0 '),
+(71, 'title', 0, 'en_us', ' mec0 '),
+(72, 'field', 29, 'en_us', ' ​ we had only positive experiences with airmaster we would highly recommend them '),
+(72, 'field', 9, 'en_us', ' we had only positive experiences with airmaster we would highly recommend them '),
+(72, 'field', 6, 'en_us', ' jacie '),
+(72, 'slug', 0, 'en_us', ' jacie '),
+(72, 'title', 0, 'en_us', ' jacie '),
+(73, 'field', 29, 'en_us', ' ​ this dealer made sure that this new ac unit was the size our home needed installation went very well as the workers were polite and efficient '),
+(73, 'field', 9, 'en_us', ' this dealer made sure that this new ac unit was the size our home needed installation went very well as the workers were polite and efficient this unit cools our home nicely and the lowered electricity bills are a big plus '),
+(73, 'field', 6, 'en_us', ' timvetsorg '),
+(73, 'slug', 0, 'en_us', ' timvetsorg '),
+(73, 'title', 0, 'en_us', ' timvetsorg '),
+(74, 'field', 29, 'en_us', ' we couldn t be more pleased with our selection as it heats our home well and we have a consistent temperature through the entire house and expect we ll have the same result when it is time to turn on the ac we will continue to recommend air master to our family and friends '),
+(74, 'field', 9, 'en_us', ' in the fall of 2013 we were a repeat customer of air master heating cooling in our former home they had previously installed a furnace air conditioning unit and when we realized the furnace in our new home was 29 years old they were the company we called to replace our heating air conditioning units during the process our sales representative educated us on the different furnace ac options and helped us make the best decision for our home we couldn t be more pleased with our selection as it heats our home well and we have a consistent temperature through the entire house and expect we ll have the same result when it is time to turn on the ac we will continue to recommend air master to our family and friends '),
+(74, 'field', 6, 'en_us', ' sgah '),
+(74, 'slug', 0, 'en_us', ' sgah '),
+(74, 'title', 0, 'en_us', ' sgah '),
+(75, 'field', 29, 'en_us', ' so i cannot think of anything that could have been done better or differently i always expect the best from your company and you folks have never disappointed would recommend your company without any hesitation '),
+(75, 'field', 9, 'en_us', ' mike laurie asked that i email you with my experience with your company after the flood only issue and probably was me as much or more then you folks is not understanding that the recommendation was to replace the furnace the actual install process went well starting with eric he is the one who explained why the replace recommendation when asked how much he was able to talk to jeff fry and get a quote while i was on the phone then the surprise when i asked when they could do the install i was told the furnace was in the warehouse and could do next day i figured it would be several weeks and i am sure i was one of the lucky ones the jerry and jerry team came the next day and by lunch time had the old out and the new in tested and any mess cleaned up not only were they quick but did a great job in my opinion what else from airmaster you have two keepers there in my opinion jerry just came this last week to do the fall maintenance and was just as good with that as with the install and seems to know his way around the lennox thermostat jerry is welcome in my house for maintenance anytime not all of the techs seem comfortable with the thermostat new technology and not everyone is comfortable with how these work i am sure especially folks who don t use the new technology with devices they own such as smart phones so i cannot think of anything that could have been done better or differently i always expect the best from your company and you folks have never disappointed would recommend your company without any hesitation feel free to ask for any additional info forgot to say a big thanks to laurie as well she got the paper work done quickly and we have received our rebate from lennox and an email from consumers that our rebate has been approved but have not received the check yet '),
+(75, 'field', 6, 'en_us', ' william myers '),
+(75, 'slug', 0, 'en_us', ' william myers '),
+(75, 'title', 0, 'en_us', ' william myers '),
+(76, 'field', 29, 'en_us', ' ​ i would like to ask that you share my next comments with the owner of airmaster and the rest of the crew who worked on my install it was a great pleasure working with you and your staff '),
+(76, 'field', 9, 'en_us', ' i would like to ask that you share my next comments with the owner of airmaster and the rest of the crew who worked on my install it was a great pleasure working with you and your staff your patience and willingness to listen to the special concerns i had about my install was greatly appreciated the fact that you and your staff went above and beyond to come up with an appropriate line cover represents how customer centric your company is each of your staff exhibited a great sense of professionalism in every aspect of the project and were always willing to answer my questions in laymen s terms that even i could understand again thank you for making this project such a pleasant experience '),
+(76, 'field', 6, 'en_us', ' susan '),
+(76, 'slug', 0, 'en_us', ' susan '),
+(76, 'title', 0, 'en_us', ' susan '),
+(77, 'field', 29, 'en_us', ' i will be referring your company to all my clients as well i hope you are doing well and if you should have any real estate questions please feel free to contact me '),
+(77, 'field', 9, 'en_us', ' hello michael i worked with you in 2009 to help sell 4th street in royal oak it was a tough market however i enjoyed working with you to get the home sold i have recently bought a house in birmingham and contacted your company for a new furnace and ac i would like to tell you what great costumer service i have had thus far you have very professional and extremely educated employees laurie was great at explaining what our new house would need for both heating and cooling the home next tuesday is my installation date of both the ac and furnace i will be referring your company to all my clients as well i hope you are doing well and if you should have any real estate questions please feel free to contact me have a great day '),
+(77, 'field', 6, 'en_us', ' erin keating dewald '),
+(77, 'slug', 0, 'en_us', ' erin keating dewald '),
+(77, 'title', 0, 'en_us', ' erin keating dewald '),
+(78, 'field', 29, 'en_us', ' the fact that you and your staff went above and beyond to come up with an appropriate line cover represents how customer centric your company is each of your staff exhibited a great sense of professionalism in every aspect of the project '),
+(78, 'field', 9, 'en_us', ' hi laura the chimney liner was installed yesterday so the job is complete attached is the signed completion certificate i would like to ask that you share my next comments with the owner of airmaster and the rest of the crew who worked on my install it was a great pleasure working with you and your staff your patience and willingness to listen to the special concerns i had about my install was greatly appreciated the fact that you and your staff went above and beyond to come up with an appropriate line cover represents how customer centric your company is each of your staff exhibited a great sense of professionalism in every aspect of the project and were always willing to answer my questions in laymen s terms that even i could understand again thank you for making this project such a pleasant experience respectfully susan '),
+(78, 'field', 6, 'en_us', ' susan watts '),
+(78, 'slug', 0, 'en_us', ' susan watts '),
+(78, 'title', 0, 'en_us', ' susan watts '),
+(79, 'field', 29, 'en_us', ' ​ as usual the fellas that came over were knowlegable answered my questions and did a great job '),
+(79, 'field', 9, 'en_us', ' as usual the fellas that came over were knowlegable answered my questions and did a great job '),
+(79, 'field', 6, 'en_us', ' joel sanberg '),
+(79, 'slug', 0, 'en_us', ' joel sanberg '),
+(79, 'title', 0, 'en_us', ' joel sanberg '),
+(80, 'field', 29, 'en_us', ' craig and his assistant chris were terrific very polite and professional young men '),
+(80, 'field', 9, 'en_us', ' thanks so very much for getting my air conditioning problem resolved so quickly this weekend is the jacob wedding and all my kids are flying in craig and his assistant chris were terrific very polite and professional young men '),
+(80, 'field', 6, 'en_us', ' wendy '),
+(80, 'slug', 0, 'en_us', ' wendy '),
+(80, 'title', 0, 'en_us', ' wendy ');
 
 -- --------------------------------------------------------
 
@@ -1417,7 +1696,7 @@ CREATE TABLE `craft_sections` (
 INSERT INTO `craft_sections` (`id`, `structureId`, `name`, `handle`, `type`, `hasUrls`, `template`, `enableVersioning`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, NULL, 'Homepage', 'homepage', 'single', 1, 'index', 1, '2014-11-05 23:30:10', '2014-12-18 18:19:57', 'cc591c72-9d9d-4b63-9541-78f08d38301a'),
 (2, NULL, 'Testimonials', 'testimonials', 'channel', 1, 'testimonials/_entry', 1, '2014-11-05 23:30:10', '2014-11-06 00:12:52', '7906de9f-31b9-4968-91c8-ce9158c7154f'),
-(3, NULL, 'Residential', 'residential', 'single', 1, 'residential', 1, '2014-11-05 23:36:02', '2014-11-06 03:54:12', '42da9c21-b252-4f78-818d-890b20cc931c'),
+(3, NULL, 'Residential', 'residential', 'single', 1, 'residential', 1, '2014-11-05 23:36:02', '2015-01-12 16:10:11', '42da9c21-b252-4f78-818d-890b20cc931c'),
 (4, NULL, 'Commercial & Industrial', 'commercialIndustrial', 'single', 1, 'commercial-industrial', 1, '2014-11-05 23:36:42', '2014-11-05 23:36:42', '9ffc915d-b14c-4a34-8177-c466ef5b5076'),
 (5, NULL, 'Fireplace', 'fireplace', 'single', 1, 'fireplace', 1, '2014-11-05 23:36:48', '2014-11-06 00:00:56', '1c090c96-94f6-4087-8930-8b82f164d3c7'),
 (6, NULL, 'Barbecue', 'barbecue', 'single', 1, 'barbecue', 1, '2014-11-05 23:36:57', '2014-11-06 00:03:36', 'df986765-c9fb-4b5d-8e8e-22c628846682'),
@@ -1469,7 +1748,7 @@ CREATE TABLE `craft_sessions` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_sessions`
@@ -1496,7 +1775,10 @@ INSERT INTO `craft_sessions` (`id`, `userId`, `token`, `dateCreated`, `dateUpdat
 (20, 1, 'd7db47e2236ffc0fd7ed34276d153e0de1094337czozNjoiY2U2OTVkNjQtYjM2YS00OWIwLWFhN2EtODA3ODU2Mzc0MzdkIjs=', '2014-12-19 03:03:23', '2014-12-19 03:03:23', '8a35a3a6-581f-4fd7-81b4-43eb9d774f4d'),
 (21, 1, 'be7b95391cd11dd66f406eb81e9de0eeee3cc0e9czozNjoiMTkwOGQ3YzUtYTBjZC00ZmVjLTk4NjAtMzZmMWI1MGEzY2RlIjs=', '2014-12-20 01:04:52', '2014-12-20 01:04:52', '5994b25a-2cdc-4a5c-9196-f00e81727114'),
 (22, 1, '4680b7fc148d35b22556851aac1ee5bd7ed12a1cczozNjoiOTAzYWNkZTAtNTE0My00ZjExLTk3YTYtYjkzNjZlMTJjZTg4Ijs=', '2015-01-04 01:27:48', '2015-01-04 01:27:48', 'c324bcd7-7355-4aaa-9726-9d035779eaa7'),
-(23, 1, '5b3373a9e884ddb839d927ee34f17ffd7a82a97bczozNjoiZjdjMzFjNDMtODhhNy00ZGYzLTkyYWYtODZhOGFjYmE2YjViIjs=', '2015-01-08 01:08:14', '2015-01-08 01:08:14', 'b34cf677-dcba-4226-9576-65f2474205de');
+(23, 1, '5b3373a9e884ddb839d927ee34f17ffd7a82a97bczozNjoiZjdjMzFjNDMtODhhNy00ZGYzLTkyYWYtODZhOGFjYmE2YjViIjs=', '2015-01-08 01:08:14', '2015-01-08 01:08:14', 'b34cf677-dcba-4226-9576-65f2474205de'),
+(24, 1, '7c134f14ca8fc5466144ae8b6610de384f256ecfczozNjoiMDQ5N2VlMzQtNTdlOC00MjUyLThhYjktNzM5MmQxOTNlMWQyIjs=', '2015-01-08 07:24:24', '2015-01-08 07:24:24', 'd827d66e-6ed0-4873-a32e-6cbcab913b3b'),
+(25, 1, '6b7a3ce89af83ea4de5bda5c1035856bda6c939cczozNjoiMWUzODhhNTctMzkxZC00YWM0LTlhZTItNGE2MWUxZDAxMjU1Ijs=', '2015-01-09 03:14:27', '2015-01-09 03:14:27', '3d69fd86-7620-4abe-a78f-dcdb18b0b3b2'),
+(26, 1, '7d3844900b3ba02de50e4ee6d02dff9c91e20c7cczozNjoiZGFiOWI1MWYtYTVkMC00NjI1LTk1MjktZDBlMWU5NzcyOTY1Ijs=', '2015-01-12 15:47:18', '2015-01-12 15:47:18', '4f04e53d-264c-40d6-8b5f-c2917795d6c6');
 
 -- --------------------------------------------------------
 
@@ -1629,7 +1911,7 @@ CREATE TABLE `craft_tasks` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -1801,7 +2083,7 @@ CREATE TABLE `craft_users` (
 --
 
 INSERT INTO `craft_users` (`id`, `username`, `photo`, `firstName`, `lastName`, `email`, `password`, `preferredLocale`, `admin`, `client`, `status`, `lastLoginDate`, `lastLoginAttemptIPAddress`, `invalidLoginWindowStart`, `invalidLoginCount`, `lastInvalidLoginDate`, `lockoutDate`, `verificationCode`, `verificationCodeIssuedDate`, `unverifiedEmail`, `passwordResetRequired`, `lastPasswordChangeDate`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, 'admin', NULL, NULL, NULL, 'mjfeeney3@gmail.com', '$2a$13$D/w3wnYH84y.RsVW679gru6o/29BW5ZnW339.ujrmHUp4U7Ih/5Qq', NULL, 1, 0, 'active', '2015-01-08 01:08:14', '127.0.0.1', NULL, NULL, '2014-11-13 22:16:39', NULL, NULL, NULL, NULL, 0, '2014-11-05 23:30:07', '2014-11-05 23:30:07', '2015-01-08 01:08:14', '77edf27a-ec25-46e1-8d84-845ad0d15a88');
+(1, 'admin', NULL, NULL, NULL, 'mjfeeney3@gmail.com', '$2a$13$D/w3wnYH84y.RsVW679gru6o/29BW5ZnW339.ujrmHUp4U7Ih/5Qq', NULL, 1, 0, 'active', '2015-01-12 15:47:18', '127.0.0.1', NULL, NULL, '2014-11-13 22:16:39', NULL, NULL, NULL, NULL, 0, '2014-11-05 23:30:07', '2014-11-05 23:30:07', '2015-01-12 15:47:18', '77edf27a-ec25-46e1-8d84-845ad0d15a88');
 
 -- --------------------------------------------------------
 
@@ -2209,7 +2491,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `craft_content`
 --
 ALTER TABLE `craft_content`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=71;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=99;
 --
 -- AUTO_INCREMENT for table `craft_deprecationerrors`
 --
@@ -2219,12 +2501,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `craft_elements`
 --
 ALTER TABLE `craft_elements`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=55;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=82;
 --
 -- AUTO_INCREMENT for table `craft_elements_i18n`
 --
 ALTER TABLE `craft_elements_i18n`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=71;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=99;
 --
 -- AUTO_INCREMENT for table `craft_emailmessages`
 --
@@ -2244,7 +2526,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 -- AUTO_INCREMENT for table `craft_entryversions`
 --
 ALTER TABLE `craft_entryversions`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=41;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=84;
 --
 -- AUTO_INCREMENT for table `craft_fieldgroups`
 --
@@ -2254,22 +2536,22 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 -- AUTO_INCREMENT for table `craft_fieldlayoutfields`
 --
 ALTER TABLE `craft_fieldlayoutfields`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=207;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=237;
 --
 -- AUTO_INCREMENT for table `craft_fieldlayouts`
 --
 ALTER TABLE `craft_fieldlayouts`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=69;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=81;
 --
 -- AUTO_INCREMENT for table `craft_fieldlayouttabs`
 --
 ALTER TABLE `craft_fieldlayouttabs`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=41;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=50;
 --
 -- AUTO_INCREMENT for table `craft_fields`
 --
 ALTER TABLE `craft_fields`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=30;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=32;
 --
 -- AUTO_INCREMENT for table `craft_info`
 --
@@ -2299,7 +2581,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `craft_relations`
 --
 ALTER TABLE `craft_relations`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=544;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=569;
 --
 -- AUTO_INCREMENT for table `craft_routes`
 --
@@ -2319,7 +2601,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 -- AUTO_INCREMENT for table `craft_sessions`
 --
 ALTER TABLE `craft_sessions`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=24;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `craft_shunnedmessages`
 --
@@ -2349,7 +2631,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT for table `craft_tasks`
 --
 ALTER TABLE `craft_tasks`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=32;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=84;
 --
 -- AUTO_INCREMENT for table `craft_templatecachecriteria`
 --
