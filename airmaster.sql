@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Jan 12, 2015 at 01:43 PM
+-- Generation Time: Jan 12, 2015 at 01:55 PM
 -- Server version: 5.5.38
 -- PHP Version: 5.6.2
 
@@ -269,7 +269,7 @@ CREATE TABLE `craft_content` (
 INSERT INTO `craft_content` (`id`, `elementId`, `locale`, `title`, `field_heading`, `field_body`, `field_customerName`, `field_location`, `field_fullQuote`, `field_aboutUs`, `field_aboutUsDescription`, `field_emailAddress`, `field_phoneNumber`, `field_socialLink`, `field_physicalAddress`, `field_officeHours`, `field_addressLine1`, `field_addressLine2`, `field_monFri`, `field_saturday`, `field_sunday`, `field_emergencyServices`, `field_quoteSnippet`, `field_servicesFull`, `field_servicesShort`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 1, 'en_us', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:30:07', '2014-11-05 23:30:07', '95f72694-1971-4afc-97ee-bb8a60e237d1'),
 (2, 2, 'en_us', 'Homepage', 'Homepage Heading', '<p>The Heating and Air Conditioning service &amp; repair&nbsp;solution for the southeast Michigan community.&nbsp;</p>', NULL, 'Serving customers in Oakland, Wayne, Washtenaw and Macomb counties since 1983.', NULL, 'About Our Company', 'Air Master is a family-owned, full-service Heating, Cooling and Home Comfort company. We have been providing outstanding residential and commercial service to our southeast Michigan community since 1983; 30 glorious years!! We love heating and cooling, and we love our customers.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-11-05 23:30:10', '2015-01-12 17:11:13', '441e0b80-d771-4cb8-89ed-dccfe1a33eb8'),
-(5, 4, 'en_us', 'Residential', NULL, '<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p><!--pagebreak-->\r\n<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>At Air Master, we staff highly trained technicians that specialize in all residential Heating, Air Conditioning, &amp; Indoor Air Quality maintenance and repair.  Preventative Maintenance on your Heating, Air Conditioning &amp; Indoor Air Quality equipment is essential to avoid future costly repairs, unexpected failures, and lower your utility bills.  If you do find yourself in need of new equipment, our fully trained Comfort Advisors will assist you in making the best choice for your replacement needs. They will provide you with a comprehensive consultation and walk with you through every step of the installation process. We provide top quality, 24 hour Emergency service for all of your residential needs. Our fully stocked parts department and trucks are here to assist you, including annual filter and humidifier pad changes.</p>', '<p>- 24/7 Emergency service, 365 days a year.</p><p>- Our fleet includes over 25 fully stocked vehicles.</p><p>- NATE certified technicians with 40 hours per year of continuing HVAC education.</p><p>- Fully trained Comfort Advisors to assist you in all HVAC replacement needs.</p><p>- In house Sheet Metal Shop that supplies all custom made metal &amp; duct work.</p><p>- Preventative Maintenance Agreements to ensure all of your equipment is working as efficiently as possible.</p>', '2014-11-05 23:36:02', '2015-01-12 16:12:17', '9b5b0035-4ec3-49ee-af03-709d4b597bda'),
+(5, 4, 'en_us', 'Residential', NULL, '<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p><!--pagebreak-->\r\n<p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p><p>Is it time for a new furnace? Maybe you just need a quote on the price for heat repair? We provide every- thing you could need for home heating, air conditioning, and HVAC care, including 24 hour emergency service.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>At Air Master, we staff highly trained technicians that specialize in all residential Heating, Air Conditioning, &amp; Indoor Air Quality maintenance and repair.  Preventative Maintenance on your Heating, Air Conditioning &amp; Indoor Air Quality equipment is essential to avoid future costly repairs, unexpected failures, and lower your utility bills.  If you do find yourself in need of new equipment, our fully trained Comfort Advisors will assist you in making the best choice for your replacement needs. They will provide you with a comprehensive consultation and walk with you through every step of the installation process. We provide top quality, 24 hour Emergency service for all of your residential needs. Our fully stocked parts department and trucks are here to assist you, including annual filter and humidifier pad changes.</p>', '<p>- 24/7 Emergency service, 365 days a year.</p><p>- Our fleet includes over 25 fully stocked vehicles.</p><p>- NATE certified technicians with 40 hours per year of continuing HVAC education.</p><p>- Fully trained Comfort Advisors to assist you in all HVAC replacement needs.</p><p>- In house Sheet Metal Shop that supplies all custom made metal &amp; duct work.</p><p>- Preventative Maintenance Agreements to ensure all of your equipment is working as efficiently as possible.</p>', '2014-11-05 23:36:02', '2015-01-12 18:54:33', '9b5b0035-4ec3-49ee-af03-709d4b597bda'),
 (8, 5, 'en_us', 'Commercial & Industrial', NULL, '<p>Our commercial team can design and execute a sophisticated cus- tom commercial heating and cooling system for your project, or&nbsp;provide simple 24 hour emergency repair service.</p><!--pagebreak--><p>* We offer discounted maintenance with our maintenance contract, * Can advice you on indoor air quality,</p><p> * Or give you a price estimate to replace your aging commercial fur- nace and/or air conditioner.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Our Commercial Sales Team can design and execute a sophisticated custom heating and air conditioning system for your individual needs. With our in house design built estimator, we guarantee that we can exceed your every expectation. Our team treats each and every project with the utmost importance and attention to detail. Our Commercial Service Technicians, with decades of experience, can maintain and repair all of your commercial and industrial equipment. We offer many Preventative Maintenance options that are sure to meet your needs. Preventative Maintenance is highly recommended on all equipment. It lessens the chance of equipment failure, helps insure longevity, and lowers your utility bills. Air Master welcomes the chance to bid your HVAC Maintenance contract. Please contact our office directly, and we will get you set up with a customized Maintenance contract.</p>', '<p>- In-house design built contractor</p><p>- 24/7 Emergency service, 365 days a year.</p><p>- Our Commercial Sales Team has over 40 years of experience.</p><p>- Our Commercial Service Technicians have over 20 years of experience.</p><p>- In house Sheet Metal Shop that supplies all custom made metal &amp; duct work.</p><p>- Preventative Maintenance Agreements to ensure all of your equipment is working as efficiently as possible.</p>', '2014-11-05 23:36:42', '2015-01-12 16:13:24', '4d4f5310-2cdd-4ada-ad93-a8b4ad4baba5'),
 (9, 6, 'en_us', 'Fireplace', NULL, '<p>IWith new technology, we can install a fireplace in any room for surprisingly cheap. You could have a new fireplace installed in 3-7 days.</p><p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you’re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?</p><!--pagebreak-->\r\n<p>Do you need your fireplace inspected? Maybe you want to replace your old wood-burning fireplace with a conversion to gas, perhaps with an automatic remote starter.Perhaps you’re looking for a chic indoor electric fireplace. Need an estimate on getting something repaired?</p><p>We carry, or can order you, any fireplace replacement part. Maybe you want to buy some fireplace accessories or redesign the exterior? We do verything from plug and go fireplaces to a full custom design and install.&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Air Master is here to meet all of your fireplace installation and service needs.  We specialize in converting wood burning fireplaces to their more modern and efficient gas alternatives.  We can assist you in any facet of your fireplace project. From the design stage to the finished product, Air Master will be with you every step of the way. Come into our showroom, or contact us directly to have a fireplace advisor discuss your options in the comfort of your own home. Air Master also provides fireplace service and safety checks. Contact us directly for details. We look forward to hearing from you.</p>', '<p>- Gas &amp; Electric Fireplace installation</p><p>- Gas fireplace inserts</p><p>- Log sets &amp; fire glass </p><p>- Installation of blue flame &amp; garage heaters</p><p>- Fireplace safety inspections</p><p>- Preventative Maintenance Agreements to ensure all of your equipment is working as efficiently as possible.&nbsp;</p>', '2014-11-05 23:36:48', '2015-01-12 16:13:04', '9f74f2cb-52de-4629-b6e8-751c333c9edf'),
 (10, 7, 'en_us', 'Barbecue', NULL, '<p>\r\n	A great american tradition, and most delicious way to prepare food.</p><p>\r\n	If you’re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.</p><p>\r\n	We can also help you get any barbecue accessory you’re missing or find you a barbecue replacement part or pieces.</p><!--pagebreak--><p>\r\n	If you’re looking for the perfect travel tailgating bbq or need a complete custom design and install of a patio barbecue entertain- ment space, that is the true value of working with your neighbor- hood shop; we help you get what you need, not just having stuff you can buy, if you know exactly what you want.</p><p>\r\n	We can also help you get any barbecue accessory you’re missing or find you a barbecue replacement part or pieces.&nbsp;&nbsp;</p>', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Barbecuing has gone from a cooking method to an entire entertaining experience.  Whether you’re entertaining 2 or 42, let Air Master find the perfect high quality product to fit your needs.  Visit our showroom to discuss your vision, or have a grilling specialist come to your home to discuss your options. Let us help make your dream barbecue a reality.</p>', '<p>- Full installation of gas &amp; charcoal barbecues</p><p>- Outdoor fire pits</p><p>- Smokers &amp; grills</p><p>- Fire tables</p><p>- Barbecue islands</p><p>- Outdoor kitchen &amp; living spaces</p>', '2014-11-05 23:36:57', '2015-01-12 16:12:43', '4fe03897-11b2-454d-a15a-abc8673f5d42'),
@@ -373,7 +373,7 @@ CREATE TABLE `craft_elements` (
 INSERT INTO `craft_elements` (`id`, `type`, `enabled`, `archived`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 'User', 1, 0, '2014-11-05 23:30:07', '2014-11-05 23:30:07', 'c8113938-2a78-4759-8206-39c1861c8dff'),
 (2, 'Entry', 1, 0, '2014-11-05 23:30:10', '2015-01-12 17:11:13', '954ab411-f91a-45d3-a149-5a1188620910'),
-(4, 'Entry', 1, 0, '2014-11-05 23:36:02', '2015-01-12 16:12:17', '543727b0-243c-4fae-ac92-d119efd211c9'),
+(4, 'Entry', 1, 0, '2014-11-05 23:36:02', '2015-01-12 18:54:33', '543727b0-243c-4fae-ac92-d119efd211c9'),
 (5, 'Entry', 1, 0, '2014-11-05 23:36:42', '2015-01-12 16:13:24', '2738b754-0be8-4ce5-824c-6ab339fe1fa1'),
 (6, 'Entry', 1, 0, '2014-11-05 23:36:48', '2015-01-12 16:13:04', '55583cfe-0f3b-48db-8626-6fd5830321fb'),
 (7, 'Entry', 1, 0, '2014-11-05 23:36:57', '2015-01-12 16:12:43', 'f07c9cd9-f747-4e13-b080-e200ace31c83'),
@@ -455,7 +455,7 @@ CREATE TABLE `craft_elements_i18n` (
 INSERT INTO `craft_elements_i18n` (`id`, `elementId`, `locale`, `slug`, `uri`, `enabled`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 1, 'en_us', '', NULL, 1, '2014-11-05 23:30:07', '2014-11-05 23:30:07', 'd0bf46ea-2449-4940-ae10-9d0155f6855c'),
 (2, 2, 'en_us', 'homepage', '__home__', 1, '2014-11-05 23:30:10', '2015-01-12 17:11:13', 'f27b8b3c-2802-4829-9686-7e2b90409573'),
-(5, 4, 'en_us', 'residential', 'residential', 1, '2014-11-05 23:36:02', '2015-01-12 16:12:17', '244657b1-4b38-4cd0-8518-f59a470c60df'),
+(5, 4, 'en_us', 'residential', 'residential', 1, '2014-11-05 23:36:02', '2015-01-12 18:54:33', '244657b1-4b38-4cd0-8518-f59a470c60df'),
 (8, 5, 'en_us', 'commercialindustrial', 'commercial-industrial', 1, '2014-11-05 23:36:42', '2015-01-12 16:13:24', '2a6bfb92-b209-402f-9794-c3394b69ee89'),
 (9, 6, 'en_us', 'fireplace', 'fireplace', 1, '2014-11-05 23:36:48', '2015-01-12 16:13:05', 'e201f096-85ff-4c9e-b142-22bc292b541f'),
 (10, 7, 'en_us', 'barbecue', 'barbecue', 1, '2014-11-05 23:36:57', '2015-01-12 16:12:43', '6e994f40-a96b-4cde-b2d6-1c839f3ad817'),
@@ -553,7 +553,7 @@ CREATE TABLE `craft_entries` (
 
 INSERT INTO `craft_entries` (`id`, `sectionId`, `typeId`, `authorId`, `postDate`, `expiryDate`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (2, 1, 1, NULL, '2014-12-18 18:19:57', NULL, '2014-11-05 23:30:10', '2015-01-12 17:11:13', '7c132c77-848a-4410-9619-4bb00519068a'),
-(4, 3, 3, NULL, '2015-01-12 16:10:11', NULL, '2014-11-05 23:36:02', '2015-01-12 16:12:17', '1cd68310-ba4b-46b8-be19-fd52b7771a67'),
+(4, 3, 3, NULL, '2015-01-12 16:10:11', NULL, '2014-11-05 23:36:02', '2015-01-12 18:54:33', '1cd68310-ba4b-46b8-be19-fd52b7771a67'),
 (5, 4, 4, NULL, '2014-11-05 23:36:42', NULL, '2014-11-05 23:36:42', '2015-01-12 16:13:24', 'a25d7a27-3b34-42d6-8844-a8061586e4de'),
 (6, 5, 5, NULL, '2014-11-06 00:00:56', NULL, '2014-11-05 23:36:48', '2015-01-12 16:13:05', '4a758c8b-a2d4-4802-938e-293752d73458'),
 (7, 6, 6, NULL, '2014-11-06 00:03:36', NULL, '2014-11-05 23:36:57', '2015-01-12 16:12:43', '805ea47e-d9db-43bd-ac7c-77ad1305b28f'),
@@ -634,10 +634,10 @@ CREATE TABLE `craft_entrytypes` (
 INSERT INTO `craft_entrytypes` (`id`, `sectionId`, `fieldLayoutId`, `name`, `handle`, `hasTitleField`, `titleLabel`, `titleFormat`, `sortOrder`, `dateCreated`, `dateUpdated`, `uid`) VALUES
 (1, 1, 53, 'Homepage', 'homepage', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:30:10', '2014-12-19 03:19:28', '3e5eabda-7292-42bc-9ad4-66b24bb48575'),
 (2, 2, 68, 'Testimonial', 'testimonial', 1, 'Title', NULL, NULL, '2014-11-05 23:30:10', '2015-01-08 01:37:30', '1bd3536f-a980-48ab-bfec-eadd397f577a'),
-(3, 3, 72, 'Residential', 'residential', 1, 'Title', NULL, NULL, '2014-11-05 23:36:02', '2015-01-12 16:10:28', '2f6a9396-a489-4662-bfe2-45feaced4327'),
-(4, 4, 74, 'Commercial & Industrial', 'commercialIndustrial', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:36:42', '2015-01-12 16:10:53', '9151e595-fb05-493f-9c07-5756d9061931'),
-(5, 5, 73, 'Fireplace', 'fireplace', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:36:48', '2015-01-12 16:10:41', '723effef-dfd6-4f57-96a6-a6b1da18783d'),
-(6, 6, 75, 'Barbecue', 'barbecue', 1, 'Barbecue', NULL, NULL, '2014-11-05 23:36:57', '2015-01-12 16:11:04', '2d4d06f6-f481-41c4-9197-6306b4deab5d'),
+(3, 3, 84, 'Residential', 'residential', 1, 'Title', NULL, NULL, '2014-11-05 23:36:02', '2015-01-12 18:54:23', '2f6a9396-a489-4662-bfe2-45feaced4327'),
+(4, 4, 82, 'Commercial & Industrial', 'commercialIndustrial', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:36:42', '2015-01-12 18:54:06', '9151e595-fb05-493f-9c07-5756d9061931'),
+(5, 5, 83, 'Fireplace', 'fireplace', 0, NULL, '{section.name|raw}', NULL, '2014-11-05 23:36:48', '2015-01-12 18:54:14', '723effef-dfd6-4f57-96a6-a6b1da18783d'),
+(6, 6, 81, 'Barbecue', 'barbecue', 1, 'Barbecue', NULL, NULL, '2014-11-05 23:36:57', '2015-01-12 18:53:58', '2d4d06f6-f481-41c4-9197-6306b4deab5d'),
 (7, 7, 77, 'About Us', 'aboutUs', 1, 'Title', NULL, NULL, '2014-12-18 15:03:55', '2015-01-12 17:48:30', '959308c3-b9a4-4f40-afa0-999d63dc81d5'),
 (8, 8, 70, 'Emergency', 'emergency', 1, 'Title', NULL, NULL, '2015-01-08 01:25:59', '2015-01-08 02:39:10', '6a88fefc-c90e-4b22-8b59-6e8d7b6bf003');
 
@@ -659,7 +659,7 @@ CREATE TABLE `craft_entryversions` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_entryversions`
@@ -744,7 +744,8 @@ INSERT INTO `craft_entryversions` (`id`, `entryId`, `sectionId`, `creatorId`, `l
 (80, 46, 8, 1, 'en_us', 5, '', '{"typeId":"8","authorId":null,"title":"Emergency","slug":"emergency","postDate":1420680359,"expiryDate":null,"enabled":1,"fields":{"28":"The comfort of our customers is of the utmost importance to us.  Air Master Heating & Air Conditioning provides Emergency Services 24 hours a day, 7 days a week, 365 days a year.  Our experienced technicians, and timely response make even the most discouraging emergencies manageable.","1":"24 Hour Emergency Services"}}', '2015-01-12 17:46:21', '2015-01-12 17:46:21', '0ce1d037-8e2d-4cde-a693-4106f883be79'),
 (81, 41, 7, 1, 'en_us', 17, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","2":"<p>Air Master is a family-owned, full-service, Heating, Air Conditioning &amp; Indoor Air Quality company. We have been providing outstanding Residential and Commercial Service &amp; Installation to our southeast Michigan community since 1983.  With over 30 years of experience we are confident that Air Master will exceed your expectations in every way.<\\/p>"}}', '2015-01-12 17:46:41', '2015-01-12 17:46:41', 'a7a8250d-31ea-4527-b61c-39c29b435c98'),
 (82, 41, 7, 1, 'en_us', 18, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","2":"<p>Air Master is a family-owned, full-service, Heating, Air Conditioning &amp; Indoor Air Quality company. We have been providing outstanding Residential and Commercial Service &amp; Installation to our southeast Michigan community since 1983.  With over 30 years of experience we are confident that Air Master will exceed your expectations in every way.<\\/p>"}}', '2015-01-12 17:47:36', '2015-01-12 17:47:36', 'e83e94a3-8a7e-4bce-88b6-e57d8658c12c'),
-(83, 41, 7, 1, 'en_us', 19, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","12":"Air Master is a family-owned, full-service, Heating, Air Conditioning & Indoor Air Quality company. We have been providing outstanding Residential and Commercial Service & Installation to our southeast Michigan community since 1983. With over 30 years of experience we are confident that Air Master will exceed your expectations in every way.","2":""}}', '2015-01-12 17:48:22', '2015-01-12 17:48:22', 'ddb06a31-596a-4bb8-acda-7b583b1bef40');
+(83, 41, 7, 1, 'en_us', 19, '', '{"typeId":"7","authorId":null,"title":"About","slug":"about","postDate":1418927058,"expiryDate":null,"enabled":1,"fields":{"11":"About Our Company","12":"Air Master is a family-owned, full-service, Heating, Air Conditioning & Indoor Air Quality company. We have been providing outstanding Residential and Commercial Service & Installation to our southeast Michigan community since 1983. With over 30 years of experience we are confident that Air Master will exceed your expectations in every way.","2":""}}', '2015-01-12 17:48:22', '2015-01-12 17:48:22', 'ddb06a31-596a-4bb8-acda-7b583b1bef40'),
+(84, 4, 3, 1, 'en_us', 6, '', '{"typeId":"3","authorId":null,"title":"Residential","slug":"residential","postDate":1421079011,"expiryDate":null,"enabled":1,"fields":{"5":["50"],"30":"<p>At Air Master, we staff highly trained technicians that specialize in all residential Heating, Air Conditioning, &amp; Indoor Air Quality maintenance and repair.  Preventative Maintenance on your Heating, Air Conditioning &amp; Indoor Air Quality equipment is essential to avoid future costly repairs, unexpected failures, and lower your utility bills.  If you do find yourself in need of new equipment, our fully trained Comfort Advisors will assist you in making the best choice for your replacement needs. They will provide you with a comprehensive consultation and walk with you through every step of the installation process. We provide top quality, 24 hour Emergency service for all of your residential needs. Our fully stocked parts department and trucks are here to assist you, including annual filter and humidifier pad changes.<\\/p>","31":"<p>- 24\\/7 Emergency service, 365 days a year.<\\/p><p>- Our fleet includes over 25 fully stocked vehicles.<\\/p><p>- NATE certified technicians with 40 hours per year of continuing HVAC education.<\\/p><p>- Fully trained Comfort Advisors to assist you in all HVAC replacement needs.<\\/p><p>- In house Sheet Metal Shop that supplies all custom made metal &amp; duct work.<\\/p><p>- Preventative Maintenance Agreements to ensure all of your equipment is working as efficiently as possible.<\\/p>"}}', '2015-01-12 18:54:33', '2015-01-12 18:54:33', '820bf78b-359d-4aa0-9fec-50a961a90875');
 
 -- --------------------------------------------------------
 
@@ -787,7 +788,7 @@ CREATE TABLE `craft_fieldlayoutfields` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=237 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=249 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_fieldlayoutfields`
@@ -813,28 +814,24 @@ INSERT INTO `craft_fieldlayoutfields` (`id`, `layoutId`, `tabId`, `fieldId`, `re
 (206, 68, 40, 6, 0, 3, '2015-01-08 01:37:30', '2015-01-08 01:37:30', 'c90964b8-6ecb-4d6c-aff0-308c626f735d'),
 (208, 70, 42, 1, 0, 1, '2015-01-08 02:39:10', '2015-01-08 02:39:10', 'a299810f-412a-4814-9ff7-88d4206dff63'),
 (209, 70, 42, 28, 0, 2, '2015-01-08 02:39:10', '2015-01-08 02:39:10', 'c225cc09-5b34-44f4-af90-87bac2feb248'),
-(212, 72, 44, 5, 0, 1, '2015-01-12 16:10:28', '2015-01-12 16:10:28', '416870eb-4e2e-4a90-aeb2-04ff2df23b5a'),
-(213, 72, 44, 2, 0, 2, '2015-01-12 16:10:28', '2015-01-12 16:10:28', '3adbacd9-9a17-4fd6-911d-4c776473786a'),
-(214, 72, 44, 30, 0, 3, '2015-01-12 16:10:28', '2015-01-12 16:10:28', 'bc30743d-832d-4a2e-8b40-bb4fc0a68c68'),
-(215, 72, 44, 31, 0, 4, '2015-01-12 16:10:28', '2015-01-12 16:10:28', 'c5bc02c8-c8b8-44da-8804-33e7599e96ef'),
-(216, 73, 45, 5, 0, 1, '2015-01-12 16:10:41', '2015-01-12 16:10:41', 'e074a636-5260-43e4-bd70-7d7689260ebe'),
-(217, 73, 45, 2, 0, 2, '2015-01-12 16:10:41', '2015-01-12 16:10:41', '80986ae3-458b-4578-8f03-1e701f55c66f'),
-(218, 73, 45, 30, 0, 3, '2015-01-12 16:10:41', '2015-01-12 16:10:41', '2336cbae-d88e-4346-96e6-fcd5e306d1dd'),
-(219, 73, 45, 31, 0, 4, '2015-01-12 16:10:41', '2015-01-12 16:10:41', 'd74e4809-7be5-4121-a281-f164eea80195'),
-(220, 74, 46, 5, 0, 1, '2015-01-12 16:10:53', '2015-01-12 16:10:53', '88f5bd6d-fd04-4ea5-bf2d-33310d69f7e4'),
-(221, 74, 46, 2, 0, 2, '2015-01-12 16:10:53', '2015-01-12 16:10:53', '78f4db62-a7da-4520-9dab-c534bf50f144'),
-(222, 74, 46, 30, 0, 3, '2015-01-12 16:10:53', '2015-01-12 16:10:53', 'dc0ef32e-f876-44e1-a6d7-b9bc54a85cc5'),
-(223, 74, 46, 31, 0, 4, '2015-01-12 16:10:53', '2015-01-12 16:10:53', '8cecc9db-60f7-4459-864f-f579876505ad'),
-(224, 75, 47, 5, 0, 1, '2015-01-12 16:11:04', '2015-01-12 16:11:04', 'a4ccc103-dca4-41ad-8567-4c2b8d2c9cb7'),
-(225, 75, 47, 2, 0, 2, '2015-01-12 16:11:04', '2015-01-12 16:11:04', 'c9edda75-cfff-47bc-9e88-550f80839158'),
-(226, 75, 47, 30, 0, 3, '2015-01-12 16:11:04', '2015-01-12 16:11:04', '42cccc13-fd25-44c0-a795-a63a4b1ddb81'),
-(227, 75, 47, 31, 0, 4, '2015-01-12 16:11:04', '2015-01-12 16:11:04', 'c2681869-c0d9-4a79-882c-867331785d05'),
 (231, 77, 49, 11, 0, 1, '2015-01-12 17:48:30', '2015-01-12 17:48:30', 'd9e97ca3-1a42-4562-86c5-1a52346d1dfe'),
 (232, 77, 49, 12, 0, 2, '2015-01-12 17:48:30', '2015-01-12 17:48:30', '11e8c1b9-870b-44b2-9f66-6fc29e7e761f'),
 (233, 78, NULL, 25, 0, 1, '2015-01-12 17:55:38', '2015-01-12 17:55:38', 'f47a34f1-b1b0-4a21-9b5b-eda0823ea36b'),
 (234, 78, NULL, 26, 0, 2, '2015-01-12 17:55:38', '2015-01-12 17:55:38', 'dfed42c6-e918-44bd-b2ac-6e4c3a6e1a49'),
 (235, 78, NULL, 27, 0, 3, '2015-01-12 17:55:38', '2015-01-12 17:55:38', 'cf3cd8af-c47c-445d-90eb-a152154d02b6'),
-(236, 80, NULL, 25, 0, 1, '2015-01-12 17:56:10', '2015-01-12 17:56:10', '4868d875-6078-43b8-a998-56f5d23c19aa');
+(236, 80, NULL, 25, 0, 1, '2015-01-12 17:56:10', '2015-01-12 17:56:10', '4868d875-6078-43b8-a998-56f5d23c19aa'),
+(237, 81, 50, 5, 0, 1, '2015-01-12 18:53:58', '2015-01-12 18:53:58', '6fe3556f-05e1-4636-a829-fc435274982c'),
+(238, 81, 50, 30, 0, 2, '2015-01-12 18:53:58', '2015-01-12 18:53:58', '14d57c8d-8fe0-4cfe-809b-c05d8211da07'),
+(239, 81, 50, 31, 0, 3, '2015-01-12 18:53:58', '2015-01-12 18:53:58', '51ccb275-aa6e-49a3-98ba-5dea90bc3689'),
+(240, 82, 51, 5, 0, 1, '2015-01-12 18:54:06', '2015-01-12 18:54:06', '1308665b-a09e-45b1-9a68-a7c45b32c272'),
+(241, 82, 51, 30, 0, 2, '2015-01-12 18:54:06', '2015-01-12 18:54:06', 'd49016cb-d6e0-4849-98cf-b6b0859d562d'),
+(242, 82, 51, 31, 0, 3, '2015-01-12 18:54:06', '2015-01-12 18:54:06', '58427bbc-49ae-4f4e-beac-9f09288fd8de'),
+(243, 83, 52, 5, 0, 1, '2015-01-12 18:54:14', '2015-01-12 18:54:14', '622c8765-1997-4dee-83d3-5818df3e669d'),
+(244, 83, 52, 30, 0, 2, '2015-01-12 18:54:14', '2015-01-12 18:54:14', '8bc31a00-e715-455e-9432-b33ef10d8651'),
+(245, 83, 52, 31, 0, 3, '2015-01-12 18:54:14', '2015-01-12 18:54:14', '0d91866e-0175-41f9-ae4c-7483ece68707'),
+(246, 84, 53, 5, 0, 1, '2015-01-12 18:54:23', '2015-01-12 18:54:23', 'd7fe1bd6-a40e-47e3-a617-c075698e4b3d'),
+(247, 84, 53, 30, 0, 2, '2015-01-12 18:54:23', '2015-01-12 18:54:23', '60a63d29-0371-4b0c-b731-6b60a584a655'),
+(248, 84, 53, 31, 0, 3, '2015-01-12 18:54:23', '2015-01-12 18:54:23', 'e1e84a36-b72a-4cba-8da6-b94818ff2590');
 
 -- --------------------------------------------------------
 
@@ -848,7 +845,7 @@ CREATE TABLE `craft_fieldlayouts` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_fieldlayouts`
@@ -865,13 +862,13 @@ INSERT INTO `craft_fieldlayouts` (`id`, `type`, `dateCreated`, `dateUpdated`, `u
 (60, 'GlobalSet', '2015-01-08 01:20:42', '2015-01-08 01:20:42', '17a3b548-9929-4de4-9bd1-92f84ac46b67'),
 (68, 'Entry', '2015-01-08 01:37:30', '2015-01-08 01:37:30', 'b456719b-3d50-4258-be9b-c3a3fa167acf'),
 (70, 'Entry', '2015-01-08 02:39:10', '2015-01-08 02:39:10', '515c351c-dacb-44f8-9357-9c9c97f65de6'),
-(72, 'Entry', '2015-01-12 16:10:28', '2015-01-12 16:10:28', '8ca6872b-ac5a-4ca3-ba43-211fe089e365'),
-(73, 'Entry', '2015-01-12 16:10:41', '2015-01-12 16:10:41', 'b41050d5-77d6-40f0-9b74-a0db65eea9c2'),
-(74, 'Entry', '2015-01-12 16:10:53', '2015-01-12 16:10:53', 'fb47d417-a4f8-4181-931a-6a03a1e7d646'),
-(75, 'Entry', '2015-01-12 16:11:03', '2015-01-12 16:11:03', 'd262f369-8e06-48cb-9061-d9b0275ec6f8'),
 (77, 'Entry', '2015-01-12 17:48:30', '2015-01-12 17:48:30', 'dc78a09c-f096-4e36-a606-c09873bd81ce'),
 (78, 'GlobalSet', '2015-01-12 17:55:38', '2015-01-12 17:55:38', 'f1b2ed67-f557-4963-bdd2-735591fbae0a'),
-(80, 'GlobalSet', '2015-01-12 17:56:10', '2015-01-12 17:56:10', '22608b4f-9c19-4405-9fc9-e1374833ffbc');
+(80, 'GlobalSet', '2015-01-12 17:56:10', '2015-01-12 17:56:10', '22608b4f-9c19-4405-9fc9-e1374833ffbc'),
+(81, 'Entry', '2015-01-12 18:53:58', '2015-01-12 18:53:58', 'fd887525-6775-45dc-8df8-2098401f5264'),
+(82, 'Entry', '2015-01-12 18:54:06', '2015-01-12 18:54:06', '6c99f9be-0bad-4fbf-b3df-8729c9747bc4'),
+(83, 'Entry', '2015-01-12 18:54:14', '2015-01-12 18:54:14', '5be998b6-c5f7-43fb-a0b2-9003d281a0a1'),
+(84, 'Entry', '2015-01-12 18:54:23', '2015-01-12 18:54:23', '088f5b70-60e5-4ac9-92c1-5ae5c3774d35');
 
 -- --------------------------------------------------------
 
@@ -887,7 +884,7 @@ CREATE TABLE `craft_fieldlayouttabs` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_fieldlayouttabs`
@@ -897,11 +894,11 @@ INSERT INTO `craft_fieldlayouttabs` (`id`, `layoutId`, `name`, `sortOrder`, `dat
 (33, 53, 'Content', 1, '2014-12-19 03:19:28', '2014-12-19 03:19:28', '661b9a83-4a18-459f-821a-1cdffd24183c'),
 (40, 68, 'Content', 1, '2015-01-08 01:37:30', '2015-01-08 01:37:30', 'd3058790-0fd4-4751-bdeb-c487db96ce91'),
 (42, 70, 'Tab 1', 1, '2015-01-08 02:39:10', '2015-01-08 02:39:10', 'efa65020-4a1d-4f19-bb25-ff672001e28c'),
-(44, 72, 'Tab 1', 1, '2015-01-12 16:10:28', '2015-01-12 16:10:28', 'eab354e9-5a93-49a4-90ad-8afbf1ca64ca'),
-(45, 73, 'Tab 1', 1, '2015-01-12 16:10:41', '2015-01-12 16:10:41', '3988e762-5c33-4800-b607-94b9f9c40260'),
-(46, 74, 'Tab 1', 1, '2015-01-12 16:10:53', '2015-01-12 16:10:53', '42d2b051-3d43-443a-a20f-7c2a9be875f7'),
-(47, 75, 'Tab 1', 1, '2015-01-12 16:11:03', '2015-01-12 16:11:03', '0ce1b118-b9f5-4d61-849f-c81655a7d7df'),
-(49, 77, 'Tab 1', 1, '2015-01-12 17:48:30', '2015-01-12 17:48:30', '7e457dbc-c928-4fb4-9b26-66dd415e2772');
+(49, 77, 'Tab 1', 1, '2015-01-12 17:48:30', '2015-01-12 17:48:30', '7e457dbc-c928-4fb4-9b26-66dd415e2772'),
+(50, 81, 'Tab 1', 1, '2015-01-12 18:53:58', '2015-01-12 18:53:58', '8383dbab-24cb-4d05-a727-8598ec432ac6'),
+(51, 82, 'Tab 1', 1, '2015-01-12 18:54:06', '2015-01-12 18:54:06', '87f996ec-34c5-4a50-bbc8-60188e7d52f5'),
+(52, 83, 'Tab 1', 1, '2015-01-12 18:54:14', '2015-01-12 18:54:14', '02774759-884f-40c4-a93e-dc1b4426dd74'),
+(53, 84, 'Tab 1', 1, '2015-01-12 18:54:23', '2015-01-12 18:54:23', 'd4f8e8d3-0b3c-4a97-803a-ba387730627e');
 
 -- --------------------------------------------------------
 
@@ -1154,7 +1151,7 @@ CREATE TABLE `craft_relations` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=569 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=570 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `craft_relations`
@@ -1169,7 +1166,6 @@ INSERT INTO `craft_relations` (`id`, `fieldId`, `sourceId`, `sourceLocale`, `tar
 (506, 14, 2, NULL, 34, 1, '2014-12-19 03:06:50', '2014-12-19 03:06:50', 'de1110d3-4ca5-402e-8eda-c69c8872cf2d'),
 (534, 5, 43, NULL, 36, 1, '2015-01-04 02:39:24', '2015-01-04 02:39:24', 'da0f0721-c3d2-4367-b49c-aec8e0b44554'),
 (535, 5, 43, NULL, 14, 2, '2015-01-04 02:39:24', '2015-01-04 02:39:24', '550a7183-809d-4bc6-8f0d-c0889f368a0f'),
-(551, 5, 4, NULL, 50, 1, '2015-01-12 16:12:17', '2015-01-12 16:12:17', 'cf2f45df-9244-4eb1-b67f-d731953ce0e4'),
 (552, 5, 7, NULL, 47, 1, '2015-01-12 16:12:43', '2015-01-12 16:12:43', '24f989a1-450f-4771-9f4f-f48d61817f17'),
 (553, 5, 6, NULL, 48, 1, '2015-01-12 16:13:05', '2015-01-12 16:13:05', 'ca315283-09b8-427c-8e36-e6048776c466'),
 (554, 5, 5, NULL, 51, 1, '2015-01-12 16:13:24', '2015-01-12 16:13:24', '6670c3e6-7d7e-4284-af1a-a6b72dc4d647'),
@@ -1179,7 +1175,8 @@ INSERT INTO `craft_relations` (`id`, `fieldId`, `sourceId`, `sourceLocale`, `tar
 (565, 4, 2, NULL, 54, 4, '2015-01-12 17:11:13', '2015-01-12 17:11:13', 'fc0e822e-e029-41d9-9771-0d81da2cdf5f'),
 (566, 7, 2, NULL, 72, 1, '2015-01-12 17:11:13', '2015-01-12 17:11:13', '1a125629-d5f3-4448-a1df-88b403f66643'),
 (567, 7, 2, NULL, 57, 2, '2015-01-12 17:11:13', '2015-01-12 17:11:13', '891a6927-3f25-49c7-ae45-08e5f7665872'),
-(568, 7, 2, NULL, 56, 3, '2015-01-12 17:11:13', '2015-01-12 17:11:13', '3a66a934-ac74-45ac-a97f-cbcf23c666a6');
+(568, 7, 2, NULL, 56, 3, '2015-01-12 17:11:13', '2015-01-12 17:11:13', '3a66a934-ac74-45ac-a97f-cbcf23c666a6'),
+(569, 5, 4, NULL, 50, 1, '2015-01-12 18:54:33', '2015-01-12 18:54:33', '4907a4b2-ac08-41fc-8828-1fc0cc90e956');
 
 -- --------------------------------------------------------
 
@@ -1911,7 +1908,7 @@ CREATE TABLE `craft_tasks` (
   `dateCreated` datetime NOT NULL,
   `dateUpdated` datetime NOT NULL,
   `uid` char(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -2526,7 +2523,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 -- AUTO_INCREMENT for table `craft_entryversions`
 --
 ALTER TABLE `craft_entryversions`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=84;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=85;
 --
 -- AUTO_INCREMENT for table `craft_fieldgroups`
 --
@@ -2536,17 +2533,17 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 -- AUTO_INCREMENT for table `craft_fieldlayoutfields`
 --
 ALTER TABLE `craft_fieldlayoutfields`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=237;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=249;
 --
 -- AUTO_INCREMENT for table `craft_fieldlayouts`
 --
 ALTER TABLE `craft_fieldlayouts`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=81;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=85;
 --
 -- AUTO_INCREMENT for table `craft_fieldlayouttabs`
 --
 ALTER TABLE `craft_fieldlayouttabs`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=50;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=54;
 --
 -- AUTO_INCREMENT for table `craft_fields`
 --
@@ -2581,7 +2578,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `craft_relations`
 --
 ALTER TABLE `craft_relations`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=569;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=570;
 --
 -- AUTO_INCREMENT for table `craft_routes`
 --
@@ -2631,7 +2628,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT for table `craft_tasks`
 --
 ALTER TABLE `craft_tasks`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=84;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=85;
 --
 -- AUTO_INCREMENT for table `craft_templatecachecriteria`
 --
