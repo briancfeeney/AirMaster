@@ -301,6 +301,9 @@ h2 {
 .emergency {
   background-color: #f2f5f9;
 }
+.emergency p {
+  font-size: 1.5em;
+}
 #footer {
   border-top: solid 1px #d9293e;
   background-color: #f2f5f9;
@@ -460,6 +463,20 @@ button.close {
 .modal-backdrop {
   background-color: #1c5599;
 }
+.bodytext {
+  margin-bottom: 4em;
+}
+.bodytext h3 {
+  text-transform: none;
+  margin: 2em 0 1em;
+  text-align: center;
+}
+.bodytext h2 {
+  color: #d9293e;
+  font-size: 2em;
+  text-transform: none;
+  margin: 1em 0;
+}
 /******************************************************************************************************
 
 	COMPONENTS 
@@ -562,12 +579,15 @@ section {
   text-align: center;
 }
 .emergency h3 {
-  margin-bottom: 9%;
-  margin-top: -1%;
+  margin-bottom: 2em;
+  margin-top: 1em;
 }
 .about {
   padding: 10px 50px 40px;
   text-align: center;
+}
+.about .read_more {
+  margin: 2em 0;
 }
 .about_description {
   margin-bottom: 3%;
