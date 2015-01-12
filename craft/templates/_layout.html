@@ -159,24 +159,8 @@
 
 										<h3>{{ entry.title }}</h3>
 									
-										<p>{{ entry.body }}</p>
-									
-										<div class="modal_contact_info">
-
-											<p>For installation information, call</p>
-
-											<p>
-												<a href="tel:{{ contact.phoneNumber }}">
-													{{ contact.phoneNumber }}
-												</a>
-											</p>
-
-											<p>
-												<a href="mailto:{{ contact.emailAddress }}">
-													{{ contact.emailAddress }}
-												</a>
-											</p>
-
+										<div class="bodytext">
+											{{ entry.body }}
 										</div>
 
 										<p class="read_more">
@@ -265,24 +249,8 @@
 
 										<h3>{{ entry.title }}</h3>
 									
-										<p>{{ entry.body }}</p>
-									
-										<div class="modal_contact_info">
-
-											<p>For installation information, call</p>
-
-											<p>
-												<a href="tel:{{ contact.phoneNumber }}">
-													{{ contact.phoneNumber }}
-												</a>
-											</p>
-
-											<p>
-												<a href="mailto:{{ contact.emailAddress }}">
-													{{ contact.emailAddress }}
-												</a>
-											</p>
-
+										<div class="bodytext">
+											{{ entry.body }}
 										</div>
 
 										<p class="read_more">
@@ -370,25 +338,9 @@
 										</button>
 
 										<h3>{{ entry.title }}</h3>
-									
-										<p>{{ entry.body }}</p>
-									
-										<div class="modal_contact_info">
-
-											<p>For installation information, call</p>
-
-											<p>
-												<a href="tel:{{ contact.phoneNumber }}">
-													{{ contact.phoneNumber }}
-												</a>
-											</p>
-
-											<p>
-												<a href="mailto:{{ contact.emailAddress }}">
-													{{ contact.emailAddress }}
-												</a>
-											</p>
-
+										
+										<div class="bodytext">
+											{{ entry.body }}
 										</div>
 
 										<p class="read_more">
@@ -477,24 +429,8 @@
 
 										<h3>{{ entry.title }}</h3>
 									
-										<p>{{ entry.body }}</p>
-									
-										<div class="modal_contact_info">
-
-											<p>For installation information, call</p>
-
-											<p>
-												<a href="tel:{{ contact.phoneNumber }}">
-													{{ contact.phoneNumber }}
-												</a>
-											</p>
-
-											<p>
-												<a href="mailto:{{ contact.emailAddress }}">
-													{{ contact.emailAddress }}
-												</a>
-											</p>
-
+										<div class="bodytext">
+											{{ entry.body }}
 										</div>
 
 										<p class="read_more">
@@ -516,6 +452,63 @@
 		</div>
 
 <!-- End Barbecue modal -->
+
+<!-- Testimonials modal -->
+
+		<div class="modal fade chaparralR" id="testimonialsModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						
+						
+					</div>
+					
+						<div class="row">
+
+							<div class="col-xs-12">
+								<h2 class="about_title">Testimonials</h2>
+							</div>
+
+							<div class="col-xs-12">
+								<div class="modal-body">
+									<div class="modal-body-wrapper">
+									
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										
+											<img src="public/img/modal-x.png" alt="">
+
+										</button>
+
+									
+										{% for entry in craft.entries.section('testimonials') %}
+											<section class="testimonial">
+												<div class="col-xs-10 col-xs-offset-1">	
+													<p class="quote">{{ entry.fullQuote }}</p>
+													<p class="quote_name">{{ entry.customerName }}</p>
+												</div>
+											</section>
+										{% endfor %}
+
+										<p class="read_more">
+											<a data-toggle="modal" href="#testimonialsModal">Back to homepage</a>
+										</p>
+									
+									</div>
+								</div>
+
+							</div>
+							<!-- END columng -->
+						</div>
+						<!-- END row -->
+
+				
+
+				</div>
+			</div>
+		</div>
+
+<!-- End Testimonials modal -->
 
 
 <!-- END ALL MODALS -->
@@ -593,10 +586,16 @@
 							</div>
 
 							<div class="footer_info">
-								<h4>Office &amp; Showroom Hours</h4>
-								<div class="chaparralR">Mon - Fri: {{ officeHours.monFri }}</div> 
-								<div class="chaparralR">Sat: {{ officeHours.saturday }}</div> 
-								<div class="chaparralR">Sun: {{ officeHours.sunday }}</div>
+								<h4>Office hours</h4>
+
+								<div class="chaparralR">Mon - Fri: {{ officeHours.monFri }}</div>
+								<br>
+								<h4>Showroom Hours</h4>
+								<div class="chaparralR">Mon - Fri: {{ showRoomHours.monFri }}</div> 
+								<div class="chaparralR">Sat: {{ showRoomHours.saturday }}</div> 
+								<div class="chaparralR">Sun: {{ showRoomHours.sunday }}</div>
+
+								<p><small>Additional hours available by appointment</small></p>
 							</div>
 						</div>
 					</div>

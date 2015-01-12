@@ -157,7 +157,7 @@ button:active {
 .testimonial {
   color: #d9293e;
   font-size: 1.3em;
-  margin: 10em 0;
+  margin: 8em 0;
 }
 .testimonial .quote {
   font-size: 1.75em;
@@ -301,6 +301,9 @@ h2 {
 .emergency {
   background-color: #f2f5f9;
 }
+.emergency p {
+  font-size: 1.5em;
+}
 #footer {
   border-top: solid 1px #d9293e;
   background-color: #f2f5f9;
@@ -311,11 +314,11 @@ h2 {
   position: fixed;
   top: 0;
   padding: 20px 0;
-  z-index: 500;
+  z-index: 5000;
   background: transparent;
 }
 #header .main-logo {
-  max-width: 230px;
+  max-width: 330px;
 }
 /** Scrolling header effects ****************************************************/
 .main-logo img,
@@ -357,20 +360,20 @@ h2 {
     transition: all 0.5s cubic-bezier(0.52, -0.5, 0.83, 0.067);
   }
   .smaller img {
-    max-width: 55%;
+    max-width: 75%;
     margin-left: 5%;
   }
   .smaller .email,
   .smaller .phone {
-    font-size: 1em;
+    font-size: 1.35em;
     color: #d9293e;
   }
   .smaller .email {
-    margin-right: 120px;
+    margin-right: 170px;
   }
   .smaller .phone {
-    margin-top: -19px;
-    margin-left: 67%;
+    margin-top: -27px;
+    margin-left: 6%;
   }
 }
 /**  Modals  *************************************************************/
@@ -382,7 +385,7 @@ h2 {
   max-width: 800px;
 }
 .modal-header {
-  padding: 32px 0;
+  padding-top: 78px;
 }
 .modal-body {
   padding: 30px 25px;
@@ -400,8 +403,24 @@ h2 {
   left: 15px;
   top: 30px;
 }
+.modal-body .testimonial {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+}
+.modal-body .quote {
+  margin-bottom: 30px;
+}
+.modal-body .quote_name {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
 .modal-content {
   min-height: 100vh;
+}
+.modal-content h2 {
+  margin: 40px 0;
 }
 .modal_contact_info {
   text-align: center;
@@ -460,6 +479,20 @@ button.close {
 .modal-backdrop {
   background-color: #1c5599;
 }
+.bodytext {
+  margin-bottom: 4em;
+}
+.bodytext h3 {
+  text-transform: none;
+  margin: 2em 0 1em;
+  text-align: center;
+}
+.bodytext h2 {
+  color: #d9293e;
+  font-size: 2em;
+  text-transform: none;
+  margin: 1em 0;
+}
 /******************************************************************************************************
 
 	COMPONENTS 
@@ -503,7 +536,7 @@ ul.main_nav {
   /* margin-bottom: 145px; */
 }
 section {
-  margin: 30px 0;
+  margin: 10px 0;
 }
 .business_categories {
   margin-bottom: 0px;
@@ -514,14 +547,40 @@ section {
 }
 .single_category_post img {
   border-radius: 100%;
-  min-height: 325px;
+  height: 350px;
+  width: 350px;
+}
+@media screen and (max-width: 991px) {
+  .single_category_post img {
+    height: 290px;
+    width: 290px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .single_category_post img {
+    height: auto;
+    width: 100%;
+    border-radius: 0;
+  }
 }
 #barbecue img {
   max-height: 350px;
   width: 440px;
 }
+@media screen and (max-width: 767px) {
+  #barbecue img {
+    height: auto;
+    width: 100%;
+    max-height: 580px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #barbecue img {
+    max-height: 500px;
+  }
+}
 .biz-img img {
-  margin-top: 8%;
+  margin-top: 2em;
 }
 .category_info {
   /* padding: 20px 40px 0px 20px; */
@@ -536,12 +595,15 @@ section {
   text-align: center;
 }
 .emergency h3 {
-  margin-bottom: 9%;
-  margin-top: -1%;
+  margin-bottom: 2em;
+  margin-top: 1em;
 }
 .about {
-  padding: 10px 50px 40px;
+  padding: 100px 0 40px 0;
   text-align: center;
+}
+.about .read_more {
+  margin: 2em 0;
 }
 .about_description {
   margin-bottom: 3%;
@@ -615,13 +677,6 @@ section {
   }
 }
 @media screen and (max-width: 991px) {
-  .single_category_post img {
-    min-height: 300px;
-  }
-  #barbecue img {
-    max-height: 330px;
-    width: 440px;
-  }
   .location {
     padding-bottom: 50px;
   }
@@ -630,23 +685,13 @@ section {
   body {
     font-size: 1.2em;
   }
-  .single_category_post img {
-    min-height: 130px;
-    width: 160px;
-  }
-  #barbecue img {
-    max-height: 130px;
-    width: 150px;
-  }
-  .biz-img img {
-    margin-top: 25%;
-  }
   header img {
     margin-bottom: 6%;
   }
   .email,
   .phone {
-    font-size: 1.3em;
+    font-size: 1.8em;
+    line-height: 1em;
   }
   .location {
     padding-bottom: 40px;
@@ -735,13 +780,6 @@ section {
   }
   .single_category_post {
     padding: 20px 0;
-  }
-  .single_category_post img {
-    min-height: 110px;
-    max-width: 90px;
-  }
-  .biz-img img {
-    margin-top: 50%;
   }
   .social_icons li img {
     margin-left: 0px;

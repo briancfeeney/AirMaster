@@ -66,10 +66,10 @@
 			{% set entries = entry.testimonials %}
 
 				{% for entry in entry.testimonials.limit(1).find() %}
-				<div class="col-xs-10 col-xs-offset-1">	
-					<p class="quote">{{ entry.fullQuote }}</p>
-					<p class="quote_name">{{ entry.customerName }}</p>
-				</div>
+					<div class="col-xs-10 col-xs-offset-1">	
+						<p class="quote">{{ entry.quoteSnippet }}</p>
+						<p class="quote_name">{{ entry.customerName }}</p>
+					</div>
 				{% endfor %}
 			
 			</div>
@@ -93,7 +93,7 @@
 
 						<div class="row">
 
-							<div class="col-sm-6 col-xs-4">
+							<div class="col-sm-6 col-xs-12">
 								
 								<div class="biz-img">
 									{% set image = entry.image.first() %}
@@ -102,11 +102,11 @@
 
 							</div>
 
-							<div class="col-sm-6 col-xs-8">
+							<div class="col-sm-6 col-xs-12">
 								<div class="category_info">
 								
 									<h3>{{ entry.title }}</h3>
-									{{ entry.body.getPage(1) }}
+									{{ entry.servicesShort }}
 						
 									<p class="read_more">
 										<a data-toggle="modal" href="#resModal">find out more</a>
@@ -130,7 +130,7 @@
 
 						<div class="row">
 
-							<div class="col-sm-6 col-sm-push-6 col-xs-4">
+							<div class="col-sm-6 col-sm-push-6 col-xs-12">
 						
 								<div class="biz-img">
 									{% set image = entry.image.first() %}
@@ -139,12 +139,12 @@
 
 							</div>
 
-							<div class="col-sm-6 col-sm-pull-6 col-xs-8">
+							<div class="col-sm-6 col-sm-pull-6 col-xs-12">
 
 								<div class="category_info">
 
 									<h3>{{ entry.title }}</h3>
-									{{ entry.body.getPage(1) }}
+									{{ entry.servicesShort }}
 
 									<p class="read_more">
 										<a data-toggle="modal" href="#commModal">find out more</a>
@@ -167,18 +167,18 @@
 
 						<div class="row">
 
-							<div class="col-sm-6 col-xs-4">
+							<div class="col-sm-6 col-xs-12">
 								<div class="biz-img">
 									{% set image = entry.image.first() %}
 										<img src="{{ image.getUrl() }}" alt="">
 								</div>
 							</div>
 
-							<div class="col-sm-6 col-xs-8">
+							<div class="col-sm-6 col-xs-12">
 								<div class="category_info">
 
 									<h3>{{ entry.title }}</h3>
-									{{ entry.body.getPage(1) }}
+									{{ entry.servicesShort }}
 
 									<p class="read_more">
 										<a data-toggle="modal" href="#fireModal">find out more</a>
@@ -201,7 +201,7 @@
 
 						<div class="row">
 
-							<div class="col-sm-6 col-sm-push-6 col-xs-4">
+							<div class="col-sm-6 col-sm-push-6 col-xs-12">
 
 								<div class="biz-img">
 									{% set image = entry.image.first() %}
@@ -210,11 +210,11 @@
 
 							</div>
 
-							<div class="col-sm-6 col-sm-pull-6 col-xs-8">
+							<div class="col-sm-6 col-sm-pull-6 col-xs-12">
 								<div class="category_info">
 
 									<h3>{{ entry.title }}</h3>
-									{{ entry.body.getPage(1) }}
+									{{ entry.servicesShort }}
 
 									<p class="read_more">
 										<a data-toggle="modal" href="#barModal">find out more</a>
@@ -278,7 +278,7 @@
 
 						<div class="col-xs-12">
 							<div>
-								<h3>{{ entry.title }}</h3>
+								<h2 class="about_title">{{ entry.title }}</h2>
 
 								<p class="about_description">{{ entry.emergencyServices }}</p>
 							</div>
@@ -316,14 +316,14 @@
 					<div class="col-md-10 col-md-offset-1 col-sm-12">	
 						<h2 class="about_title">{{ entry.aboutUs }}</h2>
 						<p class="about_description">{{ entry.aboutUsDescription }}</p>
+						
 						<p class="read_more">
-							<a data-toggle="modal" href="#textModal">find out more</a>
+							<a data-toggle="modal" href="#testimonialsModal">Read all of our customer testimonials</a>
 						</p>
 					</div>
 
 				{% endfor %}
 
-				
 			
 			
 			</div>
