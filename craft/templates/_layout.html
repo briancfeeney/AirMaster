@@ -29,6 +29,31 @@
     <script src="//use.typekit.net/xkz7qtw.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 
+	<!-- Changing of Hero Image by Season -->
+	<script>
+	// Change background image depending on date
+		function applyclass()
+		{
+		var d = new Date();
+		var n = d.getMonth();
+		if (n==11 || n==0 || n==1)
+		// If month is December, January, or February, apply winter theme to 'hero image'
+		$('.main_img_wrapper').addClass('winter');
+		else if (n==2 || n==3 || n==4)
+		// If month is March, April, or May, apply spring theme to 'hero image'
+		$('.main_img_wrapper').addClass('spring');
+		else if (n==5 || n==6 || n==7)
+		// If month is June, July, or August, apply summer theme to 'hero image'
+		$('.main_img_wrapper').addClass('summer');
+		else if (n==8 || n==9 || n==10)
+		// If month is September, October or November, apply fall theme to 'hero image'
+		$('.main_img_wrapper').addClass('fall');
+		else
+		// Else use 'day' theme from 10AM (10hrs) - 4PM (16hrs)
+		$('.main_img_wrapper').addClass('spring');
+		}
+		window.onload = applyclass;
+	</script>
 
 	
 
@@ -519,29 +544,10 @@
 	 new WOW().init();
 	</script>
 
-	<!-- Changing Hero Image by Season -->
-	<script>
-	// Change background depending on date
-		function applyclass()
-		{
-		var d = new Date();
-		var n = d.getMonth();
-		if (n < 3)
-		// If time is 6PM (18hrs) - 12AM (24hrs) apply night theme to 'body'
-		$('.main_img_wrapper').addClass('winter');
-		else if (n > 3 && n < 6)
-		// If time is between 4PM (16hrs) - 6PM (18hrs) sunset theme to 'body'
-		$('.main_img_wrapper').addClass('spring');
-		else if (n > 6 && n < 9)
-		// If time is between 12AM (0hrs) - 5AM (5hrs) night theme to 'body'
-		$('.main_img_wrapper').addClass('summer');
-		else if (n > 8 && n < 12)
-		// If time is between 5AM (5hrs) - 10AM (10hrs) sunset theme to 'body'
-		$('.main_img_wrapper').addClass('fall');
-		window.onload = applyclass;
-	</script>
 
-	
+
+
+
 	
 
 </body>

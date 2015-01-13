@@ -283,19 +283,24 @@ h2 {
   background: url("../img/michigan-summer.jpg") no-repeat center;
   background-size: cover;
 }
-.testimonial:after {
-  content: "";
+.test_circle_bg {
+  content: " ";
   background-color: #ecf3fb;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  margin: 0 auto;
-  z-index: -1;
   border-radius: 50%;
   width: 305px;
-  max-height: 310px;
+  height: 310px;
+  display: inline-block;
+  z-index: -1;
+  position: relative;
+}
+.circle_container {
+  text-align: center;
+  z-index: -1;
+  margin-top: -270px;
+}
+.short_quote {
+  display: inline-block;
+  z-index: 500;
 }
 .emergency {
   background-color: #f2f5f9;
@@ -705,8 +710,12 @@ section {
   .modal_contact_info {
     font-size: 1.15em;
   }
-  .testimonial:after {
+  .test_circle_bg {
     width: 250px;
+    height: 250px;
+  }
+  .circle_container {
+    margin-top: -210px;
   }
   .modal-body .read_more {
     font-size: .95em;
@@ -791,6 +800,9 @@ section {
   }
   .social_icons li img {
     margin-left: 0px;
+  }
+  .circle_container {
+    margin-top: -240px;
   }
 }
 /***************************************************************************/
