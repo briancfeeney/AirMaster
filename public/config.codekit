@@ -67,24 +67,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/bbq-grills.jpg": {
+	"\/img\/barbecue.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 42891,
-		"inputAbbreviatedPath": "\/img\/bbq-grills.jpg",
-		"outputAbbreviatedPath": "\/img\/bbq-grills.jpg",
+		"initialSize": 1.49366e+06,
+		"inputAbbreviatedPath": "\/img\/barbecue.jpg",
+		"outputAbbreviatedPath": "\/img\/barbecue.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/commercial-heating-cooling.jpg": {
+	"\/img\/coporate-industrial.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 38980,
-		"inputAbbreviatedPath": "\/img\/commercial-heating-cooling.jpg",
-		"outputAbbreviatedPath": "\/img\/commercial-heating-cooling.jpg",
+		"initialSize": 683379,
+		"inputAbbreviatedPath": "\/img\/coporate-industrial.jpg",
+		"outputAbbreviatedPath": "\/img\/coporate-industrial.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -100,13 +100,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/fireplace-sales-service.jpg": {
-		"fileType": 16384,
+	"\/img\/fireplace.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 28645,
-		"inputAbbreviatedPath": "\/img\/fireplace-sales-service.jpg",
-		"outputAbbreviatedPath": "\/img\/fireplace-sales-service.jpg",
+		"initialSize": 1.24954e+06,
+		"inputAbbreviatedPath": "\/img\/fireplace.png",
+		"outputAbbreviatedPath": "\/img\/fireplace.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -155,6 +155,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/michigan-fall.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 780674,
+		"inputAbbreviatedPath": "\/img\/michigan-fall.jpg",
+		"outputAbbreviatedPath": "\/img\/michigan-fall.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/michigan-spring.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 128641,
+		"inputAbbreviatedPath": "\/img\/michigan-spring.jpg",
+		"outputAbbreviatedPath": "\/img\/michigan-spring.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/michigan-summer.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33101,
+		"inputAbbreviatedPath": "\/img\/michigan-summer.jpg",
+		"outputAbbreviatedPath": "\/img\/michigan-summer.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/michigan.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -177,13 +210,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/residential-heading-cooling.jpg": {
+	"\/img\/residential.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 38665,
-		"inputAbbreviatedPath": "\/img\/residential-heading-cooling.jpg",
-		"outputAbbreviatedPath": "\/img\/residential-heading-cooling.jpg",
+		"initialSize": 1.06086e+06,
+		"inputAbbreviatedPath": "\/img\/residential.jpg",
+		"outputAbbreviatedPath": "\/img\/residential.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -198,6 +231,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/js\/application.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/application.js",
+		"outputAbbreviatedPath": "\/js\/min\/application-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/js\/bootstrap.js": {
 		"fileType": 64,
@@ -253,6 +297,26 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/less\/airmaster.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/airmaster.less",
+		"outputAbbreviatedPath": "\/css\/airmaster.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
 		},
 	"\/less\/alerts.less": {
 		"allowInsecureImports": 0,

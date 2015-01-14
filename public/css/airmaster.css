@@ -154,6 +154,11 @@ button:active {
 .single_category_post {
   /* font-weight: bolder; */
 }
+.single_category_post ul {
+  list-style: inherit;
+  font-size: 1.2em;
+  padding-left: 1.2em;
+}
 .testimonial {
   color: #d9293e;
   font-size: 1.3em;
