@@ -243,7 +243,7 @@ h2 {
   margin-top: -130px;
 }
 .main_img_wrapper {
-  height: 380px;
+  height: 350px;
   width: 65%;
   left: 12%;
   position: relative;
@@ -272,40 +272,40 @@ h2 {
     width: 93%;
   }
 }
-.fall {
-  background: url("../img/michigan-fall.jpg") no-repeat center;
-  background-size: cover;
-}
+.spring,
+.summer,
+.fall,
 .winter {
-  background: url("../img/michigan-winter.jpg") no-repeat center;
-  background-size: cover;
+  display: none;
 }
-.spring {
-  background: url("../img/michigan-spring.jpg") no-repeat center;
-  background-size: cover;
-}
-.summer {
-  background: url("../img/michigan-summer.jpg") no-repeat center;
-  background-size: cover;
-}
+/************
 .test_circle_bg {
-  content: " ";
-  background-color: #ecf3fb;
-  border-radius: 50%;
-  width: 305px;
-  height: 310px;
-  display: inline-block;
-  z-index: -1;
-  position: relative;
+	content: " ";
+    background-color: lighten(@blue, 60%);
+    border-radius: 50%;
+    width: 305px;
+    height: 310px;
+    display: inline-block;
+    z-index: -1;
+    position: relative;
 }
+
 .circle_container {
-  text-align: center;
-  z-index: -1;
+	text-align: center;
+	z-index: -1;  
+	margin-top: -270px;
+}
+
+***************/
+.short_quote {
   margin-top: -270px;
 }
-.short_quote {
-  display: inline-block;
-  z-index: 500;
+.circle {
+  background-color: #d6e5f7;
+  border-radius: 50%;
+  margin: 5px auto;
+  height: 280px;
+  width: 280px;
 }
 .emergency {
   background-color: #f2f5f9;
@@ -486,6 +486,14 @@ button.close {
   width: 100%;
   height: auto;
 }
+/*** fix for barbecue img being taller than the rest *****************
+
+#barModal img {
+	width: 50%;
+	height: auto;		
+}
+
+*********************/
 .modal-backdrop {
   background-color: #1c5599;
 }
@@ -521,6 +529,7 @@ button.close {
 }
 .phone {
   margin-top: 3%;
+  z-index: 1;
 }
 .modal .phone {
   margin-top: 0;
@@ -540,6 +549,11 @@ ul.main_nav {
 .email,
 .nav_categories {
   text-align: right;
+}
+.email {
+  z-index: 500;
+  position: relative;
+  overflow: left;
 }
 /**  Page-body  *************************************************************/
 .main_top {
@@ -648,6 +662,7 @@ section {
   margin-top: 10px;
 }
 .footer_info {
+  position: relative;
   padding-bottom: 6%;
   margin: 0 0 2em;
   padding: 0;
@@ -662,6 +677,9 @@ section {
 }
 .footer_info.footer-logo {
   margin-bottom: 4em;
+}
+.contact_info {
+  z-index: 500;
 }
 .footer-img {
   max-width: 70%;
@@ -753,6 +771,9 @@ section {
     width: 72%;
     max-width: 800px;
   }
+  .short_quote {
+    margin-top: -250px;
+  }
   .footer-logo img {
     max-width: 60%;
   }
@@ -772,24 +793,24 @@ section {
     height: 200px;
   }
   .close {
-    margin-left: -135px;
+    margin-left: -130px;
   }
   .close img {
-    max-width: 22%;
+    max-width: 29%;
     padding: 0;
   }
   .modal.in .modal-dialog {
-    -webkit-transform: translate(22%, 0);
-    -ms-transform: translate(22%, 0);
-    -o-transform: translate(22%, 0);
-    transform: translate(22%, 0);
+    -webkit-transform: translate(31%, 0);
+    -ms-transform: translate(31%, 0);
+    -o-transform: translate(31%, 0);
+    transform: translate(31%, 0);
   }
   .modal-dialog {
-    width: 80%;
+    width: 75%;
     max-width: 800px;
   }
   .modal-header {
-    padding-top: 65px;
+    padding-top: 58px;
   }
   #content {
     padding-top: 130px;
@@ -799,6 +820,9 @@ section {
   }
   .modal_nav {
     font-size: 1em;
+  }
+  .short_quote {
+    margin-top: -270px;
   }
   .single_category_post {
     padding: 20px 0;

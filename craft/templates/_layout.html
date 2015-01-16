@@ -38,19 +38,19 @@
 		var n = d.getMonth();
 		if (n==11 || n==0 || n==1)
 		// If month is December, January, or February, apply winter theme to 'hero image'
-		$('.main_img_wrapper').addClass('winter');
+			$('.winter').show();
 		else if (n==2 || n==3 || n==4)
 		// If month is March, April, or May, apply spring theme to 'hero image'
-		$('.main_img_wrapper').addClass('spring');
+			$('.spring').show();
 		else if (n==5 || n==6 || n==7)
 		// If month is June, July, or August, apply summer theme to 'hero image'
-		$('.main_img_wrapper').addClass('summer');
+			$('.summer').show();
 		else if (n==8 || n==9 || n==10)
 		// If month is September, October or November, apply fall theme to 'hero image'
-		$('.main_img_wrapper').addClass('fall');
+			$('.fall').show();
 		else
 		// Else use 'day' theme from 10AM (10hrs) - 4PM (16hrs)
-		$('.main_img_wrapper').addClass('spring');
+			$('');
 		}
 		window.onload = applyclass;
 	</script>
@@ -70,7 +70,7 @@
 
 				<div class="row">
 
-					<div class="col-sm-4 col-xs-5">
+					<div class="col-sm-4 col-xs-4">
 						
 						<div class="main-logo">
 							<img src="public/img/air-master_logo.png" alt="">
@@ -78,7 +78,7 @@
 
 					</div>
 
-					<div class="col-sm-8 col-xs-7">
+					<div class="col-sm-8 col-xs-8">
 						<nav>
 							<ul class="main_nav">
 								
@@ -448,7 +448,7 @@
 
 						</div>
 						
-						<div class="footer_info">
+						<div class="footer_info contact_info">
 							<h4>Contact</h4>	
 							<div class="chaparralR">
 								<a href="mailto:{{ contact.emailAddress }}">
@@ -467,7 +467,7 @@
 
 									<li>
 										<a href="{{ facebook8.socialLink }}">
-											<img src="{{ image.getUrl() }}" alt="">
+											<img src="public/img/facebook-icon.png" alt="">
 										</a>
 									</li>
 
@@ -477,7 +477,7 @@
 
 									<li>
 										<a href="{{ twitter.socialLink }}">
-											<img src="{{ image.getUrl() }}" alt="">
+											<img src="public/img/twitter-icon.png" alt="">
 										</a>
 									</li>
 

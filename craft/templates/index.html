@@ -44,10 +44,30 @@
 		</div>
 		<!-- END CONTAINER -->
 
+		<!-- Rotating Hero Images by Season -->
 
-		<div class="main_img_wrapper wow fadeInLeft">
+		{% set image = entry.spring.first() %}
+			<div class="main_img_wrapper wow fadeInLeft spring" style=" background: url('{{ image.getUrl() }}') no-repeat center; background-size: cover;" >
 
-		</div>
+			</div>
+
+		{% set image = entry.summer.first() %}
+			<div class="main_img_wrapper wow fadeInLeft summer" style=" background: url('{{ image.getUrl() }}') no-repeat center; background-size: cover;">
+
+			</div>
+
+		{% set image = entry.fall.first() %}
+			<div class="main_img_wrapper wow fadeInLeft fall" style=" background: url('{{ image.getUrl() }}') no-repeat center; background-size: cover;">
+
+			</div>
+
+		{% set image = entry.winter.first() %}
+			<div class="main_img_wrapper wow fadeInLeft winter" style=" background: url('{{ image.getUrl() }}') no-repeat center; background-size: cover;">
+
+			</div>
+
+		<!-- END hero images -->
+		
 
 	</div>
 
@@ -58,21 +78,25 @@
 
 <!-- first testimonial -->
 		
-		<section class="testimonial wow fadeInUp">
+		<section class="testimonial wow fadeInUp" data-wow-delay="1.5s">
 			<div class="row">
+
+				<div class="circle">
+						
+				</div>
 			
 			{% set entries = entry.testimonials %}
 
 				{% for entry in entry.testimonials.limit(1).find() %}
 					<div class="col-xs-10 col-xs-offset-1">	
-						<div class="short_quote">	
+						<div class="short_quote">
+
 							<p class="quote">{{ entry.quoteSnippet }}</p>
 							<p class="quote_name">{{ entry.customerName }}</p>
+
 						</div>
 
-						<div class="circle_container">
-							<div class="test_circle_bg"></div>
-						</div>
+						
 					</div>
 				{% endfor %}
 
@@ -245,19 +269,22 @@
 
 		<section class="testimonial wow fadeInUp">
 			<div class="row">
+
+				<div class="circle">
+						
+				</div>
 			
 			{% set entries = entry.testimonials %}
 
 				{% for entry in entry.testimonials.limit(1).offset(1) %}
 					<div class="col-xs-10 col-xs-offset-1">	
-						<div class="short_quote">	
+						<div class="short_quote">
+
 							<p class="quote">{{ entry.quoteSnippet }}</p>
 							<p class="quote_name">{{ entry.customerName }}</p>
+
 						</div>
 
-						<div class="circle_container">
-							<div class="test_circle_bg"></div>
-						</div>
 					</div>
 				{% endfor %}
 			
@@ -351,6 +378,10 @@
 	
 		<section class="testimonial wow fadeInUp">
 			<div class="row">
+
+				<div class="circle">
+						
+				</div>
 			
 			{% set entries = entry.testimonials %}
 
@@ -358,14 +389,14 @@
 				{% for entry in entry.testimonials.limit(1).offset(2) %}
 				
 				<div class="col-xs-10 col-xs-offset-1">	
+					
 					<div class="short_quote">	
+		
 						<p class="quote">{{ entry.quoteSnippet }}</p>
 						<p class="quote_name">{{ entry.customerName }}</p>
+							
 					</div>
 
-					<div class="circle_container">
-						<div class="test_circle_bg"></div>
-					</div>
 				</div>
 				{% endfor %}
 				
