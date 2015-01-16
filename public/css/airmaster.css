@@ -719,6 +719,7 @@ section {
   .email,
   .phone {
     line-height: 1em;
+    font-size: 1.45em;
   }
   .email {
     margin-top: 3px;
@@ -816,7 +817,7 @@ section {
     padding-top: 130px;
   }
   .main_nav {
-    font-size: .7em;
+    font-size: .88em;
   }
   .modal_nav {
     font-size: 1em;
