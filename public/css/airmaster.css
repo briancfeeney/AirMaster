@@ -765,6 +765,9 @@ section {
     -o-transform: translate(37%, 0);
     transform: translate(37%, 0);
   }
+  .modal-content {
+    margin-top: 140px;
+  }
   .modal-dialog {
     margin-right: 0;
     margin-top: 0;
@@ -815,6 +818,9 @@ section {
   }
   .main_nav {
     font-size: .65em;
+  }
+  .modal-content {
+    margin-top: 110px;
   }
   .modal_nav {
     font-size: 1em;
