@@ -62,6 +62,11 @@ a:hover {
 	opacity: .45;
 }
 
+a:visited, a:link, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
 
 
 /*************************************************************************/
@@ -166,7 +171,7 @@ a, button {
 	color: @blue;
 	.main_body {
 		.calluna();
-		max-width: 17em;
+		max-width: 25em;
 		font-size: 2em;
 	}
 	.location {
@@ -188,7 +193,7 @@ a, button {
 .testimonial {
 	color: @red;
 	font-size: 1.3em;
-	margin: 8em 0;
+	margin: 6em 0;
 	.quote {
 		font-size: 1.75em;
 		.chaparralR();
@@ -486,7 +491,7 @@ body {
 
 
 .modal-body {
-	padding: 30px 25px;
+	padding: 7% 13% 13% 13%;
 	h3 {
 		margin-top: 10px;
 		margin-bottom: 35px
@@ -523,13 +528,7 @@ body {
 	}
 }
 
-.modal_contact_info {
-	text-align: center;
-	margin: 110px 0;
-	p:last-child {
-		margin-top: 100px;
-	};
-}
+
 
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform .5s ease-out;
@@ -651,11 +650,11 @@ button.close {
 	z-index: 1;
 }
 
-	.modal .phone {
-		margin-top: 0;
-	}
+.modal .phone {
+	margin-top: 0;
+}
 
-ul.main_nav  {
+.main_nav  {
 	padding-left: 0;
 }
 
@@ -721,6 +720,10 @@ section {
 	}
 }
 
+#barbecue {
+	padding-bottom: 0;
+}
+
 #barbecue img {
 	max-height: 350px;
 	width: 440px;
@@ -739,12 +742,17 @@ section {
 }
 
 .category_info {
-	/* padding: 20px 40px 0px 20px; */
-	padding: 1em 0;
+	padding: 1em 2.2em;
 	p {
 		padding: 5px 0;
 		font-size: 1.2em;
 	};
+	h3 {
+		padding-bottom: 5%;
+	}
+	.read_more {
+		padding-top: 3%;
+	}
 }
 
 .emergency {
@@ -758,7 +766,7 @@ section {
 
 
 .about {
-	padding: 100px 0 40px 0;
+	padding-top: 100px;
 	text-align: center;
 	.read_more {
 		margin: 2em 0;
@@ -866,6 +874,13 @@ section {
 	}
 }
 
+@media screen and (min-width: 767px) {
+   
+   .main-logo {
+   		margin-top: 3%;
+   }
+}
+
 
 @media screen and (max-width: 767px) {
 
@@ -883,7 +898,13 @@ section {
 	}
 
 	.email {
-		margin-top: 3px;
+		margin-top: .15em;
+	}
+
+	.main_top {
+		.main_body {
+			max-width: 20em;
+		};
 	}
 
 	.location {
@@ -893,6 +914,22 @@ section {
 	.main_top {
 		margin-bottom: 25px;
 	}
+
+	.category_info {
+		/* padding: 20px 40px 0px 20px; */
+		padding: 1em 0;
+		p {
+			padding: 5px 0;
+			font-size: 1.2em;
+		};
+		h3 {
+			padding-bottom: 2%;
+		}
+		.read_more {
+			padding-top: 1.5%;
+		}
+	}
+
 
 	.testimonial, .modal_contact_info {
 		font-size: 1.15em;
@@ -960,8 +997,12 @@ section {
     }
 
     #header {
-		padding-bottom: 8px;
+		padding-bottom: 0px;
 		background: white;
+	}
+
+	.main_top {
+		margin-top: -160px;
 	}
 
 	.main_body p {
@@ -970,10 +1011,6 @@ section {
 
 	.location {
 		padding: 10px 0 30px;
-	}
-
-	.main_img_wrapper {
-		height: 200px;
 	}
 
 	.close {
