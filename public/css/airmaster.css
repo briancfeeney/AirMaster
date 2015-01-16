@@ -155,7 +155,7 @@ button:active {
   /* font-weight: bolder; */
 }
 .single_category_post ul {
-  list-style: inherit;
+  list-style: disc;
   font-size: 1.2em;
   padding-left: 1.2em;
 }
@@ -297,8 +297,14 @@ h2 {
 }
 
 ***************/
+.quote_box {
+  margin-top: -284px;
+  height: 280px;
+}
 .short_quote {
-  margin-top: -270px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .circle {
   background-color: #f0f6fc;
@@ -328,7 +334,6 @@ h2 {
 }
 #header .main-logo {
   max-width: 330px;
-  margin-top: 7px;
 }
 /** Scrolling header effects ****************************************************/
 .main-logo img,
@@ -356,11 +361,11 @@ h2 {
 @media screen and (min-width: 767px) {
   .smaller img,
   .smaller .email {
-    -webkit-transition: all 0.5s cubic-bezier(0.52, -0.5, 1.83, 0.97);
-    -moz-transition: all 0.5s cubic-bezier(0.52, -0.5, 1.83, 0.97);
-    -ms-transition: all 0.5s cubic-bezier(0.52, -0.5, 1.83, 0.97);
-    -o-transition: all 0.5s cubic-bezier(0.52, -0.5, 1.83, 0.97);
-    transition: all 0.5s cubic-bezier(0.52, -0.5, 1.83, 0.97);
+    -webkit-transition: all 0.5s cubic-bezier(0.52, -0.85, 1.83, 0.97);
+    -moz-transition: all 0.5s cubic-bezier(0.52, -0.85, 1.83, 0.97);
+    -ms-transition: all 0.5s cubic-bezier(0.52, -0.85, 1.83, 0.97);
+    -o-transition: all 0.5s cubic-bezier(0.52, -0.85, 1.83, 0.97);
+    transition: all 0.5s cubic-bezier(0.52, -0.85, 1.83, 0.97);
   }
   .smaller .phone {
     -webkit-transition: all 0.5s cubic-bezier(0.52, -0.5, 0.83, 0.067);
@@ -394,9 +399,6 @@ h2 {
   width: 60%;
   max-width: 800px;
 }
-.modal-header {
-  padding-top: 78px;
-}
 .modal-body {
   padding: 30px 25px;
 }
@@ -428,6 +430,7 @@ h2 {
 }
 .modal-content {
   min-height: 100vh;
+  margin-top: 100px;
 }
 .modal-content h2 {
   margin: 40px 0;
@@ -639,9 +642,6 @@ section {
 .quote_name {
   text-align: center;
 }
-.quote {
-  margin-top: 30px;
-}
 .quote_name {
   margin-top: 5%;
 }
@@ -772,9 +772,6 @@ section {
     width: 72%;
     max-width: 800px;
   }
-  .short_quote {
-    margin-top: -250px;
-  }
   .footer-logo img {
     max-width: 60%;
   }
@@ -786,6 +783,9 @@ section {
   #header {
     padding-bottom: 8px;
     background: white;
+  }
+  .main_body p {
+    font-size: .8em;
   }
   .location {
     padding: 10px 0 30px;
@@ -810,9 +810,6 @@ section {
     width: 75%;
     max-width: 800px;
   }
-  .modal-header {
-    padding-top: 58px;
-  }
   #content {
     padding-top: 130px;
   }
@@ -822,17 +819,25 @@ section {
   .modal_nav {
     font-size: 1em;
   }
-  .short_quote {
-    margin-top: -270px;
-  }
   .single_category_post {
-    padding: 20px 0;
+    padding: 20px 5px 50px;
   }
   .social_icons li img {
     margin-left: 0px;
   }
-  .circle_container {
-    margin-top: -240px;
+  .quote_box {
+    margin-top: -200px;
+    height: 200px;
+  }
+  .short_quote {
+    font-size: .8em;
+  }
+  .circle {
+    background-color: #f0f6fc;
+    border-radius: 50%;
+    margin: 5px auto;
+    height: 200px;
+    width: 200px;
   }
 }
 /***************************************************************************/
