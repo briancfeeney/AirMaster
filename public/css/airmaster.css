@@ -542,6 +542,7 @@ button.close {
 }
 .main_nav {
   padding-left: 0;
+  margin-top: 5px;
 }
 .main_nav li {
   display: inline-block;
@@ -718,11 +719,6 @@ section {
 @media screen and (max-width: 991px) {
   .location {
     padding-bottom: 50px;
-  }
-}
-@media screen and (min-width: 767px) {
-  .main-logo {
-    margin-top: 3%;
   }
 }
 @media screen and (max-width: 767px) {
