@@ -2,8 +2,9 @@ $(document).ready(function() {
 
 	
 	if (!jQuery.support.leadingWhitespace){
-        $("div, section").removeClass("wow");
-    }
+        $("div").removeClass("wow");
+        $("section").removeClass("wow");
+    } else {}
 
 	$(document).on("scroll", function() {
 		if($(document).scrollTop()>50) {
