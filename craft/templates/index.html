@@ -21,7 +21,7 @@
 
 {% block content %}
 
-	<div class="main_top chaparralR wow fadeIn">
+	<div class="main_top chaparralR ie9 fadeIn">
 
 		<div class="container">
 
@@ -47,22 +47,22 @@
 		<!-- Rotating Hero Images by Season -->
 
 		{% set image = entry.spring.first() %}
-			<div class="main_img_wrapper wow fadeInLeft spring" style=" background: url('{{ image.getUrl() }}') no-repeat center; background-size: cover;" >
+			<div class="main_img_wrapper ie9 fadeInLeft spring" style=" background: url('{{ image.getUrl() }}') no-repeat center; background-size: cover;" >
 
 			</div>
 
 		{% set image = entry.summer.first() %}
-			<div class="main_img_wrapper wow fadeInLeft summer" style=" background: url('{{ image.getUrl() }}') no-repeat center; background-size: cover;">
+			<div class="main_img_wrapper ie9 fadeInLeft summer" style=" background: url('{{ image.getUrl() }}') no-repeat center; background-size: cover;">
 
 			</div>
 
 		{% set image = entry.fall.first() %}
-			<div class="main_img_wrapper wow fadeInLeft fall" style=" background: url('{{ image.getUrl() }}') no-repeat center; background-size: cover;">
+			<div class="main_img_wrapper ie9 fadeInLeft fall" style=" background: url('{{ image.getUrl() }}') no-repeat center; background-size: cover;">
 
 			</div>
 
 		{% set image = entry.winter.first() %}
-			<div class="main_img_wrapper wow fadeInLeft winter" style=" background: url('{{ image.getUrl() }}') no-repeat center; background-size: cover;">
+			<div class="main_img_wrapper ie9 fadeInLeft winter" style=" background: url('{{ image.getUrl() }}') no-repeat center; background-size: cover;">
 
 			</div>
 
@@ -78,7 +78,7 @@
 
 <!-- first testimonial -->
 		
-		<section class="testimonial wow fadeInUp" data-wow-delay="1.5s">
+		<section class="testimonial ie9 fadeInUp" data-wow-delay="1.5s">
 			<div class="row">
 
 				<div class="circle">
@@ -115,10 +115,10 @@
 
 <!-- FOR LOOP to display different business categories -->
 	
-		<section class="business_categories wow">
+		<section class="business_categories">
 				
 
-				<div class="single_category_post wow" id="residential">
+				<div class="single_category_post" id="residential">
 					
 					{% for entry in craft.entries.section('residential') %}
 
@@ -155,7 +155,7 @@
 				<!-- end single_category_post -->
 			
 
-				<div class="single_category_post wow" id="commercial">
+				<div class="single_category_post" id="commercial">
 					
 					{% for entry in craft.entries.section('commercialIndustrial') %}
 
@@ -192,7 +192,7 @@
 				<!-- end single_category_post -->
 				
 
-				<div class="single_category_post wow " id="fireplace">
+				<div class="single_category_post " id="fireplace">
 					
 					{% for entry in craft.entries.section('fireplace') %}
 
@@ -270,7 +270,7 @@
 
 <!-- second testimonial -->
 
-		<section class="testimonial wow fadeInUp">
+		<section class="testimonial ie9 fadeInUp">
 			<div class="row">
 
 				<div class="circle">
@@ -382,7 +382,7 @@
 
 <!-- third testimonial -->
 	
-		<section class="testimonial wow fadeInUp">
+		<section class="testimonial ie9 fadeInUp">
 			<div class="row">
 
 				<div class="circle">
