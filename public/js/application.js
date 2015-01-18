@@ -1,6 +1,10 @@
 $(document).ready(function() {
 
 	
+	if (!jQuery.support.leadingWhitespace){
+        //Write your code for IE7 and IE8 browsers
+        $("*").removeClass("wow");
+    }
 
 	$(document).on("scroll", function() {
 		if($(document).scrollTop()>50) {
