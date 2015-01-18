@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	
 	if (!jQuery.support.leadingWhitespace){
-        $(".wow").removeClass("wow");
+        $("div, section").removeClass("wow");
     }
 
 	$(document).on("scroll", function() {
