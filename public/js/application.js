@@ -1,10 +1,5 @@
 $(document).ready(function() {
 
-	
-	 if(  document.addEventListener  ){
-        $("ie9").addClass('wow');
-    }
-
 	$(document).on("scroll", function() {
 		if($(document).scrollTop()>50) {
 			$(".main-logo").addClass("smaller");
