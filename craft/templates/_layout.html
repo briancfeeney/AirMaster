@@ -59,7 +59,19 @@
 	  for(var e,l='main article aside footer header nav section time'.split(' ');e=l.pop();document.createElement(e))
 	</script>
 
+	<script>
+		var div = document.createElement("div");
+		div.innerHTML = "<!--[if lt IE 9]><i></i><![endif]-->";
+		var isIeLessThan9 = (div.getElementsByTagName("i").length == 1);
+		if (isIeLessThan9) {
+		    alert("WE DON'T LIKE YOUR BROWSER");
+		    var myElement = document.querySelector("#header");
+			myElement.style.backgroundColor = "white";
+		}
+	</script>
+
 	
+
 </head>
 
 
