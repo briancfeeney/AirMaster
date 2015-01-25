@@ -36,7 +36,7 @@
 		{
 		var d = new Date();
 		var n = d.getMonth();
-		if (n==11 || n==0 || n==1)
+		if (n==11 || n==1 || n==1)
 		// If month is December, January, or February, apply winter theme to 'hero image'
 			$('.winter').show();
 		else if (n==2 || n==3 || n==4)
@@ -45,7 +45,7 @@
 		else if (n==5 || n==6 || n==7)
 		// If month is June, July, or August, apply summer theme to 'hero image'
 			$('.summer').show();
-		else if (n==8 || n==9 || n==10)
+		else if (n==0 || n==9 || n==10)
 		// If month is September, October or November, apply fall theme to 'hero image'
 			$('.fall').show();
 		else
@@ -64,7 +64,7 @@
 		div.innerHTML = "<!--[if lt IE 9]><i></i><![endif]-->";
 		var isIeLessThan9 = (div.getElementsByTagName("i").length == 1);
 		if (isIeLessThan9) {
-		    alert("WE DON'T LIKE YOUR BROWSER");
+		    alert("Test alert for a BROWSER");
 		    var myElement = document.querySelector("#header");
 			myElement.style.backgroundColor = "white";
 		}
@@ -361,58 +361,62 @@
 <!-- End Barbecue modal -->
 
 <!-- Testimonials modal -->
-
+	
 		<div class="modal fade chaparralR" id="testimonialsModal">
 			<div class="modal-dialog">
 				<div class="modal-content">
 
-					<div class="row">
+					{% for entry in craft.entries.section('barbecue') %}	
 
-						<div class="col-xs-12">
-							<h2 class="about_title">Testimonials</h2>
-						</div>
+						<div class="row">
 
-						<div class="col-xs-12">
-							<div class="modal-body">
-								<div class="modal-body-wrapper">
-								
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							<div class="col-xs-12">
+								<div class="modal-body">
+									<div class="modal-body-wrapper">
 									
-										<img src="public/img/modal-x.png" alt="">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										
+											<img src="public/img/modal-x.png" alt="">
 
-									</button>
+										</button>
 
-								
-									{% for entry in craft.entries.section('testimonials') %}
-										<section class="testimonial">
-											<div class="col-xs-10 col-xs-offset-1">	
-												<p class="quote">{{ entry.fullQuote }}</p>
-												<p class="quote_name">{{ entry.customerName }}</p>
-											</div>
-										</section>
-									{% endfor %}
+										<h3>Testimonials</h3>
+									
+										<div class="bodytext">
+											{% for entry in craft.entries.section('testimonials') %}
+												<div class="modal_testimonial">
+												
+													<div>{{ entry.fullQuote }}</div>
+													<div class="testimonial_name">{{ entry.customerName }}</div>
+												
+												</div>
+											{% endfor %}
+										</div>
 
 
-									<p class="read_more">
-										<a data-toggle="modal" href="#testimonialsModal">Back to homepage</a>
-									</p>
-								
+										<p class="read_more">
+											<a data-toggle="modal" href="#testimonialsModal">Back to homepage</a>
+										</p>
+									
+									</div>
 								</div>
+
 							</div>
-
+							<!-- END columng -->
 						</div>
-						<!-- END columng -->
-					</div>
-					<!-- END row -->
+						<!-- END row -->
 
-				
+					{% endfor %}
 
 				</div>
 			</div>
 		</div>
+		
 
 <!-- End Testimonials modal -->
 
+
+	
 
 <!-- END ALL MODALS -->
 		

@@ -190,6 +190,11 @@ button:active {
     margin: 3em 0;
   }
 }
+.testimonial_name {
+  text-transform: uppercase;
+  color: #d9293e;
+  text-align: center;
+}
 .modal-body {
   font-size: 1.25em;
 }
@@ -416,7 +421,7 @@ h2 {
   max-width: 800px;
 }
 .modal-body {
-  padding: 7% 13% 13% 13%;
+  padding: 7% 10% 13% 10%;
 }
 .modal-body h3 {
   margin-top: 10px;
@@ -446,10 +451,20 @@ h2 {
 }
 .modal-content {
   min-height: 100vh;
-  margin-top: 100px;
+  margin-top: 95px;
 }
 .modal-content h2 {
   margin: 40px 0;
+}
+#testimonialsModal h3 {
+  margin-top: 0px;
+  padding-bottom: 30px;
+}
+.modal_testimonial {
+  padding-bottom: 50px;
+}
+.modal_testimonial .testimonial_name {
+  padding-top: 15px;
 }
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform 0.5s ease-out;
@@ -498,14 +513,6 @@ button.close {
   width: 100%;
   height: auto;
 }
-/*** fix for barbecue img being taller than the rest *****************
-
-#barModal img {
-	width: 50%;
-	height: auto;		
-}
-
-*********************/
 .modal-backdrop {
   background-color: #1c5599;
 }
@@ -725,6 +732,9 @@ section {
   .location {
     padding-bottom: 50px;
   }
+  .modal-content {
+    margin-top: 87px;
+  }
 }
 @media screen and (max-width: 767px) {
   body {
@@ -800,7 +810,7 @@ section {
     transform: translate(37%, 0);
   }
   .modal-content {
-    margin-top: 140px;
+    margin-top: 26%;
   }
   .modal-dialog {
     margin-right: 0;
@@ -852,6 +862,10 @@ section {
     width: 75%;
     max-width: 800px;
   }
+  #testimonialsModal h3 {
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
   #content {
     padding-top: 130px;
   }
@@ -859,7 +873,7 @@ section {
     font-size: .65em;
   }
   .modal-content {
-    margin-top: 110px;
+    margin-top: 25.5%;
   }
   .modal_nav {
     font-size: 1em;
